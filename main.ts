@@ -21,15 +21,23 @@ async function getDirectories(path: string) {
 
 const currentDir = Deno.cwd();
 const dirs = await getDirectories(currentDir);
-console.log(dirs);
+const ports: Record<string, number> = {};
+let watchedFolders: string[] = [];
 
-const watchedFolders = [
-  "en/dist/Dev/js",
-  "en/dist/Dev/scss",
-  "en/ejs",
-  "fr/dist/Dev/js",
-  "fr/dist/Dev/scss",
-];
+for (let i = 0; i < dirs.length; i++) {
+  const dir = dirs[i];
+  ports[dir] = 8000 + i;
+  watchedFolders = [
+    ...watchedFolders,
+    ...[
+      `${dir}/dist/Dev/js`,
+      `${dir}/dist/Dev/scss`,
+      `${dir}/dist/lan`,
+      `${dir}/ejs`,
+      `${dir}/patiles`,
+    ],
+  ];
+}
 
 async function compileJS(filePath: string) {
   const baseCompileFilePath = filePath.split("\\Dev\\")[0];
@@ -97,9 +105,15 @@ const serveFolder = async (folder: string, req: Request) => {
   const url = new URL(req.url);
   const pname = url.pathname === "/" ? "/index.html" : url.pathname;
   const filePath = `${folder}${pname}`;
+  const extname = path.extname(filePath).toLowerCase();
+
   try {
     const file = await Deno.readFile(filePath);
-    return new Response(file, { status: 200 });
+    const headers = new Headers();
+    if (extname === ".svg") {
+      headers.set("Content-Type", "image/svg+xml");
+    }
+    return new Response(file, { status: 200, headers });
   } catch {
     return new Response("Not Found", { status: 404 });
   }
@@ -111,8 +125,9 @@ const startServer = async (port: number, folder: string) => {
 
 const main = () => {
   watchFiles();
-  startServer(8000, "./en");
-  startServer(8001, "./fr");
+  for (const lan in ports) {
+    startServer(ports[lan], lan);
+  }
 };
 
 main();
