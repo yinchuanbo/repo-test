@@ -11,7 +11,8 @@ async function getDirectories(path: string) {
     if (
       dirEntry.isDirectory &&
       !dirEntry.name.startsWith(".") &&
-      dirEntry.name !== "node_modules"
+      dirEntry.name !== "node_modules" &&
+      dirEntry.name !== "repo"
     ) {
       directories.push(dirEntry.name);
     }
@@ -62,6 +63,7 @@ async function compileJS(filePath: string) {
 }
 
 async function compileCSS(filePath: string) {
+  console.log(filePath);
   const baseCompileFilePath = filePath.split("\\Dev\\")[0];
   const CompileFilePath = `${baseCompileFilePath}\\css`;
   const baseName = path.basename(filePath);
@@ -85,18 +87,25 @@ async function compileEJS(filePath: string) {
   await Deno.writeTextFile(completePath, html);
 }
 
+const compiledFiles: Set<string> = new Set();
+
 const watchFiles = async () => {
   const watcher = Deno.watchFs(watchedFolders);
   for await (const event of watcher) {
     if (event.kind === "modify") {
       const ePath = event.paths[0].replaceAll("/", "\\");
+      if (compiledFiles.has(ePath)) continue;
+      compiledFiles.add(ePath);
       if (ePath.includes("\\Dev\\scss")) {
-        compileCSS(ePath);
+        await compileCSS(ePath);
       } else if (ePath.includes("\\Dev\\js")) {
-        compileJS(ePath);
+        await compileJS(ePath);
       } else if (ePath.includes("\\ejs")) {
-        compileEJS(ePath);
+        await compileEJS(ePath);
       }
+      setTimeout(() => {
+        compiledFiles.clear();
+      }, 2000);
     }
   }
 };
@@ -106,7 +115,6 @@ const serveFolder = async (folder: string, req: Request) => {
   const pname = url.pathname === "/" ? "/index.html" : url.pathname;
   const filePath = `${folder}${pname}`;
   const extname = path.extname(filePath).toLowerCase();
-
   try {
     const file = await Deno.readFile(filePath);
     const headers = new Headers();
