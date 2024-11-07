@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_30784" data-name="Rectangle 30784" width="14" height="14" transform="translate(1369.708 175)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="tip_icon_hook" transform="translate(-1369.708 -175)" clip-path="url(#clip-path)">
+    <path id="对勾_11_" data-name="对勾 (11)" d="M13.643.959a37.7,37.7,0,0,0-8.736,7.56L1.5,5.852,0,7.063l5.873,5.978A36.052,36.052,0,0,1,14,1.792L13.643.959M13.643.959Z" transform="translate(1369.708 175)" fill="#0f45f5"/>
+  </g>
+</svg>

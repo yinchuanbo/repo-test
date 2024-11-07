@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="icon_loading" transform="translate(-662 -408)">
+    <g id="loading_11_" data-name="loading (11)" transform="translate(658.7 404.7)">
+      <path id="路径_160887" data-name="路径 160887" d="M15.3,3.3a12,12,0,1,1-12,12A12,12,0,0,1,15.3,3.3Zm0,3.6a8.4,8.4,0,1,0,8.4,8.4,8.4,8.4,0,0,0-8.4-8.4Z" fill="rgba(255,255,255,0.33)"/>
+      <path id="路径_160888" data-name="路径 160888" d="M24.618,23.449A11.8,11.8,0,0,0,7.926,6.757a1.77,1.77,0,1,0,2.5,2.5A8.262,8.262,0,0,1,22.115,20.946a1.77,1.77,0,1,0,2.5,2.5Z" transform="translate(-0.776 0)" fill="#0E45F5"/>
+    </g>
+  </g>
+</svg>

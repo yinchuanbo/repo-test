@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14.235" height="14.235" viewBox="0 0 14.235 14.235">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Vector" d="M0,0H14.235V14.235H0Z" transform="translate(176.882 320.882)" fill="none" opacity="0"/>
+    </clipPath>
+  </defs>
+  <g id="btn_size_normal" transform="translate(-176.882 -320.882)" clip-path="url(#clip-path)">
+    <path id="Vector-2" data-name="Vector" d="M0,0H12" transform="translate(179.99 332.975) rotate(-45)" fill="none" stroke="#cfcfcf" stroke-linecap="round" stroke-width="2"/>
+    <path id="Vector-3" data-name="Vector" d="M0,0H4" transform="translate(186.354 333.682) rotate(-45)" fill="none" stroke="#cfcfcf" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>

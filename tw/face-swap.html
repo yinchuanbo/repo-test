@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <title>適用於照片和影片的免費線上換臉 AI 工具：Vidqu AI</title>
+    <meta name="description" content=" 使用 Vidqu AI 換臉工具進行照片和影片的人臉交換。在照片、GIF 和影片中，進行自然的人臉交換。立即試用這一款換臉 AI 工具吧！速度極快，且完全免費。 " />
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,viewport-fit=cover"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/dist/css/face-swap-credits.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/dist/css/face-swap.css" />
+    <link rel="preload" href="/dist/img/face-swap/btn_video_hover.png" />
+    <link rel="preload" href="/dist/img/face-swap/btn_photo_hover.png" />
+    <link rel="canonical" href="https://tw.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="en" href="https://www.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="fr" href="https://fr.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="de" href="https://de.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="es" href="https://es.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="pt" href="https://pt.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="ja" href="https://jp.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="it" href="https://it.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="ar" href="https://ar.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="ko" href="https://ko.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="zh-TW" href="https://tw.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.vidqu.ai/face-swap.html" />
+    <script type="text/javascript" src="/dist/js/flexible.min.js"></script>
+<script type="text/javascript" src="/dist/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/dist/lan/normal.js"></script>
+<link rel="stylesheet" type="text/css" href="/dist/css/common.css" />
+<script type="text/javascript" src="/dist/js/common.js"></script>
+<script src="/dist/js/popup/index.js" type="module"></script>
+<script src="/dist/js/popup/popup_init.js"></script>
+
+    <link rel="stylesheet" href="/dist/css/new-nav.css" />
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MY0KY7MEV1"></script>
+<script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-MY0KY7MEV1'); </script>
+<script>
+  // if (isMobileDevice()) {
+  //   const originUrl = window.location.origin;
+  //   if (originUrl?.includes?.("192.168")) {
+  //     eruda.init();
+  //   }
+  // }
+
+  let lan = jsonData.faceSwap;
+  var seoLan = jsonData;
+</script>  </head>
+  
+  <body>
+  <header class="nav-header" id="header">
+  <div class="nav-header-fixed">
+    <div class="nav-header-middle">
+      <div class="nave-header-middle-left">
+        
+        <a class="nav-logo" href="/">
+          <span class="nav-logo-bg"></span>
+        </a>
+        <div class="header_menu">
+          <div class="menu-item chat_tools">
+            <div class="menu-text" data-open="false">
+              <p>AI 聊天工具</p>
+              <i class="arrow-normal"></i>
+            </div>
+            <div class="menu-drop" style="display: none!important;">
+              <li><a class="menu-drop-item" href="/ai-girlfriend.html"><img src="/dist/img/IGhome/ai-girl.svg"
+                    alt=""><span>AI 女友</span></a></li>
+              <li><a class="menu-drop-item" href="/ai-boyfriend.html"><img src="/dist/img/IGhome/ai-boy.svg"><span>AI 男友</span></a></li>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-text" data-open="false">
+              <p>AI 圖片工具</p>
+              <i class="arrow-normal"></i>
+            </div>
+            <div class="menu-drop" style="display: none!important;">
+              <li><a class="menu-drop-item" href="/face-swap.html"><img src="/dist/img/IGhome/photo-face.svg" alt=""><span>AI 照片換臉</span></a></li>
+              <li><a class="menu-drop-item" href="/multiple-face-swap.html"><img src="/dist/img/IGhome/photo-face.svg" alt=""><span> AI 多人照片換臉 </span></a></li>
+<!--              <li><a class="menu-drop-item" href="/ai-image-generator.html"><img src="/dist/img/IGhome/image-ge.svg"><span>AI 圖像生成器</span></a></li>-->
+              <!-- <li><a class="menu-drop-item" href="/ai-attractiveness-test.html"><img src="/dist/img/IGhome/ai-test.svg"><span>AI 吸引力測試</span></a></li> -->
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-text" data-open="false">
+              <p>AI 影片工具</p>
+              <i class="arrow-normal"></i>
+            </div>
+            <div class="menu-drop" style="display: none!important;">
+              <li><a class="menu-drop-item" href="/face-swap.html?openTab=videofs"><img
+                    src="/dist/img/IGhome/video-face.svg" alt=""><span>AI 影片換臉</span></a></li>
+              <li><a class="menu-drop-item" href="/multiple-face-swap.html?openTab=videofs"><img
+                          src="/dist/img/IGhome/video-face.svg" alt=""><span>AI 多人影片換臉</span></a></li>
+              <!-- <li><a class="menu-drop-item" href="/video-translator.html"><img
+                    src="/dist/img/IGhome/video-trans.svg"><span>AI 影片翻譯</span></a></li> -->
+            </div>
+          </div>
+          <!-- <div class="menu-item"><a href="/pricing.html">定價</a></div> -->
+          <div class="menu-item"><a href="/about.html">關於我們</a></div>
+        </div>
+      </div>
+
+      <div class="meau_item_right">
+        
+        <header-credit class="header-credit" id="header-credit"></header-credit>
+        <div class="meau_item login" id="header_login">登入</div>
+        <div class="meau_item user" id="header_user">
+          <img src="" alt="" class="header_avator" />
+          <div class="signout log">
+            <div class="header_editUser header_item">
+              <img src="" alt="" class="header_avator" />
+              <div class="header_info">
+                <span class="userName"></span>
+                <span class="useremail"></span>
+              </div>
+            </div>
+            
+            <a class="myfileBtn" href="/my-files.html">
+              <img
+                src="/dist/img/header/list_icon_files.svg"
+                alt=""
+                class="header_icon"
+              />
+              我的檔案
+              <img
+                src="/dist/img/header/icon_list_arrow.svg"
+                alt=""
+                class="icon_list_arrow"
+              />
+            </a>
+            
+            <div class="signoutBtn header_item">
+              <img
+                src="/dist/img/header/list_icon_sign_out.svg"
+                alt=""
+                class="header_icon"
+              />
+              退出
+              <img
+                src="/dist/img/header/icon_list_arrow.svg"
+                alt=""
+                class="icon_list_arrow"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="meau_icon">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="close"></span>
+        </div>
+      </div>
+      <!-- <div id="mobile-nav-menu">
+        <div class="shadow"></div>
+      </div> -->
+    </div>
+  </div>
+  <div class="menu-contanier">
+    <ul class="mobile-menu">
+      <li class="meau_item log mobile-menu-item">
+        <div class="mob-menu-title user">
+          <img src="" alt="" class="header_avator" />
+          <div class="header_info">
+            <a href="javascript:;" class="userName header_editUser"></a>
+            <span class="useremail"></span>
+          </div>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          
+            <div class="user_item">
+              <a class="myfileBtn" href="/my-files.html">
+                <img
+                  src="/dist/img/header/list_icon_files.svg"
+                  alt=""
+                  class="header_icon"
+                />
+                我的檔案
+              </a>
+            </div>
+            
+          <div class="user_item">
+            <a class="signoutBtn" href="javascript:;">
+              <img
+                src="/dist/img/header/list_icon_sign_out.svg"
+                alt=""
+                class="header_icon"
+              />
+              退出
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu-item">
+        <div class="mob-menu-title">
+          <p>AI 聊天工具</p>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          <div><a href="/ai-girlfriend.html">AI 女友</a></div>
+          <div><a href="/ai-boyfriend.html">AI 男友</a></div>
+        </div>
+      </li>
+      <li class="mobile-menu-item">
+        <div class="mob-menu-title">
+          <p>AI 圖片工具</p>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          <div><a href="/face-swap.html">AI 照片換臉</a></div>
+          <div><a href="/multiple-face-swap.html">AI 多人照片換臉</a></div>
+<!--          <div><a href="/ai-image-generator.html">AI 圖像生成器</a></div>-->
+          <div><a href="/ai-attractiveness-test.html">AI 吸引力測試</a></div>
+        </div>
+      </li>
+      <li class="mobile-menu-item">
+        <div class="mob-menu-title">
+          <p>AI 影片工具</p>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          <div><a href="/face-swap.html?openTab=videofaceSwap">AI 影片換臉</a></div>
+          <div><a href="/multiple-face-swap.html?openTab=videofs">AI 多人影片換臉</a></div>
+          <div><a href="/video-translator.html">AI 影片翻譯</a></div>
+        </div>
+      </li>
+      <!-- <li><a href="/pricing.html">價格</a></li> -->
+      
+        <li><a class="myfileBtn" href="/my-files.html" >我的檔案</a></li>
+      
+      <li><a href="/about.html">關於</a></li>
+      <li class="meau_item log"><a href="javascript:;" class="signoutBtn">退出</a></li>
+    </ul>
+  </div>
+</header>
+<script src="/dist/js/header-credit/index.js"></script>
+<script type="text/javascript" src="/dist/js/common-header.js"></script>
+    <main class="faceSwap_main">
+      <div class="mobile_background"></div>
+      <h1 class="faceSwap_h1">免費線上<div>AI 換臉工具</div></h1>
+      <div class="faceSwap_des">免費的 AI 換臉工具，任何人都可以在影片、照片和 GIF 中輕鬆更換人臉。</div>
+      <div class="faceSwap_tabBox_outside">
+        <div class="faceSwap_tabBox">
+          <div class="faceSwap_tab active" tabname="tab_photo">
+            免費照片換臉
+          </div>
+          <div class="faceSwap_tab" tabname="tab_video">
+            免費影片換臉
+          </div>
+          <a
+            href="/multiple-face-swap.html"
+            class="faceSwap_tab"
+            tabname="tab_multiple"
+            target="_blank"
+            onclick="gtag('event', 'click_faceswap_multitab')"
+            >多臉換臉</a><img
+            src="/dist/img/icon_new_vidqu.svg"
+            class="fs_new_tag"
+        />
+        </div>
+      </div>
+
+      <div id="photo_Face_swapper_container" class="main_box">
+        <div class="operation_box">
+          <div class="upload_box">
+            <div class="stepA step">
+              <div class="stepTitle">
+                <div class="step_logo">1</div>
+                <div class="step_font">上傳原始照片</div>
+              </div>
+              <div class="stepBox">
+                <div class="step_loadingBox">
+                  <img
+                    src="/dist/img/face-swap/icon_loading.png"
+                    alt=""
+                    class="icon_upload_loading"
+                  />
+                </div>
+                <img
+                  src="/dist/img/face-swap/btn_photo_normal.png"
+                  alt=""
+                  class="step_P"
+                />
+                <div class="btn_changer"></div>
+                <div class="uploader_loading_mask"></div>
+              </div>
+            </div>
+            <div class="add">
+              <!-- <img src="/dist/img/face-swap/icon_add.png" alt="" /> -->
+            </div>
+            <div class="stepB step">
+              <div class="stepTitle">
+                <div class="step_logo">2</div>
+                <div class="step_font">上傳目標臉部照片</div>
+              </div>
+              <div class="stepBox">
+                <div class="step_loadingBox">
+                  <img
+                    src="/dist/img/face-swap/icon_loading.png"
+                    alt=""
+                    class="icon_upload_loading"
+                  />
+                </div>
+                <img
+                  src="/dist/img/face-swap/btn_photo_normal.png"
+                  alt=""
+                  class="step_P"
+                />
+                <div class="btn_changer"></div>
+                <div class="uploader_loading_mask"></div>
+              </div>
+            </div>
+          </div>
+          <div class="step_C">
+            <button class="disabled change_face_btn">
+              <span class="submit_text">立即換臉</span>
+              <div class="generating-animate" style="">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="v_step3_btn_credits" style="display: none">
+                <img
+                  class="v_button_icon"
+                  src="/dist/js/credits/img/icon_small_coins.svg"
+                  alt=""
+                />
+                <span class="v_step3_btn_credits_span"></span>
+              </div>
+            </button>
+          </div>
+          <div class="high_quality_append_dom_photo"></div>
+          <div class="swap_credit_banner"></div>
+        </div>
+        <div class="spread_box">
+          <div class="spread_box_title">上傳臉部，然後按一下「立即換臉」開始操作</div>
+          <div class="spread_box_container">
+            <img
+              src="/dist/img/face-swap/photo_banner.png"
+              alt="Free Photo Face Swap"
+              class="spread_image"
+            />
+            <div class="loading_box">
+              <lottie-player
+                class="animate_content"
+                src="/dist/img/face-swap/lottie-player.json"
+                background="transparent"
+                speed="1"
+                style="width: 88px; height: 88px"
+                loop
+                autoplay
+              >
+              </lottie-player>
+              <img
+                src="/dist/img/face-swap/icon_loading.png"
+                alt=""
+                class="icon_upload_loading"
+              />
+              <p>
+                <span class="faceSwapProgress">載入中</span>
+              </p>
+            </div>
+
+            <div class="v_mask" id="createTaskMaskPhoto">
+              <div class="v_mask_content v_mask_content2">
+                <img
+                  class="v_mask_icon"
+                  src="/dist/js/credits/img/icon_time.svg"
+                  alt=""
+                />
+                <div class="v_mask_tip">
+                  <div class="v_mask_p">
+                    免費試用需求量大。
+                  </div>
+                  <div class="v_mask_span">
+                    <span>{{val}}</span> 人在排隊，預計等待時間 <span>{{val2}}</span> {{val3}}。
+                  </div>
+                  <div class="v_mask_unlock_priority">
+                    解鎖優先權
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="v_mask_background"></div>
+          </div>
+          <div class="spread_box_controls">
+            <div class="controls_item contrast">
+              <img src="/dist/img/face-swap/icon_contrast.png" alt="" />
+              對比度
+            </div>
+            <div class="controls_item zoomIn pc_show">
+              <img src="/dist/img/face-swap/icon_zoom-in.png" alt="" />
+              放大
+            </div>
+            <div class="controls_item share">
+              <img src="/dist/img/face-swap/icon_share.png" alt="" />
+              分享
+            </div>
+            <div class="controls_item download">
+              <img src="/dist/img/face-swap/icon_donwload.png" alt="" />
+              下載
+            </div>
+          </div>
+          <div class="my_files_tips">
+            <div>您的結果已儲存在我的檔案中</div>
+            <div class="myfiles_check_Now_btn">立即檢查！</div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="video_Face_swapper_container"
+        class="main_box"
+        style="display: none"
+      >
+        <video
+          id="getLoadedDom_video"
+          crossorigin=""
+          playsinline=""
+          webkit-playsinline=""
+          style="display: none"
+        ></video>
+        <div class="operation_box">
+          <div class="upload_box">
+            <div class="stepA step">
+              <div class="stepTitle">
+                <div class="step_logo">1</div>
+                <div class="step_font">上傳原始影片</div>
+              </div>
+              <div class="stepBox">
+                <div class="step_loadingBox">
+                  <img
+                    src="/dist/img/face-swap/icon_loading.png"
+                    alt=""
+                    class="icon_upload_loading"
+                  />
+                </div>
+                <img
+                  src="/dist/img/face-swap/btn_video_normal.png"
+                  alt=""
+                  class="step_V"
+                />
+                <img
+                  src="/dist/img/face-swap/icon_big_video.png"
+                  alt=""
+                  class="icon_video"
+                />
+                <div class="btn_changer"></div>
+                <div class="uploader_loading_mask"></div>
+              </div>
+            </div>
+            <div class="add">
+              <!-- <img src="/dist/img/face-swap/icon_add.png" alt="" /> -->
+            </div>
+            <div class="stepB step">
+              <div class="stepTitle">
+                <div class="step_logo">2</div>
+                <div class="step_font">上傳目標臉部照片</div>
+              </div>
+              <div class="stepBox">
+                <div class="step_loadingBox">
+                  <img
+                    src="/dist/img/face-swap/icon_loading.png"
+                    alt=""
+                    class="icon_upload_loading"
+                  />
+                </div>
+                <img
+                  src="/dist/img/face-swap/btn_photo_normal.png"
+                  alt=""
+                  class="step_P"
+                />
+                <div class="btn_changer"></div>
+                <div class="uploader_loading_mask"></div>
+              </div>
+            </div>
+          </div>
+          <div class="step_C">
+            <button class="change_video_btn disabled" id="v_swap_face_Now">
+              <span class="submit_text">立即換臉</span>
+              <div class="generating-animate" style="">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="v_step3_btn_credits" style="display: none">
+                <img
+                  class="v_button_icon"
+                  src="/dist/js/credits/img/icon_small_coins.svg"
+                  alt=""
+                />
+                <span class="v_step3_btn_credits_span"></span>
+              </div>
+            </button>
+          </div>
+          <div class="high_quality_append_dom_video"></div>
+          <div class="swap_credit_banner"></div>
+        </div>
+        <div class="spread_box">
+          <div class="spread_box_title">上傳臉部，然後按一下「立即換臉」開始進行</div>
+          <div class="spread_box_container">
+            <video
+              class="video_node"
+              playsinline=""
+              webkit-playsinline=""
+              id="video_preview_dom"
+              style="display: none"
+              src=""
+            ></video>
+            <img
+              src="/dist/img/face-swap/video_banner.png"
+              alt="Free Video Face Swap"
+              class="spread_image img_gif_node"
+            />
+            <img
+              src="/dist/img/face-swap/icon_big_play.png"
+              alt=""
+              class="v_preview_playIcon"
+            />
+            <div class="v_preview_waitIcon">
+              <img src="/dist/img/face-swap/icon_loading.png" alt="" />
+            </div>
+            <div class="loading_box">
+              <lottie-player
+                class="animate_content"
+                src="/dist/img/face-swap/lottie-player.json"
+                background="transparent"
+                speed="1"
+                style="width: 88px; height: 88px"
+                loop
+                autoplay
+              >
+              </lottie-player>
+
+              <img
+                src="/dist/img/face-swap/icon_loading.png"
+                alt=""
+                class="icon_upload_loading"
+              />
+              <p>
+                <span class="faceSwapProgress">載入中</span>
+              </p>
+            </div>
+            <div class="v_mask" id="createTaskMaskVideo">
+              <div class="v_mask_content v_mask_content2">
+                <img
+                  class="v_mask_icon"
+                  src="/dist/js/credits/img/icon_time.svg"
+                  alt=""
+                />
+                <div class="v_mask_tip">
+                  <div class="v_mask_p">
+                    免費試用需求量大。
+                  </div>
+                  <div class="v_mask_span">
+                    <span>{{val}}</span> 人在排隊，預計等待時間 <span>{{val2}}</span> {{val3}}。
+                  </div>
+                  <div class="v_mask_unlock_priority">
+                    解鎖優先權
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="v_mask_background"></div>
+          </div>
+          <div class="spread_box_controls">
+            <div class="controls_item zoomIn pc_show">
+              <img src="/dist/img/face-swap/icon_zoom-in.png" alt="" />
+              放大
+            </div>
+            <div class="controls_item download">
+              <img src="/dist/img/face-swap/icon_donwload.png" alt="" />
+              下載
+            </div>
+          </div>
+          <div class="my_files_tips">
+            <div>您的結果已儲存在我的檔案中</div>
+            <div class="myfiles_check_Now_btn">立即檢查！</div>
+          </div>
+          <div class="video_extend_duration">
+            <div class="video_duration_title">
+              需要更多影片時間？
+            </div>
+            <div class="video_duration_container">
+              <img
+                class="v_duration_icon"
+                src="/dist/img/banner_icon_15s.svg"
+                alt=""
+              />
+              <div class="v_duration_content">
+                免費版換臉僅支持生成前 <span>{{val}} 秒</span> 的影片。
+              </div>
+            </div>
+            <div class="v_button_container">
+              <div class="v_other_button">
+                延長影片時長
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="face_img_show our_pics_box">
+      <p class="our_pics_title">
+        <b>一起來試試吧！</b>
+        從下方模板中選擇。
+      </p>
+      <div class="our_pics"></div>
+    </div>
+    <div id="large_modal">
+      <div class="close_large"></div>
+      <div class="larger_box">
+        <img src="" alt="" class="larger_img" />
+        <div class="larger_video">
+          <video src="" id="v_preview_larger_video"></video>
+          <img id="v_preview_larger_gif" />
+          <img
+            class="v_preview_larger_playIcon"
+            src="/dist/img/face-swap/icon_big_play.png"
+            alt=""
+          />
+        </div>
+        <div class="controls_large">
+          <div class="controls_btn contrast">
+            <img src="/dist/img/face-swap/icon_contrast_large.png" alt="" />
+            對比度
+          </div>
+          <div class="controls_btn share">
+            <img src="/dist/img/face-swap/icon_share_large.png" alt="" />
+            分享
+          </div>
+          <div class="controls_btn download">
+            <img src="/dist/img/face-swap/icon_donwload_large.png" alt="" />
+            下載
+          </div>
+        </div>
+      </div>
+    </div>
+    <input
+      type="file"
+      accept=".jpg, .png, .webp, .jpeg"
+      class="origin_uploader"
+      style="display: none"
+    />
+    <input
+      type="file"
+      accept=".jpg, .png, .webp, .jpeg"
+      class="change_uploader"
+      style="display: none"
+    />
+    <input
+      type="file"
+      accept=".jpg, .png, .webp, .jpeg"
+      class="video_upload_input_step2"
+      style="display: none"
+    />
+    <input
+      type="file"
+      accept=".m4v, .mp4, .mov, .webm, .gif"
+      class="video_upload_input_step1"
+      style="display: none"
+    />
+    <div class="larguage"></div>
+    <footer id="footer" class="footer">
+  <div class="footer-bottom">
+    <div class="wapper">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span class="footer-logo-bg"></span>
+        </div>
+        <div class="footer-logo-des">取得您的 AI 產生工具，感受閃耀時刻。</div>
+        <div class="footer-logo-font">
+          <div>©</div>
+          <span>2024</span>，Vidqu。著作權所有。
+        </div>
+      </div>
+      <div class="footer-right">
+        <ul>
+          <!-- <li>AI 聊天工具</li>
+          <li><a href="/ai-girlfriend.html">AI 女友</a></li>
+          <li><a href="/ai-boyfriend.html">AI 男友</a></li> -->
+        </ul>
+        <ul>
+          <li>AI 圖片工具</li>
+          <li><a href="/face-swap.html">AI 照片換臉</a></li>
+          <li><a href="/multiple-face-swap.html">AI 多人照片換臉</a></li>
+<!--          <li><a href="/ai-image-generator.html">AI 圖像生成器</a></li>-->
+          <!-- <li><a href="/ai-attractiveness-test.html">AI 吸引力測試</a></li> -->
+        </ul>
+        <ul>
+          <li>AI 影片工具</li>
+          <li><a href="/face-swap.html?openTab=videofs">AI 影片換臉</a></li>
+          <li><a href="/multiple-face-swap.html?openTab=videofs">AI 多人影片換臉</a></li>
+          <!-- <li><a href="/video-translator.html">AI 影片翻譯</a></li> -->
+        </ul>
+        <ul>
+          <li class="ex-nav">公司</li>
+          <li><a href="/about.html">關於我們</a></li>
+          <li><a href="/privacy.html">隱私政策</a></li>
+          <li><a href="/terms.html">條款</a></li>
+          <!-- <li class="ex-nav"><a href="/pricing.html">定價</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="fix-footer" style="display: none">
+  <div class="fix-footer-title">
+    <div>
+      Vidqu 使用 Cookie 改善您的網站體驗。使用 Vidqu 即表示 <a href="/privacy.html">隱私權</a>.
+    </div>
+    <button id="footer_btn">我同意</button>
+  </div>
+</div>
+<script type="text/javascript" src="/dist/js/lib-vd.min.js"></script>
+<script>
+  const _$$ = $LIB("en", "vidqu");
+</script>
+<div
+  class="fix_ios_footer"
+  id="iosFooter"
+  data-original="/dist/img/footer_bg.webp"
+>
+  <div class="fix-footer-title">
+    100%免費臉部交換應用程式下載
+    <img
+      src="/dist/img/loading-buffering-white.svg"
+      class="fix_icon"
+      alt="fix_icon"
+      width="16"
+      height="16"
+      data-original="/dist/img/footer_fix_icon.svg"
+    />
+    <button id="ios_footer_btn">立即獲取</button>
+  </div>
+</div>
+
+    <share-dialog id="shareDialogEl" fromPage="face-swap"></share-dialog>
+    <script src="/dist/js/face-api.min.js"></script>
+    <script type="text/javascript" src="/dist/js/swiper-bundle.min.js"></script>
+    <script src="/dist/js/share-dialog/index.js" type="module"></script>
+    <script src="/dist/js/bottom-message/index.js" type="module"></script>
+    <script src="/dist/js/lottie-player.js"></script>
+    <script type="text/javascript" src="/dist/js/credits/index.js"></script>
+    <script type="text/javascript" src="/dist/js/face-swap-index.js"></script>
+    <script type="text/javascript" src="/dist/js/face-swap.js"></script>
+    <script type="text/javascript" src="/dist/js/face-swap-video.js"></script>
+  </body>
+</html>

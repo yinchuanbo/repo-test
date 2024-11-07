@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <title>
+      Free AI Image Generator: Text to Image AI Online
+    </title>
+    <meta name="description" content="Create amazing images instantly with Vidqu AI Image Generator. Turn text prompts into pictures of any style. Start your AI image generation journey for free!" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,viewport-fit=cover"
+    />
+    <meta name="facebook-domain-verification" content="1j3yuczpvlcnpxgscdbj8utw68641a"/>
+    <link rel="canonical" href="https://www.vidqu.ai/ai-image-generator.html" />
+    <link rel="shortcut icon" href="/dist/img/index.png" />
+    <link rel="prefetch" href="/dist/img/ai-chatting/error_icon.svg" />
+    <link rel="prefetch" href="/dist/img/ai-chatting/popup_x_icon.svg" />
+    <link rel="stylesheet" type="text/css" href="/dist/css/ai-image-generator.css" />
+    <link rel="stylesheet" type="text/css" href="/dist/css/ig-components.css" />
+    <script type="text/javascript" src="/dist/js/jquery-2.1.4.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <meta name="robots" content="noindex, nofollow" />
+<link rel="shortcut icon" href="/dist/img/index.png" />
+<script type="text/javascript" src="/dist/js/flexible.min.js"></script>
+<script type="text/javascript" src="/dist/lan/normal.js"></script>
+<script
+async
+src="https://www.googletagmanager.com/gtag/js?id=G-CW3Q6HBRV8"
+></script>
+<script
+type="text/javascript"
+src="/dist/js/IGcomponents/editProfile.js"
+></script>
+<link rel="stylesheet" type="text/css" href="/dist/css/common.css" />
+<link
+rel="stylesheet"
+type="text/css"
+href="/dist/css/ai-image-generator-common.css"
+/>
+<link rel="stylesheet" href="/dist/css/new-nav-deep.css" />
+<script src="//cdn.jsdelivr.net/npm/eruda"></script>
+<script>
+  if (!window.location.pathname.includes("www.vidqu.ai")) {
+    eruda.init();
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-CW3Q6HBRV8");
+
+  function $id(selector) {
+    var getSelector = document.getElementById(selector);
+    if (getSelector) return getSelector;
+    return null;
+  }
+  window.addEventListener("load",function() {
+    const igBack = document.getElementById("ig_back");
+    if (!igBack) return; 
+    igBack.addEventListener("click", function(e) {
+      window.history.back();
+    })
+  })
+</script>
+  </head>
+  <body>
+    <header class="nav-header" id="header">
+  <div class="nav-header-fixed">
+    <div class="nav-header-middle">
+      <div class="nave-header-middle-left">
+        
+        <svg id="ig_back" width="20" height="20" viewBox="0 0 20 20">
+          <defs>
+            <clipPath id="icon_back">
+              <rect
+                id="Rectangle_31662"
+                data-name="Rectangle 31662"
+                width="20"
+                height="20"
+                fill="#fff"
+                stroke="#707070"
+                stroke-width="1"
+              />
+            </clipPath>
+          </defs>
+          <g id="icon_back" clip-path="url(#icon_back)">
+            <path
+              id="Path_2077"
+              data-name="Path 2077"
+              d="M20,172H4m0,0,6,6m-6-6,6-6"
+              transform="translate(-2 -162)"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              opacity="0.6"
+            />
+          </g>
+        </svg>
+        
+        <a class="nav-logo" href="/">
+          <span class="nav-logo-bg"></span>
+        </a>
+        <div class="header_menu">
+          <div class="menu-item chat_tools">
+            <div class="menu-text" data-open="false">
+              <p>AI Chat Tools</p>
+              <i class="arrow-normal"></i>
+            </div>
+            <div class="menu-drop" style="display: none !important">
+              <li>
+                <a class="menu-drop-item" href="/ai-girlfriend.html"
+                  ><img src="/dist/img/IGhome/ai-girl.svg" alt="" /><span
+                    >AI Girlfriend</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="menu-drop-item" href="/ai-boyfriend.html"
+                  ><img src="/dist/img/IGhome/ai-boy.svg" /><span
+                    >AI Boyfriend</span
+                  ></a
+                >
+              </li>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-text" data-open="false">
+              <p>AI Photo Tools</p>
+              <i class="arrow-normal"></i>
+            </div>
+            <div class="menu-drop" style="display: none !important">
+              <li>
+                <a class="menu-drop-item" href="/face-swap.html"
+                  ><img src="/dist/img/IGhome/photo-face.svg" alt="" /><span
+                    >AI Photo Face Swap</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="menu-drop-item" href="/multiple-face-swap.html"
+                  ><img src="/dist/img/IGhome/photo-face.svg" alt="" /><span>
+                    AI Multiple Photo Face Swap
+                  </span></a
+                >
+              </li>
+              <!--              <li><a class="menu-drop-item" href="/ai-image-generator.html"><img src="/dist/img/IGhome/image-ge.svg"><span>AI Image Generator</span></a></li>-->
+              <li>
+                <a class="menu-drop-item" href="/ai-attractiveness-test.html"
+                  ><img src="/dist/img/IGhome/ai-test.svg" /><span
+                    >AI Attractiveness Test</span
+                  ></a
+                >
+              </li>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-text" data-open="false">
+              <p>AI Video Tools</p>
+              <i class="arrow-normal"></i>
+            </div>
+            <div class="menu-drop" style="display: none !important">
+              <li>
+                <a class="menu-drop-item" href="/face-swap.html?openTab=videofs"
+                  ><img src="/dist/img/IGhome/video-face.svg" alt="" /><span
+                    >AI Video Face Swap</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu-drop-item"
+                  href="/multiple-face-swap.html?openTab=videofs"
+                  ><img src="/dist/img/IGhome/video-face.svg" alt="" /><span
+                    >AI Multiple Video Face Swap</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="menu-drop-item" href="/video-translator.html"
+                  ><img src="/dist/img/IGhome/video-trans.svg" /><span
+                    >AI Video Translator</span
+                  ></a
+                >
+              </li>
+            </div>
+          </div>
+          <div class="menu-item">
+            <a href="/pricing.html">Pricing</a>
+          </div>
+          <div class="menu-item">
+            <a href="/about.html">About Us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="meau_item_right">
+        
+        <header-credit class="header-credit" id="header-credit"></header-credit>
+        <div class="meau_item login" id="header_login">Login</div>
+        <div class="meau_item user" id="header_user">
+          <img src="" alt="" class="header_avator" />
+          <div class="signout log">
+            <div class="header_editUser header_item">
+              <img src="" alt="" class="header_avator" />
+              <div class="header_info">
+                <span class="userName"></span>
+                <span class="useremail"></span>
+              </div>
+            </div>
+            
+            <a class="myfileBtn" href="/my-files.html">
+              <img
+                src="/dist/img/header/list_icon_files.svg"
+                alt=""
+                class="header_icon"
+              />
+              My Files
+              <img
+                src="/dist/img/header/icon_list_arrow.svg"
+                alt=""
+                class="icon_list_arrow"
+              />
+            </a>
+            
+            <div class="signoutBtn header_item">
+              <img
+                src="/dist/img/header/list_icon_sign_out.svg"
+                alt=""
+                class="header_icon"
+              />
+              Sign out
+              <img
+                src="/dist/img/header/icon_list_arrow.svg"
+                alt=""
+                class="icon_list_arrow"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="meau_icon">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="close"></span>
+        </div>
+      </div>
+      <!-- <div id="mobile-nav-menu">
+        <div class="shadow"></div>
+      </div> -->
+    </div>
+  </div>
+  <div class="menu-contanier">
+    <ul class="mobile-menu">
+      <li class="meau_item log mobile-menu-item">
+        <div class="mob-menu-title user">
+          <img src="" alt="" class="header_avator" />
+          <div class="header_info">
+            <a href="javascript:;" class="userName header_editUser"></a>
+            <span class="useremail"></span>
+          </div>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          
+          <div class="user_item">
+            <a class="myfileBtn" href="/my-files.html">
+              <img
+                src="/dist/img/header/list_icon_files.svg"
+                alt=""
+                class="header_icon"
+              />
+              My Files
+            </a>
+          </div>
+          
+          <div class="user_item">
+            <a class="signoutBtn" href="javascript:;">
+              <img
+                src="/dist/img/header/list_icon_sign_out.svg"
+                alt=""
+                class="header_icon"
+              />
+              Sign out
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu-item chat_tools">
+        <div class="mob-menu-title">
+          <p>AI Chat Tools</p>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          <div><a href="/ai-girlfriend.html">AI Girlfriend</a></div>
+          <div><a href="/ai-boyfriend.html">AI Boyfriend</a></div>
+        </div>
+      </li>
+      <li class="mobile-menu-item">
+        <div class="mob-menu-title">
+          <p>AI Photo Tools</p>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          <div><a href="/face-swap.html">AI Photo Face Swap</a></div>
+          <div><a href="/multiple-face-swap.html">AI Multiple Photo Face Swap</a></div>
+          <!--          <div><a href="/ai-image-generator.html">AI Image Generator</a></div>-->
+          <div>
+            <a href="/ai-attractiveness-test.html">AI Attractiveness Test</a>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu-item">
+        <div class="mob-menu-title">
+          <p>AI Video Tools</p>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          <div>
+            <a href="/face-swap.html?openTab=videofaceSwap"
+              >AI Video Face Swap</a
+            >
+          </div>
+          <div>
+            <a href="/multiple-face-swap.html?openTab=videofs"
+              >AI Multiple Video Face Swap</a
+            >
+          </div>
+          <div><a href="/video-translator.html">AI Video Translator</a></div>
+        </div>
+      </li>
+      <li><a href="/pricing.html">Pricing</a></li>
+      
+      <li>
+        <a class="myfileBtn" href="/my-files.html">My Files</a>
+      </li>
+      
+      <li><a href="/about.html">About</a></li>
+    </ul>
+  </div>
+  
+</header>
+<script src="/dist/js/header-credit/index.js"></script>
+<script type="text/javascript" src="/dist/js/common-header.js"></script>
+    <!-- editUserInfo -->
+<div class="editUserInfo" style="display: none">
+    <!-- image -->
+    <div class="createIG_item image">
+      <!-- avatar -->
+      <div class="item_avatar">
+        <div class="mc_title">
+          <div class="mc_title_l">
+            <div class="font required">User avatar</div>
+          </div>
+        </div>
+        <div class="avatar editUser">
+          <input
+            type="file"
+            style="display: none"
+            class="editUserAvatar"
+            id="editUserAvatar"
+            accept=".jpg, .png, .webp, .jpeg"
+          />
+          <div class="image_item">
+            <div class="delete_image"></div>
+            <img src="" alt="" id="edit_user_avatar" />
+          </div>
+          <div class="addImage">
+            <img src="/dist/img/aiFriend/btn_set_normal.svg" alt="" />
+            <span>Set avatar</span>
+          </div>
+        </div>
+        <div class="erorrTip" data-type="editUserAvatar">
+          <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+          <span class="image_error"></span>
+        </div>
+      </div>
+    </div>
+    <!-- name -->
+    <div class="editName">
+      <div class="createIG_item">
+        <div class="mc_title">
+          <div class="mc_title_l">
+            <div class="font required">
+              Frist name
+            </div>
+          </div>
+        </div>
+        <input
+          type="text"
+          label="name"
+          class="editUser_firstName"
+          placeholder="please enter frist name"
+        />
+        <div class="erorrTip" data-type="editUser_firstName">
+          <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+          <span class="image_error">Name can't be empty</span>
+        </div>
+      </div>
+      <div class="createIG_item">
+        <div class="mc_title">
+          <div class="mc_title_l">
+            <div class="font required">
+              Last name
+            </div>
+          </div>
+        </div>
+        <input
+          type="text"
+          label="name"
+          class="editUser_lastName"
+          placeholder="please enter last name"
+        />
+        <div class="erorrTip" data-type="editUser_lastName">
+          <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+          <span class="image_error">Name can't be empty</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- email -->
+    <div class="createIG_item">
+      <div class="mc_title">
+        <div class="mc_title_l">
+          <div class="font">Email</div>
+        </div>
+      </div>
+      <input type="text" label="email" class="editUser_email disabled" />
+    </div>
+    <!-- age -->
+    <div class="createIG_item age">
+      <div class="mc_title">
+        <div class="mc_title_l">
+          <div class="font">Age</div>
+        </div>
+      </div>
+      <div class="editUserAge chatSelect">
+        <div class="select_content" data-age="0">
+          Choose your age range
+        </div>
+        <div class="select_icon"></div>
+        <div class="select_list">
+          <div class="select_list_item" data-age="1-10">1-10</div>
+          <div class="select_list_item" data-age="10-15">10-15</div>
+          <div class="select_list_item" data-age="15-20">15-20</div>
+          <div class="select_list_item" data-age="20-25">20-25</div>
+          <div class="select_list_item" data-age="25-30">25-30</div>
+          <div class="select_list_item" data-age="30-40">30-40</div>
+          <div class="select_list_item" data-age="40-50">40-50</div>
+          <div class="select_list_item" data-age="50+">50+</div>
+        </div>
+      </div>
+    </div>
+</div>
+    <div class="ai-image-generatorBox dataLoading">
+
+      <div class="MShow m-prompts-box">
+        <div class="MShow m-prompts-textarea-box">
+          <div class="m-prompts-textarea-text"></div>
+          <div class="m-txt-num">0/2000</div>
+          <textarea class="m-prompts-textarea" placeholder="Describe what you want to create ..."></textarea>
+        </div>
+      </div>
+
+      <div class="MShow m-magic-box">
+        <div class="m-magic-icon"></div>
+        <div class="m-generate-btn">Generate</div>
+      </div>
+
+      <div class="set-info-box">
+        <div class="general-settings-box">
+          <div class="self-title">General Settings</div>
+          <div class="general-info">
+            <img class="info-img" src="" />
+            <div class="info-message">
+              <div class="info-message-title">Model</div>
+              <div class="info-message-name" title=""></div>
+            </div>
+            <div class="info-switch-btn">Switch</div>
+          </div>
+        </div>
+        
+        <div class="basic-settings-box">
+          <div class="self-title">Basic Settings</div>
+          <div class="image-quantity-box"></div>
+          <div class="image-mode-box"></div>
+          <div class="image-size-box"></div>
+          <div class="private-mode-box">
+            <div class="private-mode-title">
+              Private Mode
+              <div class="private-mode-icon-box">
+                <div class="private-mode-icon"></div>
+                <div class="private-mode-icon-bubble">Hide your creations from Explore.</div>
+              </div>
+            </div>
+            <label class="switch">
+              <input type="checkbox"/>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="advanced-settings-box">
+          <div class="self-title">
+            <span class="self-title-value">Advanced Settings</span>
+            <div class="open-self-btn"></div>
+          </div>
+          <div class="negative-prompts-box">
+            <div class="negative-prompts-title">Negative Prompts</div>
+            <div class="negative-prompts-value-box">
+              <textarea class="negative-prompts-value-textarea" placeholder="Please describe what you want to avoid in the image ..."></textarea>
+              <span class="negative-prompts-value-number">0/500</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reset-defaults-btn">Reset to Defaults</div>
+      </div>
+      <div class="show-content-box">
+
+        <div class="prompts-box pcShow">
+          <div class="prompts-textarea-box">
+            <div class="prompts-textarea-text"></div>
+            <textarea class="prompts-textarea" placeholder="Describe what you want to create ..."></textarea>
+          </div>
+          <div class="generate-btn-box">
+            <div class="txt-num">0/2000</div>
+            <div class="magic-icon"></div>
+            <div class="generate-btn disable">Generate</div>
+          </div>
+        </div>
+
+        <div class="generation-history-box">
+          <div class="generation-history-title">Generation History</div>
+          <div class="generation-history-content-box"></div>
+        </div>
+
+        <div class="no-data-box" style="display: none">
+          <h1 class="no-data-title pcShow">AI Image Generator - Unleash Creativity</h1>
+          <h1 class="no-data-title MShow">Unleash Creativity</h1>
+          <div class="no-data-text">Create surprising AI images and explore endless variations. Breathe life into your ideas in one simple click.</div>
+          <img class="no-data-banner" src="/dist/img/ai-image-generator/banner.png" alt="">
+        </div>
+      </div>
+
+      <div class="back-top-icon"></div>
+    </div>
+
+    <task-info id="task-info"></task-info>
+
+    <div class="zoom-in-box">
+      <div class="tools-box">
+        <div class="share-icon"></div>
+        <div class="download_icon"></div>
+        <div class="close_icon"></div>
+      </div>
+      <img crossorigin="anonymous" class="zoom-in-image" src="/dist/img/ai-image-generator/banner.png" alt="">
+    </div>
+    <!-- model selector component -->
+    <model-selector class="hidden_menu"></model-selector>
+    <footer id="footer" class="footer">
+  <div class="footer-bottom">
+    <div class="wapper">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span class="footer-logo-bg"></span>
+        </div>
+        <div class="footer-logo-des">Get Your AI Generator, Feel the Shine.</div>
+        <div class="footer-logo-font">
+          <div>©</div>
+          <span>2024</span>, Vidqu. All Rights Reserved.
+        </div>
+      </div>
+      <div class="footer-right">
+        <ul class="chat_tools">
+          <li>AI Chat Tools</li>
+          <li><a href="/ai-girlfriend.html">AI Girlfriend</a></li>
+          <li><a href="/ai-boyfriend.html">AI Boyfriend</a></li>
+        </ul>
+        <ul>
+          <li>AI Photo Tools</li>
+          <li><a href="/face-swap.html">AI Photo Face Swap</a></li>
+          <li><a href="/multiple-face-swap.html">AI Multiple Photo Face Swap</a></li>
+<!--          <li><a href="/ai-image-generator.html">AI Image Generator</a></li>-->
+          <li><a href="/ai-attractiveness-test.html">AI Attractiveness Test</a></li>
+        </ul>
+        <ul>
+          <li>AI Video Tools</li>
+          <li><a href="/face-swap.html?openTab=videofs">AI Video Face Swap</a></li>
+          <li><a href="/multiple-face-swap.html?openTab=videofs">AI Multiple Video Face Swap</a></li>
+          <li><a href="/video-translator.html">AI Video Translator</a></li>
+        </ul>
+        <ul>
+          <li class="ex-nav">Company</li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/terms.html">Terms</a></li>
+          <li class="ex-nav"><a href="/pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="fix-footer" style="display: none">
+  <div class="fix-footer-title">
+    <div>
+      Vidqu uses cookies to improve your website experience. Usage on Vidqu gives consent to the <a href="/privacy.html">Privacy</a>.
+    </div>
+    <button id="footer_btn">I Agree</button>
+  </div>
+</div>
+<script type="text/javascript" src="/dist/js/lib-vd.min.js"></script>
+<script>
+  const _$$ = $LIB("en", "vidqu");
+</script>
+<div
+  class="fix_ios_footer"
+  id="iosFooter"
+  data-original="/dist/img/footer_bg.webp"
+>
+  <div class="fix-footer-title">
+    100% FREE Face Swap App Download
+    <img
+      src="/dist/img/loading-buffering-white.svg"
+      class="fix_icon"
+      alt="fix_icon"
+      width="16"
+      height="16"
+      data-original="/dist/img/footer_fix_icon.svg"
+    />
+    <button id="ios_footer_btn">Get It Now</button>
+  </div>
+</div>
+  </body>
+  <script src="/dist/js/bottom-message/index.js" type="module"></script>
+  <script src="/dist/js/IG-popup.js" type="text/javascript"></script>
+  <script src="/dist/js/task-info/index.js" type="module"></script>
+  <script src="/dist/js/ai-image-generate-select/index.js" type="module"></script>
+  <script type="text/javascript" src="/dist/js/ai-image-generator-common.js?v=1.4.0.18"></script>
+  <script type="text/javascript" src="/dist/js/IGcomponents/horizontalSelector.js"></script>
+  <script src="/dist/js/IGcomponents/modelSelector.js?v=1.4.0.18" type="text/javascript"></script>
+  <script type="text/javascript" src="/dist/js/ai-image-generate.js?v=1.4.0.18"></script>
+</html>

@@ -1,0 +1,7 @@
+<svg id="Group" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Ellipse_3070" data-name="Ellipse 3070" fill="rgba(255,255,255,0.24)" stroke="rgba(255,255,255,0.12)" stroke-width="1">
+    <circle cx="24" cy="24" r="24" stroke="none"/>
+    <circle cx="24" cy="24" r="23.5" fill="none"/>
+  </g>
+  <path id="Path_2000" data-name="Path 2000" d="M8.59,93.51l6.83,3.98m-.01-10.98L8.59,90.49M21,85a3,3,0,1,1-3-3A3,3,0,0,1,21,85ZM9,92a3,3,0,1,1-3-3A3,3,0,0,1,9,92Zm12,7a3,3,0,1,1-3-3A3,3,0,0,1,21,99Z" transform="translate(11 -68.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</svg>

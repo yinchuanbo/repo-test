@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="106" height="106" viewBox="0 0 106 106">
+  <g id="icon_add" transform="translate(0.484 0.193)">
+    <g id="add" transform="translate(-0.484 -0.193)" fill="#fcfcfe" stroke="#dbd4ff" stroke-linecap="round" stroke-width="3" stroke-dasharray="6 8">
+      <circle cx="53" cy="53" r="53" stroke="none"/>
+      <circle cx="53" cy="53" r="51.5" fill="none"/>
+    </g>
+    <path id="Path_160939" data-name="Path 160939" d="M18.443,1245v26.885M5,1258.443H31.885" transform="translate(34.073 -1205.635)" fill="none" stroke="#6d4dff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  </g>
+</svg>

@@ -1,0 +1,1794 @@
+@import './credit-pay-dialog.scss';
+
+.home-header .home-menu .menu-main .home-btn .credit-box {
+    display: flex;
+}
+
+.home-header .home-menu .menu-main .home-btn .head-box .user_menu {
+    display: block;
+}
+.credit_popup{
+    display: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .home-header .home-menu .home-logo .header-credits-box {
+        display: none;
+
+        &.show {
+            display: flex;
+        }
+    }
+
+    .home-header .home-menu .menu-main .menu-item.credit {
+        display: none;
+    }
+
+    #headMob {
+        display: none !important;
+    }
+
+    .footer-window {
+        display: none !important;
+    }
+
+    #backTop {
+        bottom: 3.1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .credits_combo_main_page {
+        #credits_fiexd_container {
+            display: none;
+        }
+
+        .credits_pack_combo {
+            background-image: url('/dist/img/ai-tool-pricing/Mask_Group 27.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            min-height: 580px;
+            position: relative;
+            padding-bottom: 42px;
+
+            .mob_bottom_bg {
+                display: none;
+            }
+
+            .icon_path_down {
+                width: 10px;
+                height: 12px;
+                display: block;
+                margin-left: calc(50% - 5px);
+            }
+            &.subscribe{
+                background-image: url('/dist/img/ai-tool-pricing/Mask_Group_28.svg');
+            }
+        }
+
+        .credits_pack_combo_mB {
+            display: none;
+        }
+
+        .credits_subscribe_page,
+        .credits_pack_page {
+            display: none;
+
+            .m_credits_combo_container {
+                display: none;
+            }
+
+            .m_credits_pack_container {
+                display: none;
+            }
+        }
+
+        .credits_container_loading {
+            filter: blur(5px);
+        }
+
+        .credits_title {
+            max-width: 1600px;
+            width: 84%;
+            margin: 0 auto;
+
+            .subscribe_h1 {
+                height: 209px;
+                padding-top: 70px;
+                box-sizing: border-box;
+
+                .subscribe_h1_dom {
+                    font: normal normal bold 40px/45px Sora;
+                    color: #1B1E37;
+                    margin: 0;
+                    text-align: center;
+                }
+                .subscribe_h1_span {
+                    text-align: center;
+                    margin-top: 10px;
+                    font: normal normal 300 20px/30px Sora;
+                    color: #1B1E37;
+                }
+            }
+
+            .credit_pack_h1 {
+                min-height: 169px;
+                padding-top: 80px;
+                padding-bottom: 54px;
+                box-sizing: border-box;
+                text-align: center;
+
+                .credit_pack_h1_dom {
+                    font: normal normal bold 40px/45px Sora;
+                    color: #1B1E37;
+                    margin: 0;
+                }
+
+                .credit_pack_h1_span {
+                    margin-top: 10px;
+                    font: normal normal 300 20px/30px Sora;
+                    color: #1B1E37;
+                }
+            }
+        }
+
+        .credits_combo_container_wrapper{
+            width: 100%;
+            position: relative;
+            transition: all .16s ease-in-out;
+            &.fixed {
+                position: fixed;
+                top: 65px;
+                left: 0;
+                right: 0;
+                z-index: 1;
+                background: #fff;
+                box-shadow: 0px -5px 20px #00000024;
+                border-radius: 10px 10px 0 0;
+                padding: 20px 0;
+            }
+        }
+
+        .credits_combo_container {
+            display: flex;
+            justify-content: flex-end;
+            max-width: 1600px;
+            width: 84%;
+            margin: 0 auto;
+
+            &:before{
+                content: '';
+                display: block;
+                width: calc((100% - (18px * 3)) / 4);
+                flex-shrink: 0;
+            }
+
+            .credits_combo_item {
+                width: calc((100% - (18px * 3)) / 4);
+                display: flex;
+                flex-direction: column;
+                border: 2px solid #281FAE1F;
+                background-color: #281FAE0A;
+                border-radius: 10px;
+                //width: 320px;
+                //height: 430px;
+                padding: 24px 53px;
+                box-sizing: border-box;
+                position: relative;
+                box-shadow: 0px 0px 0px #00000024;
+                transition: .3s;
+
+                &:nth-last-child(2) {
+                    margin: 0 18px;
+                }
+
+                &:hover {
+                    box-shadow: 0px 15px 20px #00000024;
+                }
+
+                .credit_discount {
+                    position: absolute;
+                    right: 12px;
+                    top: 11px;
+                    padding: 0 17px;
+                    color: #1B1E37;
+                    text-align: center;
+                    font: normal normal 600 12px/18px Sora;
+                    // font: normal normal bold 12px/18px Sora;
+                    //outline: 1px solid #281FAE3D;
+                    border-radius: 4px;
+                    height: 25px;
+                    line-height: 25px;
+                    background-color: #FFD54F;
+                    // &:hover{
+                    //     outline: none;
+                    //     background-color: rgba(139, 61, 255, 0.1);
+                    // }
+                }
+
+                .credit_info {
+                    .credit_name {
+                        font: normal normal 300 18px/22px Sora;
+                        color: #000000;
+                        padding-bottom: 4px;
+                    }
+
+                    .credit_num {
+                        font: normal normal 600 16px/21px Sora;
+                        color: #281FAE;
+                    }
+                }
+
+                .credit_price_detail {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    margin-top: 37px;
+
+                    .credit_price {
+                        display: flex;
+                        align-items: flex-end;
+                        flex-wrap: wrap;
+
+                        .credit_price_align {
+                            color: black;
+                            vertical-align: bottom;
+                            font: normal normal 600 28px/28px Sora;
+
+                            span {
+                                color: black;
+                                font: normal normal 600 18px/18px Sora;
+                            }
+                        }
+
+                        .credit_price_or {
+                            font: normal normal 300 14px/18px Sora;
+                            color: #1B1E37;
+                            margin-left: 4px;
+                            text-decoration: line-through;
+                        }
+                    }
+
+                    .credit_price_each {
+                        font: normal normal 300 14px/18px Sora;
+                        color: #1B1E37;
+                    }
+                }
+
+                .credit_subscribe {
+                    margin-top: 10px;
+                    border: 1px solid #281FAE;
+                    border-radius: 4px;
+                    width: 100%;
+                    text-align: center;
+                    color: #281FAE;
+                    font: normal normal 600 15px/44px Sora;
+                    background-color: #281FAE0A;
+                    transition: .3s background-color;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    user-select: none;
+                    pointer-events: none;
+
+                    &:hover {
+                        background-color: #281FAE14;
+                        background-color: rgba(40, 31, 174, 0.16);
+                        // border: 1px solid #A87BFF;
+                        // color: #A87BFF;
+                    }
+                }
+
+                .credit_detail_list {
+                    margin-top: 39px;
+
+                    .credit_detail_item {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 12px;
+
+                        &:nth-last-child(1) {
+                            margin-bottom: 0;
+                        }
+
+                        .credit_detail_icon {
+                            width: 11px;
+                            height: 11px;
+                            margin-right: 9px;
+                        }
+
+                        .credit_detail_span {
+                            font: normal normal 300 13px/15px Sora;
+                            color: #1B1E37;
+
+                            span {
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .credit_credits_max {
+                background: #FFFFFF;
+                box-shadow: 0px 15px 20px #00000024;
+                border: 2px solid #281FAE;
+
+                .credit_discount {
+                    background-color: #281fae13;
+                    color: #281FAE;
+                }
+
+                .credit_subscribe {
+                    margin-top: 10px;
+                    border: 1px solid #281FAE;
+                    border-radius: 4px;
+                    width: 100%;
+                    text-align: center;
+                    font: normal normal 500 15px/44px Sora;
+                    transition: .3s background-color;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    user-select: none;
+                    color: #ffffff;
+                    background-color: #281FAE;
+                    pointer-events: none;
+
+                    &:hover {
+                        color: #FFFFFF;
+                        background-color: #281faed3;
+                    }
+                }
+            }
+        }
+
+        .credits_pack_container {
+            display: flex;
+            justify-content: center;
+
+            .credits_pack_item {
+                border: 2px solid #281FAE1F;
+                background-color: #281FAE0A;
+                border-radius: 10px;
+                width: 350px;
+                height: 224px;
+                padding: 14px 24px;
+                box-sizing: border-box;
+                position: relative;
+                box-shadow: 0px 0px 0px #00000024;
+                transition: .3s;
+
+                &:nth-last-child(2) {
+                    margin: 0 24px;
+                }
+
+                &:hover {
+                    box-shadow: 0px 15px 20px #00000024;
+                }
+
+                &:nth-last-child(1) {
+                    box-shadow: 0px 15px 20px #00000024;
+                    border: 2px solid #281FAE;
+                    background-color: white;
+
+                    .credit_discount {
+                        outline: none;
+                        background-color: #281fae13;
+                    }
+
+                    .credit_subscribe {
+                        color: #FFFFFF;
+                        font: normal normal 500 15px/45px Sora;
+                        background-color: #281FAE;
+
+                        &:hover {
+                            color: #FFFFFF;
+                            background-color: #281faec7;
+                        }
+                    }
+                }
+
+                .credit_num {
+                    font: normal normal 600 16px/21px Sora;
+                    color: #281FAE;
+                }
+
+                .credit_discount {
+                    position: absolute;
+                    right: 12px;
+                    top: 11px;
+                    padding: 0 17px;
+                    color: #1B1E37;
+                    text-align: center;
+                    font: normal normal bold 12px/15px Sora;
+                    border-radius: 4px;
+                    height: 25px;
+                    line-height: 25px;
+                    background-color: #FFD54F;
+                }
+
+                .credit_price_detail {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    margin-top: 53px;
+
+                    .m_credit_price_num {
+                        display: none;
+                    }
+
+                    .credit_price {
+                        .credit_price_align {
+                            color: black;
+                            vertical-align: bottom;
+                            font: normal normal 600 28px/35px Sora;
+
+                            span {
+                                color: black;
+                                font: normal normal 600 18px/35px Sora;
+                            }
+                        }
+
+                        .credit_price_or {
+                            text-decoration: line-through;
+                            font: normal normal 300 14px/18px Sora;
+                            color: #1B1E37;
+                            margin-bottom: 6px;
+                        }
+
+                        .credit_price_none {
+                            opacity: 0;
+                        }
+                    }
+
+                    .credit_price_each {
+                        font: normal normal 300 14px/18px Sora;
+                        color: #000000;
+                    }
+                }
+
+                .credit_subscribe {
+                    margin-top: 8px;
+                    border: 1px solid #281FAE;
+                    border-radius: 4px;
+                    width: 302px;
+                    text-align: center;
+                    color: #281FAE;
+                    font: normal normal 600 15px/44px Sora;
+                    background-color: #281FAE0A;
+                    transition: .3s background-color;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    pointer-events: none;
+
+                    &:hover {
+                        border: 1px solid #281FAE;
+                        background-color: #281FAE14;
+                        background-color: rgba(40, 31, 174, 0.16);
+                    }
+                }
+            }
+        }
+
+        .about_credit_pack {
+            width: 1098px;
+            margin: 24px auto;
+            padding-bottom: 57px;
+
+            .about_credit_pack_title {
+                display: flex;
+                align-items: flex-end;
+
+                .about_credit_pack_icon {
+                    width: 17px;
+                    height: 17px;
+                    margin-right: 5px;
+                }
+
+                span {
+                    font: normal normal bold 16px/21px Sora;
+                    color: #1B1E37;
+                }
+            }
+
+            .about_credit_pack_content {
+                margin-top: 8px;
+                font: normal normal normal 13px/16px Sora;
+                color: #1B1E37;
+            }
+        }
+
+        .credits_table {
+            //height: 332px;
+            padding-top: 64px;
+            padding-bottom: 72px;
+            box-sizing: border-box;
+
+            .credits_table_title {
+                text-align: center;
+                font: normal normal bold 40px/45px Sora;
+                color: #1B1E37;
+                margin-bottom: 32px;
+            }
+
+            .credits_table_container {
+                border: 1px solid rgba(40, 31, 174, 0.16);
+                border-radius: 10px;
+                overflow: hidden;
+                width: 1005px;
+                margin: 0 auto;
+                i.icon_info{
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('/dist/img/ai-tool-pricing/icon_info.svg');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    margin: 0 8px;
+                    vertical-align: bottom;
+                }
+                table{
+                    width: calc(100% + 2px);
+                    height: calc(100% + 2px);
+                    margin: -1px;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+
+                    td, th{
+                        border: 1px solid rgba(40, 31, 174, 0.16);
+                        text-align: center;
+                        vertical-align: middle;
+                        line-height: 1;
+                    }
+
+                    th{
+                        padding: 16px;
+                        font: normal normal 600 18px Sora;
+                        color: #000000;
+                        background: rgba(40, 31, 174, 0.06) 0 0 no-repeat padding-box;
+                    }
+
+                    td{
+                        padding: 15px 0;
+                        font: normal normal normal 15px Sora;
+                        color: #1B1E37;
+                    }
+
+                    .td_translation{
+                        padding: 37px 0;
+                    }
+                }
+            }
+
+
+            .tips_title {
+                width: 1000px;
+                margin: 20px auto;
+                margin-bottom: 4px;
+                font: normal normal 600 14px/18px Sora;
+                color: #1B1E37;
+            }
+
+            .tips_p {
+                width: 1000px;
+                margin: 0 auto;
+                font: normal normal 300 14px/18px Sora;
+                color: #1B1E37;
+            }
+        }
+
+        .plan__tooltip{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 50;
+            background: rgba(27, 30, 55, 0.9) 0 0 no-repeat padding-box;
+            border-radius: 8px;
+            max-width: 400px;
+            padding: 12px;
+            font: normal normal normal 12px/15px Sora;
+            color: #FFFFFF;
+            opacity: 1;
+            text-align: left;
+            pointer-events: none;
+            display: none;
+        }
+
+        .credits_FAQs {
+            padding-top: 76px;
+            padding-bottom: 20px;
+            background: transparent linear-gradient(0deg, #FFFFFF 0%, #FFFFFF 67%, #F2F4F8 100%) 0% 0% no-repeat padding-box;
+
+            .credits_FAQs_title {
+                font: normal normal 600 34px/34px Sora;
+                text-align: center;
+            }
+
+            .credits_FAQs_container {
+                width: 1005px;
+                margin: 0 auto;
+
+                .credits_FAQs_item {
+                    //min-height: 85px;
+                    border-bottom: 1px solid #D2D0DE;
+
+                    .credits_FAQs_question {
+                        height: 85px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .credits_FAQs_question_text {
+                            display: flex;
+                            align-items: center;
+                            font: normal normal 600 18px/24px Sora;
+                            color: #39325A;
+                        }
+
+                        .credits_FAQs_question_icon {
+                            width: 18px;
+                            height: 18px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .credits_FAQs_answer {
+                        max-height: 0;
+                        transition: .3s;
+                        overflow: hidden;
+
+                        .credits_FAQs_answer_text {
+                            font: normal normal 300 14px/21px Sora;
+                            color: #39325A;
+                            margin-bottom: 30px;
+
+                            span {
+                                text-decoration: underline;
+                                cursor: pointer;
+                                font: normal normal 300 14px/21px Sora;
+                            }
+                        }
+                    }
+                }
+
+                .credits_FAQs_act {
+                    .credits_FAQs_question {
+                        .credits_FAQs_question_text {
+                            color: #281FAE;
+                        }
+
+                        .credits_FAQs_question_icon {
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    .credits_FAQs_answer {
+                        max-height: 200px;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+
+        .credit_plan_info_wrapper{
+            max-width: 1600px;
+            width: 84%;
+            margin: 34px auto 40px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 1px 1px #281FAE1F;
+            .credit_plan_info_header{
+                background: rgba(40, 31, 174, 0.16) 0 0 no-repeat padding-box;
+                padding: 14px 43px;
+                font: normal normal bold 16px/21px Sora;
+                color: #1B1E37;
+            }
+
+            .credit_plan_info_row{
+                border-bottom: 1px solid #281FAE1F;
+                background-color: #fff;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                font: normal normal normal 14px/18px Sora;
+                color: #1B1E37;
+                &:last-child{
+                    border-bottom: none;
+                }
+                .credit_plan_info_cell{
+                    padding: 24px 43px;
+                    border-left: 1px solid #281FAE1F;
+                    text-align: center;
+                    &:nth-child(1){
+                        border-left: none;
+                        text-align: left;
+                    }
+                }
+            }
+
+            i.icon_checked{
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-image: url('/dist/img/ai-tool-pricing/icon_tick.svg');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    body{
+        padding-bottom: 3rem;
+    }
+
+    .ai_tool_pricing {
+        .page-footer {
+            padding-bottom: 3rem;
+        }
+    }
+
+
+    .credits_combo_main_page {
+        #credits_fiexd_container {
+            width: 100%;
+            position: fixed;
+            bottom: -3rem;
+            left: 0;
+            padding: .6rem;
+            box-sizing: border-box;
+            padding-bottom: .3rem;
+            height: 3rem;
+            background: transparent linear-gradient(90deg, #E7E9F4 0%, #BBC4F9 100%) 0% 0% no-repeat padding-box;
+            z-index: 2;
+            transition: .3s ease;
+            border: .03rem solid #281FAE;
+            border-radius: .24rem .24rem 0px 0px;
+
+            .credits_fiexd_content {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                margin-bottom: .13rem;
+
+                .credits_fiexd_num {
+                    color: #1B1E37;
+                    font: normal normal 600 .3rem/.38rem Sora;
+                }
+
+                .credits_fiexd_price {
+                    color: #1B1E37;
+                    font: normal normal 600 .4rem/.51rem Sora;
+
+                    span {
+                        font: normal normal 600 .26rem/.51rem Sora;
+                    }
+                }
+
+                .credits_price_each {
+                    color: #1b1e3794;
+                    font: normal normal normal .28rem/.35rem Sora;
+                }
+
+                .credits_fiexd_price_or {
+                    color: #1b1e3794;
+                    font: normal normal 300 .24rem/.3rem Sora;
+                    text-decoration: line-through;
+                }
+            }
+
+            .credits_fiexd_submit {
+                margin-top: .07rem;
+                border-radius: .14rem;
+                background: transparent linear-gradient(98deg, #FF88B1 0%, #F61B1B 100%) 0% 0% no-repeat padding-box;
+                width: 100%;
+                height: 1rem;
+                line-height: 1rem;
+                text-align: center;
+                color: white;
+                font: normal normal 600 .3rem/1rem Sora;
+            }
+        }
+
+        .credits_pack_combo {
+            background: transparent linear-gradient(155deg, rgba(88, 138, 255, 0.12) 0%, rgba(159, 101, 185, 0.12) 100%) 0% 0% no-repeat padding-box;
+            background-size: 100% 100%;
+            padding: 0 .4rem .61rem;
+            min-height: 9rem;
+            position: relative;
+
+            .mob_bottom_bg {
+                max-width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: -1;
+            }
+
+            .icon_path_down {
+                display: none;
+            }
+        }
+
+        .credits_pack_combo_mB {
+            background: linear-gradient(90deg, #FFF9F9, #EBE9FF);
+            // padding: 0 .6rem;
+            min-height: 9rem;
+            display: none;
+
+            .credits_combo_container_mB {
+                .credits_combo_item_mb {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: .43rem;
+                    margin-bottom: .32rem;
+
+                    .select_item {
+                        width: 2rem;
+                        height: 2.4rem;
+                        box-sizing: border-box;
+                        position: relative;
+                        background-color: #FFFFFF;
+                        border: .04rem solid #E2E5EE;
+                        border-radius: .1rem;
+                        padding-top: .52rem;
+
+                        &.checked_item {
+                            border: .04rem solid #281FAE;
+
+                            .check_icon {
+                                display: block;
+                            }
+
+                        }
+
+                        .credit_discount {
+                            position: absolute;
+                            right: -0.04rem;
+                            top: -.27rem;
+                            width: 1.47rem;
+                            height: .42rem;
+                            border-radius: .28rem .28rem 0px .28rem;
+                            background: linear-gradient(0deg, #281FAE, #C879F7);
+                            font: normal normal bold .22rem/.42rem Sora;
+                            text-align: center;
+                            color: #FFFFFF;
+                        }
+
+                        &:nth-child(1) {
+                            .credit_discount {
+                                display: none;
+                            }
+
+                            .credit_price {
+                                .credit_price_or {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            .credit_discount {
+                                background: #281FAE0F;
+                                color: #281FAE;
+                            }
+                        }
+
+                        .credit_name {
+                            font: normal normal normal .28rem/.42rem Sora;
+                            color: #39325A;
+                            text-align: center;
+                            margin-bottom: .04rem;
+                        }
+
+                        .credit_price {
+                            text-align: center;
+
+                            .credit_price_align {
+                                font: normal normal 500 .4rem/.56rem Sora;
+                                color: #39325A;
+                                margin-bottom: .02rem;
+
+                                span {
+                                    font: normal normal 500 .26rem/.6rem Sora;
+                                }
+                            }
+
+                            .credit_price_or {
+                                color: #777777;
+                                font: normal normal 300 .26rem/.36rem Sora;
+                                text-decoration: line-through;
+                            }
+                        }
+
+                        .check_icon {
+                            display: none;
+                            width: .52rem;
+                            height: .39rem;
+                            right: -0.04rem;
+                            bottom: 0;
+                            position: absolute;
+                        }
+                    }
+                }
+
+                .credit_info {
+                    width: 7.5rem;
+                    background-color: white;
+                    border-radius: .53rem .53rem 0px 0px;
+                    overflow: hidden;
+                    padding: 0 .6rem;
+                    box-sizing: border-box;
+                    margin-left: -.6rem;
+
+                    .credit_price_detail {
+                        border-bottom: .02rem solid #E2E1E8;
+                        box-sizing: border-box;
+                        padding-top: .42rem;
+                        padding-bottom: .33rem;
+                        height: 1.68rem;
+                        font: normal normal normal .26rem/.36rem Sora;
+                        color: #000000;
+
+                        .credits_num_mB,
+                        .credits_unit_mB {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            .text_value_mB {
+                                font: normal normal 600 .32rem/.45rem Sora;
+
+                                span {
+                                    font: normal normal 600 .24rem/.45rem Sora;
+                                }
+                            }
+                        }
+
+                        .credits_num_mB {
+                            margin-bottom: .1rem;
+                        }
+                    }
+
+                    .credit_detail_list_mB {
+                        padding-top: .34rem;
+                        padding-bottom: .48rem;
+
+                        .credit_detail_item {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            height: .36rem;
+                            margin-bottom: .12rem;
+
+                            .credit_detail_span {
+                                color: #39325A;
+                                font: normal normal 300 .26rem/.26rem Sora;
+                                padding-left: .26rem;
+                                box-sizing: border-box;
+                                position: relative;
+
+                                &::after {
+                                    content: '';
+                                    width: .1rem;
+                                    height: .1rem;
+                                    border-radius: 50%;
+                                    background: #281FAE 0% 0% no-repeat padding-box;
+                                    display: block;
+                                    position: absolute;
+                                    left: 0;
+                                    top: .08rem;
+                                }
+                            }
+
+                            .credit_detail_icon {
+                                width: .28rem;
+                                height: .28rem;
+                            }
+
+                            .list_value {
+                                color: #39325A;
+                                font: normal normal 600 .26rem/.26rem Sora;
+                            }
+                        }
+                    }
+
+                    .credit_subscribe_mB {
+                        border-radius: .14rem;
+                        background-color: #281FAE;
+                        width: 100%;
+                        height: 1rem;
+                        color: #FFFFFF;
+                        font-size: .3rem;
+                        line-height: 1rem;
+                        text-align: center;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .credits_subscribe_page,
+        .credits_pack_page {
+            display: none;
+
+            .m_credits_pack_container {
+                display: block;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+                border-radius: .24rem .24rem 0 0;
+                border: .03rem solid #281FAE;
+                box-shadow: 0 .1rem .4rem #6F61614B;
+                background: transparent linear-gradient(90deg, #E7E9F4 0%, #BBC4F9 100%) 0% 0% no-repeat padding-box;
+                padding: .63rem .4rem .3rem;
+
+                .m_credit_subscribe_info_content{
+                    margin-bottom: .2rem;
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: space-between;
+                }
+
+                .m_credit_subscribe_credits{
+                    font: normal normal 600 .3rem/.38rem Sora;
+                    color: #1B1E37;
+                }
+
+                .m_credit_subscribe_price{
+                    font: normal normal 600 .4rem/.51rem Sora;
+                    color: #1B1E37;
+                    span{
+                        font: normal normal 600 .26rem/.51rem Sora;
+                    }
+                }
+
+                .m_credit_subscribe_due{
+                    font: normal normal normal .28rem/.35rem Sora;
+                    color: rgba(27, 30, 55, 0.6);
+                }
+
+                .m_credit_subscribe_list_price{
+                    text-decoration: line-through;
+                    font: normal normal 300 .24rem/.3rem Sora;
+                    color: rgba(27, 30, 55, 0.6);
+                }
+
+                .m_credit_subscribe {
+                    background: transparent linear-gradient(98deg, #FF88B1 0%, #F61B1B 100%) 0% 0% no-repeat padding-box;
+                    width: 100%;
+                    height: 1rem;
+                    color: #FFFFFF;
+                    font-size: .3rem;
+                    line-height: 1rem;
+                    text-align: center;
+                    font: normal normal 600 .3rem/1rem Sora;
+                    pointer-events: none;
+                }
+            }
+        }
+
+        .credits_subscribe_page {
+
+            .m_credits_combo_container {
+                display: block;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+                border-radius: .24rem .24rem 0 0;
+                border: .03rem solid #281FAE;
+                box-shadow: 0 .1rem .4rem #6F61614B;
+                background: transparent linear-gradient(90deg, #E7E9F4 0%, #BBC4F9 100%) 0% 0% no-repeat padding-box;
+                padding: .63rem .4rem .3rem;
+
+                .m_credit_subscribe_info_content{
+                    margin-bottom: .2rem;
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: space-between;
+                }
+
+                .m_credit_subscribe_credits{
+                    font: normal normal 600 .3rem/.38rem Sora;
+                    color: #1B1E37;
+                }
+
+                .m_credit_subscribe_price{
+                    font: normal normal 600 .4rem/.51rem Sora;
+                    color: #1B1E37;
+                    span{
+                        font: normal normal 600 .26rem/.51rem Sora;
+                    }
+                }
+
+                .m_credit_subscribe_due{
+                    font: normal normal normal .28rem/.35rem Sora;
+                    color: rgba(27, 30, 55, 0.6);
+                }
+
+                .m_credit_subscribe_list_price{
+                    text-decoration: line-through;
+                    font: normal normal 300 .24rem/.3rem Sora;
+                    color: rgba(27, 30, 55, 0.6);
+                }
+
+                .m_credit_subscribe {
+                    background: transparent linear-gradient(98deg, #FF88B1 0%, #F61B1B 100%) 0% 0% no-repeat padding-box;
+                    width: 100%;
+                    height: 1rem;
+                    color: #FFFFFF;
+                    font-size: .3rem;
+                    line-height: 1rem;
+                    text-align: center;
+                    font-weight: 600;
+                    font-family: Sora;
+                    pointer-events: none;
+                }
+
+                .m_credit_your_plan {
+                    margin-top: .58rem;
+                    display: none;
+
+                    .m_credit_plan_t {
+                        font: normal normal 600 .36rem/.4rem Sora;
+                        text-align: center;
+                    }
+
+                    .m_credit_plan_container {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        flex-wrap: wrap;
+                        margin-top: .25rem;
+
+                        .m_credit_plan_item {
+                            width: 50%;
+                            text-align: center;
+                            font-size: 0;
+
+                            &:nth-child(1),
+                            &:nth-child(2) {
+                                margin-bottom: .32rem;
+                            }
+
+                            &:nth-child(odd) {
+                                position: relative;
+
+                                &::after {
+                                    height: .64rem;
+                                    width: 1px;
+                                    background-color: #ACB1C1;
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 0;
+                                    transform: translateY(-50%);
+                                    content: "";
+                                }
+                            }
+
+                            .m_credit_plan_icon {
+                                width: .81rem;
+                                height: .81rem;
+                            }
+
+                            .m_credit_plan_content {
+                                text-align: center;
+                                font: normal normal 300 .22rem/.33rem Sora;
+
+                                padding: 0 .2rem;
+                                box-sizing: border-box;
+
+                                span {
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .credits_container_loading {
+            filter: blur(3px);
+        }
+
+        .credits_title {
+            width: 100%;
+            margin: 0 auto;
+
+            .subscribe_h1 {
+                padding-top: .32rem;
+                box-sizing: border-box;
+
+                .subscribe_h1_dom {
+                    font: normal normal bold .48rem/.68rem Sora;
+                    color: #1B1E37;
+                    margin: 0;
+                    text-align: center;
+                }
+                .subscribe_h1_span {
+                    font: normal normal 400 .28rem/.42rem Sora;
+                    color: #39325A;
+                    text-align: center;
+                }
+            }
+
+            .credit_pack_h1 {
+                padding: .3rem 0;
+                padding-bottom: .4rem;
+                box-sizing: border-box;
+                // text-align: center;
+
+                .credit_pack_h1_dom {
+                    font: normal normal bold .48rem/.68rem Sora;
+                    color: #1B1E37;
+                    margin: 0;
+                }
+
+                .credit_pack_h1_span {
+                    font: normal normal 400 .28rem/.42rem Sora;
+                    color: #39325A;
+                }
+            }
+        }
+
+        .credits_combo_container {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            .credits_combo_item {
+                background-color: white;
+                border-radius: .1rem;
+                width: calc((100% - .32rem) / 3);
+                box-sizing: border-box;
+                position: relative;
+                box-shadow: 0px 0px 0px #00000024;
+                transition: .3s;
+                margin-top: .61rem;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+                border: 1px solid #281FAE1F;
+                padding: .54rem 0;
+
+                .credit_discount {
+                    background-color: #FFD54F;
+                    text-align: center;
+                    font: normal normal bold .22rem/.42rem Sora;
+                    // box-shadow: 0px 1px 0px #D6D5D5;
+                    background: #281FAE0F 0% 0% no-repeat padding-box;
+
+                    &.credit_discount_max {
+                        background-color: #281FAE;
+                        color: white;
+                    }
+                }
+
+                .credit_info {
+                    .credit_name {
+                        text-align: center;
+                        font: normal normal normal .28rem/.35rem Sora;
+                        color: #1B1E37;
+                        margin-bottom: .15rem;
+                    }
+
+                    .credit_num {
+                        font: normal normal bold .26rem/.36rem Sora;
+                        color: #1B1E37;
+                        margin-top: .15rem;
+                        display: none;
+                    }
+                }
+
+                .credit_price_detail {
+                    padding: .2rem 0;
+                    padding-right: .2rem;
+                    // width: 2.3rem;
+                    text-align: right;
+
+
+                    .credit_price {
+                        width: 100%;
+
+                        .credit_price_align {
+                            text-align: center;
+                            color: #1B1E37;
+                            font: normal normal 600 .4rem/.51rem Sora;
+
+                            span {
+                                color: black;
+                                font: normal normal 600 .26rem/.51rem Sora;
+                            }
+                        }
+
+                        .credit_price_or {
+                            font: normal normal 300 .27rem/.34rem Sora;
+                            color: rgba(27, 30, 55, 0.5);
+                            text-align: center;
+                            text-decoration: line-through;
+                            margin-top: .07rem;
+                        }
+                    }
+
+                    .credit_price_each {
+                        display: none;
+                        margin-top: .06rem;
+                        font: normal normal 300 .24rem/.3rem Sora;
+                        color: #1B1E37;
+                    }
+                }
+
+                .credit_subscribe {
+                    display: none;
+                    margin-top: 4px;
+                    border: 1px solid #281FAE;
+                    border-radius: 4px;
+                    width: 273px;
+                    text-align: center;
+                    color: #281FAE;
+                    font: normal normal 500 15px/44px Sora;
+                    background-color: #ffffff;
+                    transition: .3s background-color;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    user-select: none;
+                    pointer-events: none;
+
+                    &:hover {
+                        color: #FFFFFF;
+                        background-color: #281FAE;
+                    }
+                }
+
+                .credit_detail_list {
+                    display: none;
+                    margin-top: 39px;
+
+                    .credit_detail_item {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 12px;
+
+                        &:nth-last-child(1) {
+                            margin-bottom: 0;
+                        }
+
+                        .credit_detail_icon {
+                            width: 11px;
+                            height: 11px;
+                            margin-right: 9px;
+                        }
+
+                        .credit_detail_span {
+                            font: normal normal 300 13px/15px Sora;
+                            color: #000000;
+
+                            span {
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .credit_credits_max {
+                .credit_discount {
+                    background-color: #281FAE;
+                    color: white;
+                }
+            }
+
+            .credits_combo_item_act {
+                box-shadow: inset 0 0 0 .04rem #281FAE;
+                &::after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: .55rem;
+                    height: .42rem;
+                    background: url('/dist/img/ai-tool-pricing/icon_chick.svg') no-repeat;
+                    background-size: 100% 100%;
+                }
+                .credit_price_align{
+                    color: #281FAE !important;
+                    span{
+                        color: inherit !important;
+                    }
+                }
+            }
+        }
+
+        .credits_pack_container {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            .credits_pack_item {
+                background-color: white;
+                border-radius: .1rem;
+                width: calc((100% - .32rem) / 3);
+                box-sizing: border-box;
+                position: relative;
+                box-shadow: 0px 0px 0px #00000024;
+                transition: .3s;
+                margin-top: .61rem;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+                border: 1px solid #281FAE1F;
+
+                &:nth-last-child(1) {
+                    .credit_discount {
+                        background-color: #281FAE;
+                        color: white;
+                    }
+                }
+
+                .credit_num {
+                    text-align: center;
+                    font: normal normal normal .28rem/.35rem Sora;
+                    color: #1B1E37;
+                    display: none;
+                }
+
+                .credit_discount {
+                    background-color: #FFD54F;
+                    text-align: center;
+                    font: normal normal bold .22rem/.42rem Sora;
+                    // box-shadow: 0px 1px 0px #D6D5D5;
+                    background-color: #281FAE0F;
+
+                    &.credit_discount_max {
+                        background-color: #281FAE;
+                        color: white;
+                    }
+                }
+
+                .credit_price_detail {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .credit_price {
+                        order: 2;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        .credit_price_align {
+                            color: #1B1E37;
+                            vertical-align: bottom;
+                            font: normal normal 600 .4rem/.51rem Sora;
+
+                            span {
+                                color: #1B1E37;
+                                font: normal normal 600 .26rem/.51rem Sora;
+                            }
+                        }
+
+                        .credit_price_or {
+                            order: 2;
+                            font: normal normal 300 .27rem/.34rem Sora;
+                            color: rgba(27, 30, 55, 0.5);
+                            text-align: center;
+                            text-decoration: line-through;
+                            margin-top: .07rem;
+                        }
+
+                        .credit_price_none {
+                            display: none;
+                        }
+                    }
+
+                    .m_credit_price_num {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-bottom: .15rem;
+
+                        .credit_num {
+                            font: normal normal bold .26rem/.33rem Sora;
+                            color: #1B1E37;
+                            display: block;
+                        }
+
+                        .credit_price_each {
+                            font: normal normal 300 .24rem/.3rem Sora;
+                            color: #1B1E37;
+                            display: none;
+                            opacity: .9;
+                        }
+                    }
+
+                    .credit_price_each {
+                        font: normal normal 300 14px/14px Sora;
+                        color: #000000;
+                        display: none;
+                    }
+                }
+
+                .credit_subscribe {
+                    margin-top: 8px;
+                    border: 1px solid #281FAE;
+                    border-radius: 4px;
+                    width: 273px;
+                    text-align: center;
+                    color: #281FAE;
+                    font: normal normal 500 15px/44px Sora;
+                    background-color: #ffffff;
+                    transition: .3s background-color;
+                    box-sizing: border-box;
+                    display: none;
+                    pointer-events: none;
+                }
+            }
+
+            .credits_pack_item_act {
+                box-shadow: inset 0 0 0 .04rem #281FAE;
+                &::after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: .55rem;
+                    height: .42rem;
+                    background: url('/dist/img/ai-tool-pricing/icon_chick.svg') no-repeat;
+                    background-size: 100% 100%;
+                }
+                .credit_price_align{
+                    color: #281FAE !important;
+                    span{
+                        color: inherit !important;
+                    }
+                }
+            }
+        }
+
+        .credit_plan_info_wrapper{
+            width: 100%;
+            margin: .32rem auto 0;
+            border-radius: .24rem;
+            overflow: hidden;
+            .credit_plan_info_header{
+                background: rgba(40, 31, 174, 0.16) 0 0 no-repeat padding-box;
+                padding: .27rem .42rem;
+                font: normal normal bold .26rem/.33rem Sora;
+                color: #1B1E37;
+            }
+
+            .credit_plan_info_row{
+                border-bottom: 1px solid #281FAE1F;
+                background-color: #fff;
+                display: grid;
+                grid-template-columns: 1.3fr 1fr;
+                font: normal normal normal .24rem/.3rem Sora;
+                color: #1B1E37;
+                &:last-child{
+                    border-bottom: none;
+                }
+                .credit_plan_info_cell{
+                    padding: .32rem .42rem;
+                    border-left: 1px solid #281FAE1F;
+                    text-align: center;
+                    &:nth-child(1){
+                        border-left: none;
+                        text-align: left;
+                    }
+
+                    &.hidden{
+                        display: none;
+                    }
+                }
+            }
+
+            i.icon_checked{
+                display: inline-block;
+                width: .32rem;
+                height: .32rem;
+                background-image: url('/dist/img/ai-tool-pricing/icon_tick.svg');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+
+        .about_credit_pack {
+            padding: .64rem 0;
+            text-align: center;
+
+            .about_credit_pack_title {
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+
+                .about_credit_pack_icon {
+                    width: 17px;
+                    height: 17px;
+                    margin-right: 5px;
+                    display: none;
+                }
+
+                span {
+                    font: normal normal 600 .36rem/.36rem Sora;
+                    color: #39325A;
+                }
+            }
+
+            .about_credit_pack_content {
+                margin-top: .18rem;
+                font: normal normal 400 .22rem/.33rem Sora;
+                color: #000000;
+            }
+        }
+
+        .credits_table {
+            //height: 332px;
+            background: transparent linear-gradient(0deg, #281FAE00 0%, #281FAE05 67%, #281FAE0A 100%) 0% 0% no-repeat padding-box;
+            padding: .45rem .4rem;
+            box-sizing: border-box;
+
+            .credits_table_title {
+                margin: 0;
+                text-align: center;
+                font: normal normal bold .4rem/.45rem Sora;
+                color: #39325A;
+                margin-bottom: .36rem;
+            }
+
+            .credits_table_container {
+                .table_charge {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 6.7rem;
+                    margin: 0 auto;
+                    border-radius: 10px;
+                    border: 1px solid #281fae11;
+
+                    .table_head {
+                        width: 100%;
+                        height: .67rem;
+                        // background: #281fae11 0% 0% no-repeat padding-box;
+                        text-align: center;
+                        vertical-align: middle;
+                        line-height: 1;
+                    }
+
+                    th{
+                        padding: .3rem .4rem;
+                        font: normal normal 600 .24rem Sora;
+                        color: #000000;
+                        background: rgba(40, 31, 174, 0.06) 0 0 no-repeat padding-box;
+                    }
+
+                    td{
+                        padding: .19rem;
+                        font: normal normal normal .22rem Sora;
+                        color: #1B1E37;
+                    }
+
+                    .table_body {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+
+                        .table_content {
+                            height: .67rem;
+                            background-color: white;
+                            width: 50%;
+                            box-sizing: border-box;
+                            font: normal normal 400 .22rem/.67rem Sora;
+                            color: #1B1E37;
+                            text-align: center;
+
+                            &:nth-child(1) {
+                                border-right: 1px solid #281fae11;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .tips_title {
+                width: 100%;
+                margin: 0.24rem auto;
+                margin-bottom: .13rem;
+                font: normal normal 600 .24rem/.3rem Sora;
+                color: #1B1E37;
+            }
+
+            .tips_p {
+                width: 100%;
+                // margin: 0.1rem auto;
+                font: normal normal 300 0.2rem / .25rem Sora;
+                color: #1B1E37;
+            }
+        }
+
+        .credits_FAQs {
+            padding: .5rem .6rem;
+            background: transparent linear-gradient(0deg, #FFFFFF 0%, #FFFFFF 67%, #F2F4F8 100%) 0% 0% no-repeat padding-box;
+
+            .credits_FAQs_title {
+                font: normal normal 600 .34rem/.34rem Sora;
+                text-align: center;
+            }
+
+            .credits_FAQs_container {
+                margin: 0 auto;
+
+                .credits_FAQs_item {
+                    //min-height: 85px;
+                    border-bottom: 1px solid #D2D0DE;
+
+                    .credits_FAQs_question {
+                        min-height: 1.12rem;
+                        padding: .2rem 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .credits_FAQs_question_text {
+                            display: flex;
+                            align-items: center;
+                            font: normal normal 600 .24rem/.35rem Sora;
+                            color: #39325A;
+                            flex: 1;
+                        }
+
+                        .credits_FAQs_question_icon {
+                            width: .32rem;
+                            height: .32rem;
+                            cursor: pointer;
+                            margin-left: .1rem;
+                        }
+                    }
+
+                    .credits_FAQs_answer {
+                        max-height: 0;
+                        transition: .3s;
+                        overflow: hidden;
+
+                        .credits_FAQs_answer_text {
+                            font: normal normal 300 .22rem/.33rem Sora;
+                            color: #39325A;
+                            margin-bottom: .4rem;
+
+                            span {
+                                // color: #281FAE;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                .credits_FAQs_act {
+                    .credits_FAQs_question {
+                        .credits_FAQs_question_text {
+                            color: #281FAE;
+                        }
+
+                        .credits_FAQs_question_icon {
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    .credits_FAQs_answer {
+                        max-height: 200px;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+}

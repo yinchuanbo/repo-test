@@ -1,0 +1,266 @@
+@media (min-width: 1200px) {
+  .header_menu {
+    display: flex;
+    align-items: center;
+  }
+  .nav-logo-bg {
+    background: url("/dist/img/IGhome/logo-w.svg") no-repeat center;
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 117px;
+    height: 38px;
+  }
+  #header_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 10px;
+    height: 38px;
+    background: #EFF3FB 0% 0% no-repeat padding-box;
+    font: normal normal 300 16px/21px Sora;
+    letter-spacing: 0px;
+    color: #2A2F4F;
+    transition: 0.5s;
+  }
+  #header_login:hover {
+    background: transparent;
+    border: 1px solid;
+  }
+  .menu-item {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  .menu-item.chat_tools {
+    display: none;
+  }
+  .menu-item .menu-text {
+    display: flex;
+    align-items: center;
+  }
+  .menu-item .menu-text .arrow-normal {
+    display: inline-block;
+    width: 10px;
+    height: 6px;
+    margin-left: 7px;
+    background: url("/dist/img/IGhome/arrow-black.svg") no-repeat center/cover;
+    transform: rotateZ(180deg);
+    transition: 0.3s;
+  }
+  .menu-item .menu-text .arrow-normal.active {
+    transform: rotateZ(180deg);
+    background: url("/dist/img/IGhome/arrow-do-h.svg") no-repeat center/cover;
+  }
+  .menu-item .menu-text.active p {
+    color: #624AFF;
+  }
+  .menu-item p {
+    text-align: left;
+    font: normal normal 300 16px/21px Sora;
+    letter-spacing: 0px;
+    color: #2A2F4F;
+  }
+  .menu-item a {
+    text-align: left;
+    font: normal normal 300 16px/21px Sora;
+    letter-spacing: 0px;
+    color: #2A2F4F;
+  }
+  .menu-item img {
+    margin-left: 7px;
+    width: 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 6px;
+    transition: 0.5s;
+  }
+  .menu-item .arrow-hover {
+    display: none;
+  }
+  .menu-item .menu-drop {
+    display: none;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.1019607843);
+    border-radius: 3px;
+    padding: 16px 12px;
+    position: absolute;
+    z-index: 9909;
+    top: 30px;
+  }
+  .menu-item .menu-drop .menu-drop-item {
+    text-align: left;
+    font: normal normal 300 16px/21px Sora;
+    letter-spacing: 0px;
+    color: #2A2F4F;
+    height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .menu-item .menu-drop .menu-drop-item span {
+    padding: 0 80px 0 10px;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .menu-item .menu-drop .menu-drop-item img {
+    width: 28px;
+    height: 28px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .menu-item .menu-drop .menu-drop-item:hover {
+    border-radius: 2px;
+    background: #EBECF2 0% 0% no-repeat padding-box;
+  }
+  .footer .footer-bottom .footer-right > ul {
+    margin-right: 0;
+  }
+  .footer .footer-logo-bg {
+    background: url("/dist/img/IGhome/logo-w.svg") no-repeat center;
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 117px;
+    height: 38px;
+  }
+  .footer .footer-logo-des {
+    text-align: left;
+    font: normal normal 300 14px/19px Sora;
+    letter-spacing: 0;
+    color: #2A2F4F;
+    display: block;
+    margin-top: 14px;
+    white-space: nowrap;
+    margin-bottom: 0;
+  }
+  .footer .footer-bottom {
+    display: flex;
+    height: 315px;
+    justify-content: center;
+    background: #F5F7F9 0% 0% no-repeat padding-box;
+    margin: 0 auto;
+  }
+  .footer .footer-bottom .wapper {
+    height: 100%;
+    display: flex;
+    padding-top: 40px;
+  }
+  .footer .footer-bottom .wapper .footer-left {
+    display: block;
+    padding-bottom: 1rem;
+  }
+  .footer .footer-bottom .wapper .footer-logo-font {
+    font: normal normal 300 12px/16px Sora;
+    letter-spacing: 0;
+    color: #2A2F4F;
+    display: flex;
+    margin-top: 48px;
+  }
+  .footer .footer-bottom .wapper .footer-right {
+    display: flex;
+    margin-left: 245px;
+  }
+  .footer .footer-bottom .wapper .footer-right ul + ul {
+    margin-left: 63px;
+  }
+  .footer .footer-bottom .wapper .footer-right ul .ex-nav a {
+    font: normal normal normal 18px/22px Sora;
+    color: #1B1E37;
+    margin-bottom: 10px;
+  }
+  .footer .footer-bottom .wapper .footer-right ul li {
+    margin-bottom: 16px;
+    white-space: nowrap;
+  }
+  .footer .footer-bottom .wapper .footer-right ul li a {
+    font: normal normal 300 14px/18px Sora;
+    color: #000000;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .footer .footer-bottom .wapper .footer-right ul li a:hover {
+    text-decoration: underline;
+    color: #281FAE;
+  }
+}
+@media (min-width: 1200px) {
+  .footer .footer-bottom .wapper .footer-right ul li:first-child {
+    font: normal normal normal 18px/22px Sora;
+    color: #1B1E37;
+    letter-spacing: 0;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 1200px) {
+  .header_menu {
+    display: none;
+  }
+  .nav-header .mobile-menu li {
+    min-height: 1.1rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.46rem;
+    padding-top: 0.46rem;
+  }
+  .mob-menu-dec {
+    width: 100%;
+    margin-top: 0.2rem;
+    display: none;
+  }
+  .mob-menu-dec a {
+    font: normal normal 300 0.3rem/0.5rem Sora;
+    letter-spacing: 0px;
+    color: #2A2F4F;
+    margin-top: 0.24rem;
+  }
+  .mob-menu-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .mob-menu-title p {
+    font: normal normal normal 0.36rem/0.5rem Sora;
+    letter-spacing: 0;
+    color: #2A2F4F;
+  }
+  .mob-menu-title .arrow {
+    background: url("/dist/img/IGhome/arrow-w.svg") no-repeat center;
+    transform: rotateZ(180deg);
+    width: 0.2rem;
+    height: 0.11rem;
+    transition: 0.3s;
+    background-size: cover;
+  }
+  .mob-menu-title .arrow.active {
+    transform: rotateZ(360deg);
+  }
+  .ex-nav a {
+    font: normal normal normal 0.36rem/0.45rem Sora !important;
+    letter-spacing: 0 !important;
+    color: #2A2F4F !important;
+  }
+  .nav-header .meau_icon .close {
+    background: url("/dist/img/IGhome/icon_menu_close_black.svg") no-repeat center;
+    width: 0.64rem !important;
+    height: 0.64rem !important;
+    background-size: cover;
+  }
+  .footer-logo-bg {
+    background: url("/dist/img/IGhome/logo-w.svg") no-repeat center;
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 1.86rem;
+    height: 0.64rem;
+  }
+  .nav-logo-bg {
+    background: url("/dist/img/IGhome/logo-w.svg") no-repeat center;
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 1.86rem;
+    height: 0.64rem;
+  }
+}/*# sourceMappingURL=new-nav.css.map */

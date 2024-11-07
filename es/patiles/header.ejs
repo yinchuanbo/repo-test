@@ -1,0 +1,244 @@
+<header class="nav-header" id="header">
+  <div class="nav-header-fixed">
+    <div class="nav-header-middle">
+      <div class="nave-header-middle-left">
+        <% if (locals.ig_back) { %>
+          <svg id="ig_back" width="20" height="20" viewBox="0 0 20 20">
+            <defs>
+              <clipPath id="icon_back">
+                <rect id="Rectangle_31662" data-name="Rectangle 31662" width="20" height="20" fill="#fff" stroke="#707070" stroke-width="1"/>
+              </clipPath>
+            </defs>
+            <g id="icon_back" clip-path="url(#icon_back)">
+              <path id="Path_2077" data-name="Path 2077" d="M20,172H4m0,0,6,6m-6-6,6-6" transform="translate(-2 -162)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" opacity="0.6"/>
+            </g>
+          </svg>
+        <% } %>
+        <a class="nav-logo" href="/">
+          <span class="nav-logo-bg"></span>
+        </a>
+        <div class="header_menu">
+          <div class="menu-item chat_tools">
+            <div class="menu-text" data-open="false">
+              <p><%- IGpopup.tools1 %></p>
+              <i class="arrow-normal"></i>
+            </div>
+            <div class="menu-drop" style="display: none!important;">
+              <li><a class="menu-drop-item" href="/novia-virtual.html"><img src="/dist/img/IGhome/ai-girl.svg"
+                    alt=""><span><%- IGpopup.page1 %></span></a></li>
+              <!-- <li><a class="menu-drop-item" href="/ai-boyfriend.html"><img src="/dist/img/IGhome/ai-boy.svg"><span><%-
+                      IGpopup.page2 %></span></a></li> -->
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-text" data-open="false">
+              <p><%- IGpopup.tools2 %></p>
+              <i class="arrow-normal"></i>
+            </div>
+            <div class="menu-drop" style="display: none!important;">
+              <li><a class="menu-drop-item" href="/face-swap.html"><img src="/dist/img/IGhome/photo-face.svg" alt=""><span><%- IGpopup.page3 %></span></a></li>
+              <li><a class="menu-drop-item" href="/multiple-face-swap.html"><img src="/dist/img/IGhome/photo-face.svg" alt=""><span> <%- IGpopup.page8 %> </span></a></li>
+<!--              <li><a class="menu-drop-item" href="/ai-image-generator.html"><img src="/dist/img/IGhome/image-ge.svg"><span><%- IGpopup.page4 %></span></a></li>-->
+              <li><a class="menu-drop-item" href="/test-de-belleza.html"><img src="/dist/img/IGhome/ai-test.svg"><span><%- IGpopup.page5 %></span></a></li>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-text" data-open="false">
+              <p><%- IGpopup.tools3 %></p>
+              <i class="arrow-normal"></i>
+            </div>
+            <div class="menu-drop" style="display: none!important;">
+              <li><a class="menu-drop-item" href="/face-swap.html?openTab=videofs"><img
+                    src="/dist/img/IGhome/video-face.svg" alt=""><span><%- IGpopup.page6 %></span></a></li>
+              <li><a class="menu-drop-item" href="/multiple-face-swap.html?openTab=videofs"><img
+                          src="/dist/img/IGhome/video-face.svg" alt=""><span><%- IGpopup.page9 %></span></a></li>
+              <!-- <li><a class="menu-drop-item" href="/video-translator.html"><img
+                    src="/dist/img/IGhome/video-trans.svg"><span><%- IGpopup.page7 %></span></a></li> -->
+            </div>
+          </div>
+          <!-- <div class="menu-item"><a href="/pricing.html"><%- IGpopup.tools4 %></a></div> -->
+          <div class="menu-item"><a href="/about.html"><%- IGpopup.tools5 %></a></div>
+        </div>
+      </div>
+
+      <div class="meau_item_right">
+        <% if (locals.isFriend) { %>
+        <div class="meau_item inform" id="header_inform">
+          <img src="/dist/img/aiFriend/icon_message.svg" alt="" class="header_infom_status">
+          <div class="inform_box">
+            <div class="inform_box_container">
+              <div class="inform_title"><%- aiGirlFriend.informTitle %></div>
+              <div class="inform_list_box">
+                <div class="inform_list"></div>
+                <img src="/dist/img/aiFriend/pic_no-message.png" alt="" class="noInform">
+                <div class="inform_notMore"><%- aiGirlFriend.notInform %></div>
+                <div class="inform_loading">
+                  <img src="/dist/img/aiFriend/inform_icon_loading.svg" alt="">
+                  <%- aiGirlFriend.loading %>
+                    <div class="loading_icon">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% } %>
+        <header-credit class="header-credit" id="header-credit"></header-credit>
+        <div class="meau_item login" id="header_login"><%- header.login %></div>
+        <div class="meau_item user" id="header_user">
+          <img src="" alt="" class="header_avator" />
+          <div class="signout log">
+            <div class="header_editUser header_item">
+              <img src="" alt="" class="header_avator" />
+              <div class="header_info">
+                <span class="userName"></span>
+                <span class="useremail"></span>
+              </div>
+            </div>
+            <% if (!locals.isFriend) { %>
+            <a class="myfileBtn" href="/my-files.html">
+              <img
+                src="/dist/img/header/list_icon_files.svg"
+                alt=""
+                class="header_icon"
+              />
+              <%- header.myFiles %>
+              <img
+                src="/dist/img/header/icon_list_arrow.svg"
+                alt=""
+                class="icon_list_arrow"
+              />
+            </a>
+            <% } %>
+            <div class="signoutBtn header_item">
+              <img
+                src="/dist/img/header/list_icon_sign_out.svg"
+                alt=""
+                class="header_icon"
+              />
+              <%- aiGirlFriend.SignUp %>
+              <img
+                src="/dist/img/header/icon_list_arrow.svg"
+                alt=""
+                class="icon_list_arrow"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="meau_icon">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="close"></span>
+        </div>
+      </div>
+      <!-- <div id="mobile-nav-menu">
+        <div class="shadow"></div>
+      </div> -->
+    </div>
+  </div>
+  <div class="menu-contanier">
+    <ul class="mobile-menu">
+      <li class="meau_item log mobile-menu-item">
+        <div class="mob-menu-title user">
+          <img src="" alt="" class="header_avator" />
+          <div class="header_info">
+            <a href="javascript:;" class="userName header_editUser"></a>
+            <span class="useremail"></span>
+          </div>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          <% if (!locals.isFriend) { %>
+            <div class="user_item">
+              <a class="myfileBtn" href="/my-files.html">
+                <img
+                  src="/dist/img/header/list_icon_files.svg"
+                  alt=""
+                  class="header_icon"
+                />
+                <%- header.myFiles %>
+              </a>
+            </div>
+            <% } %>
+          <div class="user_item">
+            <a class="signoutBtn" href="javascript:;">
+              <img
+                src="/dist/img/header/list_icon_sign_out.svg"
+                alt=""
+                class="header_icon"
+              />
+              <%- aiGirlFriend.SignUp %>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu-item">
+        <div class="mob-menu-title">
+          <p><%- IGpopup.tools1 %></p>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          <div><a href="/novia-virtual.html"><%- IGpopup.page1 %></a></div>
+          <!-- <div><a href="/ai-boyfriend.html"><%- IGpopup.page2 %></a></div> -->
+        </div>
+      </li>
+      <li class="mobile-menu-item">
+        <div class="mob-menu-title">
+          <p><%- IGpopup.tools2 %></p>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          <div><a href="/face-swap.html"><%- IGpopup.page3 %></a></div>
+          <div><a href="/multiple-face-swap.html"><%- IGpopup.page8 %></a></div>
+<!--          <div><a href="/ai-image-generator.html"><%- IGpopup.page4 %></a></div>-->
+          <div><a href="/ai-attractiveness-test.html"><%- IGpopup.page5 %></a></div>
+        </div>
+      </li>
+      <li class="mobile-menu-item">
+        <div class="mob-menu-title">
+          <p><%- IGpopup.tools3 %></p>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          <div><a href="/face-swap.html?openTab=videofaceSwap"><%- IGpopup.page6 %></a></div>
+          <div><a href="/multiple-face-swap.html?openTab=videofs"><%- IGpopup.page9 %></a></div>
+          <div><a href="/video-translator.html"><%- IGpopup.page7 %></a></div>
+        </div>
+      </li>
+      <!-- <li><a href="/pricing.html"><%- header.pricing %></a></li> -->
+      <% if (!locals.isFriend) { %>
+        <li><a class="myfileBtn" href="/my-files.html" ><%- header.myFiles %></a></li>
+        <% } %>
+      <li><a href="/about.html"><%- header.about %></a></li>
+      <li class="meau_item log"><a href="javascript:;" class="signoutBtn"><%- aiGirlFriend.SignUp %></a></li>
+    </ul>
+  </div>
+  <% if (locals.isFriend) { %>
+    <div class="mobile_show inform_mobile_list">
+      <div class="inform_m_header">
+        <div class="inform_m_back"></div>
+        <div class="inform_title"><%- aiGirlFriend.informTitle %></div>
+      </div>
+      <div class="inform_list_box">
+        <div class="inform_list"></div>
+        <img src="/dist/img/aiFriend/pic_no-message.png" alt="" class="noInform">
+        <div class="inform_notMore"><%- aiGirlFriend.notInform %></div>
+        <div class="inform_loading">
+          <img src="/dist/img/aiFriend/inform_icon_loading.svg" alt="">
+          <%- aiGirlFriend.loading %>
+            <div class="loading_icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        </div>
+      </div>
+    </div>
+    <% } %>
+</header>
+<script src="/dist/js/header-credit/index.js"></script>
+<script type="text/javascript" src="/dist/js/common-header.js"></script>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25" class="icon_download">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_5256" data-name="矩形 5256" width="25" height="25" transform="translate(1002 846)" fill="#39325a" stroke="currentColor" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon_download" transform="translate(-1002 -846)" clip-path="url(#clip-path)">
+    <path id="下载_10_" data-name="下载 (10)" d="M22.614,14.6l-4.939,4.939V4.153a1.476,1.476,0,0,0-2.953,0V19.538L9.786,14.6A1.476,1.476,0,0,0,7.7,16.687l7.458,7.458a1.437,1.437,0,0,0,.485.32c.006,0,.016,0,.022.006a1.44,1.44,0,0,0,1.077,0c.006,0,.016,0,.022-.006a1.52,1.52,0,0,0,.485-.32l7.458-7.458A1.477,1.477,0,0,0,22.614,14.6Zm1.042,10.125H8.741a1.476,1.476,0,1,0,0,2.953H23.657a1.476,1.476,0,1,0,0-2.953Z" transform="translate(998.299 843.323)" fill="currentColor"/>
+  </g>
+</svg>

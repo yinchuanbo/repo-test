@@ -1,0 +1,10 @@
+<svg id="btn_tips_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_31844" data-name="Rectangle 31844" width="16" height="16" transform="translate(289 678)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="btn_tips_normal" transform="translate(-289 -678)" clip-path="url(#clip-path)">
+    <path id="Path_1922" data-name="Path 1922" d="M6.254,1046.2a1.8,1.8,0,0,1,3.5.6c0,1.2-1.8,1.8-1.8,1.8M8,1051h.006M14,1048a6,6,0,1,1-6-6A6,6,0,0,1,14,1048Z" transform="translate(289 -361.999)" fill="none" stroke="#cfcfcf" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= myFiles.title%></title>
+    <meta
+      name="description"
+      content="<%= myFiles.description%>"
+    />
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,viewport-fit=cover"
+    />
+    <link rel="icon" href="/dist/img/FS-favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/dist/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/dist/css/my-files.css" />
+    <link rel="canonical" href="https://www.vidqu.ai/my-files.html" >
+    <%- include('../patiles/head'); -%>
+  </head>
+  <body> 
+    <%- include('../patiles/header',{type:1}); -%>
+    <main>
+        <div class="my-files">
+            <div class="my-files-container">
+                <div class="operation-box" style="display: none;">
+                    <div class="files-number">
+                        <span id="filesNumber">1</span>
+                        &nbsp;<%= myFiles.selectFiles%>
+                    </div>
+                    <div class="operation-btns">
+                        <img src="/dist/img/my-files/icon_loading.svg" style="height:24px;width:24px;display: none;" class="loading-animation">
+                        <img src="/dist/img/my-files/icon_download_white.svg" class="operation-icon" id="downloadBatch">
+                        <img src="/dist/img/my-files/icon_delete.svg" class="operation-icon" id="deleteBatch">
+                        <span class="operation-cancel"> <%= myFiles.cancel%></span>
+                    </div>
+                </div>
+                <div class="m-show my-files-navigation"><%= myFiles.navigation%></div>
+                <div class="my-files-title">
+                    <h2 class="title-left"><%= myFiles.leftText%>  (<b id="dataTotal">0</b>)</h2>
+                    <div class="title-right">
+                        <div class="filter-select-container pc-show">
+                            <div class="filter-select ">
+                                <img src="/dist/img/my-files/icon_filter.png" style="width: 20px;height: 20px;">
+                                <span id="filterText"><%= myFiles.selectAll%></span>                  
+                                <img src="/dist/img/my-files/pull_down.svg" id="pullIcon">       
+                            </div>
+                            
+                            <div class="filter-dropdown-menu" style="display: none;">
+                                <div class="item select-all" data-value="0">
+                                    <div class="item-text">All</div>
+                                </div>
+                                <div class="item select-img" data-value="1">
+                                    <div class="item-text">Images</div>
+                                </div>
+                                <div class="item select-video" data-value="2">
+                                    <div class="item-text">Videos</div>
+                                </div>
+                            </div>  
+                        </div> 
+                
+                        <div class="filter-input">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <g id="search-normal" transform="translate(-0.029)">
+                                  <rect id="" data-name="" width="20" height="20" transform="translate(0.029)" fill="#fff" opacity="0"/>
+                                  <path id="Vector" d="M15.963,7.982A7.982,7.982,0,1,1,7.982,0,7.982,7.982,0,0,1,15.963,7.982Z" transform="translate(1.598 1.598)" fill="none" stroke="#1e1e2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                  <path id="Vector-2" data-name="Vector" d="M1.68,1.68,0,0" transform="translate(16.721 16.721)" fill="none" stroke="#1e1e2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </g>
+                            </svg>
+
+                            <input id="searchMyfileInput" style="display: none;" name="custom_search_name" type="text" autocomplete="off" placeholder="<%= myFiles.searchPH%>">
+                        </div>
+
+                        <div class="filter-select-m m-show-flex">
+                            <img src="/dist/img/my-files/icon_filter.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="limit-tips">
+                    <div class="limit-text">
+                        <span class="limit-text-left">
+                            <%= myFiles.limitText1%>
+                        </span>
+                        <span>
+                            <%= myFiles.limitText3%>
+                        </span>
+                    </div>
+                    <div class="limit-button"><%= myFiles.limitButton%></div>
+                </div>
+
+                <div class="template">
+                    <div class="no-content" style="display: none;">
+                        <div class="go-to-create">
+                            <div class="no-content-text"><%= myFiles.noFiles%></div>
+                            <!-- <div class="go-to-btn">
+                                <%= myFiles.gotoBtn%>
+                                <div class="go-to-btn-icon"></div>
+                            </div> -->
+                        </div>
+
+                        <div class="no-results">
+                            <div>
+                                <img src="/dist/img/my-files/icon_none.png">
+                            </div>
+                            <div class="no-results-text"><%= myFiles.noResults%></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination-box" style="display: none;">
+                    <div class="pagination-container">
+                        <img src="/dist/img/my-files/pull_prev.svg" class="prev-page">
+                        <div class="pages-wrapper">
+                            <ul class="pages"></ul>
+                        </div>
+                        <img src="/dist/img/my-files/pull_next.svg" class="next-page">
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="preview-large-box">
+            <div class="icon-close">
+                <img src="/dist/img/my-files/icon_close.svg" alt="">
+            </div>
+            <div class="preview-container">        
+                <div class="video-container">
+                </div>
+                <div class="img-container">
+                    <img src="" alt="Image Preview" class="preview-img">
+                </div>
+
+                <div class="preview-btns-box">
+                    <div class="preview-btn preview-share">
+                        <img src="/dist/img/my-files/icon_share.svg" alt="">
+                        <%= myFiles.share%>
+                    </div>
+                    <div></div>
+                    <div class="preview-btn preview-download">
+                        <img src="/dist/img/my-files/icon_download.svg" alt="">
+                        <%= myFiles.download%>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-dropdown-menu-box" style="display: none;">
+            <div class="filter-dropdown-menu-m" >
+                <div class="item select-all active" data-value="0">
+                    <div class="item-text"><%= myFiles.selectAll%></div>
+                </div>
+                <div class="item select-img" data-value="1">
+                    <div class="item-text"><%= myFiles.selectImg%></div>
+                </div>
+                <div class="item select-video" data-value="2">
+                    <div class="item-text"><%= myFiles.selectVideo%></div>
+                </div>
+            </div>  
+        </div>
+        
+        <div class="more-operation-box" style="display: none;">
+            <div class="more-dropdown-menu-m " >
+                <div class="item item-share" data-value="0">
+                    <img src="/dist/img/my-files/icon_win_Share.svg">
+                    <div class="item-text"><%= myFiles.share%></div>
+                </div>
+                <div class="item item-download">
+                    <img src="/dist/img/my-files/icon_win_download.svg" class="item-icon">
+                    <div class="item-text"><%= myFiles.download%></div>
+                </div>
+                <div class="item item-rename">
+                    <img src="/dist/img/my-files/icon_win_Rename.svg" class="item-icon">
+                    <div class="item-text"><%= myFiles.rename%></div>
+                </div>
+                <div class="item item-delete" data-value="2">
+                    <img src="/dist/img/my-files/delete_red.svg">
+                    <div class="item-text text-delete"><%= myFiles.delete%></div>
+                </div>
+
+                <div class="cancel-btn"><%= myFiles.Cancel%></div>
+            </div>  
+        </div>
+
+        
+    </main>
+  
+    <share-dialog id="shareDialogEl"></share-dialog>
+
+    <%- include('../patiles/footer'); -%>
+
+    
+    <script type="text/javascript" src="/dist/js/share-dialog/index.js"></script>
+    <script type="text/javascript" src="/dist/js/bottom-message/index.js"></script>
+    <script type="text/javascript" src="/dist/js/jszip.min.js"></script>
+    <script src="/dist/js/moment/moment.min.js"></script>
+    <script src="/dist/js/moment/locales.min.js"></script>
+    <script src="/dist/js/bottom-message/index.js" type="module"></script>
+    <script src="/dist/js/popup/index.js" type="module"></script>
+    <script src="/dist/js/popup/popup_init.js"></script>
+    <script type="text/javascript" src="/dist/js/my-files.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script>
+        eruda.init()
+    </script> -->
+
+
+    <script>
+
+    </script>
+
+  </body>
+</html>

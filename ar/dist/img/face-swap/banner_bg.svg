@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="759.016" viewBox="0 0 1920 759.016">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="路径_1" data-name="路径 1" d="M0,0H1920V759.016H0Z" transform="translate(0 66)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#588bff"/>
+      <stop offset="0.368" stop-color="#58acff"/>
+      <stop offset="0.619" stop-color="#6a65ff"/>
+      <stop offset="1" stop-color="#9f65b9"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <rect id="矩形_10" data-name="矩形 10" width="940" height="758.662" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="矩形_14" data-name="矩形 14" width="555" height="758.662" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" y1="0.519" x2="0.927" y2="0.521" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#588bff"/>
+      <stop offset="0.207" stop-color="#588aff"/>
+      <stop offset="0.383" stop-color="#8985ff"/>
+      <stop offset="1" stop-color="#9f65b9" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="蒙版组_27" data-name="蒙版组 27" transform="translate(0 -66)" clip-path="url(#clip-path)">
+    <path id="路径_16" data-name="路径 16" d="M0,0H1920V759.016H0Z" transform="translate(0 66)" fill="#fff"/>
+    <g id="组_10182" data-name="组 10182" transform="translate(900 66)">
+      <path id="路径_173872" data-name="路径 173872" d="M35.817,7.462,171.851.593,138.217,627.905,2.183,634.774Z" transform="translate(652.497 126.174) rotate(30)" opacity="0.4" fill="url(#linear-gradient)"/>
+      <g id="蒙版组_2" data-name="蒙版组 2" clip-path="url(#clip-path-2)">
+        <path id="路径_173873" data-name="路径 173873" d="M56.585,7.533,192.619.665l-53.15,991.309L3.435,998.842Z" transform="translate(585.664 -108.169) rotate(30)" fill="#f1f6fc"/>
+        <path id="路径_173874" data-name="路径 173874" d="M56.585,7.533,192.619.665l-53.15,991.309L3.435,998.842Z" transform="translate(746.664 -108.169) rotate(30)" fill="#dfeafd"/>
+      </g>
+      <g id="蒙版组_4" data-name="蒙版组 4" transform="translate(491)" clip-path="url(#clip-path-3)">
+        <path id="路径_173875" data-name="路径 173875" d="M0,0,136.035,6.868l53.15,991.309L53.15,991.309Z" transform="translate(747.248 758.571) rotate(150)" fill="#f1f6fc" opacity="0.54"/>
+      </g>
+    </g>
+    <rect id="矩形_15" data-name="矩形 15" width="590" height="758.662" transform="translate(0 66)" opacity="0.08" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

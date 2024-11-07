@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_31796" data-name="Rectangle 31796" width="28" height="28" transform="translate(953 486)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="btn_video-voice_normal" transform="translate(-953 -486)" clip-path="url(#clip-path)">
+    <path id="Path_2531" data-name="Path 2531" d="M18.245,728a7,7,0,0,1,0,8m-6.111-11.634-3.166,3.165a2.16,2.16,0,0,1-.36.322,1.008,1.008,0,0,1-.289.119,2.111,2.111,0,0,1-.482.028H6.1a2.484,2.484,0,0,0-1.054.109,1,1,0,0,0-.437.437A2.485,2.485,0,0,0,4.5,729.6v4.8a2.485,2.485,0,0,0,.109,1.054,1,1,0,0,0,.437.437A2.484,2.484,0,0,0,6.1,736H7.837a2.111,2.111,0,0,1,.482.028.98.98,0,0,1,.289.119,2.16,2.16,0,0,1,.36.322l3.166,3.165c.428.429.643.643.826.657a.5.5,0,0,0,.419-.173c.12-.141.12-.444.12-1.049V724.931c0-.606,0-.908-.12-1.049a.5.5,0,0,0-.419-.173C12.777,723.723,12.563,723.937,12.134,724.366Z" transform="translate(955 -232.208)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

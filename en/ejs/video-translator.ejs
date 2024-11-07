@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 50px">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=no"
+    />
+    <title><%- videoTranslate['title']-%></title>
+    <meta
+      name="<%- videoTranslate['description'].name-%>"
+      content="<%- videoTranslate['description'].content-%>"
+    />
+    <link rel="stylesheet" href="/dist/css/common.css" />
+    <link rel="stylesheet" href="/dist/css/swiper.min.css" />
+    <link rel="stylesheet" href="/dist/css/video-translate.css" />
+    <!-- <link rel="stylesheet" href="/dist/css/ai-image-generator-common.css" /> -->
+    <script type="text/javascript" src="/dist/lan/normal.js"></script>
+    <link rel="canonical" href="https://www.vidqu.ai/video-translator.html" />
+    <%- include('../patiles/head'); -%>
+    <script src="/dist/js/lottie-player.js"></script>
+    <script>
+      const videoTranslate = jsonData.videoTranslate;
+      const videoTrans = videoTranslate["javascript"];
+      const videoTransText = videoTrans;
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CW3Q6HBRV8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CW3Q6HBRV8");
+    </script>
+  </head>
+
+  <body>
+  <%- include('../patiles/header.ejs'); -%>
+    <section class="video_tra">
+      <div class="video_tra_banner">
+        <img class="mob_bottom_bg" src="/dist/img/video-translate/bg_mob.png" alt="">
+        <div class="wrapper">
+          <h1><%- videoTranslate['h1']-%></h1>
+          <p><%- videoTranslate['banner_p']-%></p>
+          <div class="banner_tra">
+            <div class="tra_left">
+              <video
+                id="getLoadedDom_video1"
+                playsinline
+                webkit-playsinline
+                style="display: none"
+              ></video>
+              <video
+                id="getLoadedDom_video2"
+                playsinline
+                webkit-playsinline
+                style="display: none"
+              ></video>
+              <div class="default_box"></div>
+              <div class="upload_box">
+                <video class="pre_img"></video>
+                <div class="mask"></div>
+                <div class="mask_text">
+                  <div class="mask_icon"></div>
+                  <div>
+                    <div class="text1"><%- videoTranslate['mask_text1']-%></div>
+                    <div class="text2"><%- videoTranslate['mask_text2']-%></div>
+                  </div>
+                </div>
+                <div class="loading_box">
+                  <!-- <div class="loading_icon"></div> -->
+                  <div class="lottie_box">
+                    <lottie-player src="/dist/img/video-translate/loading.json" background="transparent" speed="1"
+                    style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                  </div>
+                  <div class="loading_text">
+                    <%- videoTranslate['loading_text']-%>
+                  </div>
+                </div>
+                <video id="pre_video" crossorigin="anonymous"></video>
+                <div class="play_btn"></div>
+                <div class="play_btn1"></div>
+                <div class="video_loading_icon"></div>
+              </div>
+              <div class="btn_box">
+                <div class="tip">
+                  <div class="tip_icon"></div>
+                  <div class="tip_text"><%- videoTranslate['tip_text']-%></div>
+                </div>
+                <div class="btn_content">
+                  <div class="btn zoom">
+                    <div class="icon"></div>
+                    <div class="text"><%- videoTranslate['btn1']-%></div>
+                  </div>
+                  <!-- <div class="btn_edit btnM">
+                    <div class="icon"></div>
+                    <div class="text"><%- videoTranslate['btn_edit']-%></div>
+                    <div class="btn_edit_loading_box">
+                      <img
+                        src="/dist/img/_common/loading2.png"
+                        class="btn_edit_loading"
+                      />
+                    </div>
+                  </div> -->
+                  <div class="btn share">
+                    <div class="icon"></div>
+                    <div class="text"><%- videoTranslate['btn2']-%></div>
+                  </div>
+                  <div class="btn download_video">
+                    <div class="icon"></div>
+                    <div class="text"><%- videoTranslate['btn3']-%></div>
+                  </div>
+                </div>
+              </div>
+              <div class="upgrade_banner_1" style="display: none">
+                <div class="design_icon"></div>
+                <div class="upgrade_banner_head">
+                  <div class="upgrade_banner_title">
+                    <%- videoTranslate['upgrade_title_free']-%>
+                  </div>
+                  <div class="upgrade_banner_btn">
+                    <%- videoTranslate['upgrade_btn_free']-%>
+                  </div>
+                </div>
+                <div class="upgrade_banner_content">
+                  <div class="upgrade_banner_item item1">
+                    <%- videoTranslate['upgrade_item1']-%>
+                  </div>
+                  <div class="upgrade_banner_item item2">
+                    <%- videoTranslate['upgrade_item2']-%>
+                  </div>
+                  <div class="upgrade_banner_item item3">
+                    <%- videoTranslate['upgrade_item3']-%>
+                  </div>
+                  <div class="upgrade_banner_item item4">
+                    <%- videoTranslate['upgrade_item4']-%>
+                  </div>
+                  <div class="upgrade_banner_item item5">
+                    <%- videoTranslate['upgrade_item5']-%>
+                  </div>
+                </div>
+                <div class="m_btn">
+                  <button class="upgrade_banner_btn" id="mob">
+                    <%- videoTranslate['upgrade_btn_free']-%>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="tra_right">
+              <div class="tra_box step1">
+                <input
+                  type="file"
+                  accept=".m4v, .mp4, .mov, .webm"
+                  class="video_upload_input"
+                />
+                <div class="step_tab_box">
+                  <div class="step_tab tab1 active" style="margin-right: 0;">
+                    <%- videoTranslate['step_tab1']-%>
+                  </div>
+                  <div class="step_tab tab2" style="display: none;">
+                    <%- videoTranslate['step_tab2']-%>
+                  </div>
+                </div>
+                <div class="step_content">
+                  <div class="step_src_none">
+                    <div class="upload_icon"></div>
+                    <div class="upload_text">
+                      <div class="text">
+                        <%- videoTranslate['upload_text']-%>
+                      </div>
+                      <div class="des des_isfree"><%- videoTranslate['upload_des']-%></div>
+                      <div class="des des_ispro"><%- videoTranslate['upload_des_pro']-%></div>
+                    </div>
+                  </div>
+                  <div class="step_src_url">
+                    <div class="input_box">
+                      <div class="input_icon"></div>
+                      <input
+                        type="text"
+                        class="input_url"
+                        placeholder="<%- videoTranslate['input_placeholder']-%>"
+                      />
+                      <div class="get_url_icon">
+                        <div class="icon"></div>
+                      </div>
+                    </div>
+                    <div class="input_des">
+                      <div class="input_des_icon"></div>
+                      <div class="input_des_text">
+                        <%- videoTranslate['input_des']-%>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step_src_style1">
+                    <div class="delete_icon"></div>
+                    <div class="show_step_video">
+                      <div class="video_img">
+                        <img class="small_img" alt="" />
+                        <div class="icon"></div>
+                      </div>
+                      <div class="video_info_box">
+                        <div class="video_info_title"></div>
+                        <div class="video_info_duration"></div>
+                      </div>
+                    </div>
+                    <div class="show_step_des">
+                      <div class="show_step_icon"></div>
+                      <div class="show_step_text">
+                        <%- videoTranslate['input_des']-%>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step_src_style2">
+                    <div class="delete_icon"></div>
+                    <div class="show_step_video">
+                      <div class="video_img">
+                        <img class="small_img" alt="" />
+                        <div class="icon"></div>
+                      </div>
+                      <div class="video_info_box">
+                        <div class="video_info_title"></div>
+                        <div class="video_info_duration"></div>
+                      </div>
+                    </div>
+                    <div class="show_step_des">
+                      <div class="show_step_icon"></div>
+                      <div class="show_step_text">
+                        <%- videoTranslate['input_des']-%>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step_content_loading">
+                    <div class="step_content_loading_icon"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tra_box step2">
+                <div class="step_choose">
+                  <div class="step2_choose_box">
+                    <div class="choose_item choose0">
+                      <div class="choose_text">
+                        <%- videoTranslate['choose0']-%>
+                      </div>
+                      <div class="select_contry select_contry1">
+                        <div class="origin_contry default">
+                          <div class="hidden-input">
+                            <input type="text" class="form-control" />
+                          </div>
+                          <div class="hidden-input">
+                            <input type="password" class="form-control" />
+                          </div>
+                          <input
+                            type="text"
+                            id="origin_lan"
+                            autocomplete="off"
+                          />
+                        </div>
+                        <div class="select_icon original_lan"></div>
+                        <div class="select_box selectOriginLan"></div>
+                      </div>
+                    </div>
+                    <div class="choose_item choose1">
+                      <div class="choose_text">
+                        <%- videoTranslate['choose1']-%>
+                      </div>
+                      <div class="select_contry select_contry2">
+                        <img class="contry_icon default" alt="icon" />
+                        <div class="contry_name default"></div>
+                        <div class="select_icon"></div>
+                        <div class="select_box selectContry"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="choose_item choose2">
+                    <div class="choose_text">
+                      <%- videoTranslate['choose2']-%>
+                    </div>
+                    <div class="info info_choose2">
+                      <div class="info_box">
+                        <div class="info_title">
+                          <%- videoTranslate['choose2_tit']-%>
+                        </div>
+                        <div class="info_item">
+                          <%- videoTranslate['choose2_dec']-%>
+                        </div>
+                      </div>
+                    </div>
+                    <label class="switch">
+                      <input
+                        type="checkbox"
+                        class="toggleSwitch toggleSwitch1"
+                      />
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                  <div class="choose_item choose2_1">
+                    <div class="choose_text">
+                      <%- videoTranslate['choose2_1']-%>
+                    </div>
+                    <div class="info info_choose2_1">
+                      <div class="info_box">
+                        <div class="info_title">
+                          <%- videoTranslate['choose2_1_tit']-%>
+                        </div>
+                        <div class="info_item">
+                          <%- videoTranslate['choose2_1_dec']-%>
+                        </div>
+                      </div>
+                    </div>
+                    <label class="switch">
+                      <input
+                        type="checkbox"
+                        class="toggleSwitch toggleSwitch2_1"
+                      />
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                  <div class="choose_item choose3">
+                    <div class="choose_text">
+                      <%- videoTranslate['choose3']-%>
+                    </div>
+                    <div class="info info_choose3">
+                      <div class="info_box">
+                        <div class="info_title">
+                          <%- videoTranslate['info_title']-%>
+                        </div>
+                        <div class="info_item">
+                          <%- videoTranslate['info1']-%>
+                        </div>
+                        <div class="info_item" id="free_show">
+                          <%- videoTranslate['info2']-%>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="beta"><%- videoTranslate['beta']-%></div>
+                    <label class="switch">
+                      <input
+                        type="checkbox"
+                        class="toggleSwitch toggleSwitch2"
+                      />
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                  <div class="choose_item choose4">
+                    <div class="choose_text">
+                      <%- videoTranslate['choose4']-%>
+                    </div>
+                    <div class="info info_choose4">
+                      <div class="info_box">
+                        <div class="info_title">
+                          <%- videoTranslate['choose4_tit']-%>
+                        </div>
+                        <div class="info_item">
+                          <%- videoTranslate['choose4_dec']-%>
+                        </div>
+                      </div>
+                    </div>
+                    <label class="switch">
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="toggleSwitch toggleSwitch3"
+                      />
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="tra_box step3">
+                <div class="translate_btn">
+                  <div class="translate_btn_text">
+                    <%- videoTranslate['btn_tra']-%>
+                  </div>
+                  <div class="time_icon_box">
+                    <div class="time_icon"></div>
+                    <div class="time_text"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="demo_video_1" style="display: none">
+            <div class="demo_title"><%- videoTranslate['demo_title']-%></div>
+            <div class="demo_box"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dialog_mask"></div>
+      <div class="dialog_content">
+        <div class="close_icon"></div>
+        <div class="video_box">
+          <div class="large_play_icon"></div>
+          <video
+            id="large_video"
+            crossorigin="anonymous"
+            playsinline
+            webkit-playsinline
+          ></video>
+          <div class="btn_share">
+            <div class="btn_icon"></div>
+            <div class="text"><%- videoTranslate['btn2']-%></div>
+          </div>
+          <!-- <div class="btn_edit btnM larger">
+            <div class="icon"></div>
+            <div class="text"><%- videoTranslate['btn_edit']-%></div>
+            <div class="btn_edit_loading_box">
+              <img src="/dist/img/_common/loading2.png" class="btn_edit_loading" />
+            </div>
+          </div> -->
+          <div class="btn_download">
+            <div class="btn_icon"></div>
+            <div class="text"><%- videoTranslate['btn3']-%></div>
+          </div>
+          <div class="largeVideo_loading_icon"></div>
+        </div>
+      </div>
+      <div class="tip_box">
+        <div class="tip_content">
+          <div class="tip_close_icon"></div>
+          <div class="tip_success">
+            <div class="suc_title">
+              <div class="suc_title_icon"></div>
+              <div class="title_text"><%- videoTranslate['title_text']-%></div>
+            </div>
+            <div class="suc_text"><%- videoTranslate['suc_text']-%></div>
+            <div class="direction_rtl">
+              <div class="suc_btn"><%- videoTranslate['btn_ok']-%></div>
+            </div>
+          </div>
+          <div class="tip_failed">
+            <div class="failed_title">
+              <div class="failed_title_icon"></div>
+              <div class="title_text">
+                <div class="title_text_tip">
+                  <%- videoTranslate['failed_title']-%>
+                </div>
+                <div class="title_text_des"></div>
+              </div>
+            </div>
+            <div class="direction_rtl">
+              <div class="failed_btn">
+                <img
+                  src="/dist/img/video-translate/bth_icon_black_coins.svg"
+                  class="icon_coins"
+                />
+                <%- videoTranslate['btn_ok']-%>
+              </div>
+            </div>
+          </div>
+          <div class="tip_progress">
+            <div class="progress_text">
+              <%- videoTranslate['progress_text']-%>
+            </div>
+            <div class="progress_container">
+              <div class="progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo_container">
+        <div class="demo_content">
+          <div class="demo_close"></div>
+          <div class="demo_dialog_name"></div>
+          <div class="demo_video_box">
+            <video id="demo_video"></video>
+            <div class="demo_play_icon"></div>
+          </div>
+          <div class="demo_btn">
+            <div class="demo_share">
+              <div class="btn_icon"></div>
+              <div class="text"><%- videoTranslate['btn2']-%></div>
+            </div>
+            <div class="demo_download">
+              <div class="btn_icon"></div>
+              <div class="text"><%- videoTranslate['btn3']-%></div>
+            </div>
+          </div>
+          <div class="pre_btn">
+            <div class="icon"></div>
+          </div>
+          <div class="next_btn">
+            <div class="icon"></div>
+          </div>
+        </div>
+      </div>
+      <share-dialog
+        id="shareDialogEl"
+        fromPage="video-translate"
+      ></share-dialog>
+    </section>
+    <div class="dialog_proofread">
+      <div class="proofread_head_box">
+        <div class="proofread_head">
+          <img src="/dist/img/video-translate/vidqu_logo_mob.svg" alt="" />
+        </div>
+        <div class="proofread_back">
+          <div class="back_icon">
+            <img src="/dist/img/video-translate/back_icon.svg" alt="" />
+          </div>
+          <div class="back_text"><%- videoTranslate['back_text']-%></div>
+        </div>
+      </div>
+      <div class="proofread_content">
+        <div class="subtitle_content"></div>
+        <div class="loading_content">
+          <div class="contry_loading">
+            <div class="contry_loading_item">
+              <div class="loading_item_box"></div>
+            </div>
+            <div class="contry_loading_item">
+              <div class="loading_item_box"></div>
+            </div>
+          </div>
+          <div class="item_loading">
+            <div class="top_loading">
+              <div class="top_loading_box"></div>
+            </div>
+            <div class="bottom_loading">
+              <div class="bottom_loading_item"></div>
+              <div class="bottom_loading_item"></div>
+            </div>
+          </div>
+          <div class="item_loading">
+            <div class="top_loading">
+              <div class="top_loading_box"></div>
+            </div>
+            <div class="bottom_loading">
+              <div class="bottom_loading_item"></div>
+              <div class="bottom_loading_item"></div>
+            </div>
+          </div>
+          <div class="item_loading">
+            <div class="top_loading">
+              <div class="top_loading_box"></div>
+            </div>
+            <div class="bottom_loading">
+              <div class="bottom_loading_item"></div>
+              <div class="bottom_loading_item"></div>
+            </div>
+          </div>
+          <div class="item_loading">
+            <div class="top_loading">
+              <div class="top_loading_box"></div>
+            </div>
+            <div class="bottom_loading">
+              <div class="bottom_loading_item"></div>
+              <div class="bottom_loading_item"></div>
+            </div>
+          </div>
+          <div class="item_loading">
+            <div class="top_loading">
+              <div class="top_loading_box"></div>
+            </div>
+            <div class="bottom_loading">
+              <div class="bottom_loading_item"></div>
+              <div class="bottom_loading_item"></div>
+            </div>
+          </div>
+          <div class="item_loading">
+            <div class="top_loading">
+              <div class="top_loading_box"></div>
+            </div>
+            <div class="bottom_loading">
+              <div class="bottom_loading_item"></div>
+              <div class="bottom_loading_item"></div>
+            </div>
+          </div>
+          <div class="item_loading">
+            <div class="top_loading">
+              <div class="top_loading_box"></div>
+            </div>
+            <div class="bottom_loading">
+              <div class="bottom_loading_item"></div>
+              <div class="bottom_loading_item"></div>
+            </div>
+          </div>
+          <div class="loading_tip">
+            <div class="loading_tip_title">
+              <%- videoTranslate['loading_tip_title']-%>
+            </div>
+            <div class="loading_tip_subtitle">
+              <%- videoTranslate['loading_tip_subtitle']-%>
+            </div>
+            <div class="loading_tip_progress_box">
+              <div class="loading_tip_progress"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom_content">
+          <div class="bottom_content_btn"><%- videoTranslate['btn_srt']-%></div>
+        </div>
+        <div class="preview_content">
+          <div class="preview_container">
+            <div class="video_box">
+              <video
+                class="proofread_video"
+                playsinline
+                webkit-playsinline
+              ></video>
+              <div class="controls_box">
+                <div class="playpause_box">
+                  <img
+                    class="controls_play"
+                    src="/dist/img/video-translate/icon_video-play.svg"
+                  />
+                  <img
+                    class="controls_pause"
+                    src="/dist/img/video-translate/btn_video-pause.svg"
+                  />
+                </div>
+                <div class="duration_show">00:00/00:00</div>
+                <input
+                  type="range"
+                  step="any"
+                  min="0"
+                  max="100"
+                  class="progressbar"
+                  value="0"
+                />
+                <div class="voice_box">
+                  <img
+                    src="/dist/img/video-translate/btn_video-voice_normal.svg"
+                    class="voice_icon"
+                  />
+                  <div class="voice_set">
+                    <div class="voice_num">20</div>
+                    <div class="voice_range">
+                      <input
+                        type="range"
+                        step="any"
+                        min="0"
+                        max="100"
+                        class="voicebar"
+                        value="20"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="subtitle_preview">
+                <%- videoTranslate['subtitle_preview']-%>
+              </div>
+            </div>
+            <div class="proofread_choose_box">
+              <div class="choose_item choose5">
+                <div class="choose_text"><%- videoTranslate['choose2']-%></div>
+                <div class="info info_choose5">
+                  <div class="info_box">
+                    <div class="info_title">
+                      <%- videoTranslate['choose2_tit']-%>
+                    </div>
+                    <div class="info_item">
+                      <%- videoTranslate['choose2_dec']-%>
+                    </div>
+                  </div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" class="toggleSwitch toggleSwitch5" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="choose_item choose5_1">
+                <div class="choose_text"><%- videoTranslate['choose2_1']-%></div>
+                <div class="info info_choose5_1">
+                  <div class="info_box">
+                    <div class="info_title">
+                      <%- videoTranslate['choose2_1_tit']-%>
+                    </div>
+                    <div class="info_item">
+                      <%- videoTranslate['choose2_1_dec']-%>
+                    </div>
+                  </div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" class="toggleSwitch toggleSwitch2_1" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="choose_item choose6">
+                <div class="choose_text"><%- videoTranslate['choose3']-%></div>
+                <div class="info info_choose6">
+                  <div class="info_box">
+                    <div class="info_title">
+                      <%- videoTranslate['info_title']-%>
+                    </div>
+                    <div class="info_item"><%- videoTranslate['info1']-%></div>
+                    <div class="info_item" id="p_free_show">
+                      <%- videoTranslate['info2']-%>
+                    </div>
+                  </div>
+                </div>
+                <div class="beta"><%- videoTranslate['beta']-%></div>
+                <label class="switch">
+                  <input type="checkbox" class="toggleSwitch toggleSwitch6" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div class="proofread_translate_btn">
+              <div class="proofread_translate_btn_text">
+                <%- videoTranslate['btn_tra']-%>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('../patiles/footer'); -%>
+    <script src="/dist/js/jquery-2.1.4.min.js"></script>
+    <script src="/dist/js/swiper-bundle.min.js"></script>
+    <script src="/dist/js/common.js"></script>
+    <script src="/dist/js/share-dialog/index.js" type="module"></script>
+    <script src="/dist/js/bottom-message/index.js" type="module"></script>
+    <script src="/dist/js/video-translate.js"></script>
+  </body>
+</html>

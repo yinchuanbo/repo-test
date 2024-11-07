@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% const version="1.0.0.0" ; %>
+    <meta charset="UTF-8" />
+    <title>Image Detail</title>
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,viewport-fit=cover"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@vidnoz" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+    <meta property="fb:app_id" content="114829304922527" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <link rel="canonical" href="" />
+    <script src="/dist/js/jquery-2.1.4.min.js"></script>
+    <%- include('../patiles/ai-image-head'); -%>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/dist/css/image-detail.css?v=<%= version %>"
+    />
+  </head>
+  <body>
+    <%- include('../patiles/header.ejs'); -%> <%-
+    include('../patiles/IG-header.ejs'); -%>
+    <main class="detail_main" data-detailID="5e124d36bf0a4184b5ee304268f00608">
+      <section class="detail_container">
+        <div class="wrapper">
+          <div class="back_icon"></div>
+          <div class="detail_info_box">
+            <div class="detail_info">
+              <div class="info_left">
+                <div class="img_pre_icon">
+                  <img
+                    src="/dist/img/image-detail/icon_back.svg"
+                    width="8"
+                    height="15"
+                    alt="icon"
+                  />
+                </div>
+                <div class="img_next_icon">
+                  <img
+                    src="/dist/img/image-detail/icon_back.svg"
+                    width="8"
+                    height="15"
+                    alt="icon"
+                  />
+                </div>
+                <div class="info_img_box" data-width="345px">
+                  <div class="info_img">
+                    <img
+                      class="show_img"
+                      src="https://genimg-cdn-test1.vidqu.ai/assets/20240823/4251/5f395008-6152-453d-86a2-117585727855.png"
+                      alt=""
+                      crossorigin="anonymous"
+                    />
+                    <!-- <img
+                      class="show_img"
+                      src="https://genimg-cdn-test1.vidqu.ai/assets/20240911/3143/730580e1-2e9b-44a3-aaf5-c8ed842af8a3.png"
+                      alt=""
+                    /> -->
+                  </div>
+                </div>
+              </div>
+              <div class="info_right">
+                <div class="btn_remix"><%- IGdetail.btn_remix %></div>
+                <div class="user_box">
+                  <img
+                    class="user_avatar"
+                    src="/dist/img/image-detail/icon_avatar.svg"
+                    width="24"
+                    height="24"
+                    alt="user_avatar"
+                  />
+                  <h1 class="user_name">Limanman</h1>
+                </div>
+                <div class="prompts_box">
+                  <div class="prompts_tip">
+                    <div class="tip_text"><%- IGdetail.prompts %></div>
+                    <div class="icon_copy"></div>
+                  </div>
+                  <div class="prompts_content">
+                    <div class="prompts_text">
+                      Create a full body portrait of a woman in the Japanese
+                      retro anime style of the 80s and 90s,The scene features a
+                      top model with wild hair,exuding confidence and allure.
+                      She stands in a dynamic pose that highlights her form and
+                      curves set against a soft pink and yellow palett...
+                    </div>
+                  </div>
+                </div>
+                <div class="size_box">
+                  <div class="tip"><%- IGdetail.size %></div>
+                  <div class="text">512 x 512 px</div>
+                </div>
+                <div class="data_box" data-time="2024-08-12 10:04:20.792018Z">
+                  <div class="tip"><%- IGdetail.date %></div>
+                  <div class="text"></div>
+                </div>
+                <div class="model_box">
+                  <div class="tip"><%- IGdetail.model %></div>
+                  <div class="model_info">
+                    <img class="model_logo" width="41" height="41" alt="" />
+                    <div class="model_des">
+                      <div class="model_tag">Checkpoint</div>
+                      <div class="model_name">DpnutHoleMix</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn_icon_box">
+                  <div class="like_box">
+                    <div class="like_icon icon"></div>
+                    <div class="like_num num"></div>
+                  </div>
+                  <div class="view_box">
+                    <div class="view_icon icon"></div>
+                    <div class="view_num num"></div>
+                  </div>
+                  <div class="download_box icon"></div>
+                  <div class="share_box icon"></div>
+                </div>
+                <div class="generate_btn">
+                  <div class="btn_icon"></div>
+                  <div class="btn_text">Generate with this model</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail_explore">
+        <div class="explore_title">Explore More Inspirations</div>
+        <div class="explore_content"></div>
+      </section>
+    </main>
+    <div class="gotoHead">
+      <img src="/dist/img/IGhome/btn_top_normal.svg" />
+    </div>
+    <%- include('../patiles/footer.ejs'); -%>
+    <script type="text/javascript" src="/dist/js/IG-popup.js"></script>
+    <script src="/dist/js/ai-image-generator-common.js?v=<%= version %>"></script>
+    <script src="/dist/js/image-detail.js?v=<%= version %>"></script>
+    <script src="/dist/js/bottom-message/index.js" type="module"></script>
+  </body>
+</html>

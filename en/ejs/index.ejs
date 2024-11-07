@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    <%= home.title %>
+  </title>
+  <meta name="description" content=" <%= home.description %> " />
+  <meta name="keywords" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,viewport-fit=cover" />
+  <link rel="icon" href="/dist/img/FS-favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="/dist/css/index.css" />
+  <link rel="canonical" href="https://www.vidqu.ai" />
+  <meta name="google-site-verification" content="y5H6vnNdWbxMs1HkwrwoqjPsCuZW0Lwvk1IAP-K3JN8" />
+  <link rel="alternate" hreflang="en" href="https://www.vidqu.ai/" />
+  <link rel="alternate" hreflang="fr" href="https://fr.vidqu.ai/" />
+  <link rel="alternate" hreflang="de" href="https://de.vidqu.ai/" />
+  <link rel="alternate" hreflang="es" href="https://es.vidqu.ai/" />
+  <link rel="alternate" hreflang="pt" href="https://pt.vidqu.ai/" />
+  <link rel="alternate" hreflang="ja" href="https://jp.vidqu.ai/" />
+  <link rel="alternate" hreflang="it" href="https://it.vidqu.ai/" />
+  <link rel="alternate" hreflang="ar" href="https://ar.vidqu.ai/" />
+  <link rel="alternate" hreflang="ko" href="https://ko.vidqu.ai/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tw.vidqu.ai/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.vidqu.ai/" />
+  <%- include('../patiles/head'); -%>
+
+</head>
+
+<body>
+  <%- include('../patiles/header'); -%>
+    <main>
+      <div class="section_aiGirl">
+        <div class="section_box">
+          <div class="section_box_l">
+            <p class="title">Vidqu</p>
+            <h1 class="tips">AI Video Translator Online Free with Natural Voice</h1>
+            <div class="introducebox pcshow">
+              <div class="item">
+                <div class="icon"></div>
+                <p class="text">AI video translation in seconds</p>
+              </div>
+              <div class="item margintb10">
+                <div class="icon"></div>
+                <p class="text">Translate videos in 140+ languages</p>
+              </div>
+              <div class="item">
+                <div class="icon"></div>
+                <p class="text">Natural voice with lip-sync</p>
+              </div>
+            </div>
+            <div class="introduceboxs ydshow">
+              AI video translation in seconds<br>Translate videos in 140+ languages<br>Natural voice with lip-sync
+            </div>
+            <div class="section_aiGirl_btn btnAiGirl">
+              Free Translate Videos
+            </div>
+          </div>
+          <div class="section_box_r">
+          </div>
+        </div>
+      </div>
+      <div class="home_banner">
+        <div class="bannerBox">
+          <div class="box_image"></div>
+          <div class="box_des">
+            <h2 class="box_name"><span>Vidqu</span><br>All-in-One Free AI Video Maker</h2>
+            <div class="box_description">
+              Meet the best free online AI video maker. Start your easy, fast, and cost-free AI video creation journey!
+            </div>
+            <!-- <button class="homeBtn btnA">Coming Soon</button> -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('../patiles/footer'); -%>
+
+</body>
+<script>
+  $(window).ready(function () {
+    $(".btnA").click(() => {
+      gtag('event', 'btnclick_homepage_faceswap')
+      window.location = '/face-swap.html'
+    })
+    $(".btnAiGirl").click(() => {
+      gtag('event', 'btnclick_homepage_videotrans')
+      window.location = 'https://www.vidqu.ai/video-translator.html'
+    })
+  })
+
+</script>
+
+</html>

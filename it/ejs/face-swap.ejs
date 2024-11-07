@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= faceSwap.title %></title>
+    <meta name="description" content=" <%= faceSwap.description %> " />
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,viewport-fit=cover"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/dist/css/face-swap-credits.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/dist/css/face-swap.css" />
+    <link rel="preload" href="/dist/img/face-swap/btn_video_hover.png" />
+    <link rel="preload" href="/dist/img/face-swap/btn_photo_hover.png" />
+    <link rel="canonical" href="https://it.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="en" href="https://www.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="fr" href="https://fr.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="de" href="https://de.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="es" href="https://es.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="pt" href="https://pt.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="ja" href="https://jp.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="it" href="https://it.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="ar" href="https://ar.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="ko" href="https://ko.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="zh-TW" href="https://tw.vidqu.ai/face-swap.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.vidqu.ai/face-swap.html" />
+    <%- include('../patiles/head',{isBlack:false}); -%>
+  </head>
+  
+  <body>
+  <%- include('../patiles/header.ejs'); -%>
+    <main class="faceSwap_main">
+      <div class="mobile_background"></div>
+      <h1 class="faceSwap_h1"><%- faceSwap.h1 %></h1>
+      <div class="faceSwap_des"><%= faceSwap.h1_p %></div>
+      <div class="faceSwap_tabBox_outside">
+        <div class="faceSwap_tabBox">
+          <div class="faceSwap_tab active" tabname="tab_photo">
+            <%= faceSwap.tab_photo %>
+          </div>
+          <div class="faceSwap_tab" tabname="tab_video">
+            <%= faceSwap.tab_video %>
+          </div>
+          <a
+            href="/multiple-face-swap.html"
+            class="faceSwap_tab"
+            tabname="tab_multiple"
+            target="_blank"
+            onclick="gtag('event', 'click_faceswap_multitab')"
+            ><%= faceSwap.tab_multiple %></a><img
+            src="/dist/img/icon_new_vidqu.svg"
+            class="fs_new_tag"
+        />
+        </div>
+      </div>
+
+      <div id="photo_Face_swapper_container" class="main_box">
+        <div class="operation_box">
+          <div class="upload_box">
+            <div class="stepA step">
+              <div class="stepTitle">
+                <div class="step_logo">1</div>
+                <div class="step_font"><%= faceSwap.face_step1 %></div>
+              </div>
+              <div class="stepBox">
+                <div class="step_loadingBox">
+                  <img
+                    src="/dist/img/face-swap/icon_loading.png"
+                    alt=""
+                    class="icon_upload_loading"
+                  />
+                </div>
+                <img
+                  src="/dist/img/face-swap/btn_photo_normal.png"
+                  alt=""
+                  class="step_P"
+                />
+                <div class="btn_changer"></div>
+                <div class="uploader_loading_mask"></div>
+              </div>
+            </div>
+            <div class="add">
+              <!-- <img src="/dist/img/face-swap/icon_add.png" alt="" /> -->
+            </div>
+            <div class="stepB step">
+              <div class="stepTitle">
+                <div class="step_logo">2</div>
+                <div class="step_font"><%= faceSwap.face_step2 %></div>
+              </div>
+              <div class="stepBox">
+                <div class="step_loadingBox">
+                  <img
+                    src="/dist/img/face-swap/icon_loading.png"
+                    alt=""
+                    class="icon_upload_loading"
+                  />
+                </div>
+                <img
+                  src="/dist/img/face-swap/btn_photo_normal.png"
+                  alt=""
+                  class="step_P"
+                />
+                <div class="btn_changer"></div>
+                <div class="uploader_loading_mask"></div>
+              </div>
+            </div>
+          </div>
+          <div class="step_C">
+            <button class="disabled change_face_btn">
+              <span class="submit_text"><%= faceSwap.SwapFaceNow %></span>
+              <div class="generating-animate" style="">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="v_step3_btn_credits" style="display: none">
+                <img
+                  class="v_button_icon"
+                  src="/dist/js/credits/img/icon_small_coins.svg"
+                  alt=""
+                />
+                <span class="v_step3_btn_credits_span"></span>
+              </div>
+            </button>
+          </div>
+          <div class="high_quality_append_dom_photo"></div>
+          <div class="swap_credit_banner"></div>
+        </div>
+        <div class="spread_box">
+          <div class="spread_box_title"><%= faceSwap.face_step3 %></div>
+          <div class="spread_box_container">
+            <img
+              src="/dist/img/face-swap/photo_banner.png"
+              alt="Face Swap Foto Gratis"
+              class="spread_image"
+            />
+            <div class="loading_box">
+              <lottie-player
+                class="animate_content"
+                src="/dist/img/face-swap/lottie-player.json"
+                background="transparent"
+                speed="1"
+                style="width: 88px; height: 88px"
+                loop
+                autoplay
+              >
+              </lottie-player>
+              <img
+                src="/dist/img/face-swap/icon_loading.png"
+                alt=""
+                class="icon_upload_loading"
+              />
+              <p>
+                <span class="faceSwapProgress"><%= faceSwap.loading %></span>
+              </p>
+            </div>
+
+            <div class="v_mask" id="createTaskMaskPhoto">
+              <div class="v_mask_content v_mask_content2">
+                <img
+                  class="v_mask_icon"
+                  src="/dist/js/credits/img/icon_time.svg"
+                  alt=""
+                />
+                <div class="v_mask_tip">
+                  <div class="v_mask_p">
+                    <%= faceSwap.faceSwapPop01.Face_swapping %>
+                  </div>
+                  <div class="v_mask_span">
+                    <%- faceSwap.faceSwapPop01.mask_span %>
+                  </div>
+                  <div class="v_mask_unlock_priority">
+                    <%= faceSwap.faceSwapPop01.Unlock_priority %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="v_mask_background"></div>
+          </div>
+          <div class="spread_box_controls">
+            <div class="controls_item contrast">
+              <img src="/dist/img/face-swap/icon_contrast.png" alt="" />
+              <%= faceSwap.Contrast %>
+            </div>
+            <div class="controls_item zoomIn pc_show">
+              <img src="/dist/img/face-swap/icon_zoom-in.png" alt="" />
+              <%= faceSwap.Zoomin %>
+            </div>
+            <div class="controls_item share">
+              <img src="/dist/img/face-swap/icon_share.png" alt="" />
+              <%= faceSwap.Share %>
+            </div>
+            <div class="controls_item download">
+              <img src="/dist/img/face-swap/icon_donwload.png" alt="" />
+              <%= faceSwap.Download %>
+            </div>
+          </div>
+          <div class="my_files_tips">
+            <div><%= faceSwap.Your_Results_Are_Saved_at_My_Files %></div>
+            <div class="myfiles_check_Now_btn"><%= faceSwap.Check_Them_Now %></div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="video_Face_swapper_container"
+        class="main_box"
+        style="display: none"
+      >
+        <video
+          id="getLoadedDom_video"
+          crossorigin=""
+          playsinline=""
+          webkit-playsinline=""
+          style="display: none"
+        ></video>
+        <div class="operation_box">
+          <div class="upload_box">
+            <div class="stepA step">
+              <div class="stepTitle">
+                <div class="step_logo">1</div>
+                <div class="step_font"><%= faceSwap.video_step1 %></div>
+              </div>
+              <div class="stepBox">
+                <div class="step_loadingBox">
+                  <img
+                    src="/dist/img/face-swap/icon_loading.png"
+                    alt=""
+                    class="icon_upload_loading"
+                  />
+                </div>
+                <img
+                  src="/dist/img/face-swap/btn_video_normal.png"
+                  alt=""
+                  class="step_V"
+                />
+                <img
+                  src="/dist/img/face-swap/icon_big_video.png"
+                  alt=""
+                  class="icon_video"
+                />
+                <div class="btn_changer"></div>
+                <div class="uploader_loading_mask"></div>
+              </div>
+            </div>
+            <div class="add">
+              <!-- <img src="/dist/img/face-swap/icon_add.png" alt="" /> -->
+            </div>
+            <div class="stepB step">
+              <div class="stepTitle">
+                <div class="step_logo">2</div>
+                <div class="step_font"><%= faceSwap.video_step2 %></div>
+              </div>
+              <div class="stepBox">
+                <div class="step_loadingBox">
+                  <img
+                    src="/dist/img/face-swap/icon_loading.png"
+                    alt=""
+                    class="icon_upload_loading"
+                  />
+                </div>
+                <img
+                  src="/dist/img/face-swap/btn_photo_normal.png"
+                  alt=""
+                  class="step_P"
+                />
+                <div class="btn_changer"></div>
+                <div class="uploader_loading_mask"></div>
+              </div>
+            </div>
+          </div>
+          <div class="step_C">
+            <button class="change_video_btn disabled" id="v_swap_face_Now">
+              <span class="submit_text"><%= faceSwap.SwapFaceNow %></span>
+              <div class="generating-animate" style="">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="v_step3_btn_credits" style="display: none">
+                <img
+                  class="v_button_icon"
+                  src="/dist/js/credits/img/icon_small_coins.svg"
+                  alt=""
+                />
+                <span class="v_step3_btn_credits_span"></span>
+              </div>
+            </button>
+          </div>
+          <div class="high_quality_append_dom_video"></div>
+          <div class="swap_credit_banner"></div>
+        </div>
+        <div class="spread_box">
+          <div class="spread_box_title"><%= faceSwap.video_step3 %></div>
+          <div class="spread_box_container">
+            <video
+              class="video_node"
+              playsinline=""
+              webkit-playsinline=""
+              id="video_preview_dom"
+              style="display: none"
+              src=""
+            ></video>
+            <img
+              src="/dist/img/face-swap/video_banner.png"
+              alt="Free Video Face Swap"
+              class="spread_image img_gif_node"
+            />
+            <img
+              src="/dist/img/face-swap/icon_big_play.png"
+              alt=""
+              class="v_preview_playIcon"
+            />
+            <div class="v_preview_waitIcon">
+              <img src="/dist/img/face-swap/icon_loading.png" alt="" />
+            </div>
+            <div class="loading_box">
+              <lottie-player
+                class="animate_content"
+                src="/dist/img/face-swap/lottie-player.json"
+                background="transparent"
+                speed="1"
+                style="width: 88px; height: 88px"
+                loop
+                autoplay
+              >
+              </lottie-player>
+
+              <img
+                src="/dist/img/face-swap/icon_loading.png"
+                alt=""
+                class="icon_upload_loading"
+              />
+              <p>
+                <span class="faceSwapProgress"><%= faceSwap.loading %></span>
+              </p>
+            </div>
+            <div class="v_mask" id="createTaskMaskVideo">
+              <div class="v_mask_content v_mask_content2">
+                <img
+                  class="v_mask_icon"
+                  src="/dist/js/credits/img/icon_time.svg"
+                  alt=""
+                />
+                <div class="v_mask_tip">
+                  <div class="v_mask_p">
+                    <%= faceSwap.faceSwapPop01.Face_swapping %>
+                  </div>
+                  <div class="v_mask_span">
+                    <%- faceSwap.faceSwapPop01.mask_span %>
+                  </div>
+                  <div class="v_mask_unlock_priority">
+                    <%= faceSwap.faceSwapPop01.Unlock_priority %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="v_mask_background"></div>
+          </div>
+          <div class="spread_box_controls">
+            <div class="controls_item zoomIn pc_show">
+              <img src="/dist/img/face-swap/icon_zoom-in.png" alt="" />
+              <%= faceSwap.Zoomin %>
+            </div>
+            <div class="controls_item download">
+              <img src="/dist/img/face-swap/icon_donwload.png" alt="" />
+              <%= faceSwap.Download %>
+            </div>
+          </div>
+          <div class="my_files_tips">
+            <div><%= faceSwap.Your_Results_Are_Saved_at_My_Files %></div>
+            <div class="myfiles_check_Now_btn"><%= faceSwap.Check_Them_Now %></div>
+          </div>
+          <div class="video_extend_duration">
+            <div class="video_duration_title">
+              <%= faceSwap.faceSwapPop01.More_video_duration %>
+            </div>
+            <div class="video_duration_container">
+              <img
+                class="v_duration_icon"
+                src="/dist/img/banner_icon_15s.svg"
+                alt=""
+              />
+              <div class="v_duration_content">
+                <%- faceSwap.faceSwapPop01.More_duration_span %>
+              </div>
+            </div>
+            <div class="v_button_container">
+              <div class="v_other_button">
+                <%= faceSwap.faceSwapPop01.More_duration_but %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="face_img_show our_pics_box">
+      <p class="our_pics_title">
+        <b><%= faceSwap.demoTitle1 %></b>
+        <%= faceSwap.demoTitle2 %>
+      </p>
+      <div class="our_pics"></div>
+    </div>
+    <div id="large_modal">
+      <div class="close_large"></div>
+      <div class="larger_box">
+        <img src="" alt="" class="larger_img" />
+        <div class="larger_video">
+          <video src="" id="v_preview_larger_video"></video>
+          <img id="v_preview_larger_gif" />
+          <img
+            class="v_preview_larger_playIcon"
+            src="/dist/img/face-swap/icon_big_play.png"
+            alt=""
+          />
+        </div>
+        <div class="controls_large">
+          <div class="controls_btn contrast">
+            <img src="/dist/img/face-swap/icon_contrast_large.png" alt="" />
+            <%= faceSwap.Contrast %>
+          </div>
+          <div class="controls_btn share">
+            <img src="/dist/img/face-swap/icon_share_large.png" alt="" />
+            <%= faceSwap.Share %>
+          </div>
+          <div class="controls_btn download">
+            <img src="/dist/img/face-swap/icon_donwload_large.png" alt="" />
+            <%= faceSwap.Download %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input
+      type="file"
+      accept=".jpg, .png, .webp, .jpeg"
+      class="origin_uploader"
+      style="display: none"
+    />
+    <input
+      type="file"
+      accept=".jpg, .png, .webp, .jpeg"
+      class="change_uploader"
+      style="display: none"
+    />
+    <input
+      type="file"
+      accept=".jpg, .png, .webp, .jpeg"
+      class="video_upload_input_step2"
+      style="display: none"
+    />
+    <input
+      type="file"
+      accept=".m4v, .mp4, .mov, .webm, .gif"
+      class="video_upload_input_step1"
+      style="display: none"
+    />
+    <div class="larguage"></div>
+    <%- include('../patiles/footer'); -%>
+
+    <share-dialog id="shareDialogEl" fromPage="face-swap"></share-dialog>
+    <script src="/dist/js/face-api.min.js"></script>
+    <script type="text/javascript" src="/dist/js/swiper-bundle.min.js"></script>
+    <script src="/dist/js/share-dialog/index.js" type="module"></script>
+    <script src="/dist/js/bottom-message/index.js" type="module"></script>
+    <script src="/dist/js/lottie-player.js"></script>
+    <script type="text/javascript" src="/dist/js/credits/index.js"></script>
+    <script type="text/javascript" src="/dist/js/face-swap-index.js"></script>
+    <script type="text/javascript" src="/dist/js/face-swap.js"></script>
+    <script type="text/javascript" src="/dist/js/face-swap-video.js"></script>
+  </body>
+</html>

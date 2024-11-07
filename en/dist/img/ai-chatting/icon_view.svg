@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_31858" data-name="Rectangle 31858" width="16" height="16" transform="translate(890 46)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon_view" transform="translate(-890 -46)" clip-path="url(#clip-path)">
+    <path id="Path_1901" data-name="Path 1901" d="M2.333,410.159a1,1,0,0,1-.162-.328.782.782,0,0,1,0-.3,1,1,0,0,1,.162-.328C3.086,408.013,5.326,405,8.741,405s5.655,3.013,6.408,4.205a.994.994,0,0,1,.162.328.783.783,0,0,1,0,.3.994.994,0,0,1-.162.328c-.753,1.192-2.993,4.205-6.408,4.205S3.086,411.351,2.333,410.159Z" transform="translate(889.259 -355.682)" fill="none" stroke="#fffdf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_1902" data-name="Path 1902" d="M11.007,413.013A2.007,2.007,0,1,0,9,411.007,2.007,2.007,0,0,0,11.007,413.013Z" transform="translate(886.993 -357.007)" fill="none" stroke="#fffdf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

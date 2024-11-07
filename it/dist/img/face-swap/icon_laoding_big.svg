@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="75" viewBox="0 0 76 75">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.053" x2="0.5" y2="0.918" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.549"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="矩形_31690" data-name="矩形 31690" width="76" height="75" transform="translate(-3.74 -2.836)" stroke="#707070" stroke-width="1" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="0.053" x2="0.5" y2="0.918" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.549"/>
+    </linearGradient>
+  </defs>
+  <g id="icon_laoding_big" transform="translate(3.74 2.836)" clip-path="url(#clip-path)">
+    <path id="路径" d="M31.245.075a5.357,5.357,0,0,1,1.776,10.566A26.789,26.789,0,0,0,37.5,63.84V74.555A37.5,37.5,0,0,1,31.245.075Z" transform="translate(-3.24 -3.336)" fill="url(#linear-gradient)"/>
+    <path id="路径-2" data-name="路径" d="M27.973,3.954a5.357,5.357,0,0,1,7.565-.409A37.5,37.5,0,0,1,10.5,68.962V58.248A26.786,26.786,0,0,0,28.382,11.519,5.357,5.357,0,0,1,27.973,3.954Z" transform="translate(23.76 2.256)" fill="url(#linear-gradient-3)"/>
+  </g>
+</svg>

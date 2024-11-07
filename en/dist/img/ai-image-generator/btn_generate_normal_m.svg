@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="140" viewBox="0 0 600 140">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_31924" data-name="Rectangle 31924" width="600" height="140" transform="translate(326.59 1274)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x2="1" y2="1.08" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#624aff"/>
+      <stop offset="0.348" stop-color="#9646ef"/>
+      <stop offset="0.717" stop-color="#f73463"/>
+      <stop offset="1" stop-color="#ff852e"/>
+    </linearGradient>
+    <filter id="Rectangle_31922" x="-10" y="-10" width="620" height="160" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#624aff"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="1" y1="0.775" x2="0" y2="0.814" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fc6e3c"/>
+      <stop offset="1" stop-color="#c5bcff"/>
+    </linearGradient>
+  </defs>
+  <g id="btn_generate_normal" transform="translate(-326.59 -1274)" clip-path="url(#clip-path)">
+    <g transform="matrix(1, 0, 0, 1, 326.59, 1274)" filter="url(#Rectangle_31922)">
+      <rect id="Rectangle_31922-2" data-name="Rectangle 31922" width="560" height="100" rx="50" transform="translate(20 20)" fill="url(#linear-gradient)"/>
+    </g>
+    <path id="Rectangle_31922_-_Outline" data-name="Rectangle 31922 - Outline" d="M76,2A48.013,48.013,0,0,0,57.317,94.229,47.7,47.7,0,0,0,76,98H536A48.013,48.013,0,0,0,554.683,5.771,47.7,47.7,0,0,0,536,2H76m0-2H536a50,50,0,0,1,0,100H76A50,50,0,0,1,76,0Z" transform="translate(320.59 1294)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

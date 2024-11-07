@@ -1,0 +1,10 @@
+<svg id="icon_win_Rename" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_31728" data-name="矩形 31728" width="20" height="20" transform="translate(921 577)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon_win_Rename-2" data-name="icon_win_Rename" transform="translate(-921 -577)" clip-path="url(#clip-path)">
+    <path id="rename_3_" data-name="rename (3)" d="M18.845,18.3a.433.433,0,0,1-.433.433H11.476a.433.433,0,0,1-.433-.433v-.867A.433.433,0,0,1,11.476,17h6.935a.433.433,0,0,1,.433.433V18.3Zm0-3.468a.433.433,0,0,1-.433.433H14.943a.433.433,0,0,1-.433-.433v-.867a.433.433,0,0,1,.433-.433h3.468a.433.433,0,0,1,.433.433Zm-5.853-11.2a2.71,2.71,0,0,1,4.122,3.518L7.844,18.12a1.734,1.734,0,0,1-1.324.615H4.281a1.04,1.04,0,0,1-1.04-1.04v-2.1a1.734,1.734,0,0,1,.421-1.132Zm2.742,1.079a.975.975,0,0,0-1.429.053L4.974,15.589V17H6.52L15.789,6.032A.975.975,0,0,0,15.733,4.712Z" transform="translate(919.958 576.292)" fill="#2a2d32"/>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="_1" data-name="1" width="32" height="32" transform="translate(684.973 522.973)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0.1"/>
+    </clipPath>
+  </defs>
+  <g id="icon_ok" transform="translate(-684.973 -522.973)" clip-path="url(#clip-path)">
+    <g id="_1-2" data-name="1" transform="translate(686.973 524.973)" fill="#fff" stroke="#6d4dff" stroke-width="2">
+      <rect width="28" height="28" rx="14" stroke="none"/>
+      <rect x="1" y="1" width="26" height="26" rx="13" fill="none"/>
+    </g>
+    <path id="_1-3" data-name="1" d="M11.428,20.041,8.874,17.488a1.277,1.277,0,1,1,1.806-1.806l1.651,1.651,6.759-6.759A1.277,1.277,0,1,1,20.9,12.38l-7.662,7.662A1.277,1.277,0,0,1,11.428,20.041Z" transform="translate(686.088 523.665)" fill="#6d4dff"/>
+  </g>
+</svg>

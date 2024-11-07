@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="17" viewBox="0 0 48 17">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.135" x2="-0.123" y2="1.11" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#588bff"/>
+      <stop offset="0.368" stop-color="#58acff"/>
+      <stop offset="0.619" stop-color="#6a65ff"/>
+      <stop offset="1" stop-color="#9f65b9"/>
+    </linearGradient>
+  </defs>
+  <g id="icon_tag_1080" transform="translate(1.848 1)">
+    <rect id="矩形_30638" data-name="矩形 30638" width="48" height="17" rx="1" transform="translate(-1.848 -1)" fill="url(#linear-gradient)"/>
+    <text id="_1080p" data-name="1080p" transform="translate(22.152 11)" fill="#fff" font-size="10" font-family="Sora-Regular, Sora"><tspan x="-16" y="0">1080p</tspan></text>
+  </g>
+</svg>

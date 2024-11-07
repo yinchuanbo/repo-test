@@ -1,0 +1,14 @@
+<svg id="icon_delete" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_31726" data-name="矩形 31726" width="24" height="24" transform="translate(-0.22)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon_delete-2" data-name="icon_delete" transform="translate(0.22)" clip-path="url(#clip-path)">
+    <g id="垃圾桶_7_" data-name="垃圾桶 (7)" transform="translate(0 1.091)">
+      <path id="路径_175511" data-name="路径 175511" d="M19.5,26.455H10.773a4.878,4.878,0,0,1-4.636-4.745V10.636a1.091,1.091,0,1,1,2.182,0V21.709a2.746,2.746,0,0,0,2.455,2.564H19.5c1.2,0,1.909-1.309,1.909-2.564V10.636a1.091,1.091,0,1,1,2.182,0V21.709c0,2.345-1.527,4.745-4.091,4.745Z" transform="translate(-2.864 -4.636)" fill="#fff"/>
+      <path id="路径_175512" data-name="路径 175512" d="M24.955,9.955H3.136a1.091,1.091,0,1,1,0-2.182H24.955a1.091,1.091,0,1,1,0,2.182ZM20.591,5.591H7.5a1.091,1.091,0,0,1,0-2.182H20.591a1.091,1.091,0,1,1,0,2.182Z" transform="translate(-2.045 -3.409)" fill="#fff"/>
+      <path id="路径_175513" data-name="路径 175513" d="M18.409,21.682a1.094,1.094,0,0,1-1.091-1.091V14.045a1.091,1.091,0,1,1,2.182,0v6.545A1.094,1.094,0,0,1,18.409,21.682Zm-4.364,0a1.094,1.094,0,0,1-1.091-1.091V14.045a1.091,1.091,0,1,1,2.182,0v6.545A1.094,1.094,0,0,1,14.045,21.682Z" transform="translate(-4.227 -5.318)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

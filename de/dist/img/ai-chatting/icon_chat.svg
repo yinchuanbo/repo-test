@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_31643" data-name="Rectangle 31643" width="14" height="14" transform="translate(4.71 4.566)" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon_chat" transform="translate(-4.71 -4.566)" clip-path="url(#clip-path)">
+    <path id="Path_2259" data-name="Path 2259" d="M6,369h.007M9,369h.007M12,369h.007M9,375a5.994,5.994,0,1,0-5.561-3.743,1.86,1.86,0,0,1,.093.253.607.607,0,0,1,.016.146,1.535,1.535,0,0,1-.03.235l-.4,2.372a.944.944,0,0,0-.024.463.332.332,0,0,0,.175.175.941.941,0,0,0,.462-.023l2.372-.4a1.549,1.549,0,0,1,.236-.03.6.6,0,0,1,.146.016,1.905,1.905,0,0,1,.254.093A5.988,5.988,0,0,0,9,375Zm-2.667-6A.333.333,0,1,1,6,368.667.333.333,0,0,1,6.333,369Zm3,0A.333.333,0,1,1,9,368.667.333.333,0,0,1,9.333,369Zm3,0a.333.333,0,1,1-.333-.333A.333.333,0,0,1,12.333,369Z" transform="translate(2.71 -357.434)" fill="none" stroke="#fffdf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+  </g>
+</svg>

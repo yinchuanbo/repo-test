@@ -1,0 +1,266 @@
+<div class="credit-pay-dialog">
+  <div class="dialog_pay_mask"></div> 
+  <div class="dialog_pay pc_modal">
+    <div class="dialog_pay_container">
+      <div class="close_icon">
+        <div class="icon"></div>
+      </div>
+      <div class="pay_info">
+        <div class="pay_info_content" id="pc_car">
+          <div class="pay_left">
+            <div class="title">
+              <div class="title_icon"></div>
+              <div class="title_text"></div>
+            </div>
+            <div class="product_price_box">
+              <div class="product_name">
+                <div class="name"></div>
+                <div class="price"></div>
+              </div>
+              <div class="subtotal">
+                <div class="name">
+                  <%-creditPayDialog.subtotal -%>
+                </div>
+                <div class="price"></div>
+              </div>
+              <div class="discount">
+                <div class="name">
+                  <%-creditPayDialog.discount -%>
+                  <span class="off"></span>
+                </div>
+                <div class="price"></div>
+              </div>
+              <div class="total_price">
+                <div class="name">
+                  <%-creditPayDialog.total_name -%>
+                </div>
+                <div class="price">
+                  <span class="cur_price" id="combo_total_price"></span>
+                  <span class="coupon_price" id="coupon_total_price"></span>
+                </div>
+              </div>
+            </div>
+            <div class="product_info_box">
+              <div class="product_info_des">
+                <%-creditPayDialog.info_des -%>
+              </div>
+              <div class="coupon_box">
+                <div class="coupon_btn">
+                  <%-creditPayDialog.get_code -%>
+                </div>
+                <div class="coupon_input">
+                  <input id="input_code" type="text" />
+                  <div class="btn_box">
+                    <button class="apply_btn">
+                      <%-creditPayDialog.apply -%>
+                    </button>
+                    <div class="remove_btn">
+                      <%-creditPayDialog.remove -%>
+                    </div>
+                  </div>
+                </div>
+                <div class="coupon_err">
+                  <%-creditPayDialog.err -%>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service_item">
+                  <%-creditPayDialog.service1 -%>
+                </div>
+                <div class="service_item">
+                  <%-creditPayDialog.service2 -%>
+                </div>
+                <div class="service_item">
+                  <%-creditPayDialog.service3 -%>
+                </div>
+              </div>
+            </div>
+            <div class="payIcon"></div>
+          </div>
+          <div class="pay_right">
+            <div class="title"><%-creditPayDialog.title -%></div>
+            <div class="fromData">
+              <form id="payment-form">
+                <div id="link-authentication-element"></div>
+                <div id="payment-element"></div>
+                <button class="buyNow" id="submit">
+                  <i><%-creditPayDialog.buy -%></i>
+                  <img
+                    src="/dist/img/ai-tool-pricing/loadingalt.svg"
+                    alt="pay_loading"
+                  />
+                </button>
+              </form>
+            </div>
+            <div class="footer">
+              <%-creditPayDialog.power -%>
+              <a
+                href="https://www.vidqu.ai/terms.html"
+                target="_blank"
+                class="links"
+                id="link"
+                ><%-creditPayDialog.term -%></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pay_success">
+        <div class="success_content">
+          <div class="icon"></div>
+          <div class="tip"><%-creditPayDialog.suc_tip -%></div>
+          <div class="success_des">
+            <p id="suc_info"></p>
+            <p><%-creditPayDialog.suc_des2 -%></p>
+          </div>
+          <button id="success_pay">
+            <%-creditPayDialog.btn_ok -%>
+          </button>
+        </div>
+      </div>
+      <div class="pay_failed">
+        <div class="failed_content">
+          <div class="icon"></div>
+          <div class="tip"><%-creditPayDialog.fail_tip -%></div>
+          <p><%-creditPayDialog.fail_p -%></p>
+          <button id="failed_pay">
+            <%-creditPayDialog.fail_try -%>
+          </button>
+          <a
+            class="help"
+            href="https://www.vidqu.ai/contact.html"
+            target="_blank"
+            ><%-creditPayDialog.fail_help -%></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dialog_pay_mob">
+    <div class="m_dialog_pay_container">
+      <div class="close_icon">
+        <div class="icon"></div>
+        <span><%-creditPayDialog.back -%></span>
+      </div>
+      <div class="pay_info">
+        <div class="pay_info_content" id="mob_car">
+          <div class="pay_left">
+            <div class="title">
+              <div class="title_icon"></div>
+              <div class="title_text"></div>
+            </div>
+            <div class="product_price_box">
+              <div class="product_name">
+                <div class="name"></div>
+                <div class="price"></div>
+              </div>
+              <div class="subtotal">
+                <div class="name">
+                  <%-creditPayDialog.subtotal -%>
+                </div>
+                <div class="price"></div>
+              </div>
+              <div class="discount">
+                <div class="name">
+                  <%-creditPayDialog.discount -%>
+                  <span class="off"></span>
+                </div>
+                <div class="price"></div>
+              </div>
+              <div class="total_price">
+                <div class="name">
+                  <%-creditPayDialog.total_name -%>
+                </div>
+                <div class="price">
+                  <span class="cur_price" id="combo_total_price"></span>
+                  <span class="coupon_price" id="coupon_total_price"></span>
+                </div>
+              </div>
+            </div>
+            <div class="product_info_box">
+              <div class="product_info_des">
+                <%-creditPayDialog.info_des -%>
+              </div>
+              <div class="coupon_box">
+                <div class="coupon_btn">
+                  <%-creditPayDialog.get_code -%>
+                </div>
+                <div class="coupon_input">
+                  <input id="input_code" type="text" />
+                  <div class="btn_box">
+                    <button class="apply_btn">
+                      <%-creditPayDialog.apply -%>
+                    </button>
+                    <div class="remove_btn">
+                      <%-creditPayDialog.remove -%>
+                    </div>
+                  </div>
+                </div>
+                <div class="coupon_err">
+                  <%-creditPayDialog.err -%>
+                </div>
+              </div>
+            </div>
+            <div class="payIcon"></div>
+          </div>
+          <div class="pay_right">
+            <div class="title"><%-creditPayDialog.title -%></div>
+            <div class="fromData">
+              <form id="mob_payment-form">
+                <div id="link-authentication-element"></div>
+                <div id="payment-element"></div>
+                <button class="buyNow" id="mob_submit">
+                  <i><%-creditPayDialog.buy -%></i>
+                  <img
+                    src="/dist/img/ai-tool-pricing/loadingalt.svg"
+                    alt="pay_loading"
+                  />
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="footer">
+            <%-creditPayDialog.power2 -%>
+            <a
+              href="https://www.vidqu.ai/terms.html"
+              target="_blank"
+              class="links"
+              id="link"
+              ><%-creditPayDialog.term -%></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="pay_success">
+        <div class="success_content">
+          <div class="icon"></div>
+          <div class="tip"><%-creditPayDialog.suc_tip -%></div>
+          <div class="success_des">
+            <p id="m_suc_info"></p>
+            <p><%-creditPayDialog.suc_des2 -%></p>
+          </div>
+          <button id="success_pay">
+            <%-creditPayDialog.btn_ok -%>
+          </button>
+        </div>
+      </div>
+      <div class="pay_failed">
+        <div class="failed_content">
+          <div class="icon"></div>
+          <div class="tip"><%-creditPayDialog.fail_tip -%></div>
+          <p><%-creditPayDialog.fail_p -%></p>
+          <button id="failed_pay">
+            <%-creditPayDialog.fail_try -%>
+          </button>
+          <a
+            class="help"
+            href="https://www.vidqu.ai/contact.html"
+            target="_blank"
+            ><%-creditPayDialog.fail_help -%></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tip_failed_box"></div>
+</div>

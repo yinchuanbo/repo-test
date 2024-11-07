@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_31410" data-name="Rectangle 31410" width="14" height="14" transform="translate(-3.24 -3.336)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.053" x2="0.5" y2="0.918" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="0.152" x2="0.5" y2="0.872" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  <g id="icon_laoding" transform="translate(3.24 3.336)" clip-path="url(#clip-path)">
+    <path id="路径" d="M5.832.014a1,1,0,0,1,.332,1.972A5,5,0,0,0,7,11.917v2A7,7,0,0,1,5.832.014Z" transform="translate(-3.24 -3.336)" fill="url(#linear-gradient)"/>
+    <path id="路径-2" data-name="路径" d="M13.762,2.507a1,1,0,0,1,1.412-.076A7,7,0,0,1,10.5,14.642v-2a5,5,0,0,0,3.338-8.723A1,1,0,0,1,13.762,2.507Z" transform="translate(-6.74 -4.061)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

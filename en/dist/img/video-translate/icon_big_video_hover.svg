@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="135.001" height="135" viewBox="0 0 135.001 135">
+  <defs>
+    <filter id="icon_big_video" x="0" y="0" width="135.001" height="135" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.678"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon_big_video-2" data-name="icon_big_video" transform="translate(30 24)">
+    <g transform="matrix(1, 0, 0, 1, -30, -24)" filter="url(#icon_big_video)">
+      <path id="icon_big_video-3" data-name="icon_big_video" d="M37.5,75A37.5,37.5,0,1,1,75,37.5,37.542,37.542,0,0,1,37.5,75Zm-5.77-54.912a2.884,2.884,0,0,0-2.883,2.885V53.6a2.873,2.873,0,0,0,1.576,2.569,2.9,2.9,0,0,0,1.308.313,2.865,2.865,0,0,0,1.7-.552L54.483,40.619a2.884,2.884,0,0,0,0-4.667L33.425,20.641A2.867,2.867,0,0,0,31.728,20.089Z" transform="translate(30 24)" fill="#e0e0e2"/>
+    </g>
+  </g>
+</svg>

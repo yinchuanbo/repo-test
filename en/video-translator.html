@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 50px">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=no"
+    />
+    <title>AI Video Translator - Translate Video to Global Language</title>
+    <meta
+      name="description"
+      content="Translate your videos into 140+ languages with Vidqu AI Video Translator. Enhance your global reach with this free video translator."
+    />
+    <link rel="stylesheet" href="/dist/css/common.css" />
+    <link rel="stylesheet" href="/dist/css/swiper.min.css" />
+    <link rel="stylesheet" href="/dist/css/video-translate.css" />
+    <!-- <link rel="stylesheet" href="/dist/css/ai-image-generator-common.css" /> -->
+    <script type="text/javascript" src="/dist/lan/normal.js"></script>
+    <link rel="canonical" href="https://www.vidqu.ai/video-translator.html" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CW3Q6HBRV8"></script>
+<script type="text/javascript" src="/dist/js/flexible.min.js"></script>
+<script type="text/javascript" src="/dist/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/dist/lan/normal.js"></script>
+<link rel="stylesheet" type="text/css" href="/dist/css/common.css" />
+<script type="text/javascript" src="/dist/js/common.js"></script>
+<script src="/dist/js/popup/index.js" type="module"></script>
+<script src="/dist/js/popup/popup_init.js"></script>
+
+    <link rel="stylesheet" href="/dist/css/new-nav.css" />
+
+
+<link rel="shortcut icon" href="/dist/img/index.png" />
+<script src="//cdn.jsdelivr.net/npm/eruda"></script>
+
+<script>
+  if (isMobileDevice()) {
+    const originUrl = window.location.origin;
+    if (originUrl?.includes?.("192.168")) {
+      eruda.init();
+    }
+  }
+
+  let lan = jsonData.faceSwap;
+  var seoLan = jsonData;
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-CW3Q6HBRV8");
+
+  function $id(selector) {
+    var getSelector = document.getElementById(selector);
+    if (getSelector) return getSelector;
+    return null;
+  }
+</script>
+    <script src="/dist/js/lottie-player.js"></script>
+    <script>
+      const videoTranslate = jsonData.videoTranslate;
+      const videoTrans = videoTranslate["javascript"];
+      const videoTransText = videoTrans;
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CW3Q6HBRV8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CW3Q6HBRV8");
+    </script>
+  </head>
+
+  <body>
+  <header class="nav-header" id="header">
+  <div class="nav-header-fixed">
+    <div class="nav-header-middle">
+      <div class="nave-header-middle-left">
+        
+        <a class="nav-logo" href="/">
+          <span class="nav-logo-bg"></span>
+        </a>
+        <div class="header_menu">
+          <div class="menu-item chat_tools">
+            <div class="menu-text" data-open="false">
+              <p>AI Chat Tools</p>
+              <i class="arrow-normal"></i>
+            </div>
+            <div class="menu-drop" style="display: none !important">
+              <li>
+                <a class="menu-drop-item" href="/ai-girlfriend.html"
+                  ><img src="/dist/img/IGhome/ai-girl.svg" alt="" /><span
+                    >AI Girlfriend</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="menu-drop-item" href="/ai-boyfriend.html"
+                  ><img src="/dist/img/IGhome/ai-boy.svg" /><span
+                    >AI Boyfriend</span
+                  ></a
+                >
+              </li>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-text" data-open="false">
+              <p>AI Photo Tools</p>
+              <i class="arrow-normal"></i>
+            </div>
+            <div class="menu-drop" style="display: none !important">
+              <li>
+                <a class="menu-drop-item" href="/face-swap.html"
+                  ><img src="/dist/img/IGhome/photo-face.svg" alt="" /><span
+                    >AI Photo Face Swap</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="menu-drop-item" href="/multiple-face-swap.html"
+                  ><img src="/dist/img/IGhome/photo-face.svg" alt="" /><span>
+                    AI Multiple Photo Face Swap
+                  </span></a
+                >
+              </li>
+              <!--              <li><a class="menu-drop-item" href="/ai-image-generator.html"><img src="/dist/img/IGhome/image-ge.svg"><span>AI Image Generator</span></a></li>-->
+              <li>
+                <a class="menu-drop-item" href="/ai-attractiveness-test.html"
+                  ><img src="/dist/img/IGhome/ai-test.svg" /><span
+                    >AI Attractiveness Test</span
+                  ></a
+                >
+              </li>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-text" data-open="false">
+              <p>AI Video Tools</p>
+              <i class="arrow-normal"></i>
+            </div>
+            <div class="menu-drop" style="display: none !important">
+              <li>
+                <a class="menu-drop-item" href="/face-swap.html?openTab=videofs"
+                  ><img src="/dist/img/IGhome/video-face.svg" alt="" /><span
+                    >AI Video Face Swap</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu-drop-item"
+                  href="/multiple-face-swap.html?openTab=videofs"
+                  ><img src="/dist/img/IGhome/video-face.svg" alt="" /><span
+                    >AI Multiple Video Face Swap</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="menu-drop-item" href="/video-translator.html"
+                  ><img src="/dist/img/IGhome/video-trans.svg" /><span
+                    >AI Video Translator</span
+                  ></a
+                >
+              </li>
+            </div>
+          </div>
+          <div class="menu-item">
+            <a href="/pricing.html">Pricing</a>
+          </div>
+          <div class="menu-item">
+            <a href="/about.html">About Us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="meau_item_right">
+        
+        <header-credit class="header-credit" id="header-credit"></header-credit>
+        <div class="meau_item login" id="header_login">Login</div>
+        <div class="meau_item user" id="header_user">
+          <img src="" alt="" class="header_avator" />
+          <div class="signout log">
+            <div class="header_editUser header_item">
+              <img src="" alt="" class="header_avator" />
+              <div class="header_info">
+                <span class="userName"></span>
+                <span class="useremail"></span>
+              </div>
+            </div>
+            
+            <a class="myfileBtn" href="/my-files.html">
+              <img
+                src="/dist/img/header/list_icon_files.svg"
+                alt=""
+                class="header_icon"
+              />
+              My Files
+              <img
+                src="/dist/img/header/icon_list_arrow.svg"
+                alt=""
+                class="icon_list_arrow"
+              />
+            </a>
+            
+            <div class="signoutBtn header_item">
+              <img
+                src="/dist/img/header/list_icon_sign_out.svg"
+                alt=""
+                class="header_icon"
+              />
+              Sign out
+              <img
+                src="/dist/img/header/icon_list_arrow.svg"
+                alt=""
+                class="icon_list_arrow"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="meau_icon">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="close"></span>
+        </div>
+      </div>
+      <!-- <div id="mobile-nav-menu">
+        <div class="shadow"></div>
+      </div> -->
+    </div>
+  </div>
+  <div class="menu-contanier">
+    <ul class="mobile-menu">
+      <li class="meau_item log mobile-menu-item">
+        <div class="mob-menu-title user">
+          <img src="" alt="" class="header_avator" />
+          <div class="header_info">
+            <a href="javascript:;" class="userName header_editUser"></a>
+            <span class="useremail"></span>
+          </div>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          
+          <div class="user_item">
+            <a class="myfileBtn" href="/my-files.html">
+              <img
+                src="/dist/img/header/list_icon_files.svg"
+                alt=""
+                class="header_icon"
+              />
+              My Files
+            </a>
+          </div>
+          
+          <div class="user_item">
+            <a class="signoutBtn" href="javascript:;">
+              <img
+                src="/dist/img/header/list_icon_sign_out.svg"
+                alt=""
+                class="header_icon"
+              />
+              Sign out
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu-item chat_tools">
+        <div class="mob-menu-title">
+          <p>AI Chat Tools</p>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          <div><a href="/ai-girlfriend.html">AI Girlfriend</a></div>
+          <div><a href="/ai-boyfriend.html">AI Boyfriend</a></div>
+        </div>
+      </li>
+      <li class="mobile-menu-item">
+        <div class="mob-menu-title">
+          <p>AI Photo Tools</p>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          <div><a href="/face-swap.html">AI Photo Face Swap</a></div>
+          <div><a href="/multiple-face-swap.html">AI Multiple Photo Face Swap</a></div>
+          <!--          <div><a href="/ai-image-generator.html">AI Image Generator</a></div>-->
+          <div>
+            <a href="/ai-attractiveness-test.html">AI Attractiveness Test</a>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu-item">
+        <div class="mob-menu-title">
+          <p>AI Video Tools</p>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          <div>
+            <a href="/face-swap.html?openTab=videofaceSwap"
+              >AI Video Face Swap</a
+            >
+          </div>
+          <div>
+            <a href="/multiple-face-swap.html?openTab=videofs"
+              >AI Multiple Video Face Swap</a
+            >
+          </div>
+          <div><a href="/video-translator.html">AI Video Translator</a></div>
+        </div>
+      </li>
+      <li><a href="/pricing.html">Pricing</a></li>
+      
+      <li>
+        <a class="myfileBtn" href="/my-files.html">My Files</a>
+      </li>
+      
+      <li><a href="/about.html">About</a></li>
+    </ul>
+  </div>
+  
+</header>
+<script src="/dist/js/header-credit/index.js"></script>
+<script type="text/javascript" src="/dist/js/common-header.js"></script>
+    <section class="video_tra">
+      <div class="video_tra_banner">
+        <img class="mob_bottom_bg" src="/dist/img/video-translate/bg_mob.png" alt="">
+        <div class="wrapper">
+          <h1>AI Video Translator Free</h1>
+          <p>Turn your video translation upside down with this free video translator. Instantly translate your videos into 140+ languages and get perfect AI-generated voiceovers and subtitles. </p>
+          <div class="banner_tra">
+            <div class="tra_left">
+              <video
+                id="getLoadedDom_video1"
+                playsinline
+                webkit-playsinline
+                style="display: none"
+              ></video>
+              <video
+                id="getLoadedDom_video2"
+                playsinline
+                webkit-playsinline
+                style="display: none"
+              ></video>
+              <div class="default_box"></div>
+              <div class="upload_box">
+                <video class="pre_img"></video>
+                <div class="mask"></div>
+                <div class="mask_text">
+                  <div class="mask_icon"></div>
+                  <div>
+                    <div class="text1">This may take a few minutes.</div>
+                    <div class="text2">Please wait! Your video will be translated soon …</div>
+                  </div>
+                </div>
+                <div class="loading_box">
+                  <!-- <div class="loading_icon"></div> -->
+                  <div class="lottie_box">
+                    <lottie-player src="/dist/img/video-translate/loading.json" background="transparent" speed="1"
+                    style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                  </div>
+                  <div class="loading_text">
+                    <span class='loading_progress' id='loading_progress'>0</span>%<br/>Translating                  </div>
+                </div>
+                <video id="pre_video" crossorigin="anonymous"></video>
+                <div class="play_btn"></div>
+                <div class="play_btn1"></div>
+                <div class="video_loading_icon"></div>
+              </div>
+              <div class="btn_box">
+                <div class="tip">
+                  <div class="tip_icon"></div>
+                  <div class="tip_text">Free usage is limited to the first <span class='tip_time'>90s</span> of the video only.</div>
+                </div>
+                <div class="btn_content">
+                  <div class="btn zoom">
+                    <div class="icon"></div>
+                    <div class="text">Zoom in</div>
+                  </div>
+                  <!-- <div class="btn_edit btnM">
+                    <div class="icon"></div>
+                    <div class="text">Edit</div>
+                    <div class="btn_edit_loading_box">
+                      <img
+                        src="/dist/img/_common/loading2.png"
+                        class="btn_edit_loading"
+                      />
+                    </div>
+                  </div> -->
+                  <div class="btn share">
+                    <div class="icon"></div>
+                    <div class="text">Share</div>
+                  </div>
+                  <div class="btn download_video">
+                    <div class="icon"></div>
+                    <div class="text">Download</div>
+                  </div>
+                </div>
+              </div>
+              <div class="upgrade_banner_1" style="display: none">
+                <div class="design_icon"></div>
+                <div class="upgrade_banner_head">
+                  <div class="upgrade_banner_title">
+                    Take AI Video Translation to the Next Level!                  </div>
+                  <div class="upgrade_banner_btn">
+                    Upgrade Now                  </div>
+                </div>
+                <div class="upgrade_banner_content">
+                  <div class="upgrade_banner_item item1">
+                    Unlimited translations of videos                  </div>
+                  <div class="upgrade_banner_item item2">
+                    2x Faster video processing                  </div>
+                  <div class="upgrade_banner_item item3">
+                    Extra 3 mins for free per day                  </div>
+                  <div class="upgrade_banner_item item4">
+                    No watermark at all                  </div>
+                  <div class="upgrade_banner_item item5">
+                    Much more premium features                  </div>
+                </div>
+                <div class="m_btn">
+                  <button class="upgrade_banner_btn" id="mob">
+                    Upgrade Now                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="tra_right">
+              <div class="tra_box step1">
+                <input
+                  type="file"
+                  accept=".m4v, .mp4, .mov, .webm"
+                  class="video_upload_input"
+                />
+                <div class="step_tab_box">
+                  <div class="step_tab tab1 active" style="margin-right: 0;">
+                    Upload video                  </div>
+                  <div class="step_tab tab2" style="display: none;">
+                    Through URL                  </div>
+                </div>
+                <div class="step_content">
+                  <div class="step_src_none">
+                    <div class="upload_icon"></div>
+                    <div class="upload_text">
+                      <div class="text">
+                        Click to upload video                      </div>
+                      <div class="des des_isfree">File type: M4V, MP4, MOV, WEBM <br/>File size up to 500 MB</div>
+                      <div class="des des_ispro">File type: M4V, MP4, MOV, WEBM <br/>File size up to 1 GB</div>
+                    </div>
+                  </div>
+                  <div class="step_src_url">
+                    <div class="input_box">
+                      <div class="input_icon"></div>
+                      <input
+                        type="text"
+                        class="input_url"
+                        placeholder="Paste your YouTube video's URL link here"
+                      />
+                      <div class="get_url_icon">
+                        <div class="icon"></div>
+                      </div>
+                    </div>
+                    <div class="input_des">
+                      <div class="input_des_icon"></div>
+                      <div class="input_des_text">
+                        Please confirm that this video belongs to you.                      </div>
+                    </div>
+                  </div>
+                  <div class="step_src_style1">
+                    <div class="delete_icon"></div>
+                    <div class="show_step_video">
+                      <div class="video_img">
+                        <img class="small_img" alt="" />
+                        <div class="icon"></div>
+                      </div>
+                      <div class="video_info_box">
+                        <div class="video_info_title"></div>
+                        <div class="video_info_duration"></div>
+                      </div>
+                    </div>
+                    <div class="show_step_des">
+                      <div class="show_step_icon"></div>
+                      <div class="show_step_text">
+                        Please confirm that this video belongs to you.                      </div>
+                    </div>
+                  </div>
+                  <div class="step_src_style2">
+                    <div class="delete_icon"></div>
+                    <div class="show_step_video">
+                      <div class="video_img">
+                        <img class="small_img" alt="" />
+                        <div class="icon"></div>
+                      </div>
+                      <div class="video_info_box">
+                        <div class="video_info_title"></div>
+                        <div class="video_info_duration"></div>
+                      </div>
+                    </div>
+                    <div class="show_step_des">
+                      <div class="show_step_icon"></div>
+                      <div class="show_step_text">
+                        Please confirm that this video belongs to you.                      </div>
+                    </div>
+                  </div>
+                  <div class="step_content_loading">
+                    <div class="step_content_loading_icon"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tra_box step2">
+                <div class="step_choose">
+                  <div class="step2_choose_box">
+                    <div class="choose_item choose0">
+                      <div class="choose_text">
+                        Original language                      </div>
+                      <div class="select_contry select_contry1">
+                        <div class="origin_contry default">
+                          <div class="hidden-input">
+                            <input type="text" class="form-control" />
+                          </div>
+                          <div class="hidden-input">
+                            <input type="password" class="form-control" />
+                          </div>
+                          <input
+                            type="text"
+                            id="origin_lan"
+                            autocomplete="off"
+                          />
+                        </div>
+                        <div class="select_icon original_lan"></div>
+                        <div class="select_box selectOriginLan"></div>
+                      </div>
+                    </div>
+                    <div class="choose_item choose1">
+                      <div class="choose_text">
+                        Output language                      </div>
+                      <div class="select_contry select_contry2">
+                        <img class="contry_icon default" alt="icon" />
+                        <div class="contry_name default"></div>
+                        <div class="select_icon"></div>
+                        <div class="select_box selectContry"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="choose_item choose2">
+                    <div class="choose_text">
+                      Subtitles                    </div>
+                    <div class="info info_choose2">
+                      <div class="info_box">
+                        <div class="info_title">
+                          Video requirements                        </div>
+                        <div class="info_item">
+                          To ensure quality subtitle, please upload video without subtitles.                        </div>
+                      </div>
+                    </div>
+                    <label class="switch">
+                      <input
+                        type="checkbox"
+                        class="toggleSwitch toggleSwitch1"
+                      />
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                  <div class="choose_item choose2_1">
+                    <div class="choose_text">
+                      Erase original subtitles                    </div>
+                    <div class="info info_choose2_1">
+                      <div class="info_box">
+                        <div class="info_title">
+                          Video requirements                        </div>
+                        <div class="info_item">
+                          If the video contains original subtitles, you can choose to erase them, but this may affect the video quality.                        </div>
+                      </div>
+                    </div>
+                    <label class="switch">
+                      <input
+                        type="checkbox"
+                        class="toggleSwitch toggleSwitch2_1"
+                      />
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                  <div class="choose_item choose3">
+                    <div class="choose_text">
+                      Lip-sync                    </div>
+                    <div class="info info_choose3">
+                      <div class="info_box">
+                        <div class="info_title">
+                          Video requirements                        </div>
+                        <div class="info_item">
+                          Duration must be longer than <span>10s</span>                        </div>
+                        <div class="info_item" id="free_show">
+                          Free usage is limited to the first <span class='info_time'>90s</span> of the video only.                        </div>
+                      </div>
+                    </div>
+                    <div class="beta">Beta</div>
+                    <label class="switch">
+                      <input
+                        type="checkbox"
+                        class="toggleSwitch toggleSwitch2"
+                      />
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                  <div class="choose_item choose4">
+                    <div class="choose_text">
+                      Proofread video script                    </div>
+                    <div class="info info_choose4">
+                      <div class="info_box">
+                        <div class="info_title">
+                          Video requirements                        </div>
+                        <div class="info_item">
+                          Proofread the original and translated scripts of the video to ensure accurate.                        </div>
+                      </div>
+                    </div>
+                    <label class="switch">
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="toggleSwitch toggleSwitch3"
+                      />
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="tra_box step3">
+                <div class="translate_btn">
+                  <div class="translate_btn_text">
+                    Translate Now                  </div>
+                  <div class="time_icon_box">
+                    <div class="time_icon"></div>
+                    <div class="time_text"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="demo_video_1" style="display: none">
+            <div class="demo_title">Translated Video Demos</div>
+            <div class="demo_box"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dialog_mask"></div>
+      <div class="dialog_content">
+        <div class="close_icon"></div>
+        <div class="video_box">
+          <div class="large_play_icon"></div>
+          <video
+            id="large_video"
+            crossorigin="anonymous"
+            playsinline
+            webkit-playsinline
+          ></video>
+          <div class="btn_share">
+            <div class="btn_icon"></div>
+            <div class="text">Share</div>
+          </div>
+          <!-- <div class="btn_edit btnM larger">
+            <div class="icon"></div>
+            <div class="text">Edit</div>
+            <div class="btn_edit_loading_box">
+              <img src="/dist/img/_common/loading2.png" class="btn_edit_loading" />
+            </div>
+          </div> -->
+          <div class="btn_download">
+            <div class="btn_icon"></div>
+            <div class="text">Download</div>
+          </div>
+          <div class="largeVideo_loading_icon"></div>
+        </div>
+      </div>
+      <div class="tip_box">
+        <div class="tip_content">
+          <div class="tip_close_icon"></div>
+          <div class="tip_success">
+            <div class="suc_title">
+              <div class="suc_title_icon"></div>
+              <div class="title_text">Download successfully!</div>
+            </div>
+            <div class="suc_text">You can <span class='click_download'>click here</span> to download this video again. Can’t find the downloaded file? Please check “Downloads” on your browser.</div>
+            <div class="direction_rtl">
+              <div class="suc_btn">OK</div>
+            </div>
+          </div>
+          <div class="tip_failed">
+            <div class="failed_title">
+              <div class="failed_title_icon"></div>
+              <div class="title_text">
+                <div class="title_text_tip">
+                  Failed                </div>
+                <div class="title_text_des"></div>
+              </div>
+            </div>
+            <div class="direction_rtl">
+              <div class="failed_btn">
+                <img
+                  src="/dist/img/video-translate/bth_icon_black_coins.svg"
+                  class="icon_coins"
+                />
+                OK              </div>
+            </div>
+          </div>
+          <div class="tip_progress">
+            <div class="progress_text">
+              Your video has been successfully generated. Downloading…            </div>
+            <div class="progress_container">
+              <div class="progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo_container">
+        <div class="demo_content">
+          <div class="demo_close"></div>
+          <div class="demo_dialog_name"></div>
+          <div class="demo_video_box">
+            <video id="demo_video"></video>
+            <div class="demo_play_icon"></div>
+          </div>
+          <div class="demo_btn">
+            <div class="demo_share">
+              <div class="btn_icon"></div>
+              <div class="text">Share</div>
+            </div>
+            <div class="demo_download">
+              <div class="btn_icon"></div>
+              <div class="text">Download</div>
+            </div>
+          </div>
+          <div class="pre_btn">
+            <div class="icon"></div>
+          </div>
+          <div class="next_btn">
+            <div class="icon"></div>
+          </div>
+        </div>
+      </div>
+      <share-dialog
+        id="shareDialogEl"
+        fromPage="video-translate"
+      ></share-dialog>
+    </section>
+    <div class="dialog_proofread">
+      <div class="proofread_head_box">
+        <div class="proofread_head">
+          <img src="/dist/img/video-translate/vidqu_logo_mob.svg" alt="" />
+        </div>
+        <div class="proofread_back">
+          <div class="back_icon">
+            <img src="/dist/img/video-translate/back_icon.svg" alt="" />
+          </div>
+          <div class="back_text">Back</div>
+        </div>
+      </div>
+      <div class="proofread_content">
+        <div class="subtitle_content"></div>
+        <div class="loading_content">
+          <div class="contry_loading">
+            <div class="contry_loading_item">
+              <div class="loading_item_box"></div>
+            </div>
+            <div class="contry_loading_item">
+              <div class="loading_item_box"></div>
+            </div>
+          </div>
+          <div class="item_loading">
+            <div class="top_loading">
+              <div class="top_loading_box"></div>
+            </div>
+            <div class="bottom_loading">
+              <div class="bottom_loading_item"></div>
+              <div class="bottom_loading_item"></div>
+            </div>
+          </div>
+          <div class="item_loading">
+            <div class="top_loading">
+              <div class="top_loading_box"></div>
+            </div>
+            <div class="bottom_loading">
+              <div class="bottom_loading_item"></div>
+              <div class="bottom_loading_item"></div>
+            </div>
+          </div>
+          <div class="item_loading">
+            <div class="top_loading">
+              <div class="top_loading_box"></div>
+            </div>
+            <div class="bottom_loading">
+              <div class="bottom_loading_item"></div>
+              <div class="bottom_loading_item"></div>
+            </div>
+          </div>
+          <div class="item_loading">
+            <div class="top_loading">
+              <div class="top_loading_box"></div>
+            </div>
+            <div class="bottom_loading">
+              <div class="bottom_loading_item"></div>
+              <div class="bottom_loading_item"></div>
+            </div>
+          </div>
+          <div class="item_loading">
+            <div class="top_loading">
+              <div class="top_loading_box"></div>
+            </div>
+            <div class="bottom_loading">
+              <div class="bottom_loading_item"></div>
+              <div class="bottom_loading_item"></div>
+            </div>
+          </div>
+          <div class="item_loading">
+            <div class="top_loading">
+              <div class="top_loading_box"></div>
+            </div>
+            <div class="bottom_loading">
+              <div class="bottom_loading_item"></div>
+              <div class="bottom_loading_item"></div>
+            </div>
+          </div>
+          <div class="item_loading">
+            <div class="top_loading">
+              <div class="top_loading_box"></div>
+            </div>
+            <div class="bottom_loading">
+              <div class="bottom_loading_item"></div>
+              <div class="bottom_loading_item"></div>
+            </div>
+          </div>
+          <div class="loading_tip">
+            <div class="loading_tip_title">
+              Transcribing video <span class='proofread_loading'></span><span>%</span>            </div>
+            <div class="loading_tip_subtitle">
+              This might take a few seconds, please don't leave.            </div>
+            <div class="loading_tip_progress_box">
+              <div class="loading_tip_progress"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom_content">
+          <div class="bottom_content_btn">Download SRT</div>
+        </div>
+        <div class="preview_content">
+          <div class="preview_container">
+            <div class="video_box">
+              <video
+                class="proofread_video"
+                playsinline
+                webkit-playsinline
+              ></video>
+              <div class="controls_box">
+                <div class="playpause_box">
+                  <img
+                    class="controls_play"
+                    src="/dist/img/video-translate/icon_video-play.svg"
+                  />
+                  <img
+                    class="controls_pause"
+                    src="/dist/img/video-translate/btn_video-pause.svg"
+                  />
+                </div>
+                <div class="duration_show">00:00/00:00</div>
+                <input
+                  type="range"
+                  step="any"
+                  min="0"
+                  max="100"
+                  class="progressbar"
+                  value="0"
+                />
+                <div class="voice_box">
+                  <img
+                    src="/dist/img/video-translate/btn_video-voice_normal.svg"
+                    class="voice_icon"
+                  />
+                  <div class="voice_set">
+                    <div class="voice_num">20</div>
+                    <div class="voice_range">
+                      <input
+                        type="range"
+                        step="any"
+                        min="0"
+                        max="100"
+                        class="voicebar"
+                        value="20"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="subtitle_preview">
+                <span>Subtitles will be displayed in this area</span>              </div>
+            </div>
+            <div class="proofread_choose_box">
+              <div class="choose_item choose5">
+                <div class="choose_text">Subtitles</div>
+                <div class="info info_choose5">
+                  <div class="info_box">
+                    <div class="info_title">
+                      Video requirements                    </div>
+                    <div class="info_item">
+                      To ensure quality subtitle, please upload video without subtitles.                    </div>
+                  </div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" class="toggleSwitch toggleSwitch5" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="choose_item choose5_1">
+                <div class="choose_text">Erase original subtitles</div>
+                <div class="info info_choose5_1">
+                  <div class="info_box">
+                    <div class="info_title">
+                      Video requirements                    </div>
+                    <div class="info_item">
+                      If the video contains original subtitles, you can choose to erase them, but this may affect the video quality.                    </div>
+                  </div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" class="toggleSwitch toggleSwitch2_1" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="choose_item choose6">
+                <div class="choose_text">Lip-sync</div>
+                <div class="info info_choose6">
+                  <div class="info_box">
+                    <div class="info_title">
+                      Video requirements                    </div>
+                    <div class="info_item">Duration must be longer than <span>10s</span></div>
+                    <div class="info_item" id="p_free_show">
+                      Free usage is limited to the first <span class='info_time'>90s</span> of the video only.                    </div>
+                  </div>
+                </div>
+                <div class="beta">Beta</div>
+                <label class="switch">
+                  <input type="checkbox" class="toggleSwitch toggleSwitch6" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div class="proofread_translate_btn">
+              <div class="proofread_translate_btn_text">
+                Translate Now              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer" class="footer">
+  <div class="footer-bottom">
+    <div class="wapper">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span class="footer-logo-bg"></span>
+        </div>
+        <div class="footer-logo-des">Get Your AI Generator, Feel the Shine.</div>
+        <div class="footer-logo-font">
+          <div>©</div>
+          <span>2024</span>, Vidqu. All Rights Reserved.
+        </div>
+      </div>
+      <div class="footer-right">
+        <ul class="chat_tools">
+          <li>AI Chat Tools</li>
+          <li><a href="/ai-girlfriend.html">AI Girlfriend</a></li>
+          <li><a href="/ai-boyfriend.html">AI Boyfriend</a></li>
+        </ul>
+        <ul>
+          <li>AI Photo Tools</li>
+          <li><a href="/face-swap.html">AI Photo Face Swap</a></li>
+          <li><a href="/multiple-face-swap.html">AI Multiple Photo Face Swap</a></li>
+<!--          <li><a href="/ai-image-generator.html">AI Image Generator</a></li>-->
+          <li><a href="/ai-attractiveness-test.html">AI Attractiveness Test</a></li>
+        </ul>
+        <ul>
+          <li>AI Video Tools</li>
+          <li><a href="/face-swap.html?openTab=videofs">AI Video Face Swap</a></li>
+          <li><a href="/multiple-face-swap.html?openTab=videofs">AI Multiple Video Face Swap</a></li>
+          <li><a href="/video-translator.html">AI Video Translator</a></li>
+        </ul>
+        <ul>
+          <li class="ex-nav">Company</li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/terms.html">Terms</a></li>
+          <li class="ex-nav"><a href="/pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="fix-footer" style="display: none">
+  <div class="fix-footer-title">
+    <div>
+      Vidqu uses cookies to improve your website experience. Usage on Vidqu gives consent to the <a href="/privacy.html">Privacy</a>.
+    </div>
+    <button id="footer_btn">I Agree</button>
+  </div>
+</div>
+<script type="text/javascript" src="/dist/js/lib-vd.min.js"></script>
+<script>
+  const _$$ = $LIB("en", "vidqu");
+</script>
+<div
+  class="fix_ios_footer"
+  id="iosFooter"
+  data-original="/dist/img/footer_bg.webp"
+>
+  <div class="fix-footer-title">
+    100% FREE Face Swap App Download
+    <img
+      src="/dist/img/loading-buffering-white.svg"
+      class="fix_icon"
+      alt="fix_icon"
+      width="16"
+      height="16"
+      data-original="/dist/img/footer_fix_icon.svg"
+    />
+    <button id="ios_footer_btn">Get It Now</button>
+  </div>
+</div>
+    <script src="/dist/js/jquery-2.1.4.min.js"></script>
+    <script src="/dist/js/swiper-bundle.min.js"></script>
+    <script src="/dist/js/common.js"></script>
+    <script src="/dist/js/share-dialog/index.js" type="module"></script>
+    <script src="/dist/js/bottom-message/index.js" type="module"></script>
+    <script src="/dist/js/video-translate.js"></script>
+  </body>
+</html>

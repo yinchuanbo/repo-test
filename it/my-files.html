@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>I miei file | Controlla i tuoi file generati - Vidqu</title>
+    <meta
+      name="description"
+      content="Scopri i file creati da Vidqu."
+    />
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,viewport-fit=cover"
+    />
+    <link rel="icon" href="/dist/img/FS-favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/dist/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/dist/css/my-files.css" />
+    <link rel="canonical" href="https://it.vidqu.ai/my-files.html" >
+    <script type="text/javascript" src="/dist/js/flexible.min.js"></script>
+<script type="text/javascript" src="/dist/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/dist/lan/normal.js"></script>
+<link rel="stylesheet" type="text/css" href="/dist/css/common.css" />
+<script type="text/javascript" src="/dist/js/common.js"></script>
+<script src="/dist/js/popup/index.js" type="module"></script>
+<script src="/dist/js/popup/popup_init.js"></script>
+
+  <link rel="stylesheet" href="/dist/css/new-nav.css" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PT5RE00M5S"></script>
+<script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-PT5RE00M5S'); </script>
+<script>
+  // if (isMobileDevice()) {
+  //   const originUrl = window.location.origin;
+  //   if (originUrl?.includes?.("192.168")) {
+  //     eruda.init();
+  //   }
+  // }
+
+  let lan = jsonData.faceSwap;
+  var seoLan = jsonData;
+
+</script>  </head>
+  <body> 
+    <header class="nav-header" id="header">
+  <div class="nav-header-fixed">
+    <div class="nav-header-middle">
+      <div class="nave-header-middle-left">
+        
+        <a class="nav-logo" href="/">
+          <span class="nav-logo-bg"></span>
+        </a>
+        <div class="header_menu">
+          <div class="menu-item chat_tools">
+            <div class="menu-text" data-open="false">
+              <p>Strumenti di Chat AI</p>
+              <i class="arrow-normal"></i>
+            </div>
+            <div class="menu-drop" style="display: none!important;">
+              <li><a class="menu-drop-item" href="/ai-girlfriend.html"><img src="/dist/img/IGhome/ai-girl.svg"
+                    alt=""><span>Fidanzata AI</span></a></li>
+              <li><a class="menu-drop-item" href="/ai-boyfriend.html"><img src="/dist/img/IGhome/ai-boy.svg"><span>Fidanzato AI</span></a></li>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-text" data-open="false">
+              <p>Strumenti AI per Foto</p>
+              <i class="arrow-normal"></i>
+            </div>
+            <div class="menu-drop" style="display: none!important;">
+              <li><a class="menu-drop-item" href="/face-swap.html"><img src="/dist/img/IGhome/photo-face.svg" alt=""><span>Face Swap Foto</span></a></li>
+              <li><a class="menu-drop-item" href="/multiple-face-swap.html"><img src="/dist/img/IGhome/photo-face.svg" alt=""><span> Face Swap Foto Multiplo </span></a></li>
+<!--              <li><a class="menu-drop-item" href="/ai-image-generator.html"><img src="/dist/img/IGhome/image-ge.svg"><span>Generatore di Immagini AI</span></a></li>-->
+              <!-- <li><a class="menu-drop-item" href="/ai-attractiveness-test.html"><img src="/dist/img/IGhome/ai-test.svg"><span>Test di Bellezza</span></a></li> -->
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-text" data-open="false">
+              <p>Strumenti AI per Video</p>
+              <i class="arrow-normal"></i>
+            </div>
+            <div class="menu-drop" style="display: none!important;">
+              <li><a class="menu-drop-item" href="/face-swap.html?openTab=videofs"><img
+                    src="/dist/img/IGhome/video-face.svg" alt=""><span>Face Swap Video</span></a></li>
+              <li><a class="menu-drop-item" href="/multiple-face-swap.html?openTab=videofs"><img
+                          src="/dist/img/IGhome/video-face.svg" alt=""><span>Face Swap Video Multiplo</span></a></li>
+              <!-- <li><a class="menu-drop-item" href="/video-translator.html"><img
+                    src="/dist/img/IGhome/video-trans.svg"><span>Traduttore Video AI</span></a></li> -->
+            </div>
+          </div>
+          <!-- <div class="menu-item"><a href="/pricing.html">Prezzi</a></div> -->
+          <div class="menu-item"><a href="/about.html">Chi Siamo</a></div>
+        </div>
+      </div>
+
+      <div class="meau_item_right">
+        
+        <header-credit class="header-credit" id="header-credit"></header-credit>
+        <div class="meau_item login" id="header_login">Accedi</div>
+        <div class="meau_item user" id="header_user">
+          <img src="" alt="" class="header_avator" />
+          <div class="signout log">
+            <div class="header_editUser header_item">
+              <img src="" alt="" class="header_avator" />
+              <div class="header_info">
+                <span class="userName"></span>
+                <span class="useremail"></span>
+              </div>
+            </div>
+            
+            <a class="myfileBtn" href="/my-files.html">
+              <img
+                src="/dist/img/header/list_icon_files.svg"
+                alt=""
+                class="header_icon"
+              />
+              I miei file
+              <img
+                src="/dist/img/header/icon_list_arrow.svg"
+                alt=""
+                class="icon_list_arrow"
+              />
+            </a>
+            
+            <div class="signoutBtn header_item">
+              <img
+                src="/dist/img/header/list_icon_sign_out.svg"
+                alt=""
+                class="header_icon"
+              />
+              Esci
+              <img
+                src="/dist/img/header/icon_list_arrow.svg"
+                alt=""
+                class="icon_list_arrow"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="meau_icon">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="close"></span>
+        </div>
+      </div>
+      <!-- <div id="mobile-nav-menu">
+        <div class="shadow"></div>
+      </div> -->
+    </div>
+  </div>
+  <div class="menu-contanier">
+    <ul class="mobile-menu">
+      <li class="meau_item log mobile-menu-item">
+        <div class="mob-menu-title user">
+          <img src="" alt="" class="header_avator" />
+          <div class="header_info">
+            <a href="javascript:;" class="userName header_editUser"></a>
+            <span class="useremail"></span>
+          </div>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          
+            <div class="user_item">
+              <a class="myfileBtn" href="/my-files.html">
+                <img
+                  src="/dist/img/header/list_icon_files.svg"
+                  alt=""
+                  class="header_icon"
+                />
+                I miei file
+              </a>
+            </div>
+            
+          <div class="user_item">
+            <a class="signoutBtn" href="javascript:;">
+              <img
+                src="/dist/img/header/list_icon_sign_out.svg"
+                alt=""
+                class="header_icon"
+              />
+              Esci
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu-item">
+        <div class="mob-menu-title">
+          <p>Strumenti di Chat AI</p>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          <div><a href="/ai-girlfriend.html">Fidanzata AI</a></div>
+          <div><a href="/ai-boyfriend.html">Fidanzato AI</a></div>
+        </div>
+      </li>
+      <li class="mobile-menu-item">
+        <div class="mob-menu-title">
+          <p>Strumenti AI per Foto</p>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          <div><a href="/face-swap.html">Face Swap Foto</a></div>
+          <div><a href="/multiple-face-swap.html">Face Swap Foto Multiplo</a></div>
+<!--          <div><a href="/ai-image-generator.html">Generatore di Immagini AI</a></div>-->
+          <div><a href="/ai-attractiveness-test.html">Test di Bellezza</a></div>
+        </div>
+      </li>
+      <li class="mobile-menu-item">
+        <div class="mob-menu-title">
+          <p>Strumenti AI per Video</p>
+          <span class="arrow"></span>
+        </div>
+        <div class="mob-menu-dec">
+          <div><a href="/face-swap.html?openTab=videofaceSwap">Face Swap Video</a></div>
+          <div><a href="/multiple-face-swap.html?openTab=videofs">Face Swap Video Multiplo</a></div>
+          <div><a href="/video-translator.html">Traduttore Video AI</a></div>
+        </div>
+      </li>
+      <!-- <li><a href="/pricing.html">Prezzi</a></li> -->
+      
+        <li><a class="myfileBtn" href="/my-files.html" >I miei file</a></li>
+      
+      <li><a href="/about.html">Chi Siamo</a></li>
+      <li class="meau_item log"><a href="javascript:;" class="signoutBtn">Esci</a></li>
+    </ul>
+  </div>
+</header>
+<script src="/dist/js/header-credit/index.js"></script>
+<script type="text/javascript" src="/dist/js/common-header.js"></script>
+    <main>
+        <div class="my-files">
+            <div class="my-files-container">
+                <div class="operation-box" style="display: none;">
+                    <div class="files-number">
+                        <span id="filesNumber">1</span>
+                        &nbsp;selezionato
+                    </div>
+                    <div class="operation-btns">
+                        <img src="/dist/img/my-files/icon_loading.svg" style="height:24px;width:24px;display: none;" class="loading-animation">
+                        <img src="/dist/img/my-files/icon_download_white.svg" class="operation-icon" id="downloadBatch">
+                        <img src="/dist/img/my-files/icon_delete.svg" class="operation-icon" id="deleteBatch">
+                        <span class="operation-cancel"> Annulla</span>
+                    </div>
+                </div>
+                <div class="m-show my-files-navigation">I miei file</div>
+                <div class="my-files-title">
+                    <h2 class="title-left">Creazioni recenti  (<b id="dataTotal">0</b>)</h2>
+                    <div class="title-right">
+                        <div class="filter-select-container pc-show">
+                            <div class="filter-select ">
+                                <img src="/dist/img/my-files/icon_filter.png" style="width: 20px;height: 20px;">
+                                <span id="filterText">Tutti</span>                  
+                                <img src="/dist/img/my-files/pull_down.svg" id="pullIcon">       
+                            </div>
+                            
+                            <div class="filter-dropdown-menu" style="display: none;">
+                                <div class="item select-all" data-value="0">
+                                    <div class="item-text">Tutti</div>
+                                </div>
+                                <div class="item select-img" data-value="1">
+                                    <div class="item-text">Immagini</div>
+                                </div>
+                                <div class="item select-video" data-value="2">
+                                    <div class="item-text">Video</div>
+                                </div>
+                            </div>  
+                        </div> 
+                
+                        <div class="filter-input">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <g id="search-normal" transform="translate(-0.029)">
+                                  <rect id="" data-name="" width="20" height="20" transform="translate(0.029)" fill="#fff" opacity="0"/>
+                                  <path id="Vector" d="M15.963,7.982A7.982,7.982,0,1,1,7.982,0,7.982,7.982,0,0,1,15.963,7.982Z" transform="translate(1.598 1.598)" fill="none" stroke="#1e1e2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                  <path id="Vector-2" data-name="Vector" d="M1.68,1.68,0,0" transform="translate(16.721 16.721)" fill="none" stroke="#1e1e2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </g>
+                            </svg>
+
+                            <input id="searchMyfileInput" style="display: none;" name="custom_search_name" type="text" autocomplete="off" placeholder="Cerca">
+                        </div>
+
+                        <div class="filter-select-m m-show-flex">
+                            <img src="/dist/img/my-files/icon_filter.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="limit-tips">
+                    <div class="limit-text">
+                        <span class="limit-text-left">
+                            Stai raggiungendo la capacità massima di archiviazione.
+                        </span>
+                        <span>
+                             Per favore, elimina file o aggiorna per evitare problemi di archiviazione.
+                        </span>
+                    </div>
+                    <div class="limit-button">Aggiorna ora</div>
+                </div>
+
+                <div class="template">
+                    <div class="no-content" style="display: none;">
+                        <div class="go-to-create">
+                            <div class="no-content-text">Attualmente non ci sono file qui.</div>
+                            <!-- <div class="go-to-btn">
+                                Genera ora con Vidqu AI
+                                <div class="go-to-btn-icon"></div>
+                            </div> -->
+                        </div>
+
+                        <div class="no-results">
+                            <div>
+                                <img src="/dist/img/my-files/icon_none.png">
+                            </div>
+                            <div class="no-results-text">Nessun risultato trovato</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination-box" style="display: none;">
+                    <div class="pagination-container">
+                        <img src="/dist/img/my-files/pull_prev.svg" class="prev-page">
+                        <div class="pages-wrapper">
+                            <ul class="pages"></ul>
+                        </div>
+                        <img src="/dist/img/my-files/pull_next.svg" class="next-page">
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="preview-large-box">
+            <div class="icon-close">
+                <img src="/dist/img/my-files/icon_close.svg" alt="">
+            </div>
+            <div class="preview-container">        
+                <div class="video-container">
+                </div>
+                <div class="img-container">
+                    <img src="" alt="Image Preview" class="preview-img">
+                </div>
+
+                <div class="preview-btns-box">
+                    <div class="preview-btn preview-share">
+                        <img src="/dist/img/my-files/icon_share.svg" alt="">
+                        Condividi
+                    </div>
+                    <div></div>
+                    <div class="preview-btn preview-download">
+                        <img src="/dist/img/my-files/icon_download.svg" alt="">
+                        Scarica
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-dropdown-menu-box" style="display: none;">
+            <div class="filter-dropdown-menu-m" >
+                <div class="item select-all active" data-value="0">
+                    <div class="item-text">Tutti</div>
+                </div>
+                <div class="item select-img" data-value="1">
+                    <div class="item-text">Immagini</div>
+                </div>
+                <div class="item select-video" data-value="2">
+                    <div class="item-text">Video</div>
+                </div>
+            </div>  
+        </div>
+        
+        <div class="more-operation-box" style="display: none;">
+            <div class="more-dropdown-menu-m " >
+                <div class="item item-share" data-value="0">
+                    <img src="/dist/img/my-files/icon_win_Share.svg">
+                    <div class="item-text">Condividi</div>
+                </div>
+                <div class="item item-download">
+                    <img src="/dist/img/my-files/icon_win_download.svg" class="item-icon">
+                    <div class="item-text">Scarica</div>
+                </div>
+                <div class="item item-rename">
+                    <img src="/dist/img/my-files/icon_win_Rename.svg" class="item-icon">
+                    <div class="item-text">Rinomina</div>
+                </div>
+                <div class="item item-delete" data-value="2">
+                    <img src="/dist/img/my-files/delete_red.svg">
+                    <div class="item-text text-delete">Elimina</div>
+                </div>
+
+                <div class="cancel-btn">Annulla</div>
+            </div>  
+        </div>
+
+        
+    </main>
+  
+    <share-dialog id="shareDialogEl"></share-dialog>
+
+    <footer id="footer" class="footer">
+  <div class="footer-bottom">
+    <div class="wapper">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span class="footer-logo-bg"></span>
+        </div>
+        <div class="footer-logo-des">Ottieni il tuo programma AI e risplendi.</div>
+        <div class="footer-logo-font">
+          <div>©</div>
+          <span>2024</span>, Vidqu. Tutti i Diritti Riservati.
+        </div>
+      </div>
+      <div class="footer-right">
+        <ul>
+          <!-- <li>Strumenti di Chat AI</li>
+          <li><a href="/ai-girlfriend.html">Fidanzata AI</a></li>
+          <li><a href="/ai-boyfriend.html">Fidanzato AI</a></li> -->
+        </ul>
+        <ul>
+          <li>Strumenti AI per Foto</li>
+          <li><a href="/face-swap.html">Face Swap Foto</a></li>
+          <li><a href="/multiple-face-swap.html">Face Swap Foto Multiplo</a></li>
+<!--          <li><a href="/ai-image-generator.html">Generatore di Immagini AI</a></li>-->
+          <!-- <li><a href="/ai-attractiveness-test.html">Test di Bellezza</a></li> -->
+        </ul>
+        <ul>
+          <li>Strumenti AI per Video</li>
+          <li><a href="/face-swap.html?openTab=videofs">Face Swap Video</a></li>
+          <li><a href="/multiple-face-swap.html?openTab=videofs">Face Swap Video Multiplo</a></li>
+          <!-- <li><a href="/video-translator.html">Traduttore Video AI</a></li> -->
+        </ul>
+        <ul>
+          <li class="ex-nav">Azienda</li>
+          <li><a href="/about.html">Chi Siamo</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/terms.html">Termini</a></li>
+          <!-- <li class="ex-nav"><a href="/pricing.html">Prezzi</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="fix-footer" style="display: none">
+  <div class="fix-footer-title">
+    <div>
+      Vidqu utilizza i cookie per migliorare la tua esperienza sul sito. L'uso di Vidqu implica il consenso a <a href="/privacy.html">Privacy</a>.
+    </div>
+    <button id="footer_btn">Accetto</button>
+  </div>
+</div>
+<script type="text/javascript" src="/dist/js/lib-vd.min.js"></script>
+<script>
+  const _$$ = $LIB("en", "vidqu");
+</script> 
+<div
+  class="fix_ios_footer"
+  id="iosFooter"
+  data-original="/dist/img/footer_bg.webp"
+>
+  <div class="fix-footer-title">
+    App Face Swap 100% GRATUITA da Scaricare
+    <img
+      src="/dist/img/loading-buffering-white.svg"
+      class="fix_icon"
+      alt="fix_icon"
+      width="16"
+      height="16"
+      data-original="/dist/img/footer_fix_icon.svg"
+    />
+    <button id="ios_footer_btn">Scaricala Ora</button>
+  </div>
+</div>
+
+    
+    <script type="text/javascript" src="/dist/js/share-dialog/index.js"></script>
+    <script type="text/javascript" src="/dist/js/bottom-message/index.js"></script>
+    <script type="text/javascript" src="/dist/js/jszip.min.js"></script>
+    <script src="/dist/js/moment/moment.min.js"></script>
+    <script src="/dist/js/moment/locales.min.js"></script>
+    <script src="/dist/js/bottom-message/index.js" type="module"></script>
+    <script src="/dist/js/popup/index.js" type="module"></script>
+    <script src="/dist/js/popup/popup_init.js"></script>
+    <script type="text/javascript" src="/dist/js/my-files.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script>
+        eruda.init()
+    </script> -->
+
+
+    <script>
+
+    </script>
+
+  </body>
+</html>

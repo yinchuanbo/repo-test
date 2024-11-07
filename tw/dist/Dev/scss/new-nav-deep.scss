@@ -1,0 +1,348 @@
+
+@media (min-width: 1200px) {
+  #header_user {
+    line-height: 0;
+    .signout {
+      background-color: #070C14;
+      svg, div, .header_item, .myfileBtn {
+        color: #cfcfcf;
+        font-family: Sora;
+        @media (min-width: 1200px) {
+          &:hover {
+            color: #fff;
+            // background: #30333b 0% 0% no-repeat padding-box;
+          }
+        }
+      }
+      .header_item {
+        .userName {
+          font: normal normal 500 12px/16px Roboto;
+          letter-spacing: 0px;
+          color: #CFCFCF;
+        }
+        .useremail {
+          font: normal normal 400 12px/16px Roboto;
+          letter-spacing: 0px;
+          color: #CFCFCF;
+          opacity: .4;
+        }
+        .icon_list_arrow {
+          content: url(/dist/img/header/icon_list_arrow_w.svg);
+        }
+        &.signoutBtn .header_icon {
+          content: url(/dist/img/header/list_icon_sign_out_w.svg);
+        }
+        &:hover {
+          background-color: #30333B;
+        }
+      }
+    }
+  }
+  .header_menu {
+    display: flex;
+    align-items: center;
+  }
+  .nav-header-fixed{
+    background: #070C14;
+    border: none;
+  }
+  #header_login{
+    width: 72px;
+    height: 38px;
+    background: #2E3643 0% 0% no-repeat padding-box;
+    font: normal normal 300 16px/21px Sora;
+    letter-spacing: 0px;
+    color: #DFEAFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration:none;
+    transition: .5s;
+    &:hover{
+      background: transparent;
+      border: 1px solid;
+    }
+  }
+  .nav-logo-bg{
+    background: url("/dist/img/IGhome/logo.svg") no-repeat center;
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 117px;
+    height: 38px;
+  }
+  .menu-item{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    .menu-text{
+      display: flex;
+      align-items: center;
+      .arrow-normal{
+        display: inline-block;
+        width: 10px;
+        height: 6px;
+        margin-left: 7px;
+        background: url("/dist/img/IGhome/arrow-do.svg") no-repeat center/cover;
+        transform: rotateZ(180deg);
+        transition: .3s;
+        &.active{
+          transform: rotateZ(180deg);
+          background: url("/dist/img/IGhome/arrow-do-h.svg") no-repeat center/cover;
+        }
+      }
+      &.active{
+        & p {
+          color:#624AFF;
+        }
+      }
+    }
+    & p {
+      text-align: left;
+      font: normal normal 300 16px/21px Sora;
+      letter-spacing: 0px;
+      color: #DFEAFD;
+    }
+    & a{
+      text-align: left;
+      font: normal normal 300 16px/21px Sora;
+      letter-spacing: 0px;
+      color: #DFEAFD;
+    }
+    .menu-drop{
+      display: none;
+      background: #1D2430 0% 0% no-repeat padding-box;
+      box-shadow: 0px 2px 22px #0000001A;
+      border-radius: 3px;
+      padding: 16px 12px;
+      position: absolute;
+      top: 30px;
+      z-index: 9999;
+      .menu-drop-item{
+        text-align: left;
+        font: normal normal 300 16px/21px Sora;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        padding-left: 14px;
+        & span{
+          padding: 0 80px 0 10px;
+          display: inline-block;
+          width: 100%;
+          white-space: nowrap;
+        }
+        & img {
+          width: 28px;
+          height: 28px;
+          object-fit: contain;
+        }
+        &:hover{
+          border-radius: 2px;
+          background: #2E3643;
+        }
+      }
+    }
+  }
+  .footer{
+    background: #070C14;
+    .footer-logo-bg{
+      background: url("/dist/img/IGhome/logo.svg") no-repeat center;
+      background-size: 100% 100%;
+      display: inline-block;
+      width: 117px;
+      height: 38px;
+    }
+    .footer-bottom .footer-right>ul{
+      margin-right: 0;
+    }
+    .footer-logo-des {
+      text-align: left;
+      font: normal normal 300 14px/19px Sora;
+      letter-spacing: 0px;
+      color: #84878C;
+      margin-top: 14px;
+      display: block;
+      margin-bottom: 0;
+      white-space: nowrap;
+    }
+    .footer-bottom {
+      display: flex;
+      height: 315px;
+      justify-content: center;
+      width: 1535px;
+      background: transparent;
+      margin: 0 auto;
+      border-top: 1px solid #292d3f;
+      .wapper {
+        height: 100%;
+        display: flex;
+        padding-top: 40px;
+
+        .footer-left {
+          display: block;
+          padding-bottom: 1rem;
+        }
+        .footer-logo-font {
+          font: normal normal 300 12px/16px Sora;
+          letter-spacing: 0;
+          color: #84878C;
+          display: flex;
+          margin-top: 48px;
+        }
+        .footer-right {
+          display: flex;
+          margin-left: 245px;
+          ul {
+            &+ul {
+              margin-left: 63px;
+            }
+            .ex-nav{
+              & a{
+                font: normal normal normal 16px/30px Sora;
+                color: #fffdf5;
+                margin-bottom: 10px;
+              }
+            }
+            li {
+              margin-bottom: 16px;
+              white-space: nowrap;
+              a {
+                font: normal normal 300 14px/18px Sora;
+                color: #bcbcbd;
+                @media (min-width: 1200px) {
+                  &:hover {
+                    text-decoration: underline;
+                    color: #ffffff;
+                  }
+                }
+              }
+
+              &:first-child {
+                font: normal normal normal 16px/30px Sora;
+                color: #fffdf5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .nav-header .mobile-menu li{
+    min-height: 1.1rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .46rem;
+    padding-top:.46rem ;
+  }
+  .nav-header .mobile-menu{
+    background: #1D2430;
+  }
+  .nav-header .mobile-menu li a{
+    color: #ffffff;
+  }
+  .mob-menu-dec{
+    width: 100%;
+    margin-top: .2rem;
+    display: none;
+    & a{
+      font: normal normal 300 .30rem/.50rem Sora;
+      letter-spacing: 0px;
+      color: #ffffff!important;
+      margin-top: .24rem;
+    }
+  }
+  .mob-menu-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    & p{
+      font: normal normal normal .36rem/.50rem Sora;
+      letter-spacing: 0;
+      color: #ffffff;
+    }
+    .arrow{
+      background: url("/dist/img/IGhome/arrow-do.svg") no-repeat center;
+      transform: rotateZ(180deg);
+      width: .2rem;
+      height: .11rem;
+      transition: .3s;
+      background-size: cover;
+      &.active{
+        transform: rotateZ(360deg);
+      }
+    }
+  }
+  .header_menu{
+    display: none;
+  }
+  .nav-header-fixed{
+    background: #070C14;
+    border: none;
+  }
+  #header_login{
+    color: #fff;
+  }
+  .nav-header .meau_icon .line{
+    background: #fff;
+  }
+  .nav-header .meau_icon .close{
+    background: url("/dist/img/IGhome/icon_menu_close.svg") no-repeat center;
+    width: .64rem!important;
+    height: .64rem!important;
+    background-size: cover;
+  }
+  .footer-bottom{
+    background: #070C14;
+  }
+  .footer-bottom .footer-right>ul>li:first-child {
+    margin-bottom: 0.24rem;
+    font: normal normal normal 0.36rem / 0.45rem Sora;
+    color: #FFFFFF;
+  }
+  .footer-bottom .footer-right>ul li a {
+    font: normal normal 300 0.28rem / 0.35rem Sora;
+    color: #9099A3;
+  }
+  .ex-nav{
+    & a{
+      font: normal normal normal 0.36rem / 0.45rem Sora!important;
+      letter-spacing: 0!important;
+      color: #FFFFFF!important;
+    }
+  }
+  .footer-left .footer-logo-des {
+    color: #84878C;
+    margin-bottom: 0.4rem;
+    font: normal normal 300 0.26rem / 0.34rem Sora;
+  }
+  .footer-left .footer-logo-font {
+    text-align: left;
+    color: #84878C;
+    width: 100%;
+    font: normal normal 300 0.2rem / 0.16rem Sora;
+  }
+  .footer-logo-bg{
+    background: url("/dist/img/IGhome/logo.svg") no-repeat center;
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 1.86rem;
+    height: .64rem;
+  }
+  .nav-logo-bg{
+    background: url("/dist/img/IGhome/logo.svg") no-repeat center;
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 1.86rem;
+    height: .64rem;
+  }
+}
+
+
+

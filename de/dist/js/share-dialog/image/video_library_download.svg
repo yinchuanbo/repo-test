@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2007" data-name="Rectangle 2007" width="22" height="22" transform="translate(5 5)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_1322" data-name="Rectangle 1322" width="24" height="24" transform="translate(553.617 312.617)" fill="#8b3dff" stroke="#fff" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="video_library_download" transform="translate(-5 -5)" clip-path="url(#clip-path)">
+    <g id="menu_download" transform="translate(-549.617 -308.617)" clip-path="url(#clip-path-2)">
+      <path id="Path_1952" data-name="Path 1952" d="M11.234,0h1.123a6.977,6.977,0,0,1,2.96.306,2.812,2.812,0,0,1,1.227,1.227,6.978,6.978,0,0,1,.306,2.96v7.864a6.978,6.978,0,0,1-.306,2.96,2.812,2.812,0,0,1-1.227,1.227,6.977,6.977,0,0,1-2.96.306H11.234M6.553,3.745l4.681,4.681m0,0L6.553,13.106m4.681-4.681H0" transform="translate(574.043 316.192) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

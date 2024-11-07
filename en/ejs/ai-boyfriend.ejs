@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <% const version="1.4.0.32" ; %>
+    <meta charset="UTF-8" />
+    <title>
+      <%= aiBoyFriend.title %>
+    </title>
+    <meta name="description" content="<%= aiBoyFriend.description.content %>" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,viewport-fit=cover" />
+    <meta name="facebook-domain-verification" content="1j3yuczpvlcnpxgscdbj8utw68641a" />
+
+    <link rel="shortcut icon" href="/dist/img/index.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@vidqu" />
+    <meta name="twitter:title" content="<%= aiBoyFriend.shareTitle %>" />
+    <meta name="twitter:description" content="<%= aiBoyFriend.shareDes %>" />
+    <meta name="twitter:image" content="" />
+    <meta property="fb:app_id" content="114829304922527" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="<%= aiBoyFriend.shareTitle %>" />
+    <meta property="og:description" content="<%= aiBoyFriend.shareDes %>" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" type="text/css" href="/dist/css/swiper.min.css" />
+
+    <link rel="canonical" href="https://www.vidqu.ai/ai-boyfriend.html" />
+    <link rel="preload" href="/dist/img/aiFriend/btn_right_hover.png" as="image" />
+    <link rel="preload" href="/dist/img/aiFriend/btn_left_hover.png" as="image" />
+    <link rel="preload" href="/dist/img/aiGirlFriendSeo/step1_photo.png" as="image" />
+    <link rel="preload" href="/dist/img/aiGirlFriendSeo/step2_photo.png" as="image" />
+    <link rel="preload" href="/dist/img/aiGirlFriendSeo/step3_photo.png" as="image" />
+    <link rel="preload" href="/dist/img/aiGirlFriendSeo/step4_photo.png" as="image" />
+    <link rel="preload" href="/dist/img/aiFriend/btn_heart_s_press.svg" as="image" />
+    <link rel="stylesheet" href="/dist/css/new-nav.css?v=<%= version %>" />
+    <link rel="prefetch" href="/dist/img/ai-chatting/error_icon.svg" />
+    <link rel="prefetch" href="/dist/img/ai-chatting/popup_x_icon.svg" />
+    <%- include('../patiles/aiG-head'); -%>
+    <link rel="stylesheet" type="text/css" href="/dist/css/ai-boyfriend-talking.css?v=<%= version %>" />
+    <link rel="stylesheet" type="text/css" href="/dist/css/ai-boyfriend.css?v=<%= version %>" />
+</head>
+
+<body>
+  <!-- header -->
+  <%- include('../patiles/header.ejs'); -%>
+    <div class="aiFriend">
+      <h1><%- aiBoyFriend.h1 %></h1>
+      <div class="description"><%- aiBoyFriend.des %></div>
+      <div class="Segment">
+        <div class="l">
+          <div class="Segment_item active"><%- aiBoyFriend.home %></div>
+          <div class="Segment_item" id="myCharacters">
+            <%- aiBoyFriend.myCharacters %>
+          </div>
+        </div>
+        <div class="r">
+          <div class="createBtn createMc">
+            <img src="/dist/img/aiFriend/icon_add.svg" alt="" />
+            <span class="pc_show"><%- aiBoyFriend.createBtn %></span>
+            <span class="mobile_show"><%- aiBoyFriend.createBtn_m %></span>
+          </div>
+        </div>
+      </div>
+      <div class="SegmentBox">
+        <div class="Recent_hr">
+          <div class="back">
+            <img src="/dist/img/aiFriend/icon_arrow.png" alt="" />
+          </div>
+          <div class="hr_title"><%- aiBoyFriend.RecentChatting %></div>
+          <div class="operate">
+            <div class="edit recent"><%- aiBoyFriend.edit %></div>
+            <div class="view"><%- aiBoyFriend.view %></div>
+          </div>
+        </div>
+        <div class="RecentChatting">
+          <div class="btn_left"></div>
+          <div class="btn_right"></div>
+          <div class="RecentChattingBox"></div>
+          <div class="mobile_show viewMore"><%- aiBoyFriend.view %></div>
+        </div>
+        <div class="Characters_hr">
+          <div class="hr_title"><%- aiBoyFriend.Characters %></div>
+        </div>
+        <div class="character_select">
+          <div class="select_like chatSelect" id="select_sort">
+            <div class="select_content"><%- aiBoyFriend.Hot %></div>
+            <div class="select_icon"></div>
+            <div class="select_list">
+              <div class="select_list_item active" data-sort="hot">
+                <%- aiBoyFriend.Hot %>
+              </div>
+              <div class="select_list_item" data-sort="top">
+                <%- aiBoyFriend.Top %>
+              </div>
+              <div class="select_list_item" data-sort="new">
+                <%- aiBoyFriend.New %>
+              </div>
+            </div>
+          </div>
+          <div class="select_time chatSelect" id="select_sort_time">
+            <div class="select_content"><%- aiBoyFriend.time.AllTime %></div>
+            <div class="select_icon"></div>
+            <div class="select_list">
+              <div class="select_list_item" data-sort_time="day">
+                <%- aiBoyFriend.time.day %>
+              </div>
+              <div class="select_list_item" data-sort_time="week">
+                <%- aiBoyFriend.time.Week %>
+              </div>
+              <div class="select_list_item" data-sort_time="month">
+                <%- aiBoyFriend.time.Month %>
+              </div>
+              <div class="select_list_item" data-sort_time="year">
+                <%- aiBoyFriend.time.Year %>
+              </div>
+              <div class="select_list_item active" data-sort_time="">
+                <%- aiBoyFriend.time.AllTime %>
+              </div>
+            </div>
+          </div>
+          <div class="heart">
+            <img src="/dist/img/aiFriend/btn_heart_normal.png" alt="" />
+          </div>
+        </div>
+        <div class="classify">
+          <div class="classify_btn_left">
+            <img src="/dist/img/aiFriend/btn_left_normal.png" alt="" />
+          </div>
+          <div class="classify_btn_right">
+            <img src="/dist/img/aiFriend/btn_right_normal.png" alt="" />
+          </div>
+          <div class="classify_box">
+            <div class="classify_box_container"></div>
+          </div>
+        </div>
+        <div class="characters"></div>
+        <lottie-player class="characters_loading" src="/dist/img/aiFriend/loading.json" background="transparent"
+          speed="1" loop autoplay></lottie-player>
+        <div class="noFound">
+          <div class="n_title"><%- aiBoyFriend.NoFound %></div>
+          <div class="n_des"><%- aiBoyFriend.try %></div>
+        </div>
+      </div>
+      <div class="myCharactersBox">
+        <div class="classify">
+          <div class="classify_select chatSelect">
+            <div class="select_content">
+              <%- aiBoyFriend.classifySelect.All %>
+            </div>
+            <div class="select_icon"></div>
+            <div class="select_list">
+              <div class="select_list_item active" data-primary="">
+                <%- aiBoyFriend.classifySelect.All %>
+              </div>
+              <div class="select_list_item" data-primary="Public">
+                <%- aiBoyFriend.classifySelect.Public %>
+              </div>
+              <div class="select_list_item" data-primary="Private">
+                <%- aiBoyFriend.classifySelect.Private %>
+              </div>
+              <div class="select_list_item" data-primary="Draft">
+                <%- aiBoyFriend.classifySelect.Draft %>
+              </div>
+            </div>
+          </div>
+          <div class="classify_btn_left">
+            <img src="/dist/img/aiFriend/btn_left_normal.png" alt="" />
+          </div>
+          <div class="classify_btn_right">
+            <img src="/dist/img/aiFriend/btn_right_normal.png" alt="" />
+          </div>
+          <div class="classify_box">
+            <div class="classify_box_container">
+              <div class="mobile_show shadow"></div>
+            </div>
+          </div>
+        </div>
+        <!-- normal -->
+        <div class="myCharacters_Box">
+          <div class="myCharacters_hr">
+            <div class="hr_title"><%- aiBoyFriend.myCharacters_hr %></div>
+            <div class="edit"><%- aiBoyFriend.edit %></div>
+          </div>
+          <div class="myCharacters"></div>
+        </div>
+        <!-- not -->
+        <div class="noFoundMc">
+          <div class="n_title"><%- aiBoyFriend.noFoundMc.title %></div>
+          <div class="n_des"><%- aiBoyFriend.noFoundMc.des %></div>
+          <div class="n_btn createMc">
+            <img src="/dist/img/aiFriend/icon_add.svg" alt="" />
+            <%- aiBoyFriend.noFoundMc.btn %>
+          </div>
+        </div>
+        <!-- create -->
+        <div class="createMyCharacter_Box">
+          <div class="createMc_hr">
+            <div class="create_back pc">
+              <div class="create_back_box">
+                <img src="/dist/img/aiFriend/icon_back.svg" alt="" />
+                <%- aiBoyFriend.create_back %>
+              </div>
+            </div>
+            <div class="hr_title"><%- aiBoyFriend.createMcHr %></div>
+          </div>
+          <div class="createMc_container">
+            <!-- image -->
+            <div class="createMc_item image">
+              <!-- avatar -->
+              <div class="item_avatar">
+                <div class="mc_title">
+                  <div class="mc_title_l">
+                    <div class="font required">
+                      <%- aiBoyFriend.createMc.avatar_title %>
+                    </div>
+                  </div>
+                </div>
+                <div class="mc_des"><%- aiBoyFriend.createMc.avatar_des %></div>
+                <div class="avatar">
+                  <input type="file" style="display: none" id="createMC_avatar" accept=".jpg, .png, .webp, .jpeg" />
+                  <div class="image_item">
+                    <div class="delete_image"></div>
+                    <img src="" alt="" id="createMC_avatar_img" />
+                  </div>
+                  <div class="addImage">
+                    <img src="/dist/img/aiFriend/btn_set_normal.svg" alt="" />
+                    <span><%- aiBoyFriend.createMc.avatar_btnSet %></span>
+                  </div>
+                </div>
+                <div class="erorrTip" data-type="avatar">
+                  <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+                  <span class="image_error"></span>
+                </div>
+              </div>
+              <!-- background -->
+              <div class="isEdit">
+                <div class="mc_title">
+                  <div class="font">
+                    <%- aiBoyFriend.createMc.background_title %>
+                  </div>
+                </div>
+                <div class="mc_des">
+                  <%- aiBoyFriend.createMc.background_des %>
+                </div>
+                <div class="background" id="background">
+                  <input type="file" style="display: none" id="createMC_background" accept=".jpg, .png, .webp,.jpeg" />
+                  <div class="image_item">
+                    <div class="delete_image"></div>
+                    <img src="" alt="" id="createMC_background_img" />
+                  </div>
+                  <div class="addImage">
+                    <img src="/dist/img/aiFriend/btn_set_normal.svg" alt="" />
+                    <span><%- aiBoyFriend.createMc.background_btnSet %></span>
+                  </div>
+                </div>
+                <div class="erorrTip" data-type="background">
+                  <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+                  <span class="image_error"></span>
+                </div>
+              </div>
+            </div>
+            <!-- voice -->
+            <div class="createMc_item isEdit voice">
+              <div class="mc_title">
+                <div class="mc_title_l">
+                  <div class="font required">
+                    <%- aiBoyFriend.createMc.voice_title %>
+                  </div>
+                  <div class="tip">
+                    <img src="/dist/img/aiFriend/btn_tips.svg" alt="" />
+                    <div class="tip_box">
+                      <%- aiBoyFriend.createMc.voice_tip %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <audio style="display: none" id="voice_type"></audio>
+              <div class="voice_box">
+                <div class="voice_item">
+                  <div class="icon"></div>
+                  123123
+                </div>
+              </div>
+            </div>
+            <!-- name -->
+            <div class="createMc_item">
+              <div class="mc_title">
+                <div class="mc_title_l">
+                  <div class="font required">
+                    <%- aiBoyFriend.createMc.name_title %>
+                  </div>
+                </div>
+                <div class="mc_title_r">
+                  <div class="maxLength" data-input="name">
+                    <span>0</span>/30
+                  </div>
+                </div>
+              </div>
+              <input type="text" label="name" class="createMC_name"
+                placeholder="<%- aiBoyFriend.createMc.name_placeholder %>" />
+              <div class="erorrTip" data-type="name">
+                <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+                <span class="image_error"><%- aiBoyFriend.createMc.name_error %></span>
+              </div>
+            </div>
+            <!-- description -->
+            <div class="createMc_item">
+              <div class="mc_title">
+                <div class="mc_title_l">
+                  <div class="font required">
+                    <%- aiBoyFriend.createMc.des_title %>
+                  </div>
+                  <div class="tip isCreate">
+                    <img src="/dist/img/aiFriend/btn_tips.svg" alt="" />
+                    <div class="tip_box">
+                      <%- aiBoyFriend.createMc.des_tip_create %>
+                    </div>
+                  </div>
+                  <div class="tip isEdit">
+                    <img src="/dist/img/aiFriend/btn_tips.svg" alt="" />
+                    <div class="tip_box">
+                      <%- aiBoyFriend.createMc.des_tip_edit %>
+                    </div>
+                  </div>
+                  <!-- <div class="writeMe" ><%- aiBoyFriend.createMc.des_write %></div> -->
+                </div>
+                <div class="mc_title_r">
+                  <div class="maxLength" data-input="description">
+                    <span>0</span>/500
+                  </div>
+                </div>
+              </div>
+              <textarea type="text" label="description" placeholder="<%- aiBoyFriend.createMc.des_placeholder %>"
+                class="whiteMeOut"></textarea>
+              <div class="erorrTip" data-type="description">
+                <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+                <span class="image_error"><%- aiBoyFriend.createMc.des_error %></span>
+              </div>
+            </div>
+            <!-- gender -->
+            <div class="createMc_item isCreate">
+              <div class="mc_title">
+                <div class="mc_title_l">
+                  <div class="font">
+                    <%- aiBoyFriend.createMc.Gender_title %>
+                  </div>
+                </div>
+                <div class="mc_title_r">
+                  <div class="maxLength" data-input="gender">
+                    <span>0</span>/30
+                  </div>
+                </div>
+              </div>
+              <input type="text" label="name" class="createMC_gender"
+                placeholder="<%- aiBoyFriend.createMc.Gender_placeholder %>" />
+            </div>
+            <!-- persona -->
+            <div class="createMc_item isEdit">
+              <div class="mc_title">
+                <div class="mc_title_l">
+                  <div class="font required">
+                    <%- aiBoyFriend.createMc.Persona_title %>
+                  </div>
+                  <div class="tip">
+                    <img src="/dist/img/aiFriend/btn_tips.svg" alt="" />
+                    <div class="tip_box">
+                      <%- aiBoyFriend.createMc.Persona_tip %>
+                    </div>
+                  </div>
+                </div>
+                <div class="mc_title_r">
+                  <div class="maxLength" data-input="persona">
+                    <span>0</span>/500
+                  </div>
+                </div>
+              </div>
+              <textarea type="text" label="persona" placeholder="<%- aiBoyFriend.createMc.Persona_placeholder %>"
+                class="createMC_persona"></textarea>
+              <div class="erorrTip" data-type="persona">
+                <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+                <span class="image_error"><%- aiBoyFriend.createMc.Persona_lack %></span>
+              </div>
+            </div>
+            <!-- Greeting -->
+            <div class="createMc_item isEdit">
+              <div class="mc_title">
+                <div class="mc_title_l">
+                  <div class="font required">
+                    <%- aiBoyFriend.createMc.Greeting_title %>
+                  </div>
+                  <div class="tip">
+                    <img src="/dist/img/aiFriend/btn_tips.svg" alt="" />
+                    <div class="tip_box">
+                      <%- aiBoyFriend.createMc.Greeting_tip %>
+                    </div>
+                  </div>
+                </div>
+                <div class="mc_title_r">
+                  <div class="maxLength" data-input="Greeting">
+                    <span>0</span>/330
+                  </div>
+                </div>
+              </div>
+              <textarea type="text" placeholder="<%- aiBoyFriend.createMc.Greeting_placeholder %>" wrap="hard"
+                class="createMC_Greeting"></textarea>
+              <div class="erorrTip" data-type="Greeting">
+                <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+                <span class="image_error"><%- aiBoyFriend.createMc.Greeting_lack %></span>
+              </div>
+            </div>
+            <!-- Scenario -->
+            <div class="createMc_item isEdit">
+              <div class="mc_title">
+                <div class="mc_title_l">
+                  <div class="font required">
+                    <%- aiBoyFriend.createMc.Scenario_title %>
+                  </div>
+                  <div class="tip">
+                    <img src="/dist/img/aiFriend/btn_tips.svg" alt="" />
+                    <div class="tip_box">
+                      <%- aiBoyFriend.createMc.Scenario_tip %>
+                    </div>
+                  </div>
+                </div>
+                <div class="mc_title_r">
+                  <div class="maxLength" data-input="Scenario">
+                    <span>0</span>/500
+                  </div>
+                </div>
+              </div>
+              <textarea type="text" placeholder="<%- aiBoyFriend.createMc.Scenario_placeholder %>"
+                class="createMC_Scenario"></textarea>
+              <div class="erorrTip" data-type="Scenario">
+                <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+                <span class="image_error"><%- aiBoyFriend.createMc.Scenario_lack %></span>
+              </div>
+            </div>
+            <!-- Dialogue -->
+            <div class="createMc_item isEdit">
+              <div class="mc_title">
+                <div class="mc_title_l">
+                  <div class="font">
+                    <%- aiBoyFriend.createMc.Dialogue_title %>
+                  </div>
+                  <div class="tip">
+                    <img src="/dist/img/aiFriend/btn_tips.svg" alt="" />
+                    <div class="tip_box">
+                      <%- aiBoyFriend.createMc.Dialogue_tip %>
+                    </div>
+                  </div>
+                </div>
+                <div class="mc_title_r">
+                  <div class="maxLength" data-input="Dialogue">
+                    <span>0</span>/700
+                  </div>
+                </div>
+              </div>
+              <div class="mc_des">
+                <%- aiBoyFriend.createMc.Dialogue_tip2 %>
+              </div>
+              <textarea type="text" placeholder="<%- aiBoyFriend.createMc.Dialogue_placeholder %>"
+                class="createMC_Dialogue"></textarea>
+            </div>
+            <!-- Character visibility -->
+            <div class="createMc_item isEdit">
+              <div class="mc_title">
+                <div class="mc_title_l">
+                  <div class="font">
+                    <%- aiBoyFriend.createMc.visibility_title %>
+                  </div>
+                  <div class="tip">
+                    <img src="/dist/img/aiFriend/btn_tips.svg" alt="" />
+                    <div class="tip_box">
+                      <%- aiBoyFriend.createMc.visibility_tip %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="createMc_select chatSelect">
+                <div class="select_content">
+                  <%- aiBoyFriend.classifySelect.Public %>
+                </div>
+                <div class="select_icon"></div>
+                <div class="select_list">
+                  <div class="select_list_item active" data-type="Public">
+                    <%- aiBoyFriend.classifySelect.Public %>
+                  </div>
+                  <div class="select_list_item" data-type="Private">
+                    <%- aiBoyFriend.classifySelect.Private %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Categories -->
+            <div class="createMc_item isEdit Categories">
+              <div class="mc_title">
+                <div class="mc_title_l">
+                  <div class="font required">
+                    <%- aiBoyFriend.createMc.Categories_title %>
+                  </div>
+                  <div class="checkNum">
+                    <%- aiBoyFriend.createMc.Categories_tip0 %>
+                  </div>
+                </div>
+              </div>
+              <div class="createMc_checkbox"></div>
+              <div class="erorrTip" data-type="Categories">
+                <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+                <span class="image_error"><%- aiBoyFriend.createMc.Categories_lack %></span>
+              </div>
+            </div>
+
+            <div class="createMc_item btn">
+              <div class="mc_btn discard">
+                <%- aiBoyFriend.createMc.mc_btn_discard %>
+              </div>
+              <div class="mc_btn draft isEdit" id="draftMc">
+                <div class="draft_loading">
+                  <img src="/dist/img/aiFriend/icon_loading_white.svg" alt="" class="" />
+                </div>
+                <%- aiBoyFriend.createMc.mc_btn_draft %>
+              </div>
+              <div class="mc_btn_create isCreate" id="createMc">
+                <div class="createMc_loading">
+                  <img src="/dist/img/aiFriend/icon_loading.svg" alt="" />
+                </div>
+                <%- aiBoyFriend.createMc.mc_btn_createMc %>
+              </div>
+              <div class="mc_btn_create isEdit" id="editMc">
+                <div class="createMc_loading">
+                  <img src="/dist/img/aiFriend/icon_loading.svg" alt="" />
+                </div>
+                <%- aiBoyFriend.createMc.mc_btn_publish %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- loading -->
+        <lottie-player class="Mycharacters_loading" src="/dist/img/aiFriend/loading.json" background="transparent"
+          speed="1" loop autoplay></lottie-player>
+      </div>
+    </div>
+    <div class="ai-chat-box" id="AiChat" style="display: none">
+      <div class="ai-chat-container">
+        <div class="transparent-header"></div>
+        <div class="transparent">
+          <div class="transparent-top"></div>
+          <div class="transparent-bottom"></div>
+        </div>
+        <div class="ai-chat-title">
+          <img class="ai-chat-gf-avatar" src="" alt="avatar" />
+          <div>
+            <div class="ai-chat-gf-name">
+              <!--   -->
+            </div>
+            <div class="ai-chat-gf-view">
+              <img src="/dist/img/ai-chatting/icon_view.svg" alt="chat icon" />
+              <span>
+                <%= aiGirlFriendChat.viewMore %>
+              </span>
+              <img class="ai-chat-gf-view-arrow" src="/dist/img/ai-chatting/icon_right.svg" alt="chat icon" />
+            </div>
+          </div>
+        </div>
+        <div class="ai-gf-info-dialog-wrap">
+          <div class="ai-gf-info-dialog-bg"></div>
+
+          <div class="ai-gf-audio-limit-dialog">
+            <div class="ai-gf-info-dialog-close-btn ai-gf-info-dialog-close">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14"
+                viewBox="0 0 20 20">
+                <defs>
+                  <clipPath id="clip-path">
+                    <rect id="Rectangle_31667" data-name="Rectangle 31667" width="20" height="20"
+                      transform="translate(711 370)" fill="#fff" stroke="#707070" stroke-width="1" />
+                  </clipPath>
+                </defs>
+                <g id="icon_close" transform="translate(-711 -370)" clip-path="url(#clip-path)">
+                  <g id="Group_13797" data-name="Group 13797" transform="translate(716 375)">
+                    <path id="Path_158819" data-name="Path 158819" d="M-8171.114,3374.287l10,10"
+                      transform="translate(8171.114 -3374.287)" fill="none" stroke="#cfcfcf" stroke-linecap="round"
+                      stroke-width="2" />
+                    <path id="Path_158820" data-name="Path 158820" d="M-8161.114,3374.287l-10,10"
+                      transform="translate(8171.114 -3374.287)" fill="none" stroke="#cfcfcf" stroke-linecap="round"
+                      stroke-width="2" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="audio-limit-banner">
+              <picture>
+                <source media="(min-width: 12.01rem)" srcset="/dist/img/ai-chatting/limit-audio-pc-bf@2x.png" />
+                <source media="(max-width: 12rem)" srcset="/dist/img/ai-chatting/limit-audio-m-bf.png" />
+                <img src="/dist/img/ai-chatting/limit-audio-pc-bf@2x.png" alt="limit banner" />
+              </picture>
+            </div>
+            <div class="audio-limit-content">
+              <div class="audio-limit-title">
+                <%- aiGirlFriendChat.audioLimitTitle %>
+              </div>
+              <div class="audio-limit-desc">
+                <!--      -->
+              </div>
+              <div style="flex: 1"></div>
+              <div class="audio-limit-btn ai-gf-info-dialog-close">
+                <%= aiGirlFriendChat.audioLimitBtn %>
+              </div>
+            </div>
+          </div>
+
+          <div class="ai-gf-info-dialog">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14"
+              viewBox="0 0 20 20" class="ai-gf-info-dialog-close">
+              <defs>
+                <clipPath id="clip-path">
+                  <rect id="Rectangle_31667" data-name="Rectangle 31667" width="20" height="20"
+                    transform="translate(711 370)" fill="#fff" stroke="#707070" stroke-width="1" />
+                </clipPath>
+              </defs>
+              <g id="icon_close" transform="translate(-711 -370)" clip-path="url(#clip-path)">
+                <g id="Group_13797" data-name="Group 13797" transform="translate(716 375)">
+                  <path id="Path_158819" data-name="Path 158819" d="M-8171.114,3374.287l10,10"
+                    transform="translate(8171.114 -3374.287)" fill="none" stroke="#cfcfcf" stroke-linecap="round"
+                    stroke-width="2" />
+                  <path id="Path_158820" data-name="Path 158820" d="M-8161.114,3374.287l-10,10"
+                    transform="translate(8171.114 -3374.287)" fill="none" stroke="#cfcfcf" stroke-linecap="round"
+                    stroke-width="2" />
+                </g>
+              </g>
+            </svg>
+            <div class="ai-gf-info-dialog-top">
+              <img src="" alt="avatar" class="ai-gf-info-dialog-avatar" />
+              <div class="ai-gf-info-dialog-msg-wrap">
+                <div class="ai-gf-info-dialog-name">
+                  <!--    -->
+                </div>
+                <div class="ai-gf-info-dialog-msg">
+                  <span class="chatting-count">
+                    <!--    -->
+                  </span>
+                  <span class="ai-gf-info-dialog-birthday">
+                    <!--    -->
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="ai-gf-info-dialog-tools">
+              <div class="chat-btn-bg chatting-like">
+                <img src="/dist/img/ai-chatting/icon_heart.svg" alt="default like icon" class="no-like-icon" />
+                <img src="/dist/img/ai-chatting/icon_heart_like.svg" alt="like-icon" class="like-icon" />
+              </div>
+              <div class="chat-btn-bg chatting-share">
+                <img src="/dist/img/ai-chatting/icon_share.svg" alt="share icon" />
+              </div>
+            </div>
+            <div class="ai-gf-info-dialog-line">
+              <span>
+                <%= aiGirlFriendChat.intro %>
+              </span>
+            </div>
+            <div class="ai-gf-info-dialog-tags">
+              <!--    -->
+            </div>
+            <div class="ai-gf-info-dialog-desc">
+              <!--    -->
+            </div>
+            <div class="ai-gf-info-dialog-footer">
+              <div class="ai-gf-info-dialog-close ai-gf-info-dialog-btn">
+                OK
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="back-icon-box chat-btn-bg" id="backIcon">
+          <img src="/dist/img/ai-chatting/icon_back.svg" />
+          <%= aiGirlFriendChat.back %>
+        </div>
+        <div class="change-photo-btn" id="changePhotoBtn">
+          <%= aiGirlFriendChat.changePhoto %>
+        </div>
+        <div class="chat-bg-img" id="chatBgImg"></div>
+        <div class="right-buttons-box">
+          <div class="btn chat-btn-bg chatting-like" id="likeRoleId">
+            <img src="/dist/img/ai-chatting/icon_heart.svg" alt="" class="no-like-icon" />
+            <img src="/dist/img/ai-chatting/icon_heart_like.svg" alt="like-icon" class="like-icon" />
+          </div>
+          <div class="btn chat-btn-bg chatting-share" id="showShareBtn">
+            <img src="/dist/img/ai-chatting/icon_share.svg" alt="" />
+          </div>
+          <div class="btn chat-btn-bg close-btn" id="closeIcon">
+            <img src="/dist/img/ai-chatting/icon_close.svg" alt="" />
+          </div>
+        </div>
+        <div class="right-buttons-box-m">
+          <div class="right-button-box-m-dropdown">
+            <img srcset="/dist/img/ai-chatting/icon_dot@2x.png 2x" src="/dist/img/ai-chatting/icon_dot.png"
+              alt="tools switch" />
+          </div>
+          <div class="right-button-box-m-dropdown-menu">
+            <div class="btn chat-btn-bg chatting-like" id="likeRoleId">
+              <img src="/dist/img/ai-chatting/icon_heart.svg" alt="" class="no-like-icon" />
+              <img src="/dist/img/ai-chatting/icon_heart_like.svg" alt="like-icon" class="like-icon" />
+              <span>like</span>
+            </div>
+            <div class="btn chat-btn-bg chatting-share" id="showShareBtn">
+              <img src="/dist/img/ai-chatting/icon_share.svg" alt="" />
+              <span>share</span>
+            </div>
+          </div>
+        </div>
+        <!-- chatting box-->
+        <div class="chatting-box" id="chattingBox">
+          <div class="chatting-container mask-to-transparent" id="chattingContainer"></div>
+          <div class="chatting-input-box">
+            <div class="change-position-box">
+              <div class="change-position-title">
+                <%= aiGirlFriendChat.chatPosition %>
+              </div>
+              <div class="change-btns-box">
+                <div id="changeBtnLeft" class="change-btn">
+                  <img src="/dist/img/ai-chatting/btn_left.svg" alt="" />
+                </div>
+                <div id="changeBtnMiddle" class="change-btn change-active">
+                  <img src="/dist/img/ai-chatting/btn_down.svg" alt="" />
+                </div>
+                <div id="changeBtnRight" class="change-btn">
+                  <img src="/dist/img/ai-chatting/btn_right.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <img src="/dist/img/ai-chatting/btn_setting_normal.svg" alt="" id="editIcon" />
+            <textarea class="chatting-input" placeholder="<%= aiGirlFriendChat.placeholder %>" id="userInputMsg"
+              maxlength="500"></textarea>
+            <div class="send-btn disable" id="sendMsg">
+              <%= aiGirlFriendChat.send %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden-box">
+        <div class="login-popup-close-btn"></div>
+
+        <div class="my-message-box item" id="myMessageBox">
+          <div class="my-message-container"></div>
+          <div class="img-container">
+            <img src="/dist/img/ai-chatting/chat-bg.png" alt="" id="myAvatarImg" />
+          </div>
+        </div>
+
+        <div class="ai-message-box item" id="aiMessageBox">
+          <div class="img-container">
+            <img src="/dist/img/ai-chatting/chat-bg.png" alt="" id="aiAvatarImg" class="aiAvatarImg" />
+          </div>
+          <div class="ai-message-container"></div>
+        </div>
+
+        <lottie-player style="display: none" src="/dist/img/ai-chatting/audio-loading.json" background="transparent"
+          speed="1" loop autoplay id="audio-loading-icon">
+        </lottie-player>
+      </div>
+    </div>
+    <div class="hr_pagePorgress"></div>
+
+    <!-- shareBox -->
+    <div class="sharePop" style="display: none">
+      <div class="shareTitle">
+        <div class="shareIcon"></div>
+        <%= aiBoyFriend.share %>
+      </div>
+      <div class="shareBox">
+        <div class="shareText">
+          <%= aiBoyFriend.shareContent %>
+        </div>
+        <div class="shareLink">
+          <div class="share_item">
+            <div class="shareIco x"></div>
+            <%= aiBoyFriend.X %>
+          </div>
+          <div class="share_item">
+            <div class="shareIco facebook"></div>
+            <%= aiBoyFriend.Facebook %>
+          </div>
+          <div class="share_item">
+            <div class="shareIco Link"></div>
+            <%= aiBoyFriend.Link %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- createMC whiteMe -->
+    <div class="whiteMeContent" style="display: none">
+      <div class="whiteMeDes"><%- aiBoyFriend.createMc.writeMe_des %></div>
+      <textarea type="text" class="whiteMe" placeholder="<%- aiBoyFriend.createMc.writeMe_placeholder %>"></textarea>
+    </div>
+    <!-- editUserInfo -->
+    <div class="editUserInfo" style="display: none">
+      <!-- image -->
+      <div class="createMc_item image">
+        <!-- avatar -->
+        <div class="item_avatar">
+          <div class="mc_title">
+            <div class="mc_title_l">
+              <div class="font required">
+                <%- aiBoyFriend.editUser.userTitle %>
+              </div>
+            </div>
+          </div>
+          <div class="mc_des"><%- aiBoyFriend.createMc.avatar_des %></div>
+          <div class="avatar editUser">
+            <input type="file" style="display: none" id="editUserAvatar" accept=".jpg, .png, .webp, .jpeg" />
+            <div class="image_item">
+              <div class="delete_image"></div>
+              <img src="" alt="" id="edit_user_avatar" />
+            </div>
+            <div class="addImage">
+              <img src="/dist/img/aiFriend/btn_set_normal.svg" alt="" />
+              <span><%- aiBoyFriend.createMc.avatar_btnSet %></span>
+            </div>
+          </div>
+          <div class="erorrTip" data-type="editUserAvatar">
+            <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+            <span class="image_error"></span>
+          </div>
+        </div>
+      </div>
+      <!-- name -->
+      <div class="editName">
+        <div class="createMc_item">
+          <div class="mc_title">
+            <div class="mc_title_l">
+              <div class="font required">
+                <%- aiBoyFriend.editUser.firstNameTitle %>
+              </div>
+            </div>
+          </div>
+          <input type="text" label="name" class="editUser_firstName"
+            placeholder="<%- aiBoyFriend.editUser.firstname_placeholder %>" />
+          <div class="erorrTip" data-type="editUser_firstName">
+            <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+            <span class="image_error"><%- aiBoyFriend.editUser.name_error %></span>
+          </div>
+        </div>
+        <div class="createMc_item">
+          <div class="mc_title">
+            <div class="mc_title_l">
+              <div class="font required">
+                <%- aiBoyFriend.editUser.lastNameTitle %>
+              </div>
+            </div>
+          </div>
+          <input type="text" label="name" class="editUser_lastName"
+            placeholder="<%- aiBoyFriend.editUser.lastname_placeholder %>" />
+          <div class="erorrTip" data-type="editUser_lastName">
+            <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+            <span class="image_error"><%- aiBoyFriend.editUser.name_error %></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- email -->
+      <div class="createMc_item">
+        <div class="mc_title">
+          <div class="mc_title_l">
+            <div class="font"><%- aiBoyFriend.editUser.emailTitle %></div>
+          </div>
+        </div>
+        <input type="text" label="email" class="editUser_email disabled" />
+      </div>
+      <!-- age -->
+      <div class="createMc_item age">
+        <div class="mc_title">
+          <div class="mc_title_l">
+            <div class="font"><%- aiBoyFriend.editUser.ageTitle %></div>
+          </div>
+        </div>
+        <div class="editUserAge chatSelect">
+          <div class="select_content" data-age="0">
+            <%- aiBoyFriend.editUser.age_tip %>
+          </div>
+          <div class="select_icon"></div>
+          <div class="select_list">
+            <div class="select_list_item" data-age="1-10">1-10</div>
+            <div class="select_list_item" data-age="10-15">10-15</div>
+            <div class="select_list_item" data-age="15-20">15-20</div>
+            <div class="select_list_item" data-age="20-25">20-25</div>
+            <div class="select_list_item" data-age="25-30">25-30</div>
+            <div class="select_list_item" data-age="30-40">30-40</div>
+            <div class="select_list_item" data-age="40-50">40-50</div>
+            <div class="select_list_item" data-age="50+">50+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('../patiles/footer.ejs'); -%>
+      <script>
+        const currentVersion = "<%= version %>";
+      </script>
+      <script type="text/javascript" src="/dist/js/flexible.min.js"></script>
+      <script type="text/javascript" src="/dist/js/ai-friend-common.js?v=<%= version %>"></script>
+      <script type="text/javascript" src="/dist/js/ai-boyfriend-common.js?v=<%= version %>"></script>
+      <script type="text/javascript" src="/dist/js/swiper-bundle.min.js"></script>
+      <script type="text/javascript" src="/dist/js/ai-boyfriend.js?v=<%= version %>"></script>
+      <script type="text/javascript" src="/dist/js/ai-boyfriend-talking.js?v=<%= version %>"></script>
+      <script type="text/javascript" src="/dist/js/ai-boyfriend-popup.js?v=<%= version %>"></script>
+      <script src="/dist/js/bottom-message/index.js" type="module"></script>
+      <script src="/dist/js/lottie-player.js?t={$smarty.now}"></script>
+      <!-- test tool -->
+      <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+      <script>
+        if (
+          location.host.includes("vidqu.ai") &&
+          location.host.includes("test") &&
+          judgeClient() != "pc"
+        ) {
+          eruda.init();
+        }
+      </script>
+</body>
+
+</html>

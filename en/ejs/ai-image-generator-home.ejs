@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <% const version="1.4.0.18" ; %>
+    <meta charset="UTF-8" />
+    <title><%- IGhome.title %></title>
+    <meta name="description" content="<%- IGhome.des %>" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,viewport-fit=cover"
+    />
+    <meta
+      name="facebook-domain-verification"
+      content="1j3yuczpvlcnpxgscdbj8utw68641a"
+    />
+    <link rel="canonical" href="https://www.vidqu.ai/" />
+    <link rel="shortcut icon" href="/dist/img/index.png" />
+    <link rel="prefetch" href="/dist/img/ai-chatting/error_icon.svg" />
+    <link rel="prefetch" href="/dist/img/ai-chatting/popup_x_icon.svg" />
+    <link rel="stylesheet" type="text/css" href="/dist/css/ig-components.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/dist/css/ai-image-generator-home.css"
+    />
+    <script type="text/javascript" src="/dist/js/jquery-2.1.4.min.js"></script>
+    <script
+      type="text/javascript"
+      src="/dist/js/IGcomponents/horizontalSelector.js"
+    ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <%- include('../patiles/ai-image-head.ejs'); -%>
+  </head>
+
+  <body>
+    <%- include('../patiles/IG-header.ejs'); -%>
+    <%- include('../patiles/header.ejs'); -%>
+    <div class="home_banner">
+      <div class="banner-container">
+        <h1><%- IGhome.title_1 %></h1>
+        <ul class="banner-text-container">
+          <li>
+            <p><span></span><%- IGhome.title_2 %></p>
+          </li>
+          <li>
+            <p><span></span><%- IGhome.title_3 %></p>
+          </li>
+          <li>
+            <p><span></span><%- IGhome.title_4 %></p>
+          </li>
+        </ul>
+        <div  class="face-btn"><%- IGhome.btn_text %></div>
+      </div>
+      <div class="video-container">
+        <video
+          class="pc-show"
+          src="/dist/img/IGhome/Vidqu-PC.mp4"
+          autoplay
+          muted
+          loop
+          playsinline="true"
+          webkit-playsinline="true"
+        ></video>
+        <video
+          class="mob-show"
+          src="/dist/img/IGhome/Vidqu-mobile.mp4"
+          autoplay
+          muted
+          loop
+          playsinline="true"
+          webkit-playsinline="true"
+        ></video>
+      </div>
+    </div>
+    <div class="main_home">
+      <h5 class="explore_title" id="explore_title"><%- IGhome.explore %></h5>
+      <div class="filter_header hidden_menu">
+        <!-- filter down menu -->
+        <div class="filter_down_menu">
+          <div class="filter">
+            <img src="/dist/img/IGhome/icon_new.svg" id="filer_icon" />
+            <span id="filer_name"><%- IGhome.new %></span>
+            <img
+              src="/dist/img/IGhome/btn_arrow-down_normal.svg"
+              class="arrow"
+            />
+          </div>
+          <div class="filter_menu">
+            <div class="filter_menu_item" data-key="new">
+              <img src="/dist/img/IGhome/icon_new.svg" />
+              <span><%- IGhome.new %></span>
+            </div>
+            <div class="filter_menu_item" data-key="hot">
+              <img src="/dist/img/IGhome/icon_hot.svg" />
+              <span><%- IGhome.hot %></span>
+            </div>
+          </div>
+        </div>
+        <!-- filter choose menu -->
+        <horizontal-selector></horizontal-selector>
+      </div>
+      <div class="IGgrid_container notshow">
+        <div class="IGgrid_table_container"></div>
+        <lottie-player
+          src="/dist/img/IGhome/loading.json"
+          background="transparent"
+          speed="1"
+          style="width: 160px; height: 160px"
+          loop
+          autoplay
+          class="lottie-loading"
+        ></lottie-player>
+      </div>
+    </div>
+    <div class="gotoHead">
+      <img src="/dist/img/IGhome/btn_top_normal.svg" />
+    </div>
+    <!-- filter choose menu -->
+    <model-selector></model-selector>
+    <%- include('../patiles/footer.ejs'); -%>
+  </body>
+
+  <script
+    type="text/javascript"
+    src="/dist/js/ai-image-generator-common.js?v=<%= version %>"
+  ></script>
+  <script src="/dist/js/IG-popup.js" type="text/javascript"></script>
+  <script
+    type="text/javascript"
+    src="/dist/js/ai-image-generate-home.js?v=<%= version %>"
+  ></script>
+  <script src="/dist/js/bottom-message/index.js" type="module"></script>
+</html>

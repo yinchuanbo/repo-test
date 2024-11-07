@@ -1,0 +1,1946 @@
+@import './credit-pay-dialog.scss';
+
+.home-header .home-menu .menu-main .home-btn .credit-box {
+  display: flex;
+}
+
+.home-header .home-menu .menu-main .home-btn .head-box .user_menu {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .home-header .home-menu .home-logo .header-credits-box {
+    display: none;
+  }
+
+  .home-header .home-menu .home-logo .header-credits-box.show {
+    display: flex;
+  }
+
+  .home-header .home-menu .menu-main .menu-item.credit {
+    display: none;
+  }
+
+  #headMob {
+    display: none !important;
+  }
+
+  .footer-window {
+    display: none !important;
+  }
+}
+
+.wrapper {
+  max-width: 1014px;
+}
+
+.mobile {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.credits_history {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 82px;
+  // margin-top: 80px;
+  position: relative;
+}
+
+.credits_history_banner {
+  width: 100%;
+  background: transparent linear-gradient(91deg, #f1f5ff 0%, #fbfafe 100%) 0% 0%
+    no-repeat padding-box;
+  padding: 40px 0;
+}
+
+.credits_history_banner h1 {
+  font: normal normal 600 20px/28px Sora;
+  margin-bottom: 11px;
+}
+
+.credits_history_banner .credits_box {
+  width: 100%;
+  height: 147px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credits_history_banner .credits_num {
+  text-align: center;
+  font: normal normal 700 24px/33px Sora;
+  margin-bottom: 3px;
+}
+
+.credits_history_banner .credits_buy {
+  width: 180px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent linear-gradient(90deg, #ff88b1 0%, #f61b1b 100%) 0% 0%
+    no-repeat padding-box;
+  border: 1px solid #00000000;
+  cursor: pointer;
+  color: #fff;
+}
+
+#credit_history_loading {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#credit_history_loading .loading_box {
+  position: absolute;
+  left: 50%;
+  top: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font: normal normal 500 20px/28px Sora;
+  color: #fff;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 124px;
+  /* UI Properties */
+  z-index: 2;
+}
+
+#credit_history_loading .loading_box p {
+  text-align: center;
+  color: #000;
+}
+
+#credit_history_loading .loading-rect1 {
+  width: 24px;
+  height: 18px;
+  background: url(/dist/img/loading-rect1.svg) no-repeat;
+  margin-left: 14px;
+  background-size: contain;
+  animation: loading-rect1 1s linear infinite;
+}
+
+.dialog_pay_mob {
+  display: none;
+}
+
+#credit_history_loading .loading-rect2 {
+  width: 24px;
+  height: 24px;
+  background: url(/dist/img/loading-rect2.svg) no-repeat;
+  margin-left: 14px;
+  background-size: contain;
+  animation: loading-rect2 1s linear infinite;
+}
+
+#credit_history_loading .loading-rect3 {
+  width: 24px;
+  height: 22px;
+  background: url(/dist/img/loading-rect3.svg) no-repeat;
+  background-size: contain;
+  animation: loading-rect3 1s linear infinite;
+  margin-left: 14px;
+}
+
+@keyframes loading-rect1 {
+  30% {
+    transform: translateY(-10px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.face_swap_loading {
+  width: 120px;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@keyframes loading-rect2 {
+  30% {
+    transform: translateY(0);
+  }
+
+  60% {
+    transform: translateY(-10px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes loading-rect3 {
+  60% {
+    transform: translateY(0);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.credits_history_banner .credits_buy:hover {
+  background: transparent linear-gradient(90deg, #ffbd5b 0%, #ff6aae 100%) 0% 0%
+    no-repeat padding-box;
+}
+
+.credits_history_banner .credits_buy .credits_icon {
+  width: 17px;
+  height: 17px;
+  background: no-repeat center url("/dist/js/credits/img/icon_coins.png");
+  background-size: cover;
+  margin-right: 7px;
+}
+
+.credits_history_banner .credits_buy .credits_text {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: Sora;
+}
+
+.credits_history_banner .credits_buy_pro {
+  display: none;
+  text-align: center;
+  font: normal normal 300 15px/14px Sora;
+}
+
+.credits_history_banner .more_credits {
+  width: 100%;
+  margin-top: 51px;
+  display: none;
+}
+
+.credits_history_banner .more_credits .more_credits_title {
+  text-align: center;
+  font: normal normal 600 36px/48px Sora;
+  margin-bottom: 3px;
+}
+
+.credits_history_banner .more_credits p {
+  text-align: center;
+  font: normal normal 300 20px/28px Sora;
+}
+
+.credits_history_banner .more_credits .more_credits_list {
+  width: 100%;
+  margin-top: 33px;
+  display: flex;
+  padding-bottom: 0 !important;
+  min-height: 300px !important;
+}
+
+.credits_history_banner
+  .more_credits
+  .more_credits_list
+  .more_credits_list_item
+  .credits_price {
+  margin-top: 77px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+.credits_history_banner
+  .more_credits
+  .more_credits_list
+  .more_credits_list_item
+  .credits_price
+  .m_buy_num {
+  display: none;
+}
+
+.credits_history_banner
+  .more_credits
+  .more_credits_list
+  .more_credits_list_item
+  .credits_price
+  .cur_price
+  .symbol {
+  color: #000;
+  font-family: Sora;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.credits_history_banner
+  .more_credits
+  .more_credits_list
+  .more_credits_list_item
+  .credits_price
+  .cur_price
+  .m_orign_price {
+  display: none;
+}
+
+.credits_history_banner
+  .more_credits
+  .more_credits_list
+  .more_credits_list_item
+  .credits_price
+  .one_price {
+  font-family: Sora;
+  font-weight: 300;
+  font-size: 14px;
+  padding-top: 13px;
+}
+
+.credits_history_banner
+  .more_credits
+  .more_credits_list
+  .more_credits_list_item
+  .credits_price
+  .one_price
+  .symbol {
+  color: #000;
+  font-family: Sora;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.credits_history_banner
+  .more_credits
+  .more_credits_list
+  .more_credits_list_item
+  .credits_price
+  .orign_price {
+  font: normal normal 300 14px/20px Sora;
+  color: #777;
+  text-decoration: line-through;
+  position: absolute;
+  left: 0;
+  top: -26px;
+}
+
+.credits_history_banner
+  .more_credits
+  .more_credits_list
+  .more_credits_list_item
+  .buy_btn:hover {
+  border: 1px solid #3e6af7;
+}
+.credits_history_banner .more_credits .m_buy_btn {
+  display: none;
+}
+
+.credits_history_banner .more_credits .more_credits_des {
+  padding-left: 5px;
+  width: 1008px;
+  margin: 0 auto;
+}
+
+.credits_history_banner .more_credits .more_credits_des .des_title {
+  font: normal normal 600 16px/23px Sora;
+  margin-bottom: 3px;
+}
+
+.credits_history_banner
+  .more_credits
+  .more_credits_des
+  .des_title
+  .des_title_icon {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+  background: no-repeat center url("/dist/img/bth_coins.svg");
+}
+
+.credits_history_banner .more_credits .more_credits_des .des {
+  font: normal normal 300 13px/16px Sora;
+}
+
+.credits_history_banner.pro .credits_buy {
+  display: none;
+}
+
+.credits_history_banner.pro .credits_buy_pro {
+  display: block;
+}
+
+.credits_history_banner.pro .more_credits {
+  display: block;
+}
+
+.credits_history_container {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.credits_history_container .credits_history_tab {
+  width: 375px;
+  padding: 5px;
+  margin: 0 auto;
+  background: transparent
+    linear-gradient(
+      270deg,
+      rgba(190, 187, 231, 0) 0%,
+      rgba(40, 31, 174, 0.25098) 49%,
+      rgba(190, 187, 231, 0) 100%
+    )
+    0% 0% no-repeat padding-box;
+  display: flex;
+  justify-content: space-around;
+}
+
+.credits_history_container .credits_history_tab .tab_item {
+  // width: 180px;
+  height: 36px;
+  border-radius: 25px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  font: normal normal 500 14px/18px Sora;
+  color: #1b1e37;
+  position: relative;
+}
+
+.credits_history_container .credits_history_tab .tab_item:hover {
+  opacity: 0.7;
+}
+
+.credits_history_container .credits_history_tab .tab_item.active::after {
+  position: absolute;
+  content: "";
+  width: 116px;
+  top: 33px;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  background: #281fae 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+}
+
+.credits_history_container .credits_history_tab .tab_item.active {
+  color: #281fae;
+  opacity: 1 !important;
+}
+
+.credits_history_container .history_content {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.credits_history_container .history_content .list_item {
+  width: 100%;
+  height: 94px;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.credits_history_container .history_content .payment_list {
+  width: 100%;
+  display: none;
+}
+
+.credits_history_container .history_content .payment_list .list_item {
+  padding: 19px 17px 0;
+}
+
+.credits_history_container .history_content .payment_list .list_item .pay_type {
+  font: normal normal 700 16px/23px Sora;
+  margin-bottom: 25px;
+}
+
+.credits_history_container .history_content .payment_list .list_item .date_no {
+  display: flex;
+}
+
+.credits_history_container
+  .history_content
+  .payment_list
+  .list_item
+  .date_no
+  .date,
+.credits_history_container
+  .history_content
+  .payment_list
+  .list_item
+  .date_no
+  .no {
+  color: #777777;
+  font: normal normal 500 12px/18px Sora;
+}
+
+.credits_history_container
+  .history_content
+  .payment_list
+  .list_item
+  .date_no
+  .date {
+  margin-right: 22px;
+}
+
+.credits_history_container
+  .history_content
+  .payment_list
+  .list_item
+  .date_no
+  .no {
+  margin-right: 22px;
+}
+
+.credits_history_container
+  .history_content
+  .payment_list
+  .list_item
+  .date_no
+  .cancel_btn,
+.credits_history_container
+  .history_content
+  .payment_list
+  .list_item
+  .date_no
+  .renew_btn {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #808080;
+  font: normal normal 500 12px/18px Sora;
+  transition: all 0.2s;
+}
+
+.credits_history_container
+  .history_content
+  .payment_list
+  .list_item
+  .date_no
+  .cancel_btn:hover,
+.credits_history_container
+  .history_content
+  .payment_list
+  .list_item
+  .date_no
+  .renew_btn:hover {
+  color: #39325a;
+}
+
+.credits_history_container
+  .history_content
+  .payment_list
+  .list_item
+  .pay_state {
+  text-align: right;
+  color: #777777;
+  font: normal normal 500 12px/18px Sora;
+  margin-bottom: 25px;
+}
+
+.credits_history_container
+  .history_content
+  .payment_list
+  .list_item
+  .pay_price {
+  text-align: right;
+  font: normal normal 700 16px/25px Sora;
+}
+
+.credits_history_container .history_content .credit_list {
+  width: 100%;
+  display: none;
+}
+
+.credits_history_container .history_content .credit_list .list_item {
+  padding: 19px 25px 0 13px;
+}
+
+.credits_history_container .history_content .credit_list .list_item .use_type {
+  font: normal normal 700 16px/23px Sora;
+  margin-bottom: 25px;
+}
+
+.credits_history_container .history_content .credit_list .list_item .use_date {
+  color: #777;
+  font: normal normal 500 12px/18px Sora;
+}
+
+.credits_history_container
+  .history_content
+  .credit_list
+  .list_item
+  .use_info_r {
+  padding-top: 15px;
+}
+
+.credits_history_container .history_content .credit_list .list_item .use_num {
+  font: normal normal 700 16px/25px Sora;
+}
+
+.credits_history_container
+  .history_content
+  .credit_list
+  .list_item
+  .use_num
+  .credit_change {
+  font: normal normal 700 16px/25px Sora;
+}
+
+.credits_history_container .history_content .no_record {
+  width: 100%;
+  height: 386px;
+  background-color: #fdfdfd;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.credits_history_container .history_content .no_record .no_record_icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 6px;
+  background: no-repeat center url("/dist/img/icon_no-record.svg");
+}
+
+.credits_history_container .history_content .no_record .no_record_text {
+  font: normal normal 500 14px/21px Sora;
+  text-align: center;
+}
+
+.credits_history_container .history_content.record .no_record {
+  display: flex;
+}
+
+.credits_history_container .history_content.record .payment_list,
+.credits_history_container .history_content.record .credit_list {
+  display: none;
+}
+
+.credits_history_container .history_content.payment .payment_list {
+  display: block;
+}
+
+.credits_history_container .history_content.payment .no_record,
+.credits_history_container .history_content.payment .credit_list {
+  display: none;
+}
+
+.credits_history_container .history_content.credit .credit_list {
+  display: block;
+}
+
+.credits_history_container .history_content.credit .no_record,
+.credits_history_container .history_content.credit .payment_list {
+  display: none;
+}
+
+.cancel_dialog {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.cancel_dialog.showconfirm {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.suc_icon,
+.fail_icon {
+  display: none;
+}
+
+.cancel_dialog.showconfirm .confirm {
+  display: block;
+}
+
+.cancel_dialog.showsuc {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cancel_dialog.showsuc .cancel_success {
+  display: block;
+}
+
+.cancel_dialog.showerr {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cancel_dialog.showerr .cancel_failed {
+  display: block;
+}
+
+.cancel_dialog .confirm {
+  position: relative;
+  width: 740px;
+  border-radius: 20px;
+  background-color: #f8f9fb;
+  border: 1px solid #3c4a681a;
+  box-shadow: 0px 10px 40px #3c4a681a;
+  padding: 80px 57px 64px;
+  display: none;
+}
+
+.cancel_dialog .confirm .cancel_close {
+  position: absolute;
+  top: 16px;
+  right: 33px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cancel_dialog .confirm .cancel_close .icon {
+  width: 24px;
+  height: 24px;
+  background: no-repeat center url("/dist/img/face-swap/win_icon_close.svg");
+  background-size: 100%;
+}
+
+.cancel_dialog .confirm .cancel_close:hover {
+  background-color: rgba(109, 113, 122, 0.1);
+}
+
+.cancel_dialog .confirm .confirm_title {
+  text-align: center;
+  font-size: 28px;
+  color: #39325a;
+  font-weight: 600;
+  line-height: 39px;
+  font-family: Sora;
+}
+
+.cancel_dialog .confirm p {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #39325a;
+  text-align: center;
+  font-family: Sora;
+}
+
+.cancel_dialog .confirm p .dis_subtime {
+  font-size: 16px;
+  font-weight: 600;
+  color: #39325a;
+  font-family: Sora;
+}
+
+.cancel_dialog .confirm p a {
+  color: #281FAE;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  font-family: Sora;
+}
+
+.cancel_dialog .confirm .confirm_btn_box {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.cancel_dialog .confirm .confirm_btn_box .confirm_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 205px;
+  height: 57px;
+  border-radius: 3px;
+  border: 1px solid #281FAE;
+  margin-right: 45px;
+  cursor: pointer;
+  &:hover {
+    background-color: #281FAE0A;
+  }
+}
+
+.cancel_dialog .confirm .confirm_btn_box .confirm_btn .text {
+  color: #281FAE;
+  font: normal normal 600 18px/57px Sora;
+}
+
+.cancel_dialog .confirm .confirm_btn_box .confirm_btn .loading {
+  display: none;
+}
+
+.cancel_dialog .confirm .confirm_btn_box .confirm_btn.loading {
+  pointer-events: none;
+  cursor: default;
+}
+
+.cancel_dialog .confirm .confirm_btn_box .no_confirm_btn {
+  width: 205px;
+  height: 57px;
+  border-radius: 3px;
+  border: 1px solid #281FAE;
+  text-align: center;
+  color: #281FAE;
+  font: normal normal 600 18px/57px Sora;
+  cursor: pointer;
+  &:hover {
+    background-color: #281FAE0A;
+  }
+}
+
+.cancel_dialog .cancel_success,
+.cancel_dialog .cancel_failed {
+  position: relative;
+  width: 550px;
+  padding: 20px 20px 16px;
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 13px;
+  box-shadow: 0px 10px 10px #0000001d;
+  display: none;
+}
+
+.cancel_dialog .cancel_success .cancel_close,
+.cancel_dialog .cancel_failed .cancel_close {
+  position: absolute;
+  top: 7px;
+  right: 9px;
+  width: 20px;
+  height: 20px;
+  background: no-repeat center url("/dist/img/face-swap/win_icon_close.svg");
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.cancel_dialog .cancel_success .cancel_close:hover,
+.cancel_dialog .cancel_failed .cancel_close:hover {
+  background-image: url("/dist/img/face-swap/win_icon_close.svg");
+}
+
+.cancel_dialog .cancel_success .suc_title,
+.cancel_dialog .cancel_failed .suc_title {
+  display: flex;
+  align-items: center;
+}
+
+.cancel_dialog .cancel_success .suc_title .title_text,
+.cancel_dialog .cancel_failed .suc_title .title_text {
+  font: normal normal bold 20px/24px Sora;
+  letter-spacing: 0px;
+  color: #FF9810;
+}
+
+.cancel_dialog .cancel_success .suc_title .title_text {
+  color: #000000;
+}
+
+.cancel_dialog .cancel_success p,
+.cancel_dialog .cancel_failed p {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  color: #39325a;
+  font: normal normal 500 14px/21px Sora;
+}
+
+.cancel_dialog .cancel_success p a,
+.cancel_dialog .cancel_failed p a {
+  color: #281FAE;
+  text-decoration: underline;
+  font: normal normal 500 14px/21px Sora;
+}
+
+.cancel_dialog .cancel_success .cancel_ok,
+.cancel_dialog .cancel_success .cancel_fail,
+.cancel_dialog .cancel_failed .cancel_ok,
+.cancel_dialog .cancel_failed .cancel_fail {
+  margin-top: 8px;
+  display: flex;
+  justify-content: end;
+}
+
+.cancel_dialog .cancel_success .cancel_ok .ok_btn,
+.cancel_dialog .cancel_success .cancel_ok .fail_btn,
+.cancel_dialog .cancel_success .cancel_fail .ok_btn,
+.cancel_dialog .cancel_success .cancel_fail .fail_btn,
+.cancel_dialog .cancel_failed .cancel_ok .ok_btn,
+.cancel_dialog .cancel_failed .cancel_ok .fail_btn,
+.cancel_dialog .cancel_failed .cancel_fail .ok_btn,
+.cancel_dialog .cancel_failed .cancel_fail .fail_btn {
+  width: 123px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid #281FAE;
+  text-align: center;
+  color: #281FAE;
+  font: normal normal 500 15px/30px Sora;
+  cursor: pointer;
+}
+
+.cancel_dialog .cancel_failed {
+  padding: 29px 20px 16px 32px;
+}
+
+.cancel_dialog .cancel_failed .fail_info {
+  display: flex;
+}
+
+.cancel_dialog .cancel_failed .fail_info .fail_icon {
+  width: 56px;
+  height: 56px;
+  background: no-repeat center url("/dist/img/icon_mistake.svg");
+  background-size: 100%;
+  margin-right: 17px;
+  flex-shrink: 0;
+}
+
+.cancel_dialog .cancel_failed .fail_info .fail_des .fail_title {
+  color: #f56a2e;
+  font: normal normal 700 17px/24px Sora;
+}
+
+.cancel_dialog .cancel_failed .fail_info .fail_des .fail_text {
+  margin: 15px 0;
+  color: #39325a;
+  font: normal normal 400 14px/21px Sora;
+}
+
+.cancel_dialog .cancel_failed .fail_info .fail_des .fail_text a {
+  color: #281FAE;
+  text-decoration: underline;
+  font: normal normal 500 14px/21px Sora;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 0 0.6rem;
+  }
+
+  .credits_history {
+    padding-bottom: 0;
+  }
+
+  .credits_history_banner {
+    padding: 0.23rem 0 0.23rem 0;
+    background: transparent linear-gradient(0deg, #EAF0FF 0%, #F7F5FC 100%) 0% 0% no-repeat padding-box;
+  }
+
+  .credits_history_banner .wrapper {
+    padding: 0;
+  }
+
+  .credits_history_banner h1 {
+    font: normal normal 600 0.28rem/0.39rem Sora;
+    margin-bottom: 0.08rem;
+    padding: 0 0.6rem;
+  }
+
+  .credits_history_banner .credits_box {
+    width: 6.3rem;
+    height: 1.67rem;
+    border-radius: 0.1rem;
+    margin: 0 auto;
+  }
+
+  .credits_history_banner .credits_num {
+    font: normal normal 700 0.32rem/0.45rem Sora;
+    margin-bottom: 0.09rem;
+  }
+
+  .credits_history_banner .credits_buy {
+    width: 2.5rem;
+    height: 0.5rem;
+    border-radius: 0.25rem;
+  }
+
+  .credits_history_banner .credits_buy .credits_icon {
+    width: 0.23rem;
+    height: 0.23rem;
+    margin-right: 0.09rem;
+  }
+
+  .credits_history_banner .credits_buy .credits_text {
+    font-size: 0.22rem;
+  }
+
+  .credits_history_banner .credits_buy_pro {
+    font: normal normal 300 0.24rem/0.35rem Sora;
+  }
+
+  .credits_history_banner .more_credits {
+    margin-top: 0;
+    padding-top: 0.51rem;
+    padding-bottom: 0.67rem;
+  }
+
+  .credits_history_banner .more_credits .more_credits_title {
+    font: normal normal 700 0.4rem/0.6rem Sora;
+    margin-bottom: 0;
+    padding: 0 0.4rem;
+  }
+
+  .credits_history_banner .more_credits p {
+    color: #000;
+    font: normal normal 400 0.28rem/0.42rem Sora;
+    padding: 0 1rem;
+  }
+
+  .credits_history_banner .more_credits .more_credits_list {
+    margin-top: 0.41rem;
+    display: block;
+    padding: 0 0.3rem;
+  }
+
+  .credits_history_banner
+    .more_credits
+    .more_credits_list
+    .more_credits_list_item
+    .buy_num {
+    position: absolute;
+    top: 0.36rem;
+    left: 0.4rem;
+    color: #39325a;
+    font: normal normal 700 0.26rem/0.39rem Sora;
+    display: none;
+  }
+
+  .credits_history_banner
+    .more_credits
+    .more_credits_list
+    .more_credits_list_item
+    .credits_price {
+    position: relative;
+    margin: 0;
+    width: 6.3rem;
+    height: 1.5rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    flex-direction: row-reverse;
+  }
+
+  .credits_history_banner
+    .more_credits
+    .more_credits_list
+    .more_credits_list_item
+    .credits_price
+    .m_buy_num {
+    display: block;
+    position: absolute;
+    top: 0.36rem;
+    left: 0.4rem;
+    color: #39325a;
+    font: normal normal 700 0.26rem/0.39rem Sora;
+  }
+
+  .credits_history_banner
+    .more_credits
+    .more_credits_list
+    .more_credits_list_item
+    .credits_price
+    .cur_price {
+    font-size: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .credits_history_banner
+    .more_credits
+    .more_credits_list
+    .more_credits_list_item
+    .credits_price
+    .cur_price
+    .symbol {
+    font-size: 0.26rem;
+  }
+
+  .credits_history_banner
+    .more_credits
+    .more_credits_list
+    .more_credits_list_item
+    .credits_price
+    .cur_price
+    .price_num {
+    font-size: 0.4rem;
+  }
+
+  .credits_history_banner
+    .more_credits
+    .more_credits_list
+    .more_credits_list_item
+    .credits_price
+    .cur_price
+    .m_orign_price {
+    text-align: right;
+    display: block;
+    color: #777777;
+    font: normal normal 300 0.22rem/0.33rem Sora;
+    text-decoration: line-through;
+  }
+
+  .credits_history_banner
+    .more_credits
+    .more_credits_list
+    .more_credits_list_item
+    .credits_price
+    .one_price {
+    padding-top: 0.84rem;
+    color: #000;
+    font-size: 0.24rem;
+  }
+
+  .credits_history_banner
+    .more_credits
+    .more_credits_list
+    .more_credits_list_item
+    .credits_price
+    .one_price
+    .symbol {
+    color: #000;
+    font-size: 0.24rem;
+  }
+
+  .credits_history_banner
+    .more_credits
+    .more_credits_list
+    .more_credits_list_item
+    .credits_price
+    .one_price
+    .price_num {
+    color: #000;
+    font-size: 0.24rem;
+  }
+
+  .credits_history_banner
+    .more_credits
+    .more_credits_list
+    .more_credits_list_item
+    .credits_price
+    .orign_price {
+    display: none;
+  }
+
+  .credits_history_banner
+    .more_credits
+    .more_credits_list
+    .more_credits_list_item
+    .buy_btn {
+    display: none;
+  }
+
+  .credits_history_banner
+    .more_credits
+    .more_credits_list
+    .more_credits_list_item
+    .item_tip {
+    position: relative;
+    border-radius: 0.1rem 0.1rem 0 0;
+    top: inherit;
+    right: inherit;
+    width: 6.3rem;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    border-bottom: 1px solid #d6d5d5;
+    font-size: 0.22rem;
+  }
+
+  .credits_history_banner
+    .more_credits
+    .more_credits_list
+    .more_credits_list_item.active {
+    box-shadow: 0px 0.15rem 0.2rem #0000004a;
+    overflow: hidden;
+  }
+
+  .credits_history_banner .more_credits .m_buy_btn {
+    display: block;
+    margin: 0.37rem auto 0;
+    width: 6.3rem;
+    height: 1rem;
+    border-radius: 0.14rem;
+    background-color: #281FAE;
+    color: #fff;
+    text-align: center;
+    line-height: 1rem;
+    font-weight: 500;
+    font-size: 0.3rem;
+    font-family: Sora;
+  }
+
+  .credits_history_banner .more_credits .more_credits_des {
+    margin-top: 0.64rem;
+    padding: 0 0.6rem;
+  }
+
+  .credits_history_banner .more_credits .more_credits_des .des_title {
+    text-align: center;
+    margin-bottom: 0.18rem;
+  }
+
+  .credits_history_banner .more_credits .more_credits_des .des {
+    color: #000000;
+    text-align: center;
+    font: normal normal 400 0.22rem/0.33rem Sora;
+  }
+
+  .more_credits_des {
+    display: block;
+  }
+
+  .credits_history_container {
+    padding-top: 0.45rem;
+    padding-bottom: 0.45rem;
+  }
+
+  .credits_history_container .credits_history_tab {
+    width: 5.78rem;
+    padding: 0.08rem 0.11rem;
+    border-radius: 0.34rem;
+  }
+
+  .credits_history_container .credits_history_tab .tab_item {
+    width: 2.08rem;
+    height: 0.56rem;
+    border-radius: 0.25rem;
+    line-height: 0.56rem;
+    font: normal normal 600 0.3rem/0.54rem Sora;
+    font-size: 0.24rem;
+    &.active::after {
+      top: 27px;
+      width: 80px;
+    }
+  }
+
+  .credits_history_container .history_content {
+    margin-top: 0.34rem;
+  }
+
+  .credits_history_container .history_content .list_item {
+    height: 1.17rem;
+    border-radius: 0.1rem;
+    margin-bottom: 0.12rem;
+  }
+
+  .credits_history_container .history_content .payment_list .list_item {
+    padding: 0;
+  }
+
+  .credits_history_container
+    .history_content
+    .payment_list
+    .list_item
+    .pay_info_l {
+    padding-top: 0.26rem;
+    padding-left: 0.3rem;
+  }
+
+  .credits_history_container
+    .history_content
+    .payment_list
+    .list_item
+    .pay_info_r {
+    padding-top: 0.12rem;
+    padding-right: 0.25rem;
+  }
+
+  .credits_history_container
+    .history_content
+    .payment_list
+    .list_item
+    .pay_type {
+    font: normal normal 700 0.24rem/0.33rem Sora;
+    margin-bottom: 0.04rem;
+  }
+
+  .credits_history_container
+    .history_content
+    .payment_list
+    .list_item
+    .date_no
+    .date {
+    font: normal normal 500 0.22rem/0.33rem Sora;
+    margin-right: 0.46rem;
+  }
+
+  .credits_history_container
+    .history_content
+    .payment_list
+    .list_item
+    .date_no
+    .no {
+    display: none;
+  }
+
+  .credits_history_container
+    .history_content
+    .payment_list
+    .list_item
+    .date_no
+    .cancel_btn,
+  .credits_history_container
+    .history_content
+    .payment_list
+    .list_item
+    .date_no
+    .renew_btn {
+    color: #777777;
+    font: normal normal 500 0.22rem/0.33rem Sora;
+  }
+
+  .credits_history_container
+    .history_content
+    .payment_list
+    .list_item
+    .date_no
+    .cancel_btn:hover,
+  .credits_history_container
+    .history_content
+    .payment_list
+    .list_item
+    .date_no
+    .renew_btn:hover {
+    color: #777777;
+  }
+
+  .credits_history_container
+    .history_content
+    .payment_list
+    .list_item
+    .pay_state {
+    font: normal normal 500 0.22rem/0.31rem Sora;
+    margin-bottom: 0.2rem;
+  }
+
+  .credits_history_container
+    .history_content
+    .payment_list
+    .list_item
+    .pay_price {
+    text-align: right;
+    font: normal normal 700 0.26rem/0.39rem Sora;
+  }
+
+  .credits_history_container .history_content .credit_list .list_item {
+    padding: 0;
+  }
+
+  .credits_history_container
+    .history_content
+    .credit_list
+    .list_item
+    .use_info_l {
+    padding-top: 0.24rem;
+    padding-left: 0.3rem;
+  }
+
+  .credits_history_container
+    .history_content
+    .credit_list
+    .list_item
+    .use_info_r {
+    padding-top: 0.4rem;
+    padding-right: 0.24rem;
+  }
+
+  .credits_history_container
+    .history_content
+    .credit_list
+    .list_item
+    .use_type {
+    font: normal normal 700 0.24rem/0.33rem Sora;
+    margin-bottom: 0.06rem;
+  }
+
+  .credits_history_container
+    .history_content
+    .credit_list
+    .list_item
+    .use_date {
+    font: normal normal 500 0.22rem/0.33rem Sora;
+  }
+
+  .credits_history_container .history_content .credit_list .list_item .use_num {
+    font: normal normal 700 0.24rem/0.35rem Sora;
+  }
+
+  .credits_history_container
+    .history_content
+    .credit_list
+    .list_item
+    .use_num
+    .credit_change {
+    font: normal normal 700 0.24rem/0.35rem Sora;
+  }
+
+  .credits_history_container .history_content .no_record {
+    height: 6.4rem;
+    border-radius: 0.1rem;
+    background-color: #ffffff;
+  }
+
+  .credits_history_container .history_content .no_record .no_record_icon {
+    width: 1.05rem;
+    height: 1.05rem;
+    background-size: contain;
+    margin-bottom: 0.11rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .credits_history_container .history_content .no_record .no_record_text {
+    font: normal normal 500 0.24rem/0.35rem Sora;
+  }
+
+  .cancel_dialog .confirm {
+    width: 6.3rem;
+    border-radius: 0.13rem;
+    background-color: #ffffff;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0px 0.1rem 0.4rem #3c4a681a;
+    padding: 0.88rem 0.4rem 0.8rem;
+  }
+
+  .cancel_dialog .confirm .cancel_close {
+    width: 0.34rem;
+    height: 0.34rem;
+    top: 0.34rem;
+    right: 0.34rem;
+    border-radius: 0;
+    background: no-repeat center url("/dist/img/icon_close.svg");
+    background-size: 100%;
+  }
+
+  .cancel_dialog .confirm .cancel_close .icon {
+    display: none;
+  }
+
+  .cancel_dialog .confirm .cancel_close:hover {
+    background-color: none;
+  }
+
+  .cancel_dialog .confirm .confirm_title {
+    color: #0e0d11;
+    font: normal normal 600 0.4rem/0.6rem Sora;
+  }
+
+  .cancel_dialog .confirm p {
+    margin-top: 0.46rem;
+    font: normal normal 500 0.25rem/0.45rem Sora;
+    color: #0e0d11;
+  }
+
+  .cancel_dialog .confirm p .dis_subtime {
+    font: normal normal 600 0.25rem/0.45rem Sora;
+    color: #0e0d11;
+  }
+
+  .cancel_dialog .confirm p a {
+    font: normal normal 300 0.25rem/0.45rem Sora;
+  }
+
+  .cancel_dialog .confirm .confirm_btn_box {
+    margin-top: 0.64rem;
+  }
+
+  .cancel_dialog .confirm .confirm_btn_box .confirm_btn {
+    width: 2.6rem;
+    height: 0.8rem;
+    border-radius: 0.08rem;
+    border: 2px solid #281FAE;
+    margin-right: 0.3rem;
+  }
+
+  .cancel_dialog .confirm .confirm_btn_box .confirm_btn .text {
+    color: #281FAE;
+    font: normal normal 600 0.26rem/0.8rem Sora;
+  }
+
+  .cancel_dialog .confirm .confirm_btn_box .no_confirm_btn {
+    width: 2.6rem;
+    height: 0.8rem;
+    border-radius: 0.08rem;
+    border: 2px solid #281FAE;
+    color: #281FAE;
+    font: normal normal 600 0.26rem/0.8rem Sora;
+  }
+
+  .cancel_dialog .cancel_success,
+  .cancel_dialog .cancel_failed {
+    width: 5.4rem;
+    padding: 0.8rem 0.3rem 0.64rem;
+    border-radius: 0.13rem;
+    box-shadow: 0px 0.1rem 0.1rem #0000001d;
+    display: none;
+  }
+
+  .cancel_dialog.showsuc .suc_icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-size: cover;
+    margin: 0.3rem auto;
+    background-image: url("/dist/img/icon_ok.svg");
+  }
+
+  .cancel_dialog .cancel_success .cancel_close,
+  .cancel_dialog .cancel_failed .cancel_close {
+    width: 0.34rem;
+    height: 0.34rem;
+    top: 0.34rem;
+    right: 0.34rem;
+    border-radius: 0;
+    background: no-repeat center url("/dist/img/icon_close.svg");
+    background-size: 100%;
+  }
+
+  .cancel_dialog .cancel_success .suc_title,
+  .cancel_dialog .cancel_failed .suc_title {
+    display: block;
+  }
+
+  .cancel_dialog .cancel_success .suc_title .title_icon,
+  .cancel_dialog .cancel_failed .suc_title .title_icon {
+    width: 1.24rem;
+    height: 1.24rem;
+    margin: 0 auto;
+  }
+
+  .cancel_dialog .cancel_success .suc_title .title_text,
+  .cancel_dialog .cancel_failed .suc_title .title_text {
+    margin-top: 0.24rem;
+    text-align: center;
+    font: normal normal 700 0.32rem/0.4rem Sora;
+  }
+
+  .cancel_dialog .cancel_success .suc_title .title_text {
+    font: normal normal bold 0.32rem/0.4rem Sora;
+    color: #281FAE;
+  }
+
+  .cancel_dialog .cancel_success p,
+  .cancel_dialog .cancel_failed p {
+    text-align: center;
+    margin-top: 0.24rem;
+    font: normal normal 300 0.24rem/0.35rem Sora;
+  }
+
+  .cancel_dialog .cancel_success p a,
+  .cancel_dialog .cancel_failed p a {
+    font: normal normal 300 0.24rem/0.35rem Sora;
+  }
+
+  .cancel_dialog .cancel_success .cancel_ok,
+  .cancel_dialog .cancel_success .cancel_fail,
+  .cancel_dialog .cancel_failed .cancel_ok,
+  .cancel_dialog .cancel_failed .cancel_fail {
+    justify-content: center;
+  }
+
+  .cancel_dialog .cancel_success .cancel_ok .ok_btn,
+  .cancel_dialog .cancel_success .cancel_ok .fail_btn,
+  .cancel_dialog .cancel_success .cancel_fail .ok_btn,
+  .cancel_dialog .cancel_success .cancel_fail .fail_btn,
+  .cancel_dialog .cancel_failed .cancel_ok .ok_btn,
+  .cancel_dialog .cancel_failed .cancel_ok .fail_btn,
+  .cancel_dialog .cancel_failed .cancel_fail .ok_btn,
+  .cancel_dialog .cancel_failed .cancel_fail .fail_btn {
+    width: 100%;
+    height: 0.88rem;
+    border-radius: 0;
+    border: 2px solid #281FAE;
+    color: #281FAE;
+    font: normal normal 500 0.32rem/0.88rem Sora;
+  }
+
+  .cancel_dialog .cancel_failed .fail_info {
+    display: block;
+  }
+
+  .cancel_dialog .cancel_failed .fail_info .fail_icon {
+    width: 1.24rem;
+    height: 1.24rem;
+    margin: 0 auto;
+  }
+
+  .cancel_dialog .cancel_failed .fail_info .fail_des .fail_icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-size: cover;
+    margin: 0.3rem auto;
+    background-image: url(/dist/img/icon_mistake.svg);
+    display: block;
+  }
+
+  .cancel_dialog .cancel_failed .fail_info .fail_des {
+    margin-top: 0.24rem;
+  }
+
+  .cancel_dialog .cancel_failed .fail_info .fail_des .fail_title {
+    text-align: center;
+    color: #000;
+    font: normal normal 700 0.32rem/0.4rem Sora;
+  }
+
+  .cancel_dialog .cancel_failed .fail_info .fail_des .fail_text {
+    text-align: center;
+    margin-top: 0.24rem;
+    color: #1B1E37;
+    font: normal normal 300 0.24rem/0.35rem Sora;
+  }
+
+  .cancel_dialog .cancel_failed .fail_info .fail_des .fail_text a {
+    font: normal normal 300 0.24rem/0.35rem Sora;
+  }
+}
+
+.more_credits_list {
+  display: flex;
+  justify-content: center;
+
+  .more_credits_list_item {
+    background-color: #281fae0a;
+    border-radius: 10px;
+    width: 350px;
+    height: 224px;
+    padding: 14px 24px;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0px 0px 0px #00000024;
+    transition: 0.3s;
+
+    &:nth-last-child(2) {
+      margin: 0 24px;
+    }
+
+    &:hover {
+      box-shadow: 0px 15px 20px #00000024;
+    }
+
+    &:last-of-type {
+      box-shadow: 0px 15px 20px #00000024;
+      background-color: white;
+
+      .item_tip {
+        outline: none;
+        background-color: #281fae13;
+      }
+
+      .buy_btn {
+        color: #ffffff;
+        font: normal normal 500 15px/45px Sora;
+        background-color: #281fae;
+
+        &:hover {
+          background-color: #281faec7;
+        }
+      }
+    }
+
+    .buy_num {
+      font: normal normal 600 16px/21px Sora;
+      color: #281fae;
+    }
+
+    .item_tip {
+      position: absolute;
+      right: 12px;
+      top: 11px;
+      padding: 0 17px;
+      color: #281fae;
+      text-align: center;
+      font: normal normal bold 12px/15px Sora;
+      outline: 1px solid #281fae3d;
+      border-radius: 4px;
+      height: 25px;
+      line-height: 25px;
+
+      &:nth-child(3) {
+        outline: none;
+        background-color: rgba(139, 61, 255, 0.1);
+      }
+    }
+
+    .cur_price .price_num {
+      color: black;
+      vertical-align: bottom;
+      font: normal normal 600 28px/35px Sora;
+    }
+
+    .credit_price_detail {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-top: 53px;
+
+      .m_credit_price_num {
+        display: none;
+      }
+
+        .credit_price_or {
+          text-decoration: line-through;
+          font: normal normal 300 14px/18px Sora;
+          color: #1b1e37;
+          margin-bottom: 6px;
+        }
+
+        .credit_price_none {
+          opacity: 0;
+        }
+
+      .credit_price_each {
+        font: normal normal 300 14px/18px Sora;
+        color: #000000;
+      }
+    }
+
+    .buy_btn {
+      margin-top: 8px;
+      border: 1px solid #281fae;
+      border-radius: 4px;
+      width: 302px;
+      text-align: center;
+      color: #281fae;
+      font: normal normal 600 15px/44px Sora;
+      background-color: #281fae0a;
+      transition: 0.3s background-color;
+      box-sizing: border-box;
+      cursor: pointer;
+
+      &:hover {
+        border: 1px solid #281fae;
+        background-color: #281fae14;
+        background-color: rgba(40, 31, 174, 0.16);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .price_num {
+    vertical-align: baseline !important;
+  }
+  .credits_history_banner .more_credits .more_credits_des {
+    .des_title, .des {
+      text-align: left;
+    }
+    width: 100%;
+  }
+  .more_credits_list {
+    margin-top: .41rem;
+    display: block;
+    padding: 0 .6rem;
+    #credit150, #credit500{
+      margin-bottom: 18px;
+
+    }
+    #credit500 {
+      margin: 0;
+      margin-bottom: 18px;
+    }
+    #credit1500 {
+      margin-bottom: 0;
+    }
+    .more_credits_list_item {
+      position: relative;
+      width: 100%;
+      height: initial;
+      padding: 0;
+      margin: 0;
+      margin-bottom: .18rem;
+      border-radius: .1rem;
+      transition: none;
+
+      .buy_num {
+        position: absolute;
+        top: .36rem;
+        left: .4rem;
+        color: #39325A;
+        font: normal normal 700 .26rem/.39rem Sora;
+        display: none;
+      }
+
+      .credits_price {
+        position: relative;
+        margin: 0;
+        width: 6.3rem;
+        height: 1.5rem;
+        padding-left: .4rem;
+        padding-right: .4rem;
+        flex-direction: row-reverse;
+        background-color: #fff;
+        border-radius: 10px;
+
+        .m_buy_num {
+          display: block;
+          position: absolute;
+          top: .36rem;
+          left: .4rem;
+          color: #39325A;
+          font: normal normal 700 .26rem/.39rem Sora;
+        }
+
+        .cur_price {
+          font-size: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .symbol {
+            font-size: .26rem;
+          }
+
+          .price_num {
+            font-size: .4rem;
+          }
+
+          .m_orign_price {
+            text-align: right;
+            display: block;
+            color: #777777;
+            font: normal normal 300 .22rem/.33rem Sora;
+            text-decoration: line-through;
+          }
+        }
+
+        .one_price {
+          padding-top: .84rem;
+          color: #000;
+          font-size: .24rem;
+
+          .symbol {
+            color: #000;
+            font-size: .24rem;
+          }
+
+          .price_num {
+            color: #000;
+            font-size: .24rem;
+          }
+        }
+
+        .orign_price {
+          display: none;
+        }
+      }
+
+      .buy_btn {
+        display: none;
+      }
+
+      .item_tip {
+        position: relative;
+        border-radius: .1rem .1rem 0 0;
+        top: inherit;
+        right: inherit;
+        width: 6.3rem;
+        height: .45rem;
+        line-height: .45rem;
+        border: none;
+        font-size: .22rem;
+        outline: none;
+        width: 6.3rem;
+        border: none;
+        border-bottom: .01rem solid #281FAE26 ;
+        background: #281FAE26 0% 0% no-repeat padding-box !important;
+      }
+
+
+      &:hover {
+        box-shadow: none;
+      }
+
+      &.active {
+        border: .03rem solid #D6D5D5;
+        box-shadow: 0px .15rem .2rem #0000004A;
+        overflow: hidden;
+        .item_tip {
+          background-color: #281FAE !important;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+
+  .m_buy_btn {
+    display: block;
+    margin: .37rem auto 0;
+    width: 6.3rem;
+    height: 1rem;
+    border-radius: .14rem;background: transparent linear-gradient(99deg, #FF86AE 0%, #F61B1B 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    text-align: center;
+    line-height: 1rem;
+    font-weight: 500;
+    font-size: .3rem;
+    font-family: Sora;
+  }
+
+  .more_credits_des {
+    margin-top: .64rem;
+    padding: 0 .6rem;
+
+    .des_title {
+      font: normal normal 600 .28rem/.27rem Sora !important;
+      margin-bottom: .18rem;
+      
+      .des_title_icon {
+        background-size: 100% 100% !important;
+        // display: none;
+        width: 0.2rem !important;
+        height: 0.2rem !important;
+      }
+    }
+
+    .des {
+      color: #000000;
+      text-align: center;
+      font: normal normal 400 .22rem/.33rem Sora;
+    }
+  }
+}

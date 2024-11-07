@@ -1,0 +1,1145 @@
+@mixin backgroundImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.aiGirlFriendSeo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  // display: none;
+  &.sectionB {
+    @include backgroundImage();
+    padding-bottom: 98px;
+    background-image: url("/dist/img/aiGirlFriendSeo/icon_bg2.png");
+  }
+  &.sectionD {
+    overflow: hidden;
+  }
+  &.sectionE {
+    position: relative;
+    @include backgroundImage();
+    height: 914px;
+    background-image: url("/dist/img/aiGirlFriendSeo/banner_big.png");
+  }
+  &.sectionF,
+  &.sectionG &.seo_footer {
+    position: relative;
+  }
+  &.sectionG {
+    background: rgba($color: #3a3847, $alpha: 0.42);
+  }
+  &.seo_footer {
+    align-items: start;
+    flex-direction: row;
+    justify-content: center;
+    background-repeat: no-repeat;
+    height: 209px;
+    background-image: url("/dist/img/aiGirlFriendSeo/banenr_bg.png");
+  }
+}
+.seo_section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    font: normal normal 900 44px/68px Sora;
+    color: #fffdf5;
+    text-align: center;
+    span {
+      color: #ff17df;
+    }
+  }
+  &.sectionA {
+    h2 {
+      margin-bottom: 16px;
+    }
+    .sectionA_btn {
+      margin-bottom: 84px;
+      position: relative;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      .sectionA_btn_Box {
+        z-index: 1;
+        padding: 0 31px;
+        background-color: #151820;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 1px;
+        background: #333843;
+        z-index: 0;
+      }
+    }
+  }
+  .sectionA_box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1fr; /* 可以根据需要调整间距 */
+    margin-bottom: 94px;
+    &.mobile_show {
+      display: none;
+    }
+    .sectionA_item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 39px;
+      img {
+        width: 96px;
+        height: 96px;
+        object-fit: contain;
+        margin: 0 auto;
+      }
+      .sectionA_title {
+        width: 325px;
+        font: italic normal bold 22px/28px Sora;
+        min-height: 57px;
+        color: #fffdf5;
+        text-align: center;
+        margin: 4px 0 13px;
+      }
+      .sectionA_des {
+        width: 325px;
+        font: normal normal normal 16px/22px Sora;
+        color: #fffdf5;
+        text-align: center;
+      }
+    }
+  }
+  &.sectionB {
+    h2 {
+      margin: 66px 0 32px;
+    }
+    .bannerA {
+      margin: 43px 0 55px;
+      width: 1307px;
+      height: 525px;
+      @include backgroundImage();
+    }
+    .bannerB {
+      width: 1304px;
+      height: 525px;
+      @include backgroundImage();
+    }
+  }
+  &.sectionC {
+    h2 {
+      padding: 116px 0 94px;
+    }
+    .sectionC_box {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 155px;
+    }
+    .sectionChat {
+      background: #3b2f3f 0% 0% no-repeat padding-box;
+      border-radius: 54px;
+      width: 589px;
+      padding: 62px 21px 21px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .lineA {
+        position: absolute;
+        bottom: 99%;
+        left: 55px;
+        width: 126px;
+        height: 387px;
+      }
+      .title {
+        width: 478px;
+        font: normal normal bold 24px/36px Sora;
+        color: #fffdf5;
+        margin-bottom: 28.5px;
+      }
+      .seo_btn {
+        min-width: 478px;
+        margin-bottom: 39px;
+      }
+      .chatContent {
+        width: 547px;
+        min-height: 326px;
+        background: rgba($color: #161820, $alpha: 0.39);
+        border-radius: 38px;
+        padding: 0 27px 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .user1 {
+        width: 420px;
+        height: 192px;
+        @include backgroundImage();
+        background-image: url("/dist/img/aiGirlFriendSeo/icon_user1.png");
+      }
+      .user2 {
+        margin-top: 25px;
+        width: 389px;
+        height: 46px;
+        @include backgroundImage();
+        margin-left: auto;
+        background-image: url("/dist/img/aiGirlFriendSeo/icon_user2.png");
+      }
+    }
+    .sectionC_img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 51px;
+      position: relative;
+      .secitonC_img_box {
+        position: relative;
+        height: 434px;
+        width: 541px;
+        img {
+          width: 494px;
+          position: absolute;
+          top: 0;
+          &.active {
+            z-index: 1;
+          }
+        }
+      }
+      .sectionC_btn {
+        width: 692px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 36px;
+        align-items: center;
+        padding-top: 32px;
+        background: #3b2f3f 0% 0% no-repeat padding-box;
+        .c_title {
+          text-align: center;
+          font: normal normal 900 26px/34px Sora;
+          color: #fffdf5;
+          margin-bottom: 12px;
+        }
+        @media (min-width: 1200px) {
+          .seo_btn {
+            width: 445px;
+            height: 64px;
+            line-height: 64px;
+            border-radius: 78px;
+          }
+        }
+      }
+      .lineB {
+        height: 166px;
+        width: auto;
+        position: absolute;
+        left: 10px;
+        bottom: 0;
+        transform: translateY(94%);
+      }
+    }
+  }
+  &.sectionD {
+    background-color: #151820;
+    padding-top: 136px;
+    .sectionD_box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 100vw;
+      overflow: hidden;
+
+      .box_banner {
+        padding: 0 9px;
+        width: 538px;
+        height: 1044px;
+        @include backgroundImage();
+        background-image: url("/dist/img/aiGirlFriendSeo/bth_step_bg.png");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        img {
+          width: 467px;
+          height: 961px;
+        }
+      }
+      .box_l,
+      .box_r {
+        height: 770px;
+        padding-top: 99px;
+        width: calc(50% - 278px);
+        background: rgba(#3a3847, 0.42);
+        display: flex;
+      }
+      .box_l {
+        flex-direction: row-reverse;
+        padding-right: 2.6%;
+        @media (min-width: 1200px) {
+          min-width: 428px;
+        }
+        .l_container {
+          .l_item {
+            display: flex;
+            &.active {
+              .item_title {
+                color: #fffdf5 !important;
+                span {
+                  color: #ff18df;
+                }
+              }
+              .icon_box .icon_item {
+                background: #ffffff 0% 0% no-repeat padding-box;
+                &:first-child {
+                  background: #ff18df 0% 0% no-repeat padding-box;
+                }
+              }
+            }
+            .icon_box {
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              padding: 15px 13px 0 0;
+              .icon_item {
+                width: 4px;
+                height: 4px;
+                background: #646464;
+                border-radius: 50%;
+                margin-bottom: 13px;
+                &:first-child {
+                  margin-bottom: 8px;
+                  width: 11px;
+                  height: 11px;
+                }
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+            .item_title {
+              width: 360px;
+              font: normal normal 500 20px/40px Sora;
+              cursor: pointer;
+              color: #646464;
+              span {
+                font: normal normal 900 20px/40px Sora;
+              }
+              &:hover {
+                color: #d5d5d5;
+              }
+            }
+          }
+          .seo_btn {
+            height: 56px;
+            border-radius: 78px;
+            font: normal normal 900 20px/56px Sora;
+            padding: 0 61px;
+            margin-top: 15px;
+          }
+        }
+      }
+      .box_r {
+        padding-left: 2.6%;
+        .line {
+          @include backgroundImage();
+          background-image: url("/dist/img/aiGirlFriendSeo/icon_line4.png");
+          width: 8px;
+          height: 418px;
+          margin-right: 20px;
+          margin-top: 16px;
+        }
+        h2 {
+          width: 53%;
+          text-align: left;
+        }
+      }
+    }
+  }
+  &.sectionE {
+    h2 {
+      padding-top: 222px;
+      width: 640px;
+    }
+    .msg {
+      display: flex;
+      margin-top: 39px;
+    }
+    .message1 {
+      width: 650px;
+      height: 296px;
+      display: block;
+    }
+    .message2 {
+      width: 642px;
+      height: 289px;
+    }
+    .e_title {
+      position: absolute;
+      font: normal normal 900 16px/24px Sora;
+      color: #fffdf5;
+      top: 16px;
+    }
+    .e_des {
+      position: absolute;
+      font: normal normal 500 34px/42px Sora;
+      color: #ffffff;
+      width: 361px;
+    }
+    .msg1 {
+      position: relative;
+      .e_title {
+        left: 56px;
+      }
+      .e_des {
+        top: 79px;
+        right: 19px;
+      }
+      .seo_btn {
+        margin-left: auto;
+        height: 54px;
+        margin-top: 33px;
+        font: normal normal 900 18px/54px Sora;
+        padding: 0 24px;
+      }
+      .line3 {
+        height: 276px;
+        position: absolute;
+        right: 140px;
+        width: auto;
+      }
+    }
+    .msg2 {
+      position: relative;
+      @media (min-width: 1200px) {
+        top: 130px;
+        right: -70px;
+      }
+      .e_title {
+        right: 58px;
+      }
+      .e_des {
+        top: 94px;
+        left: 39px;
+      }
+    }
+  }
+  &.sectionF {
+    .sex_box {
+      margin-top: 73px;
+      display: flex;
+      .text_container {
+        width: 650px;
+        margin-right: 76px;
+      }
+      .text_item {
+        font: normal normal 900 24px/50px Sora;
+        color: #fffdf5;
+        &.active {
+          color: #e746c1;
+        }
+        &:nth-child(5) {
+          margin-bottom: 20px;
+        }
+      }
+      .image_container {
+        width: 325px;
+        height: 330px;
+        position: relative;
+        right: -24px;
+        @include backgroundImage();
+        background-image: url("/dist/img/aiGirlFriendSeo/icon_ai_sex_bg.png");
+        overflow: hidden;
+        img {
+          position: absolute;
+          top: 50%;
+          left: -100%;
+          transform: translateY(-50%);
+          width: 120px;
+          transition: left 0.5s;
+          &.active {
+            animation: slide 2s forwards;
+          }
+        }
+        // &:animated {
+        //   animation: slide 5s forwards; /* 设置动画持续时间 */
+        // }
+      }
+      .seo_btn {
+        height: 71px;
+        line-height: 71px;
+        padding: 0px 90px;
+      }
+    }
+    .sex_banner {
+      position: relative;
+      margin-top: 78px;
+      padding-bottom: 100px;
+      .main_box {
+        position: absolute;
+        top: 209px;
+        left: 291px;
+        width: 808px;
+        .main_title {
+          font: normal normal bold 44px/54px Sora;
+          color: #fffdf5;
+          margin-bottom: 20px;
+        }
+        .main_des {
+          font: normal normal normal 26px/32px Sora Condensed;
+          color: #fffdf5;
+        }
+      }
+      .A_box,
+      .B_box,
+      .C_box {
+        position: absolute;
+        color: #161820;
+        width: 251px;
+        .title {
+          font: normal normal 900 44px/54px Sora;
+        }
+        .des {
+          font: normal normal bold 18px/28px Sora;
+        }
+      }
+      .A_box {
+        color: #ff18df;
+        top: 54px;
+        right: 33px;
+      }
+      .B_box {
+        left: 66px;
+        top: 552px;
+      }
+      .C_box {
+        right: 206px;
+        top: 560px;
+      }
+    }
+    .sex_banner_json {
+      height: 787px;
+    }
+  }
+  &.sectionG {
+    padding: 90px 0 140px;
+  }
+  &.seo_footer {
+    align-items: start;
+    flex-direction: row;
+    height: 100%;
+    .seo_footer_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 63px;
+      height: 100%;
+    }
+    h2 {
+      text-align: left;
+    }
+    .seo_footer_des {
+      width: 1145px;
+      text-align: left;
+      font: normal normal 500 16px/24px Sora;
+      color: #fffdf5;
+      margin-bottom: 17px;
+    }
+    .seo_btn {
+      height: 48px;
+      font: normal normal 900 18px/48px Sora;
+      color: #22242c;
+    }
+    .seo_girl {
+      position: relative;
+      right: 79px;
+      width: 397px;
+      height: inherit;
+      img {
+        width: 397px;
+        height: 323px;
+        position: absolute;
+        bottom: -11px;
+      }
+    }
+  }
+  .seo_btn {
+    width: fit-content;
+    background: #f597e8 0% 0% no-repeat padding-box;
+    border-radius: 78px;
+    height: 74px;
+    padding: 0 53px;
+    font: normal normal 900 24px/74px Sora;
+    color: #22242c;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    @media (min-width: 1200px) {
+      &:hover {
+        background: #fd65e9;
+      }
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: -100%;
+    transform: translate(-100%, -50%);
+  }
+  10% {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  90% {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    left: 100%;
+    transform: translate(100%, -50%);
+  }
+}
+
+@keyframes slideA {
+  0% {
+    left: -100%;
+  }
+  10% {
+    left: 0;
+  }
+  90% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.micro-test-faq .micro-test-faq-list {
+  margin: 6px auto 0;
+  margin-top: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.micro-test-faq .micro-test-faq-item {
+  position: relative;
+  border-bottom: 1px solid #414141;
+  transition: all 0.3s ease;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.micro-test-faq .micro-test-faq-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+
+.micro-test-faq .micro-test-faq-item::before {
+  right: 0;
+  top: 30px;
+  width: 18px;
+  height: 18px;
+  background-image: url("/dist/img/aiGirlFriendSeo/icon_down.png");
+  background-size: 18px;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.micro-test-faq .micro-test-faq-item.active {
+  .micro-test-faq-name {
+    color: #fd65e9;
+  }
+  &::before {
+    transform: rotateX(-180deg);
+    transition: transform 0.3s ease-out;
+  }
+}
+
+.micro-test-faq .micro-test-faq-name {
+  display: block;
+  padding: 9px 30px 30px 0;
+  cursor: pointer;
+  font: normal normal 500 18px/48px Sora;
+  color: #fffdf5;
+}
+
+.micro-test-faq .micro-test-faq-desc {
+  padding-bottom: 30px;
+  margin-top: -15px;
+  display: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+.micro-test-faq .micro-test-faq-desc b {
+  font-weight: 600;
+}
+
+.micro-test-faq .micro-test-faq-desc b.css-h4 {
+  display: block;
+  padding: 5px 0;
+}
+
+.micro-test-faq .micro-test-faq-desc .css-h4 {
+  font-size: inherit;
+}
+
+.micro-test-faq .micro-test-faq-desc .css-p {
+  font: normal normal 500 14px/48px Sora;
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .aiGirlFriendSeo {
+    width: 100vw;
+    &.sectionB {
+      padding-bottom: 1.5rem;
+      background-image: url("/dist/img/aiGirlFriendSeo/icon_bg2_mobile.png");
+    }
+    &.sectionE {
+      height: 10.4rem;
+      background-image: url("/dist/img/aiGirlFriendSeo/banner_big_mobile.png");
+    }
+    &.seo_footer {
+      height: 2.09rem;
+      background-image: url("/dist/img/aiGirlFriendSeo/banenr_bg_mobile.png");
+    }
+  }
+  .seo_section {
+    overflow: hidden;
+    width: 100%;
+    h2 {
+      font: normal normal 900 0.48rem/0.54rem Sora;
+    }
+    .seo_btn {
+      border-radius: 0.78rem;
+      height: 0.83rem;
+      padding: 0 0.7rem;
+      font: normal normal 900 0.28rem/0.83rem Sora;
+    }
+    &.sectionA {
+      padding: 0 0.47rem;
+      .sectionA_btn {
+        margin-bottom: 0.43rem;
+        &::before {
+          height: 0.01rem;
+        }
+        .sectionA_btn_Box {
+          padding: 0 0.4rem;
+        }
+      }
+      .sectionA_box {
+        display: flex;
+        margin-bottom: 0.8rem;
+        width: 100%;
+        position: relative;
+        height: 3.17rem;
+
+        &.pc_show {
+          display: none;
+        }
+        .sectionA_item {
+          overflow: hidden;
+          width: 2.44rem;
+          margin: 0;
+
+          img {
+            width: 0.96rem;
+            height: 0.96rem;
+          }
+          .sectionA_title {
+            width: 1.6rem;
+            font: italic normal bold 0.24rem/0.28rem Sora;
+            margin: 0.02rem 0 0.11rem;
+          }
+          .sectionA_des {
+            width: 2.44rem;
+            font: normal normal normal 0.22rem/0.22rem Sora;
+            color: #c6c6c6;
+          }
+        }
+        .slideA_box {
+          width: inherit;
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          left: -100%;
+          transition: left 0.5s;
+          &.active {
+            left: 0;
+          }
+          &.active {
+            animation: slideA 4s forwards;
+          }
+        }
+      }
+    }
+    &.sectionB {
+      h2 {
+        margin: 1rem 0.6rem 0.46rem;
+        span {
+          white-space: nowrap;
+        }
+      }
+      .swiper_banner {
+        margin: 0.48rem 0 0;
+        padding: 0 0.4rem;
+        width: 100%;
+        img {
+          width: 100%;
+          height: 7.76rem;
+        }
+      }
+    }
+    &.sectionC {
+      padding: 0 0.4rem;
+      overflow: visible;
+      h2 {
+        padding: 1.11rem 0 0.36rem;
+      }
+      .sectionC_box {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1.7rem;
+        width: 100%;
+      }
+      .sectionChat {
+        width: 100%;
+        padding: 61px 0.26rem 0.24rem;
+        border-radius: 0.54rem;
+        .lineA {
+          width: 0.68rem;
+          height: 4.46rem;
+          left: 0.25rem;
+        }
+        .title {
+          font: normal normal bold 0.32rem/0.36rem Sora;
+          width: 100%;
+          padding: 0 0.2rem;
+          margin-bottom: 0.16rem;
+        }
+        .seo_btn {
+          padding: 0 0.2rem;
+          width: 100%;
+          min-width: auto;
+          margin-bottom: 0.45rem;
+        }
+        .chatContent {
+          width: 100%;
+          height: 3.89rem;
+          min-height: auto;
+          padding: 0.4rem 0.2rem 0.3rem;
+          .take {
+            width: 6.18rem;
+            height: 3.89rem;
+          }
+        }
+      }
+      .sectionC_img {
+        margin: 0.6rem 0 0.3rem;
+        width: 100%;
+        .secitonC_img_box {
+          width: 5.41rem;
+          height: 4.34rem;
+          img {
+            width: 5.41rem;
+          }
+          .msg2_img {
+            content: url("/dist/img/aiGirlFriendSeo/photo_unlimited_messages2_mobile.png");
+          }
+          .msg1_img {
+            content: url("/dist/img/aiGirlFriendSeo/photo_unlimited_messages1_mobile.png");
+          }
+        }
+        .sectionC_btn {
+          width: 100%;
+          padding: 0.34rem 0.4rem 0;
+          height: 2.15rem;
+          border-radius: 0.36rem;
+          .c_title {
+            font: normal normal 900 0.28rem/0.48rem Sora;
+          }
+          .seo_btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &.sectionD {
+      padding: 0;
+      .secitonD_control {
+        padding: 0 1rem 1.4rem;
+        .control_box {
+          .control_icon {
+            display: flex;
+            justify-content: center;
+            margin: 0.23rem 0;
+            .control_item {
+              width: 0.07rem;
+              height: 0.07rem;
+              background: #ffffff;
+              margin-right: 0.11rem;
+              border-radius: 50%;
+              &.active {
+                background: #ff18df;
+              }
+            }
+          }
+          .control_title {
+            font: normal normal 500 0.28rem/0.4rem Sora;
+            color: #fffdf5;
+            display: none;
+            padding-bottom: 0.3rem;
+            span {
+              color: #ff18df;
+            }
+            &.active {
+              display: block;
+            }
+          }
+        }
+      }
+      .sectionD_box {
+        .box_banner {
+          width: 5.38rem;
+          height: 10.44rem;
+          img {
+            width: 4.67rem;
+            height: 9.61rem;
+          }
+        }
+        .box_l,
+        .box_r {
+          height: 7.7rem;
+          width: 0.95rem;
+        }
+      }
+      .seo_btn.mobile_show {
+        margin-top: 1.8rem;
+        margin-bottom: 1.17rem;
+        width: 5.9rem;
+        height: 0.83rem;
+        line-height: 0.83rem;
+      }
+    }
+    &.sectionE {
+      padding: 0 0.4rem;
+      h2 {
+        width: auto;
+        padding: 0.62rem 0;
+        font: normal normal 900 0.44rem/0.54rem Sora;
+      }
+      .msg {
+        flex-direction: column-reverse;
+      }
+      .message1 {
+        width: 100%;
+        height: auto;
+      }
+      .message2 {
+        margin-top: 0.3rem;
+        width: 100%;
+        height: auto;
+      }
+      .msg2 {
+        .e_title {
+          right: 0.54rem;
+          top: 0.4rem;
+        }
+        .e_des {
+          left: 0.39rem;
+          top: 1.2rem;
+        }
+      }
+      .msg1 {
+        .e_title {
+          left: 0.59rem;
+          top: 0.02rem;
+        }
+        .e_des {
+          top: 0.94rem;
+          right: 0.35rem;
+        }
+      }
+      .e_title {
+        font: normal normal 900 0.2rem/0.48rem Sora;
+        top: 0.14rem;
+      }
+      .e_des {
+        font: normal normal 500 0.34rem/0.42rem Sora;
+        width: 3.61rem;
+      }
+    }
+    &.sectionF {
+      padding: 0.4rem 0 1.1rem;
+      h2 {
+        padding: 0 1.03rem;
+      }
+      .sex_box {
+        margin-top: 0.32rem;
+        width: 100%;
+        display: flex;
+        padding: 0 0.4rem;
+        .text_container {
+          width: 3.69rem;
+          margin-right: 0.27rem;
+          .text_item {
+            font: normal normal normal 0.24rem/0.36rem Sora;
+          }
+        }
+        .image_container {
+          width: 2.74rem;
+          height: 2.78rem;
+          right: auto;
+          img {
+            width: 1.2rem;
+          }
+        }
+      }
+      .seo_btn.mobile_show {
+        min-width: 5.9rem;
+      }
+      .icon_abc_bg {
+        background-image: url("/dist/img/aiGirlFriendSeo/icon_abc_bg.png");
+        @include backgroundImage();
+        width: 7.13rem;
+        height: 8.97rem;
+      }
+      .sex_banner {
+        margin-top: 1.15rem;
+        padding: 0;
+
+        .A_box,
+        .B_box,
+        .C_box {
+          width: 2.19rem;
+          .title {
+            font: normal normal 900 0.44rem/0.54rem Sora;
+          }
+          .des {
+            font: normal normal bold 0.24rem/0.28rem Sora;
+          }
+        }
+        .A_box {
+          top: 0.57rem;
+          right: 0.72rem;
+        }
+        .B_box {
+          top: 6.3rem;
+          left: 0.56rem;
+        }
+        .C_box {
+          top: 6.79rem;
+          right: 0.61rem;
+        }
+        .main_box {
+          top: 2.6rem;
+          left: 50%;
+          width: 4.9rem;
+          transform: translateX(-50%);
+          .main_title {
+            font: normal normal bold 0.44rem/0.54rem Sora;
+          }
+          .main_des {
+            font: normal normal 500 0.26rem/0.32rem Sora;
+          }
+        }
+      }
+    }
+    &.sectionG {
+      padding: 1.08rem 0;
+    }
+    &.seo_footer {
+      padding-left: 0.53rem;
+      position: relative;
+      overflow: visible;
+      justify-content: space-between;
+      .seo_footer_box {
+        padding: 0;
+        width: 2.93rem;
+      }
+      h2 {
+        font: normal normal 900 0.36rem/0.46rem Sora;
+        span {
+          white-space: nowrap;
+        }
+      }
+      .seo_girl {
+        width: 3.24rem;
+        right: 0;
+        img {
+          width: 3.24rem;
+          bottom: -0.11rem;
+          height: 2.63rem;
+          content: url("/dist/img/aiGirlFriendSeo/banenr_girls_mobile.png");
+        }
+      }
+      .seo_btn {
+        height: 0.48rem;
+        border-radius: 0.78rem;
+        font: normal normal 900 0.18rem/0.48rem Sora;
+      }
+    }
+  }
+  .micro-test-faq {
+    .micro-test-faq-list {
+      margin-top: 0.7rem;
+    }
+    .micro-test-faq-name {
+      padding: 0.3rem 0.4rem;
+      font: normal normal 500 0.22rem/0.51rem Sora;
+    }
+    .micro-test-faq-desc .css-p {
+      font: normal normal 500 0.22rem/0.34rem Sora;
+      padding-left: 0.4rem;
+    }
+    .micro-test-faq-item::before {
+      width: 0.2rem;
+      height: 0.2rem;
+      right: 0.4rem;
+      top: 0.4rem;
+      background-size: 0.2rem;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@media screen and (max-width: 1560px) and (min-width: 1200px) {
+  .seo_section.sectionF .sex_banner {
+    .main_box {
+      top: 209px;
+      left: 252px;
+      width: 700px;
+    }
+    .A_box,
+    .B_box,
+    .C_box {
+      width: 220px;
+    }
+    .A_box {
+      top: 108px;
+      right: 16px;
+    }
+    .B_box {
+      left: 66px;
+      top: 516px;
+    }
+    .C_box {
+      right: 135px;
+      top: 516px;
+    }
+  }
+  .seo_section.seo_footer .seo_footer_des {
+    width: 865px;
+  }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_31792" data-name="Rectangle 31792" width="22" height="22" transform="translate(1437 21)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fdad3e"/>
+      <stop offset="1" stop-color="#ff0a49"/>
+    </linearGradient>
+  </defs>
+  <g id="icon_addtime" transform="translate(-1437 -21)" clip-path="url(#clip-path)">
+    <rect id="Rectangle_31793" data-name="Rectangle 31793" width="22" height="22" rx="6" transform="translate(1437 21)" fill="url(#linear-gradient)"/>
+    <path id="Path_175363" data-name="Path 175363" d="M125.2,119.766h-3.124v-3.124a.642.642,0,0,0-.642-.642h-1.027a.642.642,0,0,0-.642.642v3.124h-3.124a.642.642,0,0,0-.642.642v1.027a.642.642,0,0,0,.642.642h3.124V125.2a.642.642,0,0,0,.642.642h1.027a.642.642,0,0,0,.642-.642v-3.124H125.2a.642.642,0,0,0,.642-.642v-1.027A.642.642,0,0,0,125.2,119.766Z" transform="translate(1327.078 -88.922)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<meta name="robots" content="noindex, nofollow" />
+<link rel="shortcut icon" href="/dist/img/index.png" />
+<script type="text/javascript" src="/dist/js/flexible.min.js"></script>
+<script type="text/javascript" src="/dist/lan/normal.js"></script>
+<script
+async
+src="https://www.googletagmanager.com/gtag/js?id=G-CW3Q6HBRV8"
+></script>
+<script
+type="text/javascript"
+src="/dist/js/IGcomponents/editProfile.js"
+></script>
+<link rel="stylesheet" type="text/css" href="/dist/css/common.css" />
+<link
+rel="stylesheet"
+type="text/css"
+href="/dist/css/ai-image-generator-common.css"
+/>
+<link rel="stylesheet" href="/dist/css/new-nav-deep.css" />
+<script src="//cdn.jsdelivr.net/npm/eruda"></script>
+<script>
+  if (!window.location.pathname.includes("www.vidqu.ai")) {
+    eruda.init();
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-CW3Q6HBRV8");
+
+  function $id(selector) {
+    var getSelector = document.getElementById(selector);
+    if (getSelector) return getSelector;
+    return null;
+  }
+  window.addEventListener("load",function() {
+    const igBack = document.getElementById("ig_back");
+    if (!igBack) return; 
+    igBack.addEventListener("click", function(e) {
+      window.history.back();
+    })
+  })
+</script>

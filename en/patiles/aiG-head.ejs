@@ -1,0 +1,25 @@
+<script type="text/javascript" src="/dist/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/dist/lan/normal.js"></script>
+<link rel="stylesheet" href="/dist/css/common.css" />
+<link rel="stylesheet" href="/dist/css/new-nav-deep.css" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CW3Q6HBRV8"></script>
+<script>
+  var jsonAiGirlFriend = jsonData.aiGirlFriend;
+  var jsonAiBoyFriend = jsonData.aiBoyFriend;
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "G-CW3Q6HBRV8");
+  window.gtagClick = (event) => {
+    gtag("event", event);
+  };
+</script>
+<script>
+  function $id(selector) {
+    var getSelector = document.getElementById(selector);
+    if (getSelector) return getSelector;
+    return null;
+  }
+</script>

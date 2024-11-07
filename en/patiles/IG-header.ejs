@@ -1,0 +1,110 @@
+<!-- editUserInfo -->
+<div class="editUserInfo" style="display: none">
+    <!-- image -->
+    <div class="createIG_item image">
+      <!-- avatar -->
+      <div class="item_avatar">
+        <div class="mc_title">
+          <div class="mc_title_l">
+            <div class="font required"><%- IGpopup.editUser.userTitle %></div>
+          </div>
+        </div>
+        <div class="avatar editUser">
+          <input
+            type="file"
+            style="display: none"
+            class="editUserAvatar"
+            id="editUserAvatar"
+            accept=".jpg, .png, .webp, .jpeg"
+          />
+          <div class="image_item">
+            <div class="delete_image"></div>
+            <img src="" alt="" id="edit_user_avatar" />
+          </div>
+          <div class="addImage">
+            <img src="/dist/img/aiFriend/btn_set_normal.svg" alt="" />
+            <span><%- IGpopup.editUser.avatar_btnSet %></span>
+          </div>
+        </div>
+        <div class="erorrTip" data-type="editUserAvatar">
+          <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+          <span class="image_error"></span>
+        </div>
+      </div>
+    </div>
+    <!-- name -->
+    <div class="editName">
+      <div class="createIG_item">
+        <div class="mc_title">
+          <div class="mc_title_l">
+            <div class="font required">
+              <%- IGpopup.editUser.firstNameTitle %>
+            </div>
+          </div>
+        </div>
+        <input
+          type="text"
+          label="name"
+          class="editUser_firstName"
+          placeholder="<%- aiGirlFriend.editUser.firstname_placeholder %>"
+        />
+        <div class="erorrTip" data-type="editUser_firstName">
+          <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+          <span class="image_error"><%- IGpopup.editUser.name_error %></span>
+        </div>
+      </div>
+      <div class="createIG_item">
+        <div class="mc_title">
+          <div class="mc_title_l">
+            <div class="font required">
+              <%- IGpopup.editUser.lastNameTitle %>
+            </div>
+          </div>
+        </div>
+        <input
+          type="text"
+          label="name"
+          class="editUser_lastName"
+          placeholder="<%- aiGirlFriend.editUser.lastname_placeholder %>"
+        />
+        <div class="erorrTip" data-type="editUser_lastName">
+          <img src="/dist/img/aiFriend/icon_tip.svg" alt="" />
+          <span class="image_error"><%- IGpopup.editUser.name_error %></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- email -->
+    <div class="createIG_item">
+      <div class="mc_title">
+        <div class="mc_title_l">
+          <div class="font"><%- aiGirlFriend.editUser.emailTitle %></div>
+        </div>
+      </div>
+      <input type="text" label="email" class="editUser_email disabled" />
+    </div>
+    <!-- age -->
+    <div class="createIG_item age">
+      <div class="mc_title">
+        <div class="mc_title_l">
+          <div class="font"><%- aiGirlFriend.editUser.ageTitle %></div>
+        </div>
+      </div>
+      <div class="editUserAge chatSelect">
+        <div class="select_content" data-age="0">
+          <%- aiGirlFriend.editUser.age_tip %>
+        </div>
+        <div class="select_icon"></div>
+        <div class="select_list">
+          <div class="select_list_item" data-age="1-10">1-10</div>
+          <div class="select_list_item" data-age="10-15">10-15</div>
+          <div class="select_list_item" data-age="15-20">15-20</div>
+          <div class="select_list_item" data-age="20-25">20-25</div>
+          <div class="select_list_item" data-age="25-30">25-30</div>
+          <div class="select_list_item" data-age="30-40">30-40</div>
+          <div class="select_list_item" data-age="40-50">40-50</div>
+          <div class="select_list_item" data-age="50+">50+</div>
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,326 @@
+
+@media (min-width: 1200px) {
+
+  .header_menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-logo-bg{
+    background: url("/dist/img/IGhome/logo-w.svg") no-repeat center;
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 117px;
+    height: 38px;
+  }
+  #header_login{
+    width: 128px;
+    height: 38px;
+    background: #EFF3FB 0% 0% no-repeat padding-box;
+    font: normal normal 300 16px/21px Sora;
+    letter-spacing: 0px;
+    color: #2A2F4F;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-decoration:none;
+    transition: .5s;
+    &:hover{
+      background: transparent;
+      border: 1px solid;
+    }
+  }
+  .menu-item{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    &.chat_tools {
+      display: none;
+    }
+    .menu-text{
+      display: flex;
+      align-items: center;
+      .arrow-normal{
+        display: inline-block;
+        width: 10px;
+        height: 6px;
+        margin-left: 7px;
+        background: url("/dist/img/IGhome/arrow-black.svg") no-repeat center/cover;
+        transform: rotateZ(180deg);
+        transition: .3s;
+        &.active{
+          transform: rotateZ(180deg);
+          background: url("/dist/img/IGhome/arrow-do-h.svg") no-repeat center/cover;
+        }
+      }
+      &.active{
+        & p {
+          color:#624AFF;
+        }
+
+      }
+    }
+    & p {
+      text-align: left;
+      font: normal normal 300 16px/21px Sora;
+      letter-spacing: 0px;
+      color: #2A2F4F;
+    }
+    & a{
+      text-align: left;
+      font: normal normal 300 16px/21px Sora;
+      letter-spacing: 0px;
+      color: #2A2F4F;
+    }
+    & img{
+      margin-left:7px;
+      width: 10px;
+      object-fit: cover;
+      height: 6px;
+      transition: .5s;
+    }
+    .arrow-hover{
+      display: none;
+    }
+    .menu-drop{
+      display: none;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 2px 22px #0000001A;
+      border-radius: 3px;
+      padding: 16px 12px;
+      position: absolute;
+      z-index: 9909;
+      top: 30px;
+      .menu-drop-item{
+        text-align: left;
+        font: normal normal 300 16px/21px Sora;
+        letter-spacing: 0px;
+        color: #2A2F4F;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        & span{
+          padding: 0 80px 0 10px;
+          display: inline-block;
+          width: 100%;
+          white-space: nowrap;
+        }
+        & img {
+          width: 28px;
+          height: 28px;
+          object-fit: contain;
+        }
+        &:hover{
+          border-radius: 2px;
+          background: #EBECF2 0% 0% no-repeat padding-box;
+        }
+      }
+    }
+  }
+  .footer{
+    .footer-bottom .footer-right>ul{
+      margin-right: 0;
+    }
+    .footer-logo-bg{
+      background: url("/dist/img/IGhome/logo-w.svg") no-repeat center;
+      background-size: 100% 100%;
+      display: inline-block;
+      width: 117px;
+      height: 38px;
+    }
+    .footer-logo-des {
+      text-align: left;
+      font: normal normal 300 14px/19px Sora;
+      letter-spacing: 0;
+      color: #2A2F4F;
+      display: block;
+      margin-top: 14px;
+      white-space: nowrap;
+      margin-bottom: 0;
+    }
+    .footer-bottom {
+      display: flex;
+      height: 315px;
+      justify-content: center;
+      background: #F5F7F9 0% 0% no-repeat padding-box;
+      margin: 0 auto;
+      .wapper {
+        height: 100%;
+        display: flex;
+        padding-top: 40px;
+
+        .footer-left {
+          display: block;
+          padding-bottom: 1rem;
+        }
+
+        .footer-logo-font {
+          font: normal normal 300 12px/16px Sora;
+          letter-spacing: 0;
+          color: #2A2F4F;
+          display: flex;
+          margin-top: 48px;
+        }
+
+        .footer-right {
+          display: flex;
+          margin-left: 245px;
+
+          ul {
+            &+ul {
+              margin-left: 63px;
+            }
+            .ex-nav{
+              & a{
+                font: normal normal normal 18px/22px Sora;
+                color: #1B1E37;
+                margin-bottom: 10px;
+              }
+            }
+            li {
+              margin-bottom: 16px;
+              white-space: nowrap;
+              a {
+                font: normal normal 300 14px/18px Sora;
+                color: #000000;
+
+                @media (min-width: 1200px) {
+                  &:hover {
+                    text-decoration: underline;
+                    color: #281FAE;
+                  }
+                }
+              }
+
+              &:first-child {
+                font: normal normal normal 18px/22px Sora;
+                color: #1B1E37;
+                letter-spacing: 0;
+                margin-bottom: 32px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .header_menu{
+    display: none;
+  }
+  .nav-header .mobile-menu li{
+    min-height: 1.1rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .46rem;
+    padding-top:.46rem ;
+    &.log {
+      padding-bottom: 0.26rem;
+      padding-top: 0.26rem;
+      a {
+        display: inline-flex;
+        align-items: center;
+        .header_icon {
+          margin-right: .2rem;
+        }
+      }
+    }
+    .user_item {
+      line-height: 0;
+    }
+  }
+  .mob-menu-dec{
+    width: 100%;
+    margin-top: .2rem;
+    display: none;
+    & a{
+      font: normal normal 300 .30rem/.50rem Sora;
+      letter-spacing: 0px;
+      color: #2A2F4F;
+      margin-top: .24rem;
+    }
+  }
+  .mob-menu-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    &.user {
+      justify-content: flex-start;
+      .arrow {
+        position: absolute;
+        right: 0;
+      }
+    }
+    .header_info {
+      line-height: .3;
+    }
+    .header_avator {
+      width: 1rem;
+      height: 1rem;
+      /* UI Properties */
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 0.3rem;
+    }
+    .header_editUser {
+      font: normal normal 600 0.3rem/0.38rem Sora;
+      color: #1b1e37;
+    }
+    .useremail {
+      opacity: 0.4;
+      font: normal normal normal 0.3rem/0.38rem Sora;
+      color: #1b1e37;
+    }
+    & p{
+      font: normal normal normal .36rem/.50rem Sora;
+      letter-spacing: 0;
+      color: #2A2F4F;
+    }
+    .arrow{
+      background: url("/dist/img/IGhome/arrow-w.svg") no-repeat center;
+      transform: rotateZ(180deg);
+      width: .2rem;
+      height: .11rem;
+      transition: .3s;
+      background-size: cover;
+      &.active{
+        transform: rotateZ(360deg);
+      }
+    }
+  }
+  .ex-nav{
+    & a{
+      font: normal normal normal 0.36rem / 0.45rem Sora!important;
+      letter-spacing: 0!important;
+      color: #2A2F4F!important;
+    }
+  }
+  .nav-header .meau_icon .close{
+    background: url("/dist/img/IGhome/icon_menu_close_black.svg") no-repeat center;
+    width: .64rem!important;
+    height: .64rem!important;
+    background-size: cover;
+  }
+  .footer-logo-bg{
+    background: url("/dist/img/IGhome/logo-w.svg") no-repeat center;
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 1.86rem;
+    height: .64rem;
+  }
+  .nav-logo-bg{
+    background: url("/dist/img/IGhome/logo-w.svg") no-repeat center;
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 1.86rem;
+    height: .64rem;
+  }
+}
+
+
+

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="icon_lock" transform="translate(-973 -786)">
+    <rect id="Rectangle_31837" data-name="Rectangle 31837" width="26" height="26" rx="4" transform="translate(973 786)" fill="#21242c" opacity="0.8"/>
+    <path id="Path_2682" data-name="Path 2682" d="M12.667,247.667v-1.333a3.333,3.333,0,0,0-6.667,0v1.333m3.333,3V252M7.2,255h4.267a4.969,4.969,0,0,0,2.108-.218,2,2,0,0,0,.874-.874,4.969,4.969,0,0,0,.218-2.108v-.933a4.969,4.969,0,0,0-.218-2.108,2,2,0,0,0-.874-.874,4.969,4.969,0,0,0-2.108-.218H7.2a4.969,4.969,0,0,0-2.108.218,2,2,0,0,0-.874.874A4.97,4.97,0,0,0,4,250.867v.933a4.97,4.97,0,0,0,.218,2.108,2,2,0,0,0,.874.874A4.969,4.969,0,0,0,7.2,255Z" transform="translate(976.667 550)" fill="none" stroke="#fffdf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+  </g>
+</svg>

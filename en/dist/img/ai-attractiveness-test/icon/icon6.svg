@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_31586" data-name="矩形 31586" width="18" height="18" transform="translate(283 100)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.37" y1="0.715" x2="0.658" y2="0.272" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffd00d" stop-opacity="0"/>
+      <stop offset="1" stop-color="#db722b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="2.271" y1="-1.655" x2="2.183" y2="-2.645" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a34a9e"/>
+      <stop offset="1" stop-color="#343168"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-12.171" y1="4.477" x2="-11.761" y2="4.696" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3fa9f5"/>
+      <stop offset="1" stop-color="#666ad6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="-21.586" y1="-11.156" x2="-21.273" y2="-10.873" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-5" x1="0.637" y1="0.357" x2="-0.243" y2="1.099" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff4974"/>
+      <stop offset="0.45" stop-color="#fe4773"/>
+      <stop offset="0.629" stop-color="#fc406d"/>
+      <stop offset="0.76" stop-color="#f73464"/>
+      <stop offset="0.868" stop-color="#f12257"/>
+      <stop offset="0.961" stop-color="#e80c46"/>
+      <stop offset="1" stop-color="#e4003d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="0.64" y1="0.193" x2="0.247" y2="1.873" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c4f8b6"/>
+      <stop offset="1" stop-color="#3b8eac"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="0.04" cy="0.165" r="0.894" xlink:href="#linear-gradient-5"/>
+    <linearGradient id="linear-gradient-7" x1="1.205" y1="1.07" x2="-0.581" y2="0.058" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e4003d" stop-opacity="0"/>
+      <stop offset="0.343" stop-color="#cd0e2d" stop-opacity="0.341"/>
+      <stop offset="1" stop-color="#972e07"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-8" x1="0.641" y1="0.455" x2="0.944" y2="0.774" xlink:href="#linear-gradient-7"/>
+    <linearGradient id="linear-gradient-9" x1="0.381" y1="0.262" x2="0.912" y2="0.963" xlink:href="#linear-gradient-3"/>
+    <linearGradient id="linear-gradient-10" x1="0.377" y1="0.265" x2="0.907" y2="0.966" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-11" x1="0.396" y1="0.258" x2="0.926" y2="0.959" xlink:href="#linear-gradient-6"/>
+    <linearGradient id="linear-gradient-12" x1="0.394" y1="0.256" x2="0.924" y2="0.958" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffe548"/>
+      <stop offset="0.176" stop-color="#ffde50"/>
+      <stop offset="0.445" stop-color="#ffca65"/>
+      <stop offset="0.771" stop-color="#ffaa87"/>
+      <stop offset="1" stop-color="#ff90a4"/>
+    </linearGradient>
+  </defs>
+  <g id="icon_results_firework5" transform="translate(-283 -100)" clip-path="url(#clip-path)">
+    <g id="组_13664" data-name="组 13664" transform="translate(274.349 99.999)">
+      <path id="路径_161361" data-name="路径 161361" d="M14.557,141.267a.448.448,0,0,1-.166.1l-.065.02s-8.79,3.547-9.474,2.861,2.9-9.465,2.9-9.465l.02-.065a.449.449,0,0,1,.1-.165c.547-.545,2.487.516,4.333,2.369S15.1,140.722,14.557,141.267Z" transform="translate(3.996 -126.372)" fill="#f90"/>
+      <path id="路径_161362" data-name="路径 161362" d="M33,166.9q-1.236.49-2.483.953c-.669.249-1.4.514-2.127.763-.635.218-1.266.425-1.848.6-.4-.336-.8-.7-1.186-1.091s-.752-.789-1.086-1.19c.176-.581.386-1.211.606-1.846.252-.726.52-1.457.771-2.125q.468-1.245.962-2.48a16.074,16.074,0,0,1,3.627,2.777A16.076,16.076,0,0,1,33,166.9Z" transform="translate(-14.998 -151.754)" fill="#f90"/>
+      <path id="路径_161363" data-name="路径 161363" d="M55.887,141.266a.449.449,0,0,1-.166.1l-.065.019-.316.126q-1.236.49-2.483.953c-.669.249-1.4.514-2.127.763a18.173,18.173,0,0,1-3.513-3.526c.252-.726.52-1.457.771-2.125q.468-1.245.962-2.48c.081-.2.127-.316.127-.316l.02-.065a.449.449,0,0,1,.1-.165c.547-.545,2.487.516,4.333,2.369S56.434,140.721,55.887,141.266Z" transform="translate(-37.335 -126.372)" fill="#f90"/>
+      <path id="路径_161364" data-name="路径 161364" d="M84.292,141.267a.449.449,0,0,1-.166.1l-.065.019-.316.126q-1.236.49-2.483.953a17.749,17.749,0,0,1-4.869-4.888q.468-1.245.962-2.48c.081-.2.127-.316.127-.316l.02-.065a.449.449,0,0,1,.1-.165c.547-.545,2.487.516,4.333,2.369S84.839,140.722,84.292,141.267Z" transform="translate(-65.738 -126.373)" fill="#f90"/>
+      <path id="路径_161365" data-name="路径 161365" d="M123.659,141.268c-.547.545-2.487-.515-4.333-2.369s-2.9-3.8-2.353-4.342,2.487.515,4.333,2.369S124.206,140.722,123.659,141.268Z" transform="translate(-105.106 -126.373)" fill="#fef156"/>
+      <path id="路径_161366" data-name="路径 161366" d="M143.651,155.349c-.4.4-2.04-.585-3.655-2.205s-2.6-3.261-2.192-3.664,2.04.585,3.655,2.205S144.055,154.947,143.651,155.349Z" transform="translate(-125.438 -140.954)" fill="url(#linear-gradient)"/>
+      <path id="路径_161369" data-name="路径 161369" d="M260.741,242.815l-.75-.9a.4.4,0,0,1,.063-.572,9.264,9.264,0,0,1,10.2-.685.4.4,0,0,1,.139.559l-.624.989a.4.4,0,0,1-.531.134,7.3,7.3,0,0,0-7.954.535A.4.4,0,0,1,260.741,242.815Z" transform="translate(-244.147 -229.134)" fill="url(#linear-gradient-2)"/>
+      <path id="路径_161370" data-name="路径 161370" d="M106.838,48.881l-.681-.7a1.127,1.127,0,0,1-.221-1.218.723.723,0,0,1,1.116-.294,1.127,1.127,0,0,1,.407,1.169l-.247.945a.222.222,0,0,1-.374.1Z" transform="translate(-94.395 -46.117)" fill="url(#linear-gradient-3)"/>
+      <path id="路径_161371" data-name="路径 161371" d="M58.577,77.254l-.967-.141a1.127,1.127,0,0,1-.918-.831.723.723,0,0,1,.706-.913,1.127,1.127,0,0,1,1.035.678l.38.9A.222.222,0,0,1,58.577,77.254Z" transform="translate(-47.795 -72.537)" fill="url(#linear-gradient-4)"/>
+      <path id="路径_161372" data-name="路径 161372" d="M397.2,378.2l.973-.088a1.127,1.127,0,0,1,1.086.595.723.723,0,0,1-.474,1.052,1.127,1.127,0,0,1-1.165-.419l-.579-.787A.222.222,0,0,1,397.2,378.2Z" transform="translate(-375.342 -361.824)" fill="url(#linear-gradient-5)"/>
+      <path id="路径_161373" data-name="路径 161373" d="M403.98,326.133l.718-.663a1.127,1.127,0,0,1,1.223-.19.723.723,0,0,1,.265,1.123,1.127,1.127,0,0,1-1.179.377l-.939-.271A.222.222,0,0,1,403.98,326.133Z" transform="translate(-381.957 -311.174)" fill="url(#linear-gradient-6)"/>
+      <path id="路径_161374" data-name="路径 161374" d="M165.434,9.651A.336.336,0,0,1,165,9.4l-.27-1.343a.259.259,0,0,1,.168-.3,2.882,2.882,0,0,0,.545-.258,2.793,2.793,0,0,1-1.453-1.037,2.347,2.347,0,0,1-.132-2.727,2.366,2.366,0,0,1,2.478-.965,2.674,2.674,0,0,1,1.938,2.414q.011.08.02.158a1.685,1.685,0,0,0,.585-.536,2.244,2.244,0,0,0,.078-1.969,1.808,1.808,0,0,0-.752-.925.339.339,0,0,1-.172-.378l.31-1.277a.335.335,0,0,1,.444-.236A3.6,3.6,0,0,1,170.778,2.1a4.2,4.2,0,0,1-.232,3.752,4.162,4.162,0,0,1-2.59,1.715,3.73,3.73,0,0,1-1.112,1.354,4.751,4.751,0,0,1-1.41.733Zm.385-4.974a.417.417,0,0,0-.333.162c-.1.146.033.38.12.506a1.148,1.148,0,0,0,.751.36q-.008-.121-.025-.241c-.063-.439-.225-.729-.435-.778A.347.347,0,0,0,165.819,4.677Z" transform="translate(-150.885 1)" fill="url(#radial-gradient)"/>
+      <path id="路径_161375" data-name="路径 161375" d="M269.076,125.5l-1.408-1.413a5.236,5.236,0,0,1-.34,2.221A4.667,4.667,0,0,0,269.076,125.5Z" transform="translate(-250.257 -117.74)" fill="url(#linear-gradient-7)"/>
+      <path id="路径_161376" data-name="路径 161376" d="M165.61,115.728a.782.782,0,0,1-.155-.373l-1.967,0a2.664,2.664,0,0,0,.507,1.5,2.792,2.792,0,0,0,1.453,1.037s1.008-.306.912-1.8A1.148,1.148,0,0,1,165.61,115.728Z" transform="translate(-150.888 -109.383)" fill="url(#linear-gradient-8)"/>
+      <path id="路径_161378" data-name="路径 161378" d="M444.819,180.413a3.872,3.872,0,0,0-1.141,1.148.17.17,0,0,1-.285,0,3.872,3.872,0,0,0-1.137-1.152.17.17,0,0,1,0-.283,3.873,3.873,0,0,0,1.141-1.148.17.17,0,0,1,.285,0,3.873,3.873,0,0,0,1.137,1.152A.17.17,0,0,1,444.819,180.413Z" transform="translate(-419.533 -171.962)" fill="url(#linear-gradient-9)"/>
+      <path id="路径_161379" data-name="路径 161379" d="M354.033,25.578a3.872,3.872,0,0,0-1.141,1.148.17.17,0,0,1-.285,0,3.872,3.872,0,0,0-1.137-1.152.17.17,0,0,1,0-.283,3.872,3.872,0,0,0,1.141-1.148.17.17,0,0,1,.285,0,3.872,3.872,0,0,0,1.137,1.152.17.17,0,0,1,0,.283Z" transform="translate(-331.703 -23.028)" fill="url(#linear-gradient-10)"/>
+      <path id="路径_161380" data-name="路径 161380" d="M360.1,141.462a2.823,2.823,0,0,0-.832.837.124.124,0,0,1-.208,0,2.821,2.821,0,0,0-.829-.84.124.124,0,0,1,0-.207,2.822,2.822,0,0,0,.832-.837.124.124,0,0,1,.208,0,2.823,2.823,0,0,0,.829.84A.124.124,0,0,1,360.1,141.462Z" transform="translate(-338.198 -134.314)" fill="url(#linear-gradient-11)"/>
+      <path id="路径_161381" data-name="路径 161381" d="M391.582,81.473a2.822,2.822,0,0,0-.832.837.124.124,0,0,1-.208,0,2.822,2.822,0,0,0-.829-.84.124.124,0,0,1,0-.207,2.823,2.823,0,0,0,.832-.837.124.124,0,0,1,.208,0,2.823,2.823,0,0,0,.829.84A.124.124,0,0,1,391.582,81.473Z" transform="translate(-368.32 -76.909)" fill="url(#linear-gradient-12)"/>
+    </g>
+  </g>
+</svg>

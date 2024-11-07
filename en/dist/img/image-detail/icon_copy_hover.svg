@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_31688" data-name="Rectangle 31688" width="14" height="14" transform="translate(1438 175)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon_copy" transform="translate(-1438 -175)" clip-path="url(#clip-path)">
+    <path id="Path_1867" data-name="Path 1867" d="M5.722,1523h4.3a5.959,5.959,0,0,1,2.55.266,2.406,2.406,0,0,1,1.057,1.053,6.031,6.031,0,0,1,.264,2.553v4.3m-8.953,2.722h4.9a2.981,2.981,0,0,0,1.275-.133,1.218,1.218,0,0,0,.529-.526,3.016,3.016,0,0,0,.132-1.276v-4.9a3.016,3.016,0,0,0-.132-1.276,1.219,1.219,0,0,0-.529-.526,2.981,2.981,0,0,0-1.275-.133h-4.9a2.981,2.981,0,0,0-1.275.133,1.219,1.219,0,0,0-.529.526A3.016,3.016,0,0,0,3,1527.053v4.9a3.016,3.016,0,0,0,.132,1.276,1.218,1.218,0,0,0,.529.526A2.981,2.981,0,0,0,4.936,1533.889Z" transform="translate(1436.556 -1346.444)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+<footer id="footer" class="footer">
+  <div class="footer-bottom">
+    <div class="wapper">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span class="footer-logo-bg"></span>
+        </div>
+        <div class="footer-logo-des"><%- footer.logo_font %></div>
+        <div class="footer-logo-font">
+          <div>©</div>
+          <span>2024</span><%- footer.logo_font_footer %>
+        </div>
+      </div>
+      <div class="footer-right">
+        <ul>
+          <!-- <li><%- IGpopup.tools1 %></li>
+          <li><a href="/ai-girlfriend.html"><%- IGpopup.page1 %></a></li>
+          <li><a href="/ai-boyfriend.html"><%- IGpopup.page2 %></a></li> -->
+        </ul>
+        <ul>
+          <li><%- IGpopup.tools2 %></li>
+          <li><a href="/face-swap.html"><%- IGpopup.page3 %></a></li>
+          <li><a href="/multiple-face-swap.html"><%- IGpopup.page8 %></a></li>
+<!--          <li><a href="/ai-image-generator.html"><%- IGpopup.page4 %></a></li>-->
+          <!-- <li><a href="/ai-attractiveness-test.html"><%- IGpopup.page5 %></a></li> -->
+        </ul>
+        <ul>
+          <li><%- IGpopup.tools3%></li>
+          <li><a href="/face-swap.html?openTab=videofs"><%- IGpopup.page6 %></a></li>
+          <li><a href="/multiple-face-swap.html?openTab=videofs"><%- IGpopup.page9 %></a></li>
+          <!-- <li><a href="/video-translator.html"><%- IGpopup.page7 %></a></li> -->
+        </ul>
+        <ul>
+          <li class="ex-nav"><%- IGpopup.tools6 %></li>
+          <li><a href="/about.html"><%- IGpopup.tools5 %></a></li>
+          <li><a href="/privacy.html"><%- IGpopup.tools7 %></a></li>
+          <li><a href="/terms.html"><%- IGpopup.tools8 %></a></li>
+          <!-- <li class="ex-nav"><a href="/pricing.html"><%- IGpopup.tools4 %></a></li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="fix-footer" style="display: none">
+  <div class="fix-footer-title">
+    <div>
+      <%- footer.cookies %> <a href="/privacy.html"><%- footer.privacy %></a>.
+    </div>
+    <button id="footer_btn"><%- footer.btn %></button>
+  </div>
+</div>
+<script type="text/javascript" src="/dist/js/lib-vd.min.js"></script>
+<script>
+  const _$$ = $LIB("en", "vidqu");
+</script> 
+<div
+  class="fix_ios_footer"
+  id="iosFooter"
+  data-original="/dist/img/footer_bg.webp"
+>
+  <div class="fix-footer-title">
+    <%- footer.ios_footer_title %>
+    <img
+      src="/dist/img/loading-buffering-white.svg"
+      class="fix_icon"
+      alt="fix_icon"
+      width="16"
+      height="16"
+      data-original="/dist/img/footer_fix_icon.svg"
+    />
+    <button id="ios_footer_btn"><%- footer.fix_footer_btn %></button>
+  </div>
+</div>

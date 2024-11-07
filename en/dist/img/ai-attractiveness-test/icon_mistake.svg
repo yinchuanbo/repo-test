@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_5293" data-name="矩形 5293" width="56" height="56" transform="translate(685.363 523.363)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.954" y2="0.828" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f82324"/>
+      <stop offset="1" stop-color="#d93434"/>
+    </linearGradient>
+    <filter id="路径_158821" x="-5.781" y="-2.781" width="67.563" height="67.563" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon_mistake" transform="translate(-685.363 -523.363)" clip-path="url(#clip-path)">
+    <g transform="matrix(1, 0, 0, 1, 685.36, 523.36)" filter="url(#路径_158821)">
+      <path id="路径_158821-2" data-name="路径 158821" d="M24.781,0A24.781,24.781,0,1,1,0,24.781,24.781,24.781,0,0,1,24.781,0Z" transform="translate(3.22 3.22)" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="_" data-name="！" transform="translate(723.363 566.363)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="41" font-family="STSongti-SC-Bold, Songti SC" font-weight="700"><tspan x="-20" y="0">！</tspan></text>
+  </g>
+</svg>

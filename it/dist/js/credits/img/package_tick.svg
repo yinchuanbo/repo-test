@@ -1,0 +1,11 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="13" viewBox="0 0 13 13">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_5306" data-name="矩形 5306" width="13" height="13" transform="translate(870 375)" fill="#fff" stroke="#0E45F5" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="package_tick" transform="translate(-870 -375)" clip-path="url(#clip-path)">
+    <path id="对勾_10_" data-name="对勾 (10)" d="M12.668.89a35.008,35.008,0,0,0-8.112,7.02L1.4,5.434,0,6.558l5.453,5.551A33.477,33.477,0,0,1,13,1.664L12.668.89M12.668.89Z" transform="translate(870 375)" stroke="#0E45F5" fill="#0E45F5" />
+  </g>
+</svg>

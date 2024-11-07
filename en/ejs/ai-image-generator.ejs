@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <% const version="1.4.0.18" ; %>
+    <meta charset="UTF-8" />
+    <title>
+      <%= aiImageGenerate.title %>
+    </title>
+    <meta name="<%= aiImageGenerate.description.name %>" content="<%= aiImageGenerate.description.content %>" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,viewport-fit=cover"
+    />
+    <meta name="facebook-domain-verification" content="1j3yuczpvlcnpxgscdbj8utw68641a"/>
+    <link rel="canonical" href="https://www.vidqu.ai/ai-image-generator.html" />
+    <link rel="shortcut icon" href="/dist/img/index.png" />
+    <link rel="prefetch" href="/dist/img/ai-chatting/error_icon.svg" />
+    <link rel="prefetch" href="/dist/img/ai-chatting/popup_x_icon.svg" />
+    <link rel="stylesheet" type="text/css" href="/dist/css/ai-image-generator.css" />
+    <link rel="stylesheet" type="text/css" href="/dist/css/ig-components.css" />
+    <script type="text/javascript" src="/dist/js/jquery-2.1.4.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <%- include('../patiles/ai-image-head.ejs'); -%>
+  </head>
+  <body>
+    <%- include('../patiles/header.ejs', {ig_back:true}); -%>
+    <%- include('../patiles/IG-header.ejs'); -%>
+    <div class="ai-image-generatorBox dataLoading">
+
+      <div class="MShow m-prompts-box">
+        <div class="MShow m-prompts-textarea-box">
+          <div class="m-prompts-textarea-text"></div>
+          <div class="m-txt-num">0/2000</div>
+          <textarea class="m-prompts-textarea" placeholder="<%= aiImageGenerate.text1 %>"></textarea>
+        </div>
+      </div>
+
+      <div class="MShow m-magic-box">
+        <div class="m-magic-icon"></div>
+        <div class="m-generate-btn"><%= aiImageGenerate.text2 %></div>
+      </div>
+
+      <div class="set-info-box">
+        <div class="general-settings-box">
+          <div class="self-title"><%= aiImageGenerate.text3 %></div>
+          <div class="general-info">
+            <img class="info-img" src="" />
+            <div class="info-message">
+              <div class="info-message-title"><%= aiImageGenerate.text4 %></div>
+              <div class="info-message-name" title=""></div>
+            </div>
+            <div class="info-switch-btn"><%= aiImageGenerate.text5 %></div>
+          </div>
+        </div>
+        
+        <div class="basic-settings-box">
+          <div class="self-title"><%= aiImageGenerate.text6 %></div>
+          <div class="image-quantity-box"></div>
+          <div class="image-mode-box"></div>
+          <div class="image-size-box"></div>
+          <div class="private-mode-box">
+            <div class="private-mode-title">
+              <%= aiImageGenerate.text7 %>
+              <div class="private-mode-icon-box">
+                <div class="private-mode-icon"></div>
+                <div class="private-mode-icon-bubble"><%= aiImageGenerate.text8 %></div>
+              </div>
+            </div>
+            <label class="switch">
+              <input type="checkbox"/>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="advanced-settings-box">
+          <div class="self-title">
+            <span class="self-title-value"><%= aiImageGenerate.text9 %></span>
+            <div class="open-self-btn"></div>
+          </div>
+          <div class="negative-prompts-box">
+            <div class="negative-prompts-title"><%= aiImageGenerate.text10 %></div>
+            <div class="negative-prompts-value-box">
+              <textarea class="negative-prompts-value-textarea" placeholder="<%= aiImageGenerate.text11 %>"></textarea>
+              <span class="negative-prompts-value-number">0/500</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reset-defaults-btn"><%= aiImageGenerate.text12 %></div>
+      </div>
+      <div class="show-content-box">
+
+        <div class="prompts-box pcShow">
+          <div class="prompts-textarea-box">
+            <div class="prompts-textarea-text"></div>
+            <textarea class="prompts-textarea" placeholder="<%= aiImageGenerate.text1 %>"></textarea>
+          </div>
+          <div class="generate-btn-box">
+            <div class="txt-num">0/2000</div>
+            <div class="magic-icon"></div>
+            <div class="generate-btn disable"><%= aiImageGenerate.text2 %></div>
+          </div>
+        </div>
+
+        <div class="generation-history-box">
+          <div class="generation-history-title"><%= aiImageGenerate.text13 %></div>
+          <div class="generation-history-content-box"></div>
+        </div>
+
+        <div class="no-data-box" style="display: none">
+          <h1 class="no-data-title pcShow"><%= aiImageGenerate.text14 %></h1>
+          <h1 class="no-data-title MShow"><%= aiImageGenerate.text15 %></h1>
+          <div class="no-data-text"><%= aiImageGenerate.text16 %></div>
+          <img class="no-data-banner" src="/dist/img/ai-image-generator/banner.png" alt="">
+        </div>
+      </div>
+
+      <div class="back-top-icon"></div>
+    </div>
+
+    <task-info id="task-info"></task-info>
+
+    <div class="zoom-in-box">
+      <div class="tools-box">
+        <div class="share-icon"></div>
+        <div class="download_icon"></div>
+        <div class="close_icon"></div>
+      </div>
+      <img crossorigin="anonymous" class="zoom-in-image" src="/dist/img/ai-image-generator/banner.png" alt="">
+    </div>
+    <!-- model selector component -->
+    <model-selector class="hidden_menu"></model-selector>
+    <%- include('../patiles/footer.ejs'); -%>
+  </body>
+  <script src="/dist/js/bottom-message/index.js" type="module"></script>
+  <script src="/dist/js/IG-popup.js" type="text/javascript"></script>
+  <script src="/dist/js/task-info/index.js" type="module"></script>
+  <script src="/dist/js/ai-image-generate-select/index.js" type="module"></script>
+  <script type="text/javascript" src="/dist/js/ai-image-generator-common.js?v=<%= version %>"></script>
+  <script type="text/javascript" src="/dist/js/IGcomponents/horizontalSelector.js"></script>
+  <script src="/dist/js/IGcomponents/modelSelector.js?v=<%= version %>" type="text/javascript"></script>
+  <script type="text/javascript" src="/dist/js/ai-image-generate.js?v=<%= version %>"></script>
+</html>

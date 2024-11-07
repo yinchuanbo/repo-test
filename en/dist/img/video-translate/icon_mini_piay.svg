@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="83" height="83" viewBox="0 0 83 83">
+  <defs>
+    <filter id="icon_mini_piay" x="0" y="0" width="83" height="83" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.678"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#icon_mini_piay)">
+    <path id="icon_mini_piay-2" data-name="icon_mini_piay" d="M0,11.5A11.5,11.5,0,1,1,11.5,23,11.514,11.514,0,0,1,0,11.5Zm1.769,0A9.731,9.731,0,1,0,11.5,1.769,9.743,9.743,0,0,0,1.769,11.5Zm7.561,5.726a.884.884,0,0,1-.483-.788V7.045a.884.884,0,0,1,1.4-.716l6.458,4.7a.885.885,0,0,1,0,1.432l-6.458,4.7a.885.885,0,0,1-.921.073Z" transform="translate(30 24)" fill="#fff"/>
+  </g>
+</svg>

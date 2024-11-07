@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="l_31662" data-name="l 31662" width="20" height="20" transform="translate(711 370)" fill="#d32f2f" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon_failed" transform="translate(-711 -370)" clip-path="url(#clip-path)">
+    <path id="l_2039" data-name="l 2039" d="M22,1532a10,10,0,1,1-10-10A10,10,0,0,1,22,1532Z" transform="translate(709 -1152)" fill="#d32f2f"/>
+    <path id="l_175244" data-name="l 175244" d="M15,1529l-6,6m0-6,6,6" transform="translate(709 -1151.798)" fill="none" stroke="#21242c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

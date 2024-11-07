@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51.475" height="70.257" viewBox="0 0 51.475 70.257">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.238" y1="0.39" x2="0.887" y2="0.866" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7faef4"/>
+      <stop offset="1" stop-color="#4c8df1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4c8df1" stop-opacity="0.482"/>
+      <stop offset="1" stop-color="#4256ac"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.112" y1="0.532" x2="0.518" y2="0.941" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cbdaf7"/>
+      <stop offset="1" stop-color="#7faef4"/>
+    </linearGradient>
+  </defs>
+  <g id="icon_No_record" transform="translate(-68.17)" opacity="0.841">
+    <path id="路径_175644" data-name="路径 175644" d="M68.17,4.392V65.867a4.4,4.4,0,0,0,4.39,4.39h42.693a4.4,4.4,0,0,0,4.392-4.392V16.172a5.084,5.084,0,0,0-1.489-3.595L107.068,1.489A5.084,5.084,0,0,0,103.473,0H72.562A4.4,4.4,0,0,0,68.17,4.392Z" opacity="0.779" fill="url(#linear-gradient)"/>
+    <path id="路径_175645" data-name="路径 175645" d="M145.182,210.847h28.072a1.267,1.267,0,0,0,1.267-1.267v-3.089a1.267,1.267,0,0,0-1.267-1.267H145.182a1.267,1.267,0,0,0-1.267,1.267v3.089A1.267,1.267,0,0,0,145.182,210.847Zm0,8.777h28.072a1.267,1.267,0,0,0,1.267-1.267v-3.089A1.267,1.267,0,0,0,173.254,214H145.182a1.267,1.267,0,0,0-1.267,1.267v3.089A1.267,1.267,0,0,0,145.182,219.624Zm0,8.777h28.072a1.267,1.267,0,0,0,1.267-1.267v-3.089a1.267,1.267,0,0,0-1.267-1.267H145.182a1.267,1.267,0,0,0-1.267,1.267v3.089a1.267,1.267,0,0,0,1.267,1.267Zm-.35,8.777h14.211a.917.917,0,0,0,.917-.917v-3.788a.917.917,0,0,0-.917-.917H144.832a.917.917,0,0,0-.917.917v3.788A.917.917,0,0,0,144.832,237.179Z" transform="translate(-65.31 -176.952)" fill="#ebeff0"/>
+    <path id="路径_175646" data-name="路径 175646" d="M335.846,2.465A5.084,5.084,0,0,0,333.5,1.132V15.448l14.923,14.923V17.148a5.084,5.084,0,0,0-1.489-3.595Z" transform="translate(-228.778 -0.976)" fill="url(#linear-gradient-2)"/>
+    <path id="路径_175647" data-name="路径 175647" d="M346.027,15.44c.016.071.031.139.045.206H332.62a1.725,1.725,0,0,1-1.725-1.725V.581q.165.03.33.066a5.4,5.4,0,0,1,2.643,1.464l10.7,10.7A5.461,5.461,0,0,1,346.027,15.44Z" transform="translate(-226.532 -0.501)" fill="url(#linear-gradient-3)"/>
+  </g>
+</svg>

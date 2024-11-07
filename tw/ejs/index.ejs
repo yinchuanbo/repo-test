@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    <%= home.title %>
+  </title>
+  <meta name="description" content=" <%= home.description %> " />
+  <meta name="keywords" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,viewport-fit=cover" />
+  <link rel="icon" href="/dist/img/FS-favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="/dist/css/index.css" />
+  <%- include('../patiles/head'); -%>
+  <link rel="canonical" href="https://jp.vidqu.ai" />
+  <link rel="alternate" hreflang="en" href="https://www.vidqu.ai/" />
+  <link rel="alternate" hreflang="fr" href="https://fr.vidqu.ai/" />
+  <link rel="alternate" hreflang="de" href="https://de.vidqu.ai/" />
+  <link rel="alternate" hreflang="es" href="https://es.vidqu.ai/" />
+  <link rel="alternate" hreflang="pt" href="https://pt.vidqu.ai/" />
+  <link rel="alternate" hreflang="ja" href="https://jp.vidqu.ai/" />
+  <link rel="alternate" hreflang="it" href="https://it.vidqu.ai/" />
+  <link rel="alternate" hreflang="ar" href="https://ar.vidqu.ai/" />
+  <link rel="alternate" hreflang="ko" href="https://ko.vidqu.ai/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tw.vidqu.ai/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.vidqu.ai/" />
+</head>
+
+<body>
+  <%- include('../patiles/header'); -%>
+    <main>
+      <div class="section_aiGirl">
+        <div class="section_box">
+          <h1>
+            <p><%- home.textAs -%></p><%- home.aiGirlH1 -%>
+          </h1>
+          <div class="section_item"><%- home.li1 -%></div>
+          <div class="section_item"><%- home.li2 -%></div>
+          <div class="section_item"><%- home.li3 -%></div>
+          <button class="homeBtn btnAiGirl">
+            <div class="icon"></div><%- home.btnAiGirl -%>
+          </button>
+        </div>
+      </div>
+      <div class="home_banner">
+        <div class="bannerBox">
+          <div class="box_image"></div>
+          <div class="box_des">
+            <h2 class="box_name"><span><%- home.textAs -%></span><br> <%- home.textA -%></h2>
+            <div class="box_description">
+              <%- home.textB -%>
+            </div>
+            <button class="homeBtn btnA"><%- home.textC -%></button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('../patiles/footer'); -%>
+
+</body>
+<script>
+  $(window).ready(function () {
+    $(".btnA").click(() => {
+      gtag('event', 'btnclick_homepage_faceswap')
+      window.location = '/face-swap.html'
+    })
+    $(".btnAiGirl").click(() => {
+      gtag('event', 'btnclick_homepage_aigf')
+      window.open('https://www.vidqu.ai/ai-girlfriend.html')
+    })
+  })
+
+</script>
+
+</html>

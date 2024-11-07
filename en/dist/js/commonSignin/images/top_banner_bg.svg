@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="299" height="135" viewBox="0 0 299 135">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_31463" data-name="Rectangle 31463" width="299" height="135" rx="8" transform="translate(1356.709 134)" fill="#f2f5fb" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="top_banner_bg" transform="translate(-1356.709 -134)">
+    <g id="Mask_Group_8009" data-name="Mask Group 8009" clip-path="url(#clip-path)">
+      <rect id="Rectangle_30679" data-name="Rectangle 30679" width="299" height="135" rx="8" transform="translate(1356.709 134)" fill="#f2f5fb" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+      <path id="Polygon_80" data-name="Polygon 80" d="M9.264,2.524a1,1,0,0,1,1.875,0l1.985,5.343a1,1,0,0,0,.494.548l4.972,2.459a1,1,0,0,1,0,1.793l-4.972,2.459a1,1,0,0,0-.494.548l-1.985,5.343a1,1,0,0,1-1.875,0L7.279,15.674a1,1,0,0,0-.494-.548L1.813,12.667a1,1,0,0,1,0-1.793L6.785,8.415a1,1,0,0,0,.494-.548Z" transform="translate(1625.709 215.434)" fill="#fc8c5d"/>
+      <path id="Polygon_81" data-name="Polygon 81" d="M5.858,2.616a1,1,0,0,1,1.882,0L8.7,5.3a1,1,0,0,0,.486.552l2.662,1.359a1,1,0,0,1,0,1.781L9.191,10.349A1,1,0,0,0,8.7,10.9L7.74,13.583a1,1,0,0,1-1.882,0L4.893,10.9a1,1,0,0,0-.486-.552L1.744,8.99a1,1,0,0,1,0-1.781L4.407,5.849A1,1,0,0,0,4.893,5.3Z" transform="translate(1627.709 149.105)" fill="#16a1ff"/>
+      <path id="Polygon_82" data-name="Polygon 82" d="M6.258,2.681a1,1,0,0,1,1.887,0L9.231,5.767a1,1,0,0,0,.481.555L12.7,7.884a1,1,0,0,1,0,1.773L9.711,11.219a1,1,0,0,0-.481.555L8.145,14.86a1,1,0,0,1-1.887,0L5.172,11.774a1,1,0,0,0-.481-.555L1.7,9.657a1,1,0,0,1,0-1.773L4.691,6.322a1,1,0,0,0,.481-.555Z" transform="translate(1601.508 243.434)" fill="#0f45f5"/>
+    </g>
+  </g>
+</svg>

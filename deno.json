@@ -1,0 +1,9 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-net --allow-read --allow-env --allow-write --allow-run main.ts"
+  },
+  "nodeModulesDir": "auto",
+  "imports": {
+    "sass": "npm:sass@^1.80.6"
+  }
+}

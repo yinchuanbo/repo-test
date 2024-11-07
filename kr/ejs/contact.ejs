@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    <%= contact.conTitle %>
+  </title>
+  <meta name="description" content="<%= contact.conDescription %>" />
+  <meta name="keywords" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,viewport-fit=cover" />
+  <link rel="canonical" href="https://ko.vidqu.ai/contact.html" />
+  <link rel="alternate" hreflang="en" href="https://www.vidqu.ai/contact.html" />
+  <link rel="alternate" hreflang="fr" href="https://fr.vidqu.ai/contact.html" />
+  <link rel="alternate" hreflang="de" href="https://de.vidqu.ai/contact.html" />
+  <link rel="alternate" hreflang="es" href="https://es.vidqu.ai/contact.html" />
+  <link rel="alternate" hreflang="pt" href="https://pt.vidqu.ai/contact.html" />
+  <link rel="alternate" hreflang="ja" href="https://jp.vidqu.ai/contact.html" />
+  <link rel="alternate" hreflang="it" href="https://it.vidqu.ai/contact.html" />
+  <link rel="alternate" hreflang="ar" href="https://ar.vidqu.ai/contact.html" />
+  <link rel="alternate" hreflang="ko" href="https://ko.vidqu.ai/contact.html" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tw.vidqu.ai/contact.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.vidqu.ai/contact.html" />
+  <!--- contact --->
+  <link rel="stylesheet" type="text/css" href="/dist/css/contact.css" />
+  <%- include('../patiles/head'); -%>
+</head>
+
+<body>
+  <%- include('../patiles/header'); -%>
+    <main class="main">
+      <div class="contact_box">
+        <h1 class="title">
+          <%- contact.title %>
+        </h1>
+        <div class="description">
+          <%= contact.des %>
+        </div>
+        <div class="contact">
+          <div class="content_item">
+            <label for="name">
+              <%= contact.name %>:
+            </label>
+            <input type="text" placeholder='<%= contact.placeholder1 %>' id="subject" />
+          </div>
+          <div class="content_item">
+            <label for="name">
+              <%= contact.email %>:
+            </label>
+            <input type="text" placeholder='<%= contact.placeholder2 %>' id="email" />
+          </div>
+          <div class="content_item">
+            <label for="name">
+              <%= contact.msg %>:
+            </label>
+            <textarea placeholder='<%= contact.placeholder3 %>' id="content"></textarea>
+          </div>
+          <button class="submit">
+            <%= contact.submit %>
+          </button>
+        </div>
+      </div>
+    </main>
+    <%- include('../patiles/footer'); -%>
+
+      <script type="text/javascript" src="/dist/js/contact.js"></script>
+</body>
+
+</html>

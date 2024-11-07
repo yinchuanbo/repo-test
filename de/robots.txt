@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://de.vidqu.ai/sitemap.xml

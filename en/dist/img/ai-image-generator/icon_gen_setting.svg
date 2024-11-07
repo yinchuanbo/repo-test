@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_31660" data-name="Rectangle 31660" width="18" height="18" transform="translate(35 110)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon_gen-setting" transform="translate(-35 -110)" clip-path="url(#clip-path)">
+    <path id="Path_2398" data-name="Path 2398" d="M17.2,46.311l-6.9,3.833m0,0-6.9-3.833m6.9,3.833v7.711m7.305-4.417V46.85a1.8,1.8,0,0,0-.041-.541.812.812,0,0,0-.174-.3,1.8,1.8,0,0,0-.453-.3l-6.006-3.337a1.788,1.788,0,0,0-.467-.217.813.813,0,0,0-.327,0,1.787,1.787,0,0,0-.467.217L3.668,45.715a1.8,1.8,0,0,0-.453.3.812.812,0,0,0-.174.3A1.8,1.8,0,0,0,3,46.85v6.589a1.8,1.8,0,0,0,.041.541.811.811,0,0,0,.174.3,1.8,1.8,0,0,0,.453.3L9.674,57.91a1.786,1.786,0,0,0,.467.217.81.81,0,0,0,.327,0,1.787,1.787,0,0,0,.467-.217l6.006-3.337a1.8,1.8,0,0,0,.453-.3.811.811,0,0,0,.174-.3A1.8,1.8,0,0,0,17.61,53.438Z" transform="translate(33.695 68.856)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

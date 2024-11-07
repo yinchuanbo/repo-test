@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="108" height="108" viewBox="0 0 108 108">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_30547" data-name="Rectangle 30547" width="108" height="108" rx="54" transform="translate(0 0)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="btn_facebook_normal" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <rect id="Rectangle_31656" data-name="Rectangle 31656" width="93.836" height="93.836" rx="46.918" transform="translate(7.082 7.082)" fill="#cfcfcf"/>
+    <path id="Subtraction_15" data-name="Subtraction 15" d="M54.58,110.992h0C28.617,110.979,6.254,92.378,1.1,66.508S9.421,14.655,33.332,4.369C61.108-7.562,93.138,5.659,104.873,33.9S103.6,94.7,75.828,106.632a53.47,53.47,0,0,1-21.248,4.36ZM39.194,45.306V56.985h8.355V87.346h13.16V57.2h9.815V45.518H60.917V38.51a3.311,3.311,0,0,1,1.094-2.379,3.2,3.2,0,0,1,2.458-.806h9.4V23.646H58.827a10.223,10.223,0,0,0-9.552,6.265,19.216,19.216,0,0,0-1.723,6.265v9.13Z" transform="translate(0.084 0.496)" fill="#353841"/>
+  </g>
+</svg>

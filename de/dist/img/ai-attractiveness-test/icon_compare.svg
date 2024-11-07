@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25" class="icon_compare">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_5255" data-name="矩形 5255" width="25" height="25" transform="translate(447 849)" fill="#39325a" stroke="currentColor" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon_compare" transform="translate(-447 -849)" clip-path="url(#clip-path)">
+    <path id="对比" d="M2.841,20.455H9.659v2.273H.568V2.273H9.659V4.545H2.841Zm12.5,0h2.273v2.273H15.341V20.455Zm3.409,0h2.273v2.273H18.75V20.455Zm3.409,2.273V20.455h2.273v2.273Zm0-7.955V12.5h2.273v2.273Zm0,3.409V15.909h2.273v2.273Zm0-6.818V9.091h2.273v2.273Zm0-3.409V5.682h2.273V7.955Zm0-3.409V2.273h2.273V4.545H22.159Zm-1.136,0H18.75V2.273h2.273V4.545Zm-3.409,0H15.341V2.273h2.273V4.545ZM11.932,0H14.2V25H11.932Z" transform="translate(447 849)" fill="currentColor"/>
+  </g>
+</svg>

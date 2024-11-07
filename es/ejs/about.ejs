@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    <%= about.title %>
+  </title>
+  <meta name="description" content=" <%= about.description %> " />
+  <meta name="keywords" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,viewport-fit=cover" />
+  <link rel="icon" href="/dist/img/FS-favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="/dist/css/about.css" />
+  <link rel="canonical" href="https://es.vidqu.ai/about.html" />
+  <%- include('../patiles/head'); -%>
+  <link rel="alternate" hreflang="en" href="https://www.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="fr" href="https://fr.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="de" href="https://de.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="es" href="https://es.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="pt" href="https://pt.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="ja" href="https://jp.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="it" href="https://it.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="ar" href="https://ar.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="ko" href="https://ko.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tw.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.vidqu.ai/about.html" />
+</head>
+
+<body>
+  <%- include('../patiles/header'); -%>
+    <main>
+      <div class="main">
+        <h1 class="title"><%- about.textA -%> <span><%- about.textD -%></span></h1>
+        <div class="des">
+          <div class="des_title"><%- about.textB -%></div>
+          <div class="des_content"><%- about.textC -%></div>
+        </div>
+      </div>
+      <div class="about_bg"></div>
+    </main>
+
+    <%- include('../patiles/footer'); -%>
+
+      <script src="/dist/js/popup/index.js" type="module"></script>
+</body>
+
+</html>

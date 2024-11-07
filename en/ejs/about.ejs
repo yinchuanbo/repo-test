@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    <%= about.title %>
+  </title>
+  <meta name="description" content=" <%= about.description %> " />
+  <meta name="keywords" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,viewport-fit=cover" />
+  <link rel="icon" href="/dist/img/FS-favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="/dist/css/about.css" />
+  <link rel="canonical" href="https://www.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="en" href="https://www.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="fr" href="https://fr.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="de" href="https://de.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="es" href="https://es.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="pt" href="https://pt.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="ja" href="https://jp.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="it" href="https://it.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="ar" href="https://ar.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="ko" href="https://ko.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tw.vidqu.ai/about.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.vidqu.ai/about.html" />
+  <%- include('../patiles/head'); -%>
+
+</head>
+
+<body>
+<%- include('../patiles/header'); -%>
+<div class="about_box">
+  <div class="header">
+    <p class="title">About Vidqu</p>
+    <div class="tipsbox">
+      <p class="tipstext">Vidqu is a platform dedicated to providing users with practical and convenient AI tools.
+        We have been engaged in the research and development of video-related technologies since 2004. With the
+        advancement of technology in recent years, AI has emerged in the process of video creation and editing with
+        an unstoppable trend. Strong IT technical talents employ AI technology to enable video processing to be
+        completed in just a few minutes. Recently, we've planned to develop more AI tools.</p>
+    </div>
+  </div>
+  <div class="dataImglist">
+    <div class="item">
+      <img src="../dist/img/about/aboutimg1.png" alt="">
+      <p class="num">5,000,000+</p>
+      <p class="tips">Monthly active users</p>
+    </div>
+    <div class="item"><img src="../dist/img/about/aboutimg2.png" alt="">
+      <p class="num">20,000,000+</p>
+      <p class="tips">Videos processed</p>
+    </div>
+    <div class="item"><img src="../dist/img/about/aboutimg3.png" alt="">
+      <p class="num">200+</p>
+      <p class="tips">Countries</p>
+    </div>
+  </div>
+  <p class="teamTitle">We've Built Professional and Cooperative Teams</p>
+  <div class="teamlist">
+    <div class="item marginr30">
+      <p class="title">R&D Team</p>
+      <p class="tips">Our entire product research and development department takes user needs as the priority and
+        strives to develop new products to meet different needs.</p>
+    </div>
+    <div class="item">
+      <p class="title">Designer Team</p>
+      <p class="tips">Our designers, with a high level of aesthetics, rich imagination and innovation, are committed
+        to designing AI tool interfaces combined with beauty and simplicity.</p>
+    </div>
+    <div class="item marginr30 margint30">
+      <p class="title">Marketer Team</p>
+      <p class="tips">The marketing staff always pays attention to the trend of user needs and conducts market
+        research to discover new products that users need.</p>
+    </div>
+    <div class="item margint30">
+      <p class="title">Customer Support Team</p>
+      <p class="tips">The Customer Support team members patiently communicate with users to handle complaints and
+        provide professional solutions until our users are satisfied.</p>
+    </div>
+  </div>
+  <div class="bannerbox">
+
+  </div>
+  <p class="submitTtile">Contact Us</p>
+  <p class="submitTips">You can submit a request to our support team here. And you will get a response within 72
+    hours.</p>
+  <div class="form">
+    <div class="flex marginbt30">
+      <div class="namebox">
+        <p class="title"><span class="red">*&nbsp;</span>Name:</p>
+        <input type="text" class="name" placeholder="Your name">
+      </div>
+      <div class="mailbox">
+        <p class="title"><span class="red">*&nbsp;</span>Email address:</p>
+        <input type="text" class="mail" placeholder="Your email">
+      </div>
+    </div>
+    <p class="title titleWidth"><span class="red">*&nbsp;</span>Your message:</p>
+    <div class="messagebox">
+          <textarea placeholder="Please describe the issue you are encountering. Minimum of 20 characters."
+                    class="message"></textarea>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="btnbox">
+      <div class="btn">
+        <img class="loading-svg" src="../dist/img/about/loading.svg" alt="">
+        <p>Submit</p>
+      </div>
+      <p class="sendTips">Submitted Successfully</p>
+    </div>
+  </div>
+</div>
+  <%- include('../patiles/footer'); -%>
+  <script src="/dist/js/popup/index.js" type="module"></script>
+  <script src="/dist/js/bottom-message/index.js" type="module"></script>
+  <script type="text/javascript" src="../dist/js/jquery-2.1.4.min.js"></script>
+</body>
+<script type="text/javascript" src="../dist/js/about.js"></script>
+
+</html>

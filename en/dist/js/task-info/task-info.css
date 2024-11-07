@@ -1,0 +1,296 @@
+body.no-scroll {
+    overflow: hidden;
+}
+
+.taskInfoBox .MShow{
+    display: none !important;
+}
+
+.taskInfoBox{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(7, 12, 20, 0.5);
+    backdrop-filter: blur(20px);
+    z-index: 999;
+}
+
+.taskInfoBox .taskInfoContentBox{
+    position: relative;
+    width: 1100px;
+    padding: 16px 16px 70px 20px;
+    background-color: #1F2532;
+    border: 1px solid #FFFFFF14;
+    box-shadow: 0 20px 40px #00000026;
+    border-radius: 16px;
+    font-family: Sora, serif;
+    box-sizing: border-box;
+}
+
+.taskInfoBox .taskInfoContentBox .taskInfoLoadingBox{
+    display: none;
+    align-content: center;
+    justify-content: center;
+}
+
+.taskInfoBox .taskInfoContentBox .taskInfoLoadingBox::before{
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url("/dist/js/task-info/img/icon_loading.svg");
+    animation: animationRotate 2s linear infinite;
+}
+
+.taskInfoBox .taskInfoContentBox.loading .taskInfoNoLoadingBox{
+    display: none;
+}
+.taskInfoBox .taskInfoContentBox.loading .taskInfoLoadingBox{
+    display: flex;
+}
+
+.taskInfoBox .taskInfoContentBox .taskInfoTitle{
+    margin-bottom: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font: normal normal 600 16px/21px Sora;
+    color: #FFFFFF;
+}
+
+.taskInfoBox .taskInfoContentBox .taskInfoTitle .icon{
+    width: 24px;
+    height: 24px;
+    background-image:  url("/dist/js/task-info/img/icon_close.svg");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.taskInfoBox .taskInfoContentBox .taskInfoTitle .icon:hover{
+    background-image:  url("/dist/js/task-info/img/icon_close_hover.svg");
+}
+
+.taskInfoBox .taskInfoContentBox .labelItem{
+    display: flex;
+    margin-top: 12px;
+    margin-right: 24px;
+}
+
+.taskInfoBox .taskInfoContentBox .labelItem .labelItemLeft{
+    display: flex;
+    align-items: center;
+    width: 130px;
+    font: normal normal normal 12px/15px Sora;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.taskInfoBox .taskInfoContentBox .labelItem .labelItemRight{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    font: normal normal normal 12px/15px Sora;
+    color: #FFFFFF;
+    width: 80%;
+}
+
+.taskInfoBox .taskInfoContentBox .labelItem .labelItemRight .copy{
+    margin-left: 8px;
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    background-image:  url("/dist/js/task-info/img/icon_copy.svg");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.taskInfoBox .taskInfoContentBox .labelItem .labelItemRight .copy:hover{
+    background-image:  url("/dist/js/task-info/img/icon_copy_hover.svg");
+}
+
+.taskInfoBox .taskInfoContentBox .labelItem .labelItemRight .privateItem{
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 24px;
+    color: #FFFFFF;
+    background-color: rgba(67, 209, 167, 0.3);
+    border-radius: 4px;
+}
+
+.taskInfoBox .taskInfoContentBox .labelItem .labelItemRight .privateItem.private{
+    background-color: rgba(150, 70, 239, 0.3);
+}
+
+.taskInfoBox .taskInfoContentBox .labelItem .labelItemRight .modelImage{
+    flex-shrink: 0;
+    margin-right: 6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+.taskInfoBox .taskInfoContentBox .labelItem .labelItemRight .generationBox{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    background: #C1D2FF0F 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF14;
+    border-radius: 4px;
+    overflow: auto;
+    opacity: 0.7;
+}
+
+.taskInfoBox .taskInfoContentBox .labelItem .labelItemRight .generationBox .w100{
+    width: calc(100% - 30px);
+    word-wrap: break-word;
+}
+
+.taskInfoBox .taskInfoContentBox .remixBtn{
+    position: absolute;
+    right: 40px;
+    bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 122px;
+    height: 32px;
+    font: normal normal 600 13px/17px Sora;
+    color: #FFFFFF;
+    border-radius: 20px;
+    background-color: #F73463;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .taskInfoBox{
+        align-items: flex-end;
+    }
+
+    .taskInfoBox .taskInfoContentBox{
+        width: 100%;
+        height: 85vh;
+        padding: 0.4rem 0.4rem 2rem 0.4rem;
+        border: 0.02rem solid #FFFFFF14;
+        box-shadow: 0 -0.2rem 0.4rem #00000066;
+        border-radius: 0.32rem 0.32rem 0 0;
+    }
+
+    .taskInfoBox .taskInfoContentBox .taskInfoNoLoadingBox{
+        max-height: calc(100% - 1rem);
+        overflow: auto;
+    }
+
+    .taskInfoBox .taskInfoContentBox .taskInfoTitle {
+        margin-bottom: 0.42rem;
+        font: normal normal 600 0.32rem/0.4rem Sora;
+    }
+
+    .taskInfoBox .taskInfoContentBox .taskInfoTitle .icon {
+        width: 0.42rem;
+        height: 0.42rem;
+        background-image:  url("/dist/js/task-info/img/icon_close_hover.svg");
+    }
+
+    .taskInfoBox .taskInfoContentBox .labelItem {
+        display: block;
+        margin-top: 0.42rem;
+        margin-right: 0;
+        font: normal normal normal 0.24rem/0.3rem Sora;
+    }
+
+    .taskInfoBox .taskInfoContentBox .labelItem:first-child {
+        margin-top: 0;
+    }
+
+    .taskInfoBox .taskInfoContentBox .labelItem .labelItemLeft {
+        margin-bottom: 0.12rem;
+        justify-content: space-between;
+        width: inherit;
+        font: normal normal normal 0.24rem/0.3rem Sora;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .taskInfoBox .taskInfoContentBox .labelItem .labelItemRight {
+        margin-left: 0;
+        width: 100%;
+        font: normal normal normal 0.24rem/0.3rem Sora;
+    }
+
+    .taskInfoBox .taskInfoContentBox .labelItem .copy {
+        margin-right: 0.1rem;
+        width: 0.32rem;
+        height: 0.32rem;
+        background-image:  url("/dist/js/task-info/img/icon_copy_hover.svg");
+        background-size: cover;
+    }
+
+    .taskInfoBox .taskInfoContentBox .labelItem .labelItemRight .privateItem{
+        margin-right: 0.15rem;
+        padding: 0.12rem 0.24rem;
+        width: initial;
+        height: initial;
+        background-color: rgba(67, 209, 167, 0.3);
+        border-radius: 0.06rem;
+    }
+
+    .taskInfoBox .taskInfoContentBox .labelItem .labelItemRight .privateItem.private{
+        background-color: rgba(150, 70, 239, 0.3);
+    }
+
+    .taskInfoBox .taskInfoContentBox .labelItem .labelItemRight .modelImage{
+        flex-shrink: 0;
+        margin-right: 0.16rem;
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 0.06em;
+    }
+
+    .taskInfoBox .taskInfoContentBox .labelItem .labelItemRight .generationBox{
+        height: 3rem;
+        padding: 0.12rem;
+        border: 0.01px solid #FFFFFF14;
+        border-radius: 0.04rem;
+    }
+
+    .taskInfoBox .taskInfoContentBox .labelItem .labelItemRight .generationBox .w100{
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    .taskInfoBox .taskInfoContentBox .remixBtn{
+        position: absolute;
+        right: 0.4rem;
+        bottom: 0.6rem;
+        width: 6.7rem;
+        height: 1rem;
+        font: normal normal 600 0.28rem/0.35rem Sora;
+        border-radius: 0.5rem;
+    }
+
+    .taskInfoBox .pcShow{
+        display: none !important;
+    }
+
+    .taskInfoBox .MShow{
+        display: flex !important;
+    }
+}
+
+@keyframes animationRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

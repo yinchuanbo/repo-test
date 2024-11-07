@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="108" height="108" viewBox="0 0 108 108">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_30547" data-name="Rectangle 30547" width="108" height="108" rx="54" transform="translate(0 0)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="btn_x_normal" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <rect id="Rectangle_31655" data-name="Rectangle 31655" width="88.525" height="88.525" rx="44.262" transform="translate(9.738 9.738)" fill="#cfcfcf"/>
+    <path id="twitter" d="M54.58,110.992h0C28.617,110.979,6.254,92.378,1.1,66.508S9.421,14.655,33.332,4.369C61.108-7.562,93.138,5.659,104.873,33.9S103.6,94.7,75.828,106.632A53.471,53.471,0,0,1,54.58,110.992ZM51.422,60.7h0l12.222,18.08H77L58.845,51.933l16.69-19.721H71.578L57.089,49.335,45.515,32.211H32.162L49.667,58.106,32.162,78.785h3.955l15.3-18.08ZM71.58,75.9H65.506L53.42,58.334l-1.774-2.576-14.1-20.52h6.076L55.009,51.8l1.772,2.576,14.8,21.521Z" transform="translate(0.102 0.496)" fill="#353841"/>
+  </g>
+</svg>

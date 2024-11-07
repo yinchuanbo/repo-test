@@ -1,0 +1,5 @@
+<svg id="icon_avatar" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <path id="Path_175453" data-name="Path 175453" d="M19,0A19,19,0,1,1,0,19,19,19,0,0,1,19,0Z" fill="rgba(193,210,255,0.13)"/>
+  <path id="Path_175451" data-name="Path 175451" d="M112.564,277.921a2.234,2.234,0,0,1-.327,2,14.907,14.907,0,0,1-24.121,0,2.234,2.234,0,0,1-.327-2l.757-2.353a4.692,4.692,0,0,1,6.071-2.984,16.99,16.99,0,0,0,11.118,0,4.7,4.7,0,0,1,6.071,2.984Z" transform="translate(-81.177 -252.093)" fill="#eef3ff" opacity="0.28"/>
+  <circle id="Ellipse_3128" data-name="Ellipse 3128" cx="7.34" cy="7.34" r="7.34" transform="translate(11.66 4.023)" fill="#eef3ff" opacity="0.28"/>
+</svg>

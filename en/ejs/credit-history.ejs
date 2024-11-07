@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Buy MioCreate Whiteboard - Official Online Pricing Page</title>
+    <meta
+      name="description"
+      content="Buy Subscription. Unlock more templates and features of MioCreate online Whiteboard via different payment methods."
+    />
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,viewport-fit=cover"
+    />
+    <link rel="icon" href="/dist/img/FS-favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/dist/css/common.css" />
+    <link
+      rel="canonical"
+      href="https://www.miocreate.com/credit-history.html"
+    />
+    <!--- pricing --->
+    <!-- <link rel="stylesheet" type="text/css" href="/dist/css/pricing.css" /> -->
+    <link rel="stylesheet" type="text/css" href="/dist/css/swiper.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/dist/css/credit-history.css"
+    />
+    <link rel="preload" href="/dist/img/right_arrow2.svg" as="image" />
+    <link rel="preload" href="/dist/img/right_arrow3.svg" as="image" />
+    <link rel="preload" href="/dist/img/price_arr_hover.svg" as="image" />
+    <%- include('../patiles/head'); -%> 
+    <style>
+      .h {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include('../patiles/header'); -%>
+    <section class="credits_history">
+      <div id="credit_history_loading">
+        <div class="loading_box">
+          <p id="loading"><%= creditPayDialog.loading %></p>
+          <div class="face_swap_loading">
+            <div class="loading-rect1"></div>
+            <div class="loading-rect2"></div>
+            <div class="loading-rect3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="credits_history_banner">
+        <div class="wrapper">
+          <h1><%= creditHistory.h1 %></h1>
+          <div class="credits_box">
+            <div class="credits_info">
+              <div class="credits_num" id="banner_num"></div>
+              <div class="credits_buy">
+                <span class="credits_icon"></span>
+                <span class="credits_text"><%= creditHistory.buy %></span>
+              </div>
+              <div class="credits_buy_pro"><%= creditHistory.buy2 %></div>
+            </div>
+          </div>
+          <div class="more_credits">
+            <div class="more_credits_title"><%= creditHistory.more1 %></div>
+            <p><%= creditHistory.more2 %></p>
+            <div class="more_credits_list">
+              <div id="payment_loading" style="display: none">
+                <div class="loading_box">
+                  <p id="loading"><%= creditPayDialog.loading %></p>
+                  <p id="sub_loading" style="display: none">
+                    <%= creditPayDialog.subLoding %>
+                  </p>
+                  <div class="face_swap_loading">
+                    <div class="loading-rect1"></div>
+                    <div class="loading-rect2"></div>
+                    <div class="loading-rect3"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="more_credits_list_item" id="credit150">
+                <div class="item_tip"></div>
+                <div class="buy_num"></div>
+                <div class="credits_price">
+                  <div class="m_buy_num"></div>
+                  <div class="cur_price">
+                    <div class="cur_price_price"><span class="symbol"></span><span class="price_num"></span></div>
+                    <div class="m_orign_price"></div>
+                  </div>
+                  <div class="one_price">
+                    <span class="symbol"></span><span class="price_num"></span><%= creditHistory.more3 %>
+                  </div>
+                  <div class="orign_price"></div>
+                </div>
+                <button class="buy_btn" id="credit150_btn"><%= creditHistory.more4 %></button>
+              </div>
+              <div class="more_credits_list_item" id="credit500">
+                <div class="item_tip"></div>
+                <div class="buy_num"></div>
+                <div class="credits_price">
+                  <div class="m_buy_num"></div>
+                  <div class="cur_price">
+                    <div><span class="symbol"></span><span class="price_num"></span></div>
+                    <div class="m_orign_price"></div>
+                  </div>
+                  <div class="one_price">
+                    <span class="symbol"></span><span class="price_num"></span><%= creditHistory.more3 %>
+                  </div>
+                  <div class="orign_price"></div>
+                </div>
+                <button class="buy_btn" id="credit500_btn"><%= creditHistory.more4 %></button>
+              </div>
+              <div class="more_credits_list_item active" id="credit1500">
+                <div class="item_tip"></div>
+                <div class="buy_num"></div>
+                <div class="credits_price">
+                  <div class="m_buy_num"></div>
+                  <div class="cur_price">
+                    <div><span class="symbol"></span><span class="price_num"></span></div>
+                    <div class="m_orign_price"></div>
+                  </div>
+                  <div class="one_price">
+                    <span class="symbol"></span><span class="price_num"></span><%= creditHistory.more3 %>
+                  </div>
+                  <div class="orign_price"></div>
+                </div>
+                <button class="buy_btn" id="credit1500_btn"><%= creditHistory.more4 %></button>
+              </div>
+            </div>
+            <div class="m_buy_btn"><%= creditHistory.more4 %></div>
+            <div class="more_credits_des">
+              <div class="des_title">
+                <span class="des_title_icon"></span><%= creditHistory.more5 %>
+              </div>
+              <div class="des"><%= creditHistory.more6 %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="credits_history_container">
+        <div class="wrapper">
+          <div class="credits_history_tab">
+            <div class="tab_item active" id="payment_history">
+              <%= creditHistory.list1 %>
+            </div>
+            <div class="tab_item" id="credit_history">
+              <%= creditHistory.list2 %>
+            </div>
+          </div>
+          <div class="history_content record">
+            <div class="payment_list"></div>
+            <div class="credit_list"></div>
+            <div class="no_record">
+              <div class="no_record_content">
+                <div class="no_record_icon"></div>
+                <div class="no_record_text"><%= creditHistory.list3 %></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cancel_dialog">
+        <div class="cancel_dialog_container">
+          <div class="confirm">
+            <div class="cancel_close">
+              <div class="icon"></div>
+            </div>
+            <div class="confirm_title"><%= creditHistory.confirm_title %></div>
+            <p><%- creditHistory.confirm_p %></p>
+            <div class="confirm_btn_box">
+              <div class="confirm_btn">
+                <div class="text"><%= creditHistory.confirm_btn %></div>
+                <div class="loading"></div>
+              </div>
+              <div class="no_confirm_btn">
+                <%= creditHistory.no_confirm_btn %>
+              </div>
+            </div>
+          </div>
+          <div class="cancel_success">
+            <div class="cancel_close"></div>
+            <div class="suc_icon">
+            </div>
+            <div class="suc_title">
+              <div class="title_text">
+                <%= creditHistory.cancel_suc_title %>
+              </div>
+            </div>
+            <p><%- creditHistory.cancel_suc_p %></p>
+            <div class="cancel_ok">
+              <div class="ok_btn"><%= creditHistory.cancel_ok %></div>
+            </div>
+          </div>
+          <div class="cancel_failed">
+            <div class="cancel_close"></div>
+            <div class="fail_info">
+              <div class="fail_des">
+                <div class="fail_icon">
+                </div>
+                <div class="fail_title">
+                  <%= creditHistory.cancel_fail_title %>
+                </div>
+                <div class="fail_text">
+                  <%- creditHistory.cancel_fail_text %>
+                </div>
+              </div>
+            </div>
+            <div class="cancel_fail">
+              <div class="fail_btn"><%= creditHistory.cancel_fail %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('../patiles/credit-pay-dialog'); -%>
+    <%- include('../patiles/footer'); -%>
+    <script>
+      const payText = jsonData.creditPayDialog.javascript;
+    </script>
+    <script type="text/javascript" src="/dist/js/jquery-2.1.4.min.js"></script>
+    <script src="https://checkout.airwallex.com/assets/elements.bundle.min.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script type="text/javascript" src="/dist/js/common.js"></script>
+    <script type="text/javascript" src="/dist/js/flexible.min.js"></script>
+    <script type="text/javascript" src="/dist/js/swiper-bundle.min.js"></script>
+    <script src="/dist/js/credit-pay-dialog.js"></script>
+    <script type="text/javascript" src="/dist/js/credit-history.js"></script>
+  </body>
+</html>
