@@ -65,7 +65,6 @@ async function compileJS(filePath: string) {
 }
 
 async function compileCSS(filePath: string) {
-  console.log(filePath);
   const baseCompileFilePath = filePath.split("\\Dev\\")[0];
   const CompileFilePath = `${baseCompileFilePath}\\css`;
   const baseName = path.basename(filePath);
@@ -198,6 +197,23 @@ async function compileRepoCode(filePath: string) {
 
 const compiledFiles: Set<string> = new Set();
 
+const switchFiles = async (ePath: string = "") => {
+  if (ePath.includes("\\Dev\\scss")) {
+    await compileCSS(ePath);
+  } else if (ePath.includes("\\Dev\\js")) {
+    await compileJS(ePath);
+  } else if (ePath.includes("\\ejs") && !ePath.includes("\\repo")) {
+    await compileEJS(ePath);
+  } else if (ePath.includes("\\lan\\index.js")) {
+    await compileLan(ePath);
+  } else if (ePath.includes("\\patiles")) {
+    const likeEjsPath = ePath.split("\\patiles")[0];
+    await compileLan(`${likeEjsPath}\\dist\\lan\\index.js`);
+  } else if (ePath.includes("\\repo")) {
+    await compileRepoCode(ePath);
+  }
+};
+
 const watchFiles = async () => {
   const watcher = Deno.watchFs(watchedFolders);
   for await (const event of watcher) {
@@ -205,20 +221,7 @@ const watchFiles = async () => {
       const ePath = event.paths[0].replaceAll("/", "\\");
       if (compiledFiles.has(ePath)) continue;
       compiledFiles.add(ePath);
-      if (ePath.includes("\\Dev\\scss")) {
-        await compileCSS(ePath);
-      } else if (ePath.includes("\\Dev\\js")) {
-        await compileJS(ePath);
-      } else if (ePath.includes("\\ejs") && !ePath.includes("\\repo")) {
-        await compileEJS(ePath);
-      } else if (ePath.includes("\\lan\\index.js")) {
-        await compileLan(ePath);
-      } else if (ePath.includes("\\patiles")) {
-        const likeEjsPath = ePath.split("\\patiles")[0];
-        await compileLan(`${likeEjsPath}\\dist\\lan\\index.js`);
-      } else if (ePath.includes("\\repo")) {
-        await compileRepoCode(ePath);
-      }
+      await switchFiles(ePath);
       setTimeout(() => {
         compiledFiles.clear();
       }, 2000);
