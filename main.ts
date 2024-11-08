@@ -24,7 +24,7 @@ async function getDirectories(path: string) {
 const currentDir = Deno.cwd();
 const dirs = await getDirectories(currentDir);
 const ports: Record<string, number> = {};
-let watchedFolders: string[] = [];
+let watchedFolders: string[] = ["repo/js", "repo/scss", "repo/ejs"];
 
 for (let i = 0; i < dirs.length; i++) {
   const dir = dirs[i];
@@ -40,8 +40,6 @@ for (let i = 0; i < dirs.length; i++) {
     ],
   ];
 }
-
-watchedFolders = [...watchedFolders, "repo/js", "repo/scss", "repo/ejs"];
 
 async function compileJS(filePath: string) {
   const baseCompileFilePath = filePath.split("\\Dev\\")[0];
