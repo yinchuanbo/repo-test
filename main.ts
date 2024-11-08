@@ -237,12 +237,35 @@ const serveFolder = async (folder: string, req: Request) => {
   const pname = url.pathname === "/" ? "/index.html" : url.pathname;
   const filePath = `${folder}${pname}`;
   const extname = path.extname(filePath).toLowerCase();
+  const headers = new Headers();
+  switch (extname) {
+    case ".svg":
+      headers.set("Content-Type", "image/svg+xml");
+      break;
+    case ".jpg":
+    case ".jpeg":
+      headers.set("Content-Type", "image/jpeg");
+      break;
+    case ".png":
+      headers.set("Content-Type", "image/png");
+      break;
+    case ".gif":
+      headers.set("Content-Type", "image/gif");
+      break;
+    case ".html":
+      headers.set("Content-Type", "text/html");
+      break;
+    case ".css":
+      headers.set("Content-Type", "text/css");
+      break;
+    case ".js":
+      headers.set("Content-Type", "application/javascript");
+      break;
+    default:
+      headers.set("Content-Type", "application/octet-stream");
+  }
   try {
     const file = await Deno.readFile(filePath);
-    const headers = new Headers();
-    if (extname === ".svg") {
-      headers.set("Content-Type", "image/svg+xml");
-    }
     return new Response(file, { status: 200, headers });
   } catch {
     return new Response("Not Found", { status: 404 });
@@ -252,8 +275,8 @@ const serveFolder = async (folder: string, req: Request) => {
 const startServer = async (port: number, folder: string) => {
   await serve((req) => serveFolder(folder, req), {
     port,
-    onListen({ port, hostname }) {
-      console.log(`${folder} Server started at http://${hostname}:${port}`);
+    onListen({ port }) {
+      console.log(`${folder} Server started at http://localhost:${port}`);
     },
   });
 };
