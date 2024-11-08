@@ -1,3 +1,6 @@
+import {getHeaders} from "@js/api.js";
+console.log("getHeaders", getHeaders());
+
 let submit = false;
 let maxCharacters = 500;
 $(window).ready(function () {

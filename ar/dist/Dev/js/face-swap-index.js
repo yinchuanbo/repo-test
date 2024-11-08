@@ -1,3 +1,5 @@
+import {getHeaders} from "@js/api.js";
+
 const toolPicingUrl = "/pricing.html";
 var userRuleConfig = {
   limit: 100, // 上传限制

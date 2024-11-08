@@ -1,3 +1,7 @@
+import {curToken} from "@js/config.js";
+
+console.log("curToken", curToken)
+
 $(".seo_btn").click(function() {
   switch (true) {
     case $(this).hasClass("sectionbtn_A"):

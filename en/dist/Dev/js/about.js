@@ -1,3 +1,5 @@
+import {getHeaders} from "@js/api.js";
+console.log("getHeaders", getHeaders());
 
 let isSubmit = true
 // POST

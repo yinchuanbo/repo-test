@@ -1,5 +1,6 @@
 import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
 import * as ejs from "https://deno.land/x/deno_ejs@v0.3.1/mod.ts";
+import { walk } from "https://deno.land/std@0.224.0/fs/walk.ts";
 import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
 const sass = require("sass");
@@ -39,6 +40,8 @@ for (let i = 0; i < dirs.length; i++) {
     ],
   ];
 }
+
+watchedFolders = [...watchedFolders, "repo/js", "repo/scss", "repo/ejs"];
 
 async function compileJS(filePath: string) {
   const baseCompileFilePath = filePath.split("\\Dev\\")[0];
@@ -137,6 +140,62 @@ async function compileAllEjs(filePath: string) {
   }
 }
 
+async function findImports(importPath: string) {
+  const matchingFiles: string[] = [];
+  for await (const entry of walk("./", { exts: [".js", ".scss", ".ejs"] })) {
+    const content = await Deno.readTextFile(entry.path);
+    if (
+      content.includes(`from "${importPath}"`) ||
+      content.includes(`../../${importPath}`) ||
+      content.includes(`../../../../${importPath}`)
+    ) {
+      matchingFiles.push(entry.path);
+    }
+  }
+  return matchingFiles;
+}
+
+async function compileRepoCode(filePath: string) {
+  const basename = path.basename(filePath);
+  if (filePath.endsWith(".js")) {
+    const files = await findImports(`@js/${basename}`);
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i];
+      if (file.endsWith(".js")) {
+        if (file.startsWith("repo")) {
+          await compileRepoCode(file);
+        } else {
+          await compileJS(`${Deno.cwd()}\\${file}`);
+        }
+      }
+    }
+  } else if (filePath.endsWith(".ejs")) {
+    const files = await findImports(`repo/ejs/${basename}`);
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i];
+      if (file.endsWith(".ejs")) {
+        if (file.startsWith("repo")) {
+          await compileRepoCode(file);
+        } else {
+          await compileEJS(`${Deno.cwd()}\\${file}`);
+        }
+      }
+    }
+  } else if (filePath.endsWith(".scss")) {
+    const files = await findImports(`repo/scss/${basename}`);
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i];
+      if (file.endsWith(".scss")) {
+        if (file.startsWith("repo")) {
+          await compileRepoCode(file);
+        } else {
+          await compileCSS(`${Deno.cwd()}\\${file}`);
+        }
+      }
+    }
+  }
+}
+
 const compiledFiles: Set<string> = new Set();
 
 const watchFiles = async () => {
@@ -150,13 +209,15 @@ const watchFiles = async () => {
         await compileCSS(ePath);
       } else if (ePath.includes("\\Dev\\js")) {
         await compileJS(ePath);
-      } else if (ePath.includes("\\ejs")) {
+      } else if (ePath.includes("\\ejs") && !ePath.includes("\\repo")) {
         await compileEJS(ePath);
       } else if (ePath.includes("\\lan\\index.js")) {
         await compileLan(ePath);
       } else if (ePath.includes("\\patiles")) {
         const likeEjsPath = ePath.split("\\patiles")[0];
         await compileLan(`${likeEjsPath}\\dist\\lan\\index.js`);
+      } else if (ePath.includes("\\repo")) {
+        await compileRepoCode(ePath);
       }
       setTimeout(() => {
         compiledFiles.clear();
