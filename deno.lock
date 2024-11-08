@@ -2,6 +2,8 @@
   "version": "4",
   "specifiers": {
     "jsr:@luca/cases@1": "1.0.0",
+    "npm:@rollup/plugin-alias@^5.1.1": "5.1.1_rollup@2.79.2",
+    "npm:@rollup/plugin-terser@~0.4.4": "0.4.4_rollup@2.79.2",
     "npm:rollup-plugin-terser@^7.0.2": "7.0.2_rollup@2.79.2",
     "npm:rollup@2.79.2": "2.79.2",
     "npm:rollup@4.24.4": "4.24.4",
@@ -115,6 +117,21 @@
         "is-glob",
         "micromatch",
         "node-addon-api"
+      ]
+    },
+    "@rollup/plugin-alias@5.1.1_rollup@2.79.2": {
+      "integrity": "sha512-PR9zDb+rOzkRb2VD+EuKB7UC41vU5DIwZ5qqCpk0KJudcWAyi8rvYOhS7+L5aZCspw1stTViLgN5v6FF1p5cgQ==",
+      "dependencies": [
+        "rollup@2.79.2"
+      ]
+    },
+    "@rollup/plugin-terser@0.4.4_rollup@2.79.2": {
+      "integrity": "sha512-XHeJC5Bgvs8LfukDwWZp7yeqin6ns8RTl2B9avbejt6tZqsqvVoWI7ZTQrcNsfKEDWBTnTxM8nMDkO2IFFbd0A==",
+      "dependencies": [
+        "rollup@2.79.2",
+        "serialize-javascript@6.0.2",
+        "smob",
+        "terser"
       ]
     },
     "@rollup/rollup-android-arm-eabi@4.24.4": {
@@ -276,7 +293,7 @@
         "@babel/code-frame",
         "jest-worker",
         "rollup@2.79.2",
-        "serialize-javascript",
+        "serialize-javascript@4.0.0",
         "terser"
       ]
     },
@@ -328,6 +345,15 @@
       "dependencies": [
         "randombytes"
       ]
+    },
+    "serialize-javascript@6.0.2": {
+      "integrity": "sha512-Saa1xPByTTq2gdeFZYLLo+RFE35NHZkAbqZeWNd3BpzppeVisAqpDjcp8dyf6uIvEqJRd46jemmyA4iFIeVk8g==",
+      "dependencies": [
+        "randombytes"
+      ]
+    },
+    "smob@1.5.0": {
+      "integrity": "sha512-g6T+p7QO8npa+/hNx9ohv1E5pVCmWrVCUzUXJyLdMmftX6ER0oiWY/w9knEonLpnOp6b6FenKnMfR8gqwWdwig=="
     },
     "source-map-js@1.2.1": {
       "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="
@@ -600,6 +626,8 @@
     ],
     "packageJson": {
       "dependencies": [
+        "npm:@rollup/plugin-alias@^5.1.1",
+        "npm:@rollup/plugin-terser@~0.4.4",
         "npm:rollup-plugin-terser@^7.0.2",
         "npm:rollup@^4.24.4"
       ]

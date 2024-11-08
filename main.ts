@@ -45,17 +45,16 @@ async function compileJS(filePath: string) {
   const CompileFilePath = `${baseCompileFilePath}\\js`;
   const baseName = path.basename(filePath);
   const completePath = `${CompileFilePath}\\${baseName}`;
-  await new Deno.Command("npx", {
+  await new Deno.Command("rollup", {
     args: [
-      "rollup",
+      "--config",
+      "rollup.config.js",
       filePath,
       "--file",
       completePath,
       "--format",
       "es",
       "--treeshake",
-      "--plugin",
-      "terser",
     ],
     stdout: "inherit",
     stderr: "inherit",
@@ -81,10 +80,61 @@ async function compileEJS(filePath: string) {
     "ejs",
     "html"
   )}`;
-  const templateData = { title: "Hello, Deno" };
+  const lanPath = `${baseCompileFilePath}\\dist\\lan\\index.js`;
+  delete require.cache[require.resolve(lanPath)];
+  let templateData = require(lanPath);
+  templateData = {
+    ...templateData,
+    faceSSwap: JSON.stringify(templateData.faceSwap),
+    allData: JSON.stringify(templateData),
+    voice_Generator: JSON.stringify(templateData.voiceGenerator),
+  };
   const template = await Deno.readTextFile(filePath);
-  const html = ejs.render(template, templateData, {});
-  await Deno.writeTextFile(completePath, html);
+  try {
+    const result = await ejs.render(template, templateData, {
+      filename: filePath,
+      async: false,
+    });
+    await Deno.writeTextFile(completePath, result);
+  } catch (err) {
+    console.log("Error rendering EJS template:", err);
+  }
+}
+
+async function getFiles(
+  folderPath: string,
+  suffix: string = ".ejs"
+): Promise<string[]> {
+  const files: string[] = [];
+  for await (const entry of Deno.readDir(folderPath)) {
+    if (entry.isFile && entry.name.endsWith(suffix)) {
+      files.push(entry.name);
+    }
+  }
+  return files;
+}
+
+async function compileLan(filePath: string) {
+  const baseCompileFilePath = path.dirname(filePath);
+  const es6Path = `${baseCompileFilePath}\\es6.js`;
+  const normalPath = `${baseCompileFilePath}\\normal.js`;
+  const fileContent = await Deno.readTextFile(filePath);
+  const jsonContent = fileContent.replace(/^module\.exports\s*=\s*/, "").trim();
+  const es6content = `export default ${jsonContent}`;
+  const normalcontent = `var jsonData = ${jsonContent}`;
+  await Deno.writeTextFile(es6Path, es6content);
+  await Deno.writeTextFile(normalPath, normalcontent);
+  compileAllEjs(filePath);
+}
+
+async function compileAllEjs(filePath: string) {
+  const baseCompileFilePath = filePath.split("\\dist\\")[0];
+  const saveFilePath = `${baseCompileFilePath}\\ejs`;
+  const allEjsFiles = await getFiles(saveFilePath);
+  for (let i = 0; i < allEjsFiles.length; i++) {
+    const filename = allEjsFiles[i];
+    await compileEJS(`${saveFilePath}\\${filename}`);
+  }
 }
 
 const compiledFiles: Set<string> = new Set();
@@ -102,6 +152,11 @@ const watchFiles = async () => {
         await compileJS(ePath);
       } else if (ePath.includes("\\ejs")) {
         await compileEJS(ePath);
+      } else if (ePath.includes("\\lan\\index.js")) {
+        await compileLan(ePath);
+      } else if (ePath.includes("\\patiles")) {
+        const likeEjsPath = ePath.split("\\patiles")[0];
+        await compileLan(`${likeEjsPath}\\dist\\lan\\index.js`);
       }
       setTimeout(() => {
         compiledFiles.clear();
