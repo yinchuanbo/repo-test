@@ -250,7 +250,12 @@ const serveFolder = async (folder: string, req: Request) => {
 };
 
 const startServer = async (port: number, folder: string) => {
-  await serve((req) => serveFolder(folder, req), { port });
+  await serve((req) => serveFolder(folder, req), {
+    port,
+    onListen({ port, hostname }) {
+      console.log(`${folder} Server started at http://${hostname}:${port}`);
+    },
+  });
 };
 
 const main = () => {
