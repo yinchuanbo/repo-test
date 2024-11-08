@@ -5,6 +5,7 @@ import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
 const sass = require("sass");
 const path = require("node:path");
+const { minify } = require("html-minifier-terser");
 
 async function getDirectories(path: string) {
   const directories: string[] = [];
@@ -95,7 +96,11 @@ async function compileEJS(filePath: string) {
       filename: filePath,
       async: false,
     });
-    await Deno.writeTextFile(completePath, result);
+    const minifiedContent = await minify(result, {
+      collapseWhitespace: true,
+      removeComments: true,
+    });
+    await Deno.writeTextFile(completePath, minifiedContent);
   } catch (err) {
     console.log("Error rendering EJS template:", err);
   }
