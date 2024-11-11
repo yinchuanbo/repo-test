@@ -2,6 +2,12 @@
 
 - window: `winget install DenoLand.Deno`
 
+## 项目运行方式
+
+```sh
+deno task dev
+```
+
 ## repo 引用方式
 
 - js
