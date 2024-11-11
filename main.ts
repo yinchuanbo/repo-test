@@ -3,7 +3,6 @@ import * as ejs from "https://deno.land/x/deno_ejs@v0.3.1/mod.ts";
 import { walk } from "https://deno.land/std@0.224.0/fs/walk.ts";
 import { createRequire } from "node:module";
 
-// 类型定义
 type TemplateData = {
   faceSwap: unknown;
   voiceGenerator: unknown;
@@ -15,7 +14,6 @@ interface CompileOptions {
   async: boolean;
 }
 
-// 常量配置
 const require = createRequire(import.meta.url);
 const sass = require("sass");
 const path = require("node:path");
